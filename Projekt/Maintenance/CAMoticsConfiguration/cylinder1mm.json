@@ -1,0 +1,9 @@
+{
+  "1": {
+    "units": "metric",
+    "shape": "cylindrical",
+    "length": 10,
+    "diameter": 1,
+    "description": ""
+  }
+}

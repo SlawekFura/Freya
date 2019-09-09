@@ -1,0 +1,146 @@
+  0
+LAYERSTATEDICTIONARY
+  0
+LAYERSTATE
+  1
+MyConfiguration
+ 91
+     1023
+301
+Configuration0: description
+290
+     0
+302
+0
+  8
+0
+ 90
+        8
+ 62
+     7
+370
+    -3
+  6
+Continuous
+  2
+Color_7
+  8
+Defpoints
+ 90
+        0
+ 62
+     7
+370
+    -3
+  6
+Continuous
+  2
+Color_7
+  8
+_B_WIDOK
+ 90
+       10
+ 62
+     9
+370
+    -3
+  6
+Continuous
+  2
+Color_9
+  8
+-_D_-_WIDOK_DACH_W
+ 90
+        8
+ 62
+   130
+370
+    -3
+  6
+Continuous
+  2
+Color_130
+  8
+-_D_-_WIDOK_DACH_W_CIENKA
+ 90
+        8
+ 62
+     8
+370
+    -3
+  6
+Continuous
+  2
+Color_8
+  8
+Proste wycinanie
+ 90
+        8
+ 62
+     7
+370
+    -3
+  6
+Continuous
+  2
+Color_7
+  8
+DIMENSION
+ 90
+        8
+ 62
+     3
+370
+    25
+  6
+Continuous
+  2
+Color_3
+  8
+Gora - wycinanie
+ 90
+        8
+ 62
+     5
+370
+    -3
+  6
+Continuous
+  2
+Color_5
+  8
+Dol - wycinanie
+ 90
+        8
+ 62
+     3
+370
+    -3
+  6
+Continuous
+  2
+Color_3
+  8
+Gora - zgiecie
+ 90
+        8
+ 62
+     1
+370
+    -3
+  6
+Continuous
+  2
+Color_1
+  8
+Dol - zgiecie
+ 90
+        8
+ 62
+     4
+370
+    -3
+  6
+Continuous
+  2
+Color_4
