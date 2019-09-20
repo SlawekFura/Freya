@@ -19,7 +19,8 @@ def detriangulize(structure, triangle):
             return structure
 
 
-def generateStructFromFaces(listOfFaces):
+def generateStructFromCrossSection(crossSection):
+    listOfFaces = crossSection.faces.tolist()
     structure = listOfFaces[0]
     listOfFaces.remove(listOfFaces[0])
     i = 1;

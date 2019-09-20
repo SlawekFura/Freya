@@ -11,31 +11,12 @@ mesh = pymesh.load_mesh("schody_stl_p2_rotated.stl")
 
 fig = go.Figure()
 crossSections = pymesh.slice_mesh(mesh, np.array([0, 0, 1], np.int32), 2)
-for section in crossSections:
+for crossSect in crossSections:
 
-    listOfFaces = section.faces.tolist()
-    structure = section.faces[0].tolist()
-
-    #i = 1;
-    #while len(listOfFaces):
-    #    generatedStruct = detriangulize(structure, listOfFaces[i])
-    #    if generatedStruct is not None:
-    #        structure = generatedStruct
-    #        listOfFaces.remove(listOfFaces[i])
-    #        i -= 1;
-    #    i += 1;
-    #    if i == len(listOfFaces):
-    #        i = 0
-    #
-    structure = generateStructFromFaces(listOfFaces)
-    #print(structure)
-    #if structure[100]:
-    #    break
+    structure = generateStructFromCrossSection(crossSect)
     
-    vertices = [ [float('%.3f' % coord) for coord in elem] for elem in section.vertices]
+    vertices = [[float('%.3f' % coord) for coord in elem] for elem in crossSect.vertices]
     structure = removeDoubledPoints(structure, vertices)
-    for point in structure:
-        print(vertices[point])
 
     structure = removePointsOnSameLine(structure, vertices)
     coordStructure = []
