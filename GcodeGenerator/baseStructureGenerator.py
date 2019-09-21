@@ -20,6 +20,7 @@ def detriangulize(structure, triangle):
 
 
 def generateStructFromCrossSection(crossSection):
+    vertices = roundFloatList(crossSection.vertices, 3)
     listOfFaces = crossSection.faces.tolist()
     structure = listOfFaces[0]
     listOfFaces.remove(listOfFaces[0])
@@ -33,6 +34,10 @@ def generateStructFromCrossSection(crossSection):
         i += 1;
         if i == len(listOfFaces):
             i = 0
+
+    structure = removeDoubledPoints(structure, vertices)
+    structure = removePointsOnSameLine(structure, vertices)
+    structure.append(structure[0])
     return structure
  
 def removeDoubledPoints(primaryStructure, vertices):
@@ -59,6 +64,6 @@ def removePointsOnSameLine(structure, vertices):
         if oc.matchFloats(vertices[p0Index][x], vertices[p1Index][x], vertices[p2Index][x]) or oc.matchFloats(vertices[p0Index][y], vertices[p1Index][y],vertices[p2Index][y]) or isThirdPointOnSameLine(vertices[p0Index], vertices[p1Index], vertices[p2Index]):
             newStructure.remove(p1Index) 
             cond = True
-        print("first: (" + str(vertices[p0Index][x]) + ", " + str(vertices[p0Index][y]) +  ")" + "\tsecond: (" + str(vertices[p1Index][x]) + ", " + str(vertices[p1Index][y]) + ")" + "\tthird: (" + str(vertices[p2Index][x]) + ", " + str(vertices[p2Index][y]) +  ")" + "\tT/F: " + str(cond)) 
+        #print("first: (" + str(vertices[p0Index][x]) + ", " + str(vertices[p0Index][y]) +  ")" + "\tsecond: (" + str(vertices[p1Index][x]) + ", " + str(vertices[p1Index][y]) + ")" + "\tthird: (" + str(vertices[p2Index][x]) + ", " + str(vertices[p2Index][y]) +  ")" + "\tT/F: " + str(cond)) 
     return newStructure
 
