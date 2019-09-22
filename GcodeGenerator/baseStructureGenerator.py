@@ -2,7 +2,6 @@ from utils import *
 import OffsetCreator as oc
 
 def detriangulize(structure, triangle):
-    originalStruct = structure
     for i in range(0, len(structure)):
         point = structure[i]
 
@@ -18,9 +17,8 @@ def detriangulize(structure, triangle):
                 structure.insert(i, pointToAppend[0])
             return structure
 
-
 def generateStructFromCrossSection(crossSection):
-    vertices = roundFloatList(crossSection.vertices, 3)
+    vertices = crossSection.vertices
     listOfFaces = crossSection.faces.tolist()
     structure = listOfFaces[0]
     listOfFaces.remove(listOfFaces[0])
@@ -43,7 +41,7 @@ def generateStructFromCrossSection(crossSection):
 def removeDoubledPoints(primaryStructure, vertices):
     structure = list(primaryStructure)
     for i in range(0, len(primaryStructure)): 
-        if vertices[primaryStructure[i-1]] == vertices[primaryStructure[i]]:
+        if match2FloatLists(vertices[primaryStructure[i-1]], vertices[primaryStructure[i]]):
             structure.remove(primaryStructure[i])     
     return structure
             
@@ -64,6 +62,30 @@ def removePointsOnSameLine(structure, vertices):
         if oc.matchFloats(vertices[p0Index][x], vertices[p1Index][x], vertices[p2Index][x]) or oc.matchFloats(vertices[p0Index][y], vertices[p1Index][y],vertices[p2Index][y]) or isThirdPointOnSameLine(vertices[p0Index], vertices[p1Index], vertices[p2Index]):
             newStructure.remove(p1Index) 
             cond = True
-        #print("first: (" + str(vertices[p0Index][x]) + ", " + str(vertices[p0Index][y]) +  ")" + "\tsecond: (" + str(vertices[p1Index][x]) + ", " + str(vertices[p1Index][y]) + ")" + "\tthird: (" + str(vertices[p2Index][x]) + ", " + str(vertices[p2Index][y]) +  ")" + "\tT/F: " + str(cond)) 
+        #print("first: (" + str(vertices[p0Index][x]) + ", " + str(vertices[p0Index][y]) +  ")" + "\tsecond: (" + str(vertices[p1Index][x]) + ", " + str(vertices[p1Index][y]) + ")" + "\tthird: (" + str(vertices[p2Index][x]) + ", " + str(vertices[p2Index][y]) +  ")" + "\tT/F: " + str(cond))
     return newStructure
 
+def getNumOfSlices(mesh):
+    meshSize = mesh.bbox[1][z]
+    zCoordList = genZCoordList(mesh)
+    zCoordList.sort(reverse=True)
+    smallestHeightDifference = getSmallestDifference(zCoordList)
+    return math.ceil(meshSize/smallestHeightDifference)
+
+def genZCoordList(mesh):
+    zCoords = []
+    for vertice in mesh.vertices:
+        zCoords.append(vertice[z])
+    zCoords = roundFloatList(zCoords)
+    zCoords = removeDuplicates(zCoords)
+    #zCoords.sort(reverse=True)
+    zCoords.sort()
+    return zCoords
+
+def getSmallestDifference(zCoord):
+    smallestDiff = max(zCoord)
+    for i in range(1, len(zCoord)):
+        diffBetween2Values = zCoord[i-1] - zCoord[i]
+        if smallestDiff > diffBetween2Values:
+            smallestDiff = diffBetween2Values
+    return smallestDiff
