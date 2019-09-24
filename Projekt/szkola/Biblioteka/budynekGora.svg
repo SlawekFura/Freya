@@ -7,13 +7,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="100mm"
-   height="333mm"
-   viewBox="0 0 100 333"
-   version="1.1"
-   id="svg983"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="budynekGora.svg"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+   id="svg983"
+   version="1.1"
+   viewBox="0 0 100 333"
+   height="333mm"
+   width="100mm">
   <metadata
      id="metadata985">
     <rdf:RDF>
@@ -31,15 +31,15 @@
      id="namedview7"
      showgrid="false"
      inkscape:pagecheckerboard="true"
-     inkscape:zoom="4"
-     inkscape:cx="165.81086"
-     inkscape:cy="109.95325"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="-163.75945"
+     inkscape:cy="24.436785"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="1358"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g911" />
+     inkscape:current-layer="g981" />
   <desc
      id="desc9">C:\Users\SlawekFura\Desktop\Freya\Projekt\szkola\Biblioteka\budynek.dxf - scale = 1.000000, origin = (0.000000, 0.000000), method = manual</desc>
   <defs
@@ -88,7 +88,7 @@
      inkscape:label="Dol - wycinanie"
      id="g907"
      transform="translate(0,36)"
-     style="display:inline">
+     style="display:none">
     <path
        id="path905"
        style="fill:none;stroke:#00ff00;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none"
@@ -99,7 +99,7 @@
      inkscape:groupmode="layer"
      inkscape:label="Dol - zgiecie"
      id="g911"
-     style="display:inline"
+     style="display:none"
      transform="translate(0,36)">
     <path
        d="m 48.327068,281.6073 v -19.75"
@@ -124,7 +124,7 @@
      id="layer1"
      inkscape:label="Gora poglebianie"
      transform="translate(0,36)"
-     style="display:inline">
+     style="display:none">
     <path
        d="m 84.743632,272.5673 v -3.1 H 13.660658 v 3.2 h 71.082974"
        style="display:inline;fill:none;stroke:#000000;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none"
@@ -186,7 +186,7 @@
              id="tspan2264"
              sodipodi:role="line"
              y="323"
-             x="110">(50.2; 0.0; -2.9)</tspan></text>
+             x="110">(50.2; 0.0; -3.1)</tspan></text>
       </g>
     </g>
     <g
