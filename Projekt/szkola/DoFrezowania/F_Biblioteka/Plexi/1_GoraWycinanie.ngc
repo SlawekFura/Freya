@@ -6,82 +6,74 @@ M3
 (Header end.)
 G21 (All units in mm)
 
-(Start cutting path id: path4308)
+(Start cutting path id: path651)
 (Change tool to Cylindrical cutter)
 
-G00 Z1.000000
-G00 X2.154603 Y20.424700
+G00 Z2.000000
+G00 X-0.488500 Y16.723690
 
-G01 Z-2.100000 F100.0(Penetrate)
-G01 X2.154603 Y39.674700 Z-2.100000 F400.000000
-G00 Z1.000000
+G01 Z-2.100000 F20.0(Penetrate)
+G01 X-0.488500 Y33.473690 Z-2.100000 F200.000000
+G00 Z2.000000
 
-(End cutting path id: path4308)
+(End cutting path id: path651)
 
 
-(Start cutting path id: path4308)
+(Start cutting path id: path651)
 (Change tool to Cylindrical cutter)
 
-G00 Z1.000000
-G00 X2.154603 Y20.424700
+G00 Z2.000000
+G00 X-0.488500 Y16.723690
 
-G01 Z-3.000000 F100.0(Penetrate)
-G01 X2.154603 Y39.674700 Z-3.000000 F400.000000
-G00 Z1.000000
+G01 Z-3.000000 F20.0(Penetrate)
+G01 X-0.488500 Y33.473690 Z-3.000000 F200.000000
+G00 Z2.000000
 
-(End cutting path id: path4308)
+(End cutting path id: path651)
 
 
-(Start cutting path id: path4308)
+(Start cutting path id: path647)
 (Change tool to Cylindrical cutter)
 
-G00 Z1.000000
-G00 X-31.261956 Y39.674700
+G00 Z2.000000
+G00 X-33.905059 Y33.473690
 
-G01 Z-2.100000 F100.0(Penetrate)
-G01 X2.154603 Y39.674700 Z-2.100000 F400.000000
-G00 Z1.000000
+G01 Z-2.100000 F20.0(Penetrate)
+G01 X-0.488500 Y33.473690 Z-2.100000 F200.000000
+G00 Z2.000000
 
-(End cutting path id: path4308)
-
-
-(Start cutting path id: path4308)
 (Change tool to Cylindrical cutter)
 
-G00 Z1.000000
-G00 X-31.261956 Y39.674700
+G00 Z2.000000
+G00 X-0.488500 Y33.473690
 
-G01 Z-3.000000 F100.0(Penetrate)
-G01 X2.154603 Y39.674700 Z-3.000000 F400.000000
-G00 Z1.000000
+G01 Z-2.100000 F20.0(Penetrate)
+G01 X31.177907 Y33.473690 Z-2.100000 F200.000000
+G00 Z2.000000
 
-(End cutting path id: path4308)
+(End cutting path id: path647)
 
 
-(Start cutting path id: path4308)
+(Start cutting path id: path647)
 (Change tool to Cylindrical cutter)
 
-G00 Z1.000000
-G00 X2.154603 Y39.674700
+G00 Z2.000000
+G00 X-33.905059 Y33.473690
 
-G01 Z-2.100000 F100.0(Penetrate)
-G01 X33.821012 Y39.674700 Z-2.100000 F400.000000
-G00 Z1.000000
+G01 Z-3.000000 F20.0(Penetrate)
+G01 X-0.488500 Y33.473690 Z-3.000000 F200.000000
+G00 Z2.000000
 
-(End cutting path id: path4308)
-
-
-(Start cutting path id: path4308)
 (Change tool to Cylindrical cutter)
 
-G00 Z1.000000
-G00 X2.154603 Y39.674700
+G00 Z2.000000
+G00 X-0.488500 Y33.473690
 
-G01 Z-3.000000 F100.0(Penetrate)
-G01 X33.821012 Y39.674700 Z-3.000000 F400.000000
-G00 Z1.000000
+G01 Z-3.000000 F20.0(Penetrate)
+G01 X31.177907 Y33.473690 Z-3.000000 F200.000000
+G00 Z2.000000
 
-(End cutting path id: path4308)
+(End cutting path id: path647)
 
 
 (Footer)
