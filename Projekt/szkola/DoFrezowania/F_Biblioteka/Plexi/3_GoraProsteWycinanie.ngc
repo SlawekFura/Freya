@@ -6,6 +6,38 @@ M3
 (Header end.)
 G21 (All units in mm)
 
+(Start cutting path id: path9073)
+(Change tool to Cylindrical cutter)
+
+G00 Z2.000000
+G00 X32.562672 Y30.519390
+
+G01 Z-1.600000 F20.0(Penetrate)
+G01 X32.562672 Y16.383980 Z-1.600000 F200.000000
+G01 X40.598089 Y16.383980 Z-1.600000
+G01 X40.598089 Y30.519390 Z-1.600000
+G01 X32.562672 Y30.519390 Z-1.600000
+G00 Z2.000000
+
+(End cutting path id: path9073)
+
+
+(Start cutting path id: path9073)
+(Change tool to Cylindrical cutter)
+
+G00 Z2.000000
+G00 X32.562672 Y30.519390
+
+G01 Z-3.100000 F20.0(Penetrate)
+G01 X32.562672 Y16.383980 Z-3.100000 F200.000000
+G01 X40.598089 Y16.383980 Z-3.100000
+G01 X40.598089 Y30.519390 Z-3.100000
+G01 X32.562672 Y30.519390 Z-3.100000
+G00 Z2.000000
+
+(End cutting path id: path9073)
+
+
 (Start cutting path id: path675)
 (Change tool to Cylindrical cutter)
 
