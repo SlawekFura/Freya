@@ -7,13 +7,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="100mm"
-   height="333mm"
-   viewBox="0 0 100 333"
-   version="1.1"
-   id="svg679"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="budynek_plexi.svg"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+   id="svg679"
+   version="1.1"
+   viewBox="0 0 100 333"
+   height="333mm"
+   width="100mm">
   <metadata
      id="metadata681">
     <rdf:RDF>
@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -31,9 +31,9 @@
      id="namedview345"
      showgrid="false"
      inkscape:pagecheckerboard="true"
-     inkscape:zoom="0.5946522"
-     inkscape:cx="161.84592"
-     inkscape:cy="-143.36694"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="42.735242"
+     inkscape:cy="58.16128"
      inkscape:window-width="1302"
      inkscape:window-height="745"
      inkscape:window-x="56"
@@ -94,6 +94,12 @@
        style="fill:none;stroke:#000000;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none"
        id="path675"
        inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 82.362672,266.48061 v 14.13541 h 8.035417 v -14.13541 z"
+       id="path9073"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
   </g>
   <g
      inkscape:groupmode="layer"

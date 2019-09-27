@@ -101,7 +101,7 @@ Standard
   9
 $CLAYER
   8
-0
+Dol - zgiecie
   9
 $CELTYPE
   6
@@ -501,11 +501,11 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2458753.910686528
+2458753.979224884
   9
 $TDUUPDATE
  40
-2458753.827353194
+2458753.895891551
   9
 $TDINDWG
  40
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-58A
+594
   9
 $SURFTAB1
  70
@@ -1127,7 +1127,7 @@ ObjectDBX Classes
  90
         0
  91
-       11
+       10
 280
      0
 281
@@ -1207,7 +1207,7 @@ ObjectDBX Classes
  90
      1153
  91
-       10
+        9
 280
      0
 281
@@ -1239,7 +1239,7 @@ ObjectDBX Classes
  90
      1153
  91
-       10
+        9
 280
      0
 281
@@ -1383,7 +1383,7 @@ ObjectDBX Classes
  90
         0
  91
-        8
+        7
 280
      0
 281
@@ -1495,7 +1495,7 @@ CAcLayoutPrintConfig
  90
      4095
  91
-        7
+        6
 280
      0
 281
@@ -1511,7 +1511,7 @@ SCENEOE
  90
      1153
  91
-       10
+        9
 280
      0
 281
@@ -1573,9 +1573,9 @@ AcDbViewportTableRecord
  21
 1.0
  12
--237.532349
+-274.202718
  22
--86.075731
+-78.442023
  13
 0.0
  23
@@ -1601,7 +1601,7 @@ AcDbViewportTableRecord
  37
 0.0
  40
-143.661972
+63.849765
  41
 2.403483
  42
@@ -1869,7 +1869,7 @@ Dol - wycinanie
  70
      0
  62
-    -3
+     3
   6
 Continuous
 370
@@ -1895,7 +1895,7 @@ Dol - zgiecie
  70
      0
  62
-    -4
+     4
   6
 Continuous
 370
@@ -5041,142 +5041,6 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-57B
-330
-1F
-100
-AcDbEntity
-  8
-Proste wycinanie
-100
-AcDbPolyline
- 90
-        4
- 70
-     1
- 43
-0.0
- 10
--116.723209
- 20
-82.24807
- 10
--135.073152
- 20
-82.248251
- 10
--135.073152
- 20
-87.288865
- 10
--116.723209
- 20
-87.288684
-  0
-LWPOLYLINE
-  5
-57C
-330
-1F
-100
-AcDbEntity
-  8
-Proste wycinanie
-100
-AcDbPolyline
- 90
-        4
- 70
-     1
- 43
-0.0
- 10
--116.723209
- 20
-73.206879
- 10
--116.723209
- 20
-78.248479
- 10
--135.073152
- 20
-78.24866
- 10
--135.073152
- 20
-73.20706
-  0
-LWPOLYLINE
-  5
-57D
-330
-1F
-100
-AcDbEntity
-  8
-Proste wycinanie
-100
-AcDbPolyline
- 90
-        4
- 70
-     1
- 43
-0.0
- 10
--116.723209
- 20
-64.16487
- 10
--116.723209
- 20
-69.206879
- 10
--135.073152
- 20
-69.20706
- 10
--135.073152
- 20
-64.165051
-  0
-LWPOLYLINE
-  5
-57E
-330
-1F
-100
-AcDbEntity
-  8
-Proste wycinanie
-100
-AcDbPolyline
- 90
-        4
- 70
-     1
- 43
-0.0
- 10
--135.073152
- 20
-55.123763
- 10
--135.073152
- 20
-60.16546
- 10
--116.723209
- 20
-60.165279
- 10
--116.723209
- 20
-55.123582
-  0
-LWPOLYLINE
-  5
 57F
 330
 1F
@@ -5336,6 +5200,142 @@ AcDbPolyline
 -74.049009
  20
 25.771998
+  0
+LWPOLYLINE
+  5
+58D
+330
+1F
+100
+AcDbEntity
+  8
+Proste wycinanie
+100
+AcDbPolyline
+ 90
+        4
+ 70
+     1
+ 43
+0.0
+ 10
+-117.223209
+ 20
+82.748075
+ 10
+-134.573152
+ 20
+82.748246
+ 10
+-134.573152
+ 20
+86.78886
+ 10
+-117.223209
+ 20
+86.788689
+  0
+LWPOLYLINE
+  5
+58E
+330
+1F
+100
+AcDbEntity
+  8
+Proste wycinanie
+100
+AcDbPolyline
+ 90
+        4
+ 70
+     1
+ 43
+0.0
+ 10
+-117.223209
+ 20
+73.706884
+ 10
+-117.223209
+ 20
+77.748484
+ 10
+-134.573152
+ 20
+77.748656
+ 10
+-134.573152
+ 20
+73.707056
+  0
+LWPOLYLINE
+  5
+58F
+330
+1F
+100
+AcDbEntity
+  8
+Proste wycinanie
+100
+AcDbPolyline
+ 90
+        4
+ 70
+     1
+ 43
+0.0
+ 10
+-117.223209
+ 20
+64.664875
+ 10
+-117.223209
+ 20
+68.706884
+ 10
+-134.573152
+ 20
+68.707056
+ 10
+-134.573152
+ 20
+64.665046
+  0
+LWPOLYLINE
+  5
+590
+330
+1F
+100
+AcDbEntity
+  8
+Proste wycinanie
+100
+AcDbPolyline
+ 90
+        4
+ 70
+     1
+ 43
+0.0
+ 10
+-134.573152
+ 20
+55.623758
+ 10
+-134.573152
+ 20
+59.665456
+ 10
+-117.223209
+ 20
+59.665284
+ 10
+-117.223209
+ 20
+55.623587
   0
 VIEWPORT
   5
@@ -5531,7 +5531,7 @@ EF
   3
 ACDB_RECOMPOSE_DATA
 350
-589
+593
   3
 AcDbVariableDictionary
 350
@@ -6075,7 +6075,7 @@ X-Ray
   0
 XRECORD
   5
-589
+593
 102
 {ACAD_REACTORS
 330
@@ -8245,7 +8245,7 @@ TABLESTYLE
 102
 {ACAD_XDICTIONARY
 360
-587
+591
 102
 }
 330
@@ -15539,7 +15539,7 @@ CSD_PLOT_CONFIG
   0
 DICTIONARY
   5
-587
+591
 330
 7F
 100
@@ -15551,7 +15551,7 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-588
+592
   0
 LAYOUTPRINTCONFIG
   5
@@ -15579,15 +15579,15 @@ CAcLayoutPrintConfig
   0
 CELLSTYLEMAP
   5
-588
+592
 102
 {ACAD_REACTORS
 330
-587
+591
 102
 }
 330
-587
+591
 100
 AcDbCellStyleMap
  90
