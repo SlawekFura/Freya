@@ -9,12 +9,12 @@ G21 (All units in mm)
 (Start cutting path id: path909)
 (Change tool to Cylindrical cutter)
 
-G00 Z1.000000
+G00 Z2.000000
 G00 X1.877222 Y15.392700
 
-G01 Z-2.900000 F100.0(Penetrate)
-G01 X1.877222 Y35.142700 Z-2.900000 F400.000000
-G00 Z1.000000
+G01 Z-2.800000 F100.0(Penetrate)
+G01 X1.877222 Y35.142700 Z-2.800000 F400.000000
+G00 Z2.000000
 
 (End cutting path id: path909)
 
