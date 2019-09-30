@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100mm"
+   height="333mm"
+   viewBox="0 0 100 333"
+   version="1.1"
+   id="svg983"
+   sodipodi:docname="budynek.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata985">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:document-units="mm"
+     id="namedview7"
+     showgrid="false"
+     inkscape:pagecheckerboard="true"
+     inkscape:zoom="0.7130787"
+     inkscape:cx="103.37718"
+     inkscape:cy="9.4102867"
+     inkscape:window-width="1302"
+     inkscape:window-height="745"
+     inkscape:window-x="56"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g911" />
+  <desc
+     id="desc9">C:\Users\SlawekFura\Desktop\Freya\Projekt\szkola\Biblioteka\budynek.dxf - scale = 1.000000, origin = (0.000000, 0.000000), method = manual</desc>
+  <defs
+     id="defs21">
+    <marker
+       id="DistanceX"
+       orient="auto"
+       refX="0"
+       refY="0"
+       style="overflow:visible">
+      <path
+         d="M 3,-3 -3,3 M 0,-5 V 5"
+         style="stroke:#000000;stroke-width:0.5"
+         id="path11"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <pattern
+       height="8"
+       id="Hatch"
+       patternUnits="userSpaceOnUse"
+       width="8"
+       x="0"
+       y="0">
+      <path
+         d="M8 4 l-4,4"
+         linecap="square"
+         stroke="#000000"
+         stroke-width="0.25"
+         id="path14" />
+      <path
+         d="M6 2 l-4,4"
+         linecap="square"
+         stroke="#000000"
+         stroke-width="0.25"
+         id="path16" />
+      <path
+         d="M4 0 l-4,4"
+         linecap="square"
+         stroke="#000000"
+         stroke-width="0.25"
+         id="path18" />
+    </pattern>
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Dol - wycinanie"
+     id="g907"
+     transform="translate(0,36)"
+     style="display:inline">
+    <path
+       id="path905"
+       style="fill:none;stroke:#00ff00;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 15.760658,281.6073 h 35.916564 m 0,0 h 34.16641"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Dol - zgiecie"
+     id="g911"
+     style="display:inline"
+     transform="translate(0,36)">
+    <path
+       d="m 51.677222,281.6073 v -19.75"
+       style="fill:none;stroke:#00ffff;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path909"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Proste wycinanie"
+     id="g981"
+     style="display:inline"
+     transform="translate(0,36)">
+    <path
+       d="m 15.260658,281.6073 v -20.25 h 36.416564 12.17641 v 14 h 8.92 v -14 h 13.57 v 20.25"
+       style="fill:none;stroke:#000000;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path975"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Gora poglebianie"
+     transform="translate(0,36)"
+     style="display:inline">
+    <path
+       d="m 15.260658,272.5673 v -3.1 h 71.082974 v 3.2 H 15.260658"
+       style="display:inline;fill:none;stroke:#000000;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path23"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path2786"
+       style="fill:none;stroke:#999999;stroke-width:0.30000001;marker-end:url(#DrawCurveMarker)"
+       d="m 16.361328,270.56641 v 1 h 68.882813 v -1 z m -0.601562,-0.59961 v 2.20117 H 85.84375 v -2.20117 z"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g2868" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="0"
+     id="g39"
+     style="display:inline"
+     transform="translate(0,36)">
+    <g
+       id="g2270"
+       transform="matrix(1.000000,0.000000,0.000000,1.000000,0.000000,-36.000000)"
+       gcodetools="Gcodetools orientation group">
+      <g
+         id="g2260"
+         gcodetools="Gcodetools orientation point (2 points)">
+        <path
+           id="path2254"
+           style="stroke:none;fill:#000000;"
+           gcodetools="Gcodetools orientation point arrow"
+           d="m 0.0,333.0 2.9375,-6.343750000001 0.8125,1.90625 6.843748640396,-6.84374864039 0,0 0.6875,0.6875 -6.84375,6.84375 1.90625,0.812500000001 z z" />
+        <text
+           id="text2258"
+           xml:space="preserve"
+           y="323"
+           x="10"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:'DejaVu Sans';fill:#000000;fill-opacity:1;stroke:none"
+           gcodetools="Gcodetools orientation point text"><tspan
+             id="tspan2256"
+             sodipodi:role="line"
+             y="323"
+             x="10">(-49.8; 0.0; 0.0)</tspan></text>
+      </g>
+      <g
+         id="g2268"
+         gcodetools="Gcodetools orientation point (2 points)">
+        <path
+           id="path2262"
+           style="stroke:none;fill:#000000;"
+           gcodetools="Gcodetools orientation point arrow"
+           d="m 100.0,333.0 2.9375,-6.343750000001 0.8125,1.90625 6.843748640396,-6.84374864039 0,0 0.6875,0.6875 -6.84375,6.84375 1.90625,0.812500000001 z z" />
+        <text
+           id="text2266"
+           xml:space="preserve"
+           y="323"
+           x="110"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:'DejaVu Sans';fill:#000000;fill-opacity:1;stroke:none"
+           gcodetools="Gcodetools orientation point text"><tspan
+             id="tspan2264"
+             sodipodi:role="line"
+             y="323"
+             x="110">(50.2; 0.0; -2.9)</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g2393"
+       transform="translate(-108.42651,341.63365)"
+       gcodetools="Gcodetools tool definition">
+      <path
+         id="path2311"
+         d="M -20,-20 H 380 V 155 H -20 Z"
+         style="fill:#00ff00;fill-opacity:0.5;stroke:#444444;stroke-width:1px"
+         gcodetools="Gcodetools tool background"
+         inkscape:connector-curvature="0" />
+      <g
+         id="g2321"
+         gcodetools="Gcodetools tool parameter">
+        <text
+           id="text2315"
+           xml:space="preserve"
+           y="0"
+           x="0"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'DejaVu Sans';fill:#000000;fill-opacity:1;stroke:none"
+           gcodetools="Gcodetools tool definition field name"><tspan
+             id="tspan2313"
+             sodipodi:role="line"
+             y="0"
+             x="0">name</tspan></text>
+        <text
+           id="text2319"
+           xml:space="preserve"
+           y="0"
+           x="150"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'DejaVu Sans';fill:#000000;fill-opacity:1;stroke:none"
+           gcodetools="Gcodetools tool definition field value"><tspan
+             id="tspan2317"
+             sodipodi:role="line"
+             y="0"
+             x="150">Cylindrical cutter</tspan></text>
+      </g>
+      <g
+         id="g2331"
+         gcodetools="Gcodetools tool parameter">
+        <text
+           id="text2325"
+           xml:space="preserve"
+           y="20"
+           x="0"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:'DejaVu Sans';fill:#000000;fill-opacity:1;stroke:none"
+           gcodetools="Gcodetools tool definition field name"><tspan
+             id="tspan2323"
+             sodipodi:role="line"
+             y="20"
+             x="0">id</tspan></text>
+        <text
+           id="text2329"
+           xml:space="preserve"
+           y="20"
+           x="150"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:'DejaVu Sans';fill:#000000;fill-opacity:1;stroke:none"
+           gcodetools="Gcodetools tool definition field value"><tspan
+             id="tspan2327"
+             sodipodi:role="line"
+             y="20"
+             x="150">Cylindrical cutter 0001</tspan></text>
+      </g>
+      <g
+         id="g2341"
+         gcodetools="Gcodetools tool parameter">
+        <text
+           id="text2335"
+           xml:space="preserve"
+           y="35"
+           x="0"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:'DejaVu Sans';fill:#000000;fill-opacity:1;stroke:none"
+           gcodetools="Gcodetools tool definition field name"><tspan
+             id="tspan2333"
+             sodipodi:role="line"
+             y="35"
+             x="0">diameter</tspan></text>
+        <text
+           id="text2339"
+           xml:space="preserve"
+           y="35"
+           x="150"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:'DejaVu Sans';fill:#000000;fill-opacity:1;stroke:none"
+           gcodetools="Gcodetools tool definition field value"><tspan
+             id="tspan2337"
+             sodipodi:role="line"
+             y="35"
+             x="150">1</tspan></text>
+      </g>
+      <g
+         id="g2351"
+         gcodetools="Gcodetools tool parameter">
+        <text
+           id="text2345"
+           xml:space="preserve"
+           y="50"
+           x="0"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:'DejaVu Sans';fill:#000000;fill-opacity:1;stroke:none"
+           gcodetools="Gcodetools tool definition field name"><tspan
+             id="tspan2343"
+             sodipodi:role="line"
+             y="50"
+             x="0">feed</tspan></text>
+        <text
+           id="text2349"
+           xml:space="preserve"
+           y="50"
+           x="150"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:'DejaVu Sans';fill:#000000;fill-opacity:1;stroke:none"
+           gcodetools="Gcodetools tool definition field value"><tspan
+             id="tspan2347"
+             sodipodi:role="line"
+             y="50"
+             x="150">400</tspan></text>
+      </g>
+      <g
+         id="g2361"
+         gcodetools="Gcodetools tool parameter">
+        <text
+           id="text2355"
+           xml:space="preserve"
+           y="65"
+           x="0"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:'DejaVu Sans';fill:#000000;fill-opacity:1;stroke:none"
+           gcodetools="Gcodetools tool definition field name"><tspan
+             id="tspan2353"
+             sodipodi:role="line"
+             y="65"
+             x="0">penetration angle</tspan></text>
+        <text
+           id="text2359"
+           xml:space="preserve"
+           y="65"
+           x="150"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:'DejaVu Sans';fill:#000000;fill-opacity:1;stroke:none"
+           gcodetools="Gcodetools tool definition field value"><tspan
+             id="tspan2357"
+             sodipodi:role="line"
+             y="65"
+             x="150">90</tspan></text>
+      </g>
+      <g
+         id="g2371"
+         gcodetools="Gcodetools tool parameter">
+        <text
+           id="text2365"
+           xml:space="preserve"
+           y="80"
+           x="0"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:'DejaVu Sans';fill:#000000;fill-opacity:1;stroke:none"
+           gcodetools="Gcodetools tool definition field name"><tspan
+             id="tspan2363"
+             sodipodi:role="line"
+             y="80"
+             x="0">penetration feed</tspan></text>
+        <text
+           id="text2369"
+           xml:space="preserve"
+           y="80"
+           x="150"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:'DejaVu Sans';fill:#000000;fill-opacity:1;stroke:none"
+           gcodetools="Gcodetools tool definition field value"><tspan
+             id="tspan2367"
+             sodipodi:role="line"
+             y="80"
+             x="150">100</tspan></text>
+      </g>
+      <g
+         id="g2381"
+         gcodetools="Gcodetools tool parameter">
+        <text
+           id="text2375"
+           xml:space="preserve"
+           y="95"
+           x="0"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:'DejaVu Sans';fill:#000000;fill-opacity:1;stroke:none"
+           gcodetools="Gcodetools tool definition field name"><tspan
+             id="tspan2373"
+             sodipodi:role="line"
+             y="95"
+             x="0">depth step</tspan></text>
+        <text
+           id="text2379"
+           xml:space="preserve"
+           y="95"
+           x="150"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:'DejaVu Sans';fill:#000000;fill-opacity:1;stroke:none"
+           gcodetools="Gcodetools tool definition field value"><tspan
+             id="tspan2377"
+             sodipodi:role="line"
+             y="95"
+             x="150">3.5</tspan></text>
+      </g>
+      <g
+         id="g2391"
+         gcodetools="Gcodetools tool parameter">
+        <text
+           id="text2385"
+           xml:space="preserve"
+           y="110"
+           x="0"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:'DejaVu Sans';fill:#000000;fill-opacity:1;stroke:none"
+           gcodetools="Gcodetools tool definition field name"><tspan
+             id="tspan2383"
+             sodipodi:role="line"
+             y="110"
+             x="0">tool change gcode</tspan></text>
+        <text
+           id="text2389"
+           xml:space="preserve"
+           y="110"
+           x="150"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:'DejaVu Sans';fill:#000000;fill-opacity:1;stroke:none"
+           gcodetools="Gcodetools tool definition field value"><tspan
+             id="tspan2387"
+             sodipodi:role="line"
+             y="110"
+             x="150">(None)</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

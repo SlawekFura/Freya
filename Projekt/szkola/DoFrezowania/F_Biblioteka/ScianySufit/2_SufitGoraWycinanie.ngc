@@ -6,17 +6,20 @@ M3
 (Header end.)
 G21 (All units in mm)
 
-(Start cutting path id: path745)
+(Start cutting path id: path3038)
 (Change tool to Cylindrical cutter)
 
 G00 Z2.000000
-G00 X1.371435 Y51.697557
+G00 X9.167676 Y4.611660
 
-G01 Z-2.800000 F100.0(Penetrate)
-G01 X21.318935 Y51.697557 Z-2.800000 F400.000000
+G01 Z-3.000000 F100.0(Penetrate)
+G01 X9.168676 Y38.778070 Z-3.000000 F400.000000
+G01 X45.085239 Y38.776070 Z-3.000000
+G01 X45.083739 Y4.609660 Z-3.000000
+G01 X9.167176 Y4.611660 Z-3.000000
 G00 Z2.000000
 
-(End cutting path id: path745)
+(End cutting path id: path3038)
 
 
 (Footer)
