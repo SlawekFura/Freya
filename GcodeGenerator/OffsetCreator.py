@@ -1,27 +1,8 @@
-import math
 import pyclipper
-from utils import *
 from baseStructureGenerator import *
 import pymesh
 import numpy as np
 import plotly.graph_objects as go
-
-def generateOffset(vertStructure, offset):
-    pco = pyclipper.PyclipperOffset()
-    coordinates_scaled = pyclipper.scale_to_clipper(vertStructure)
-    pco.AddPath(coordinates_scaled, pyclipper.JT_SQUARE, pyclipper.ET_CLOSEDPOLYGON)
-    new_coordinates = pco.Execute(pyclipper.scale_to_clipper(offset))
-    new_coordinates_scaled = pyclipper.scale_from_clipper(new_coordinates)
-
-
-    offsetCoord = []
-    for figure in new_coordinates_scaled:
-        offsetCoord.append(roundFloatNestedList(figure, 4))
-
-    for elem in offsetCoord[0]:
-        elem.append(vertStructure[0][z])
-
-    return offsetCoord
 
 class OffsetGenerator:
     def __init__(self, mesh, offset):
