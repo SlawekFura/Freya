@@ -7,17 +7,30 @@ import matplotlib.lines as mlines
 import copy
 import polyFromMeshCreator as pc
 import pyclipper
+import os
+import ReadWritePolysFromFile as RWPolys
+import subprocess
+import GcodeCommandGenerator as gGen
 
+
+millDiameter = 3
+baseOffset = 1
 #mesh = pymesh.load_mesh("schody_stl_p2_rotated.stl")
 mesh = pymesh.load_mesh("complicatedShape.stl")
-boxMesh = pymesh.generate_box_mesh(mesh.bbox[0], mesh.bbox[1])
+bbox = mesh.bbox
+bbox[0][x] -= baseOffset + millDiameter / 2
+bbox[0][y] -= baseOffset + millDiameter / 2
+bbox[1][x] += baseOffset + millDiameter / 2
+bbox[1][y] += baseOffset + millDiameter / 2
+
+boxMesh = pymesh.generate_box_mesh(bbox[0], bbox[1])
 diff = pymesh.boolean(boxMesh, mesh, "difference")
 
 polyCreator = pc.polyFromMeshCreator(diff)
 polylinesMap, verticesMap = polyCreator.genPolylines()
 
-fig = plt.figure()
-ax = fig.add_subplot(111, projection='3d')
+#fig = plt.figure()
+#ax = fig.add_subplot(111, projection='3d')
 
 #for key, values in polylinesMap.items():
     #print(key, values)
@@ -35,16 +48,6 @@ key = list(keys)[0]
 polyVal = polylinesMap[key]
 vertice = verticesMap[key]
 
-coordList = []
-for poly in polyVal:
-    pointList = []
-    for point in poly:
-        coord = vertice[point]
-        pointList.append(coord)
-    coordList.append(pointList)
-
-print(coordList[0])
-
 polylinesCoordMap = {}
 for key, polylines in polylinesMap.items():
     vertice = polylinesMap[key]
@@ -54,36 +57,20 @@ for key, polylines in polylinesMap.items():
         lineCoord = []
         for point in line:
             lineCoord.append(verticesMap[key][point])
+        line.append(line[0])
         polylineCoord.append(lineCoord)
     polylinesCoordMap.update({key : polylineCoord}) 
-#print(polylinesCoordMap)
 
 
-offsetList = []
-#for coordStructure in self.crossSectionsCoords:
-print("dupa1")
-pco = pyclipper.PyclipperOffset()
-print("dupa2")
-coordinates_scaled = pyclipper.scale_to_clipper(coordList)
-print(coordinates_scaled)
-print("dupa3")
-for coord in coordinates_scaled:
-    pco.AddPath(coord, pyclipper.JT_SQUARE, pyclipper.ET_CLOSEDPOLYGON)
-print("dupa4")
-newCoordinates = pco.Execute(pyclipper.scale_to_clipper(-20))
-print("dupa5")
-newCoordinatesScaled = pyclipper.scale_from_clipper(newCoordinates)
-print("dupa6", newCoordinatesScaled)
+RWPolys.writePolyCoordsMapIntoFile('MeshOffsetsMap', polylinesCoordMap)
 
+args = ("/home/slawek/workspace/CppWorkspace/ToolpathGenerator/build-debug/ToolpathGenerator")
+#Or just:
+#args = "bin/bar -c somefile.xml -d text.txt -r aString -f anotherString".split()
+popen = subprocess.Popen(args, stdout=subprocess.PIPE)
+popen.wait()
+output = popen.stdout.read()
 
-offsetCoord = []
-for figure in newCoordinatesScaled:
-    offsetCoord.append(roundFloatNestedList(figure, 4))
+offsetPolygonsMap = RWPolys.readPolysFromFile("dataFromCgal.txt")
 
-for elem in offsetCoord[0]:
-    elem.append(coordStructure[0][z])
-
-offsetCoord[0] = self.joinBeginWithEnd(offsetCoord[0])
-offsetLists.append(offsetCoord[0])
-
-
+gGen.genGcode("gcode.ngc", offsetPolygonsMap)
