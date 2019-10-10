@@ -15,13 +15,18 @@ import GcodeCommandGenerator as gGen
 
 millDiameter = 3
 baseOffset = 1
+materialHeight = 70.0
 #mesh = pymesh.load_mesh("schody_stl_p2_rotated.stl")
 mesh = pymesh.load_mesh("complicatedShape.stl")
+
+mesh = pc.moveToGround(mesh)
+
 bbox = mesh.bbox
 bbox[0][x] -= baseOffset + millDiameter / 2
 bbox[0][y] -= baseOffset + millDiameter / 2
 bbox[1][x] += baseOffset + millDiameter / 2
 bbox[1][y] += baseOffset + millDiameter / 2
+
 
 boxMesh = pymesh.generate_box_mesh(bbox[0], bbox[1])
 diff = pymesh.boolean(boxMesh, mesh, "difference")
@@ -65,8 +70,6 @@ for key, polylines in polylinesMap.items():
 RWPolys.writePolyCoordsMapIntoFile('MeshOffsetsMap', polylinesCoordMap)
 
 args = ("/home/slawek/workspace/CppWorkspace/ToolpathGenerator/build-debug/ToolpathGenerator")
-#Or just:
-#args = "bin/bar -c somefile.xml -d text.txt -r aString -f anotherString".split()
 popen = subprocess.Popen(args, stdout=subprocess.PIPE)
 popen.wait()
 output = popen.stdout.read()

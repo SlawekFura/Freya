@@ -1,0 +1,2528 @@
+  0
+SECTION
+  2
+HEADER
+  9
+$ACADVER
+  1
+AC1009
+  9
+$INSBASE
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$EXTMIN
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$EXTMAX
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+ENDSEC
+  0
+SECTION
+  2
+TABLES
+  0
+TABLE
+  2
+VPORT
+ 70
+0
+  0
+ENDTAB
+  0
+TABLE
+  2
+LTYPE
+ 70
+1
+  0
+LTYPE
+  2
+CONTINUOUS
+ 70
+0
+  3
+Solid line
+ 72
+65
+ 73
+0
+ 40
+0.0
+  0
+ENDTAB
+  0
+TABLE
+  2
+LAYER
+ 70
+1
+  0
+LAYER
+  2
+0
+ 70
+64
+ 62
+7
+  6
+continuous
+  0
+ENDTAB
+  0
+TABLE
+  2
+STYLE
+ 70
+1
+  0
+STYLE
+  2
+STANDARD
+ 70
+0
+ 40
+0
+ 41
+1.0
+ 50
+0.0
+ 71
+0
+ 42
+1
+ 3
+ARIAL.TTF
+ 4
+
+  0
+ENDTAB
+  0
+TABLE
+  2
+VIEW
+ 70
+0
+  0
+ENDTAB
+  0
+ENDSEC
+  0
+SECTION
+  2
+BLOCKS
+  0
+ENDSEC
+  0
+SECTION
+  2
+ENTITIES
+  0
+POLYLINE
+  8
+BOT_Partial_CutOut
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+BOT_Partial_CutOut
+ 10
+-113.223209
+ 20
+51.621998
+ 30
+0.0
+  0
+VERTEX
+  8
+BOT_Partial_CutOut
+ 10
+-113.223152
+ 20
+90.788911
+ 30
+0.0
+  0
+VERTEX
+  8
+BOT_Partial_CutOut
+ 10
+-74.049009
+ 20
+90.788378
+ 30
+0.0
+  0
+VERTEX
+  8
+BOT_Partial_CutOut
+ 10
+-74.049009
+ 20
+51.621998
+ 30
+0.0
+  0
+SEQEND
+  8
+BOT_Partial_CutOut
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+0
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-113.223152
+ 20
+116.138911
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-74.049009
+ 20
+116.138911
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-95.636103
+ 20
+94.288911
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-100.679533
+ 20
+94.288911
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-100.679487
+ 20
+112.638911
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-95.636058
+ 20
+112.638911
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-86.592603
+ 20
+94.288911
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-91.636033
+ 20
+94.288911
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-91.635987
+ 20
+112.638911
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-86.592558
+ 20
+112.638911
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-77.549103
+ 20
+94.288911
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-82.592533
+ 20
+94.288911
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-82.592487
+ 20
+112.638911
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-77.549058
+ 20
+112.638911
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-77.549188
+ 20
+60.163726
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-77.549201
+ 20
+55.122028
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-82.592701
+ 20
+55.122101
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-82.592688
+ 20
+60.163798
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-82.592621
+ 20
+87.288501
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-82.592633
+ 20
+82.246998
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-77.549133
+ 20
+82.246926
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-77.549121
+ 20
+87.288428
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-91.636121
+ 20
+87.288631
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-86.592621
+ 20
+87.288559
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-86.592633
+ 20
+82.247056
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-91.636133
+ 20
+82.247129
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-100.679621
+ 20
+87.288762
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-95.636121
+ 20
+87.288689
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-95.636133
+ 20
+82.247187
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-100.679633
+ 20
+82.24726
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-109.723133
+ 20
+82.24739
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-104.679633
+ 20
+82.247317
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-104.679621
+ 20
+87.28882
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-109.723121
+ 20
+87.288893
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-109.723127
+ 20
+84.768141
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-109.723143
+ 20
+78.24739
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-109.723156
+ 20
+73.20579
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-104.679656
+ 20
+73.205717
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-104.679643
+ 20
+78.247317
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-100.679643
+ 20
+78.24726
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-100.679656
+ 20
+73.20566
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-95.636156
+ 20
+73.205587
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-95.636143
+ 20
+78.247187
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-91.636143
+ 20
+78.247129
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-91.636156
+ 20
+73.205529
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-86.592656
+ 20
+73.205456
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-86.592643
+ 20
+78.247056
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-86.592672
+ 20
+66.684656
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-86.592666
+ 20
+69.205456
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-91.636095
+ 20
+69.205529
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-91.636108
+ 20
+64.163929
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-86.592678
+ 20
+64.163856
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-77.549143
+ 20
+78.246926
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-77.549156
+ 20
+73.205326
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-82.592656
+ 20
+73.205398
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-82.592643
+ 20
+78.246998
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-77.549166
+ 20
+69.205326
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-77.549178
+ 20
+64.163726
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-82.592678
+ 20
+64.163798
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-82.592666
+ 20
+69.205398
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-95.636172
+ 20
+66.684787
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-95.636166
+ 20
+69.205587
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-100.679595
+ 20
+69.20566
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-100.679608
+ 20
+64.16406
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-95.636178
+ 20
+64.163987
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-104.679666
+ 20
+69.205717
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-109.723166
+ 20
+69.20579
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-109.723172
+ 20
+66.68499
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-109.723178
+ 20
+64.16419
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-104.679678
+ 20
+64.164117
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-104.679672
+ 20
+66.684917
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-104.679688
+ 20
+60.164117
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-104.679701
+ 20
+55.12242
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-109.723201
+ 20
+55.122493
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-109.723188
+ 20
+60.16419
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-95.636188
+ 20
+60.163987
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-100.679688
+ 20
+60.16406
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-100.679701
+ 20
+55.122362
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-95.636201
+ 20
+55.122289
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-86.592688
+ 20
+60.163856
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-91.636188
+ 20
+60.163929
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-91.636201
+ 20
+55.122231
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-86.592701
+ 20
+55.122159
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-104.679603
+ 20
+94.288911
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-109.723103
+ 20
+94.288911
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-109.723058
+ 20
+112.638911
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-104.679558
+ 20
+112.638911
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-52.699009
+ 20
+82.747437
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-70.049009
+ 20
+82.747608
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-70.049009
+ 20
+86.788223
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-52.699009
+ 20
+86.788051
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-52.699009
+ 20
+77.747846
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-52.699009
+ 20
+73.706246
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-70.049009
+ 20
+73.706418
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-70.049009
+ 20
+77.748018
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-52.699009
+ 20
+68.706246
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-52.699009
+ 20
+64.664237
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-70.049009
+ 20
+64.664408
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-70.049009
+ 20
+68.706418
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-52.699009
+ 20
+55.622949
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-70.049009
+ 20
+55.62312
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-70.049009
+ 20
+59.664818
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-52.699009
+ 20
+59.664646
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+0
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-48.199009
+ 20
+51.622302
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-48.199009
+ 20
+90.788033
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+0
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-139.073152
+ 20
+90.788911
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-139.073152
+ 20
+51.621998
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-109.723264
+ 20
+29.771998
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-104.679764
+ 20
+29.771998
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-104.679718
+ 20
+48.121998
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-109.723218
+ 20
+48.121998
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-100.679693
+ 20
+29.771998
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-100.679648
+ 20
+48.121998
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-95.636218
+ 20
+48.121998
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-95.636264
+ 20
+29.771998
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-91.636193
+ 20
+29.771998
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-86.592764
+ 20
+29.771998
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-86.592718
+ 20
+48.121998
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-91.636148
+ 20
+48.121998
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-82.592693
+ 20
+29.771998
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-82.592648
+ 20
+48.121998
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-77.549218
+ 20
+48.121998
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-77.549264
+ 20
+29.771998
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+0
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-113.223209
+ 20
+25.771998
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-74.049009
+ 20
+25.771998
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-117.223209
+ 20
+82.748075
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-134.573152
+ 20
+82.748246
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-134.573152
+ 20
+86.78886
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-117.223209
+ 20
+86.788689
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-117.223209
+ 20
+73.706884
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-117.223209
+ 20
+77.748484
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-134.573152
+ 20
+77.748656
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-134.573152
+ 20
+73.707056
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-117.223209
+ 20
+64.664875
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-117.223209
+ 20
+68.706884
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-134.573152
+ 20
+68.707056
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-134.573152
+ 20
+64.665046
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+TOP_Full_CutOut_90
+ 62
+0
+ 70
+1
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-134.573152
+ 20
+55.623758
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-134.573152
+ 20
+59.665456
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-117.223209
+ 20
+59.665284
+ 30
+0.0
+  0
+VERTEX
+  8
+TOP_Full_CutOut_90
+ 10
+-117.223209
+ 20
+55.623587
+ 30
+0.0
+  0
+SEQEND
+  8
+TOP_Full_CutOut_90
+  0
+POLYLINE
+  8
+BOT_Full_CutOut_45
+ 62
+0
+ 70
+0
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+BOT_Full_CutOut_45
+ 10
+-74.049009
+ 20
+116.138911
+ 30
+0.0
+  0
+VERTEX
+  8
+BOT_Full_CutOut_45
+ 10
+-74.049009
+ 20
+90.788378
+ 30
+0.0
+  0
+VERTEX
+  8
+BOT_Full_CutOut_45
+ 10
+-48.699009
+ 20
+90.788033
+ 30
+0.0
+  0
+SEQEND
+  8
+BOT_Full_CutOut_45
+  0
+POLYLINE
+  8
+BOT_Full_CutOut_45
+ 62
+0
+ 70
+0
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+BOT_Full_CutOut_45
+ 10
+-113.223152
+ 20
+116.138911
+ 30
+0.0
+  0
+VERTEX
+  8
+BOT_Full_CutOut_45
+ 10
+-113.223152
+ 20
+90.788911
+ 30
+0.0
+  0
+VERTEX
+  8
+BOT_Full_CutOut_45
+ 10
+-138.573152
+ 20
+90.788911
+ 30
+0.0
+  0
+SEQEND
+  8
+BOT_Full_CutOut_45
+  0
+POLYLINE
+  8
+BOT_Full_CutOut_45
+ 62
+0
+ 70
+0
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+BOT_Full_CutOut_45
+ 10
+-74.049009
+ 20
+26.271998
+ 30
+0.0
+  0
+VERTEX
+  8
+BOT_Full_CutOut_45
+ 10
+-74.049009
+ 20
+51.622302
+ 30
+0.0
+  0
+VERTEX
+  8
+BOT_Full_CutOut_45
+ 10
+-48.699009
+ 20
+51.622302
+ 30
+0.0
+  0
+SEQEND
+  8
+BOT_Full_CutOut_45
+  0
+POLYLINE
+  8
+BOT_Full_CutOut_45
+ 62
+0
+ 70
+0
+ 66
+1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+VERTEX
+  8
+BOT_Full_CutOut_45
+ 10
+-138.573152
+ 20
+51.621998
+ 30
+0.0
+  0
+VERTEX
+  8
+BOT_Full_CutOut_45
+ 10
+-113.223209
+ 20
+51.621998
+ 30
+0.0
+  0
+VERTEX
+  8
+BOT_Full_CutOut_45
+ 10
+-113.223209
+ 20
+26.271998
+ 30
+0.0
+  0
+SEQEND
+  8
+BOT_Full_CutOut_45
+  0
+ENDSEC
+  0
+EOF

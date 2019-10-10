@@ -66,16 +66,19 @@ def removePointsOnSameLine(structure, vertices):
     return newStructure
 
 def getNumOfSlices(mesh):
-    meshSize = mesh.bbox[1][z]
+    bbox = mesh.bbox
+    meshSize = abs(bbox[1][z] - mesh.bbox[0][z])
     zCoordList = genZCoordList(mesh)
     zCoordList.sort(reverse=True)
     smallestHeightDifference = getSmallestDifference(zCoordList)
+    print("meshSize: ", meshSize, "\tsdiff: ", smallestHeightDifference)
     return math.ceil(meshSize/smallestHeightDifference)
 
 def genZCoordList(mesh):
     zCoords = []
     for vertice in mesh.vertices:
         zCoords.append(vertice[z])
+    print(zCoords)
     zCoords = roundFloatList(zCoords)
     zCoords = removeDuplicates(zCoords)
     #zCoords.sort(reverse=True)
@@ -83,9 +86,9 @@ def genZCoordList(mesh):
     return zCoords
 
 def getSmallestDifference(zCoord):
-    smallestDiff = max(zCoord)
+    smallestDiff = abs(zCoord[0] - zCoord[-1])
     for i in range(1, len(zCoord)):
-        diffBetween2Values = zCoord[i-1] - zCoord[i]
+        diffBetween2Values = abs(zCoord[i-1] - zCoord[i])
         if smallestDiff > diffBetween2Values:
             smallestDiff = diffBetween2Values
     return smallestDiff

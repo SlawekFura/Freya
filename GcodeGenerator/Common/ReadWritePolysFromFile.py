@@ -23,7 +23,7 @@ def readPolysFromFile(filename):
     polygon = []
     for line in fileToRead:
         firstChar = line[0]
-        if firstChar.isdigit():
+        if firstChar.isdigit() or firstChar == '-':
             key = float(line)
         elif firstChar == "\t":
             point = line[1:-1].split(" ")
@@ -31,7 +31,7 @@ def readPolysFromFile(filename):
             polygon.append([float(point[0]), float(point[1])])
         elif firstChar == "\n":
             if key in offsetPolygonsMap.keys():
-                offsetPolygonsMap[key].append([list(polygon)]);
+                offsetPolygonsMap[key].append(list(polygon));
             else:
                 offsetPolygonsMap.update({key : [list(polygon)]});
             polygon.clear()

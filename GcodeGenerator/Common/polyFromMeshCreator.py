@@ -104,3 +104,9 @@ class polyFromMeshCreator:
             polyMap.update({key : polylines})
         return polyMap, self.verticesMap
  
+def moveToGround(mesh):
+    maxZCoord = mesh.bbox[1][z]
+    print("maxZ: ", maxZCoord)
+    #return pymesh.form_mesh(mesh.vertices + [[0, 0, 0]], mesh.faces)
+    return pymesh.form_mesh(mesh.vertices + [[0, 0, -maxZCoord]], mesh.faces)
+    #return pymesh.form_mesh(mesh.vertices, mesh.faces)
