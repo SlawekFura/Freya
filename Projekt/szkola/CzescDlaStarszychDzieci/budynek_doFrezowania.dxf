@@ -5,15 +5,19 @@ HEADER
   9
 $ACADVER
   1
-AC1024
+AC1027
   9
 $ACADMAINTVER
  70
-     6
+     8
   9
 $DWGCODEPAGE
   3
 ANSI_1251
+  9
+$REQUIREDVERSIONS
+160
+                 0
   9
 $LASTSAVEDBY
   1
@@ -97,7 +101,7 @@ STANDARD
   9
 $CLAYER
   8
-Gora - zgiecie
+0
   9
 $CELTYPE
   6
@@ -497,11 +501,11 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2458705.614232685
+2458770.761773739
   9
 $TDUUPDATE
  40
-2458705.530899352
+2458770.678440405
   9
 $TDINDWG
  40
@@ -549,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-454B
+4566
   9
 $SURFTAB1
  70
@@ -1119,7 +1123,7 @@ ObjectDBX Classes
  90
         0
  91
-        8
+        6
 280
      0
 281
@@ -1167,7 +1171,7 @@ ObjectDBX Classes
  90
         0
  91
-        5
+        4
 280
      0
 281
@@ -1183,7 +1187,7 @@ ObjectDBX Classes
  90
      4095
  91
-        6
+        5
 280
      0
 281
@@ -1199,7 +1203,7 @@ ObjectDBX Classes
  90
      1153
  91
-        7
+        5
 280
      0
 281
@@ -1215,7 +1219,7 @@ ObjectDBX Classes
  90
      4095
  91
-        7
+        5
 280
      0
 281
@@ -1231,7 +1235,7 @@ ObjectDBX Classes
  90
      1153
  91
-        7
+        5
 280
      0
 281
@@ -1247,7 +1251,7 @@ ACDB_MLEADERSTYLE_CLASS
  90
      4095
  91
-        5
+        4
 280
      0
 281
@@ -1263,7 +1267,7 @@ ObjectDBX Classes
  90
      1152
  91
-        5
+        4
 280
      0
 281
@@ -1311,7 +1315,7 @@ ObjectDBX Classes
  90
         0
  91
-        5
+        4
 280
      0
 281
@@ -1327,7 +1331,7 @@ AutoCAD 2000
  90
         0
  91
-        5
+        4
 280
      0
 281
@@ -1343,7 +1347,7 @@ ObjectDBX Classes
  90
         0
  91
-        5
+        4
 280
      0
 281
@@ -1375,7 +1379,7 @@ ObjectDBX Classes
  90
         0
  91
-        5
+        4
 280
      0
 281
@@ -1407,7 +1411,7 @@ NanoSPDS
  90
       893
  91
-        5
+        4
 280
      0
 281
@@ -1423,7 +1427,7 @@ NanoSPDS
  90
       893
  91
-       22
+       21
 280
      0
 281
@@ -1439,7 +1443,7 @@ NanoSPDS
  90
       893
  91
-        6
+        4
 280
      0
 281
@@ -1487,7 +1491,7 @@ CAcLayoutPrintConfig
  90
      4095
  91
-        5
+        4
 280
      0
 281
@@ -1503,7 +1507,7 @@ SCENEOE
  90
      1153
  91
-        7
+        5
 280
      0
 281
@@ -1519,7 +1523,7 @@ CDocDataContainer
  90
      4095
  91
-        5
+        4
 280
      0
 281
@@ -1645,9 +1649,9 @@ AcDbViewportTableRecord
  21
 1.0
  12
-33.884462
+-78.270473
  22
--52.703921
+-39.248134
  13
 0.0
  23
@@ -1673,9 +1677,9 @@ AcDbViewportTableRecord
  37
 0.0
  40
-184.041516
+232.890929
  41
-2.441247
+3.098321
  42
 50.0
  43
@@ -1843,7 +1847,7 @@ LAYER
 100
 AcDbSymbolTable
  70
-    13
+    12
   0
 LAYER
   5
@@ -1857,7 +1861,7 @@ AcDbLayerTableRecord
   2
 0
  70
-     1
+     0
  62
      7
   6
@@ -1868,6 +1872,8 @@ CONTINUOUS
 0
 347
 EE
+348
+0
   0
 LAYER
   5
@@ -1894,54 +1900,8 @@ CONTINUOUS
 0
 347
 EE
-  0
-LAYER
-  5
-368
-330
-2
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
--_D_-_WIDOK_DACH_W
- 70
-     0
- 62
-   130
-  6
-CONTINUOUS
-370
-    -3
-390
+348
 0
-347
-EE
-  0
-LAYER
-  5
-36A
-330
-2
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
--_D_-_WIDOK_DACH_W_CIENKA
- 70
-     0
- 62
-     8
-  6
-CONTINUOUS
-370
-    -3
-390
-0
-347
-EE
   0
 LAYER
   5
@@ -1966,6 +1926,8 @@ CONTINUOUS
 0
 347
 EE
+348
+0
   0
 LAYER
   5
@@ -1990,54 +1952,8 @@ CONTINUOUS
 0
 347
 EE
-  0
-LAYER
-  5
-32E8
-330
-2
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-Gora - zgiecie
- 70
-     0
- 62
-     1
-  6
-CONTINUOUS
-370
-    -3
-390
+348
 0
-347
-EE
-  0
-LAYER
-  5
-32E9
-330
-2
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-Gora - wycinanie
- 70
-     0
- 62
-     5
-  6
-CONTINUOUS
-370
-    -3
-390
-0
-347
-EE
   0
 LAYER
   5
@@ -2049,7 +1965,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Dol - wycinanie
+BOT_Deepen
  70
      0
  62
@@ -2062,78 +1978,8 @@ CONTINUOUS
 0
 347
 EE
-  0
-LAYER
-  5
-32EB
-330
-2
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-Dol - zgięcie
- 70
-     0
- 62
-     4
-  6
-CONTINUOUS
-370
-    -3
-390
+348
 0
-347
-EE
-  0
-LAYER
-  5
-32EC
-330
-2
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-Proste wycinanie
- 70
-     0
- 62
-     7
-  6
-CONTINUOUS
-370
-    -3
-390
-0
-347
-EE
-  0
-LAYER
-  5
-32F1
-330
-2
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-Poglebianie dol
- 70
-     0
- 62
-   218
-  6
-CONTINUOUS
-370
-    -3
-390
-0
-347
-EE
   0
 LAYER
   5
@@ -2145,7 +1991,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Poglebianie gora
+TOP_Deepen
  70
      0
  62
@@ -2158,6 +2004,164 @@ CONTINUOUS
 0
 347
 EE
+348
+0
+  0
+LAYER
+  5
+450D
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+TOP_Full_CutOut_90
+ 70
+     0
+ 62
+     7
+  6
+CONTINUOUS
+370
+    -3
+390
+0
+347
+EE
+348
+0
+  0
+LAYER
+  5
+450E
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+BOT_Full_CutOut_90
+ 70
+     0
+ 62
+     7
+  6
+CONTINUOUS
+370
+    -3
+390
+0
+347
+EE
+348
+0
+  0
+LAYER
+  5
+450F
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+TOP_Fulll_CutOut_45
+ 70
+     0
+ 62
+     5
+  6
+CONTINUOUS
+370
+    -3
+390
+0
+347
+EE
+348
+0
+  0
+LAYER
+  5
+4510
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+BOT_Fulll_CutOut_45
+ 70
+     0
+ 62
+     3
+  6
+CONTINUOUS
+370
+    -3
+390
+0
+347
+EE
+348
+0
+  0
+LAYER
+  5
+4511
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+TOP_Partial_CutOut_45
+ 70
+     0
+ 62
+     1
+  6
+CONTINUOUS
+370
+    -3
+390
+0
+347
+EE
+348
+0
+  0
+LAYER
+  5
+4512
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+BOT_Partial_CutOut_45
+ 70
+     0
+ 62
+     4
+  6
+CONTINUOUS
+370
+    -3
+390
+0
+347
+EE
+348
+0
   0
 ENDTAB
   0
@@ -2486,12 +2490,6 @@ AcDbDimStyleTable
 DIMSTYLE
 105
 1B0
-102
-{ACAD_REACTORS
-330
-4068
-102
-}
 330
 A
 100
@@ -70429,7 +70427,7 @@ SECTION
   2
 ENTITIES
   0
-LINE
+LWPOLYLINE
   5
 14EC
 330
@@ -70437,21 +70435,23 @@ LINE
 100
 AcDbEntity
   8
-Gora - wycinanie
+TOP_Fulll_CutOut_45
 100
-AcDbLine
+AcDbPolyline
+ 90
+        2
+ 70
+     0
+ 43
+0.0
  10
 120.676867
  20
 259.288171
- 30
-0.0
- 11
+ 10
 120.676867
- 21
+ 20
 184.941438
- 31
-0.0
   0
 LWPOLYLINE
   5
@@ -70461,7 +70461,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Dol - zgięcie
+BOT_Partial_CutOut_45
 100
 AcDbPolyline
  90
@@ -70487,7 +70487,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Dol - zgięcie
+BOT_Partial_CutOut_45
 100
 AcDbPolyline
  90
@@ -70508,18 +70508,12 @@ AcDbPolyline
 LWPOLYLINE
   5
 14F5
-102
-{ACAD_REACTORS
-330
-4297
-102
-}
 330
 1F
 100
 AcDbEntity
   8
-Gora - zgiecie
+TOP_Partial_CutOut_45
 100
 AcDbPolyline
  90
@@ -70545,7 +70539,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Dol - zgięcie
+BOT_Partial_CutOut_45
 100
 AcDbPolyline
  90
@@ -70571,7 +70565,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Dol - zgięcie
+BOT_Partial_CutOut_45
 100
 AcDbPolyline
  90
@@ -70597,7 +70591,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Gora - zgiecie
+TOP_Partial_CutOut_45
 100
 AcDbPolyline
  90
@@ -70623,7 +70617,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Dol - zgięcie
+BOT_Partial_CutOut_45
 100
 AcDbPolyline
  90
@@ -70649,7 +70643,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Dol - zgięcie
+BOT_Partial_CutOut_45
 100
 AcDbPolyline
  90
@@ -70669,39 +70663,13 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-1A4E
-330
-1F
-100
-AcDbEntity
-  8
-Gora - zgiecie
-100
-AcDbPolyline
- 90
-        2
- 70
-     0
- 43
-0.0
- 10
-138.676867
- 20
-91.814544
- 10
-131.316867
- 20
-91.814544
-  0
-LWPOLYLINE
-  5
 328D
 330
 1F
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
 100
 AcDbPolyline
  90
@@ -70739,7 +70707,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
 100
 AcDbPolyline
  90
@@ -70777,7 +70745,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
 100
 AcDbPolyline
  90
@@ -70815,7 +70783,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Poglebianie gora
+TOP_Deepen
 100
 AcDbPolyline
  90
@@ -70901,7 +70869,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
 100
 AcDbPolyline
  90
@@ -70935,7 +70903,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
 100
 AcDbPolyline
  90
@@ -70969,7 +70937,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
 100
 AcDbPolyline
  90
@@ -71003,7 +70971,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
 100
 AcDbPolyline
  90
@@ -71032,28 +71000,12 @@ AcDbPolyline
 LWPOLYLINE
   5
 3392
-102
-{ACAD_REACTORS
-330
-41FF
-330
-4266
-330
-4287
-330
-4297
-330
-4386
-330
-4397
-102
-}
 330
 1F
 100
 AcDbEntity
   8
-Poglebianie gora
+TOP_Deepen
 100
 AcDbPolyline
  90
@@ -71111,7 +71063,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Poglebianie gora
+TOP_Deepen
 100
 AcDbPolyline
  90
@@ -71145,7 +71097,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Poglebianie gora
+TOP_Deepen
 100
 AcDbPolyline
  90
@@ -71179,7 +71131,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Poglebianie gora
+TOP_Deepen
 100
 AcDbPolyline
  90
@@ -71213,7 +71165,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Poglebianie gora
+TOP_Deepen
 100
 AcDbPolyline
  90
@@ -71247,7 +71199,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -71283,7 +71235,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -71319,7 +71271,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -71355,7 +71307,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -71391,7 +71343,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -71427,7 +71379,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -71463,7 +71415,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -71499,7 +71451,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -71535,7 +71487,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -71571,7 +71523,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -71607,7 +71559,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -71643,7 +71595,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -71679,7 +71631,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -71715,7 +71667,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -71751,7 +71703,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -71787,7 +71739,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -71823,7 +71775,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -71859,7 +71811,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -71895,7 +71847,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -71931,7 +71883,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -71967,7 +71919,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -72003,7 +71955,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -72039,7 +71991,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -72075,7 +72027,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -72111,7 +72063,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -72147,7 +72099,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -72183,7 +72135,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -72219,7 +72171,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -72255,7 +72207,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -72291,7 +72243,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -72327,7 +72279,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -72363,7 +72315,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -72399,7 +72351,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -72435,7 +72387,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -72471,7 +72423,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -72507,7 +72459,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -72543,7 +72495,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -72579,7 +72531,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -72615,7 +72567,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -72651,7 +72603,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -72687,7 +72639,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Gora - wycinanie
+TOP_Fulll_CutOut_45
 100
 AcDbPolyline
  90
@@ -72724,18 +72676,12 @@ AcDbPolyline
 LWPOLYLINE
   5
 3BEA
-102
-{ACAD_REACTORS
-330
-43FF
-102
-}
 330
 1F
 100
 AcDbEntity
   8
-Gora - wycinanie
+TOP_Fulll_CutOut_45
 100
 AcDbPolyline
  90
@@ -72765,7 +72711,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Gora - wycinanie
+TOP_Fulll_CutOut_45
 100
 AcDbPolyline
  90
@@ -72799,7 +72745,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Gora - wycinanie
+TOP_Fulll_CutOut_45
 100
 AcDbPolyline
  90
@@ -72833,7 +72779,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Gora - zgiecie
+TOP_Partial_CutOut_45
 100
 AcDbPolyline
  90
@@ -72861,53 +72807,13 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-3C11
-330
-1F
-100
-AcDbEntity
-  8
-Gora - zgiecie
-100
-AcDbPolyline
- 90
-        3
- 70
-     0
- 43
-0.0
- 10
-131.321615
- 20
-91.814544
- 10
-131.320848
- 20
-109.731193
- 10
-138.681615
- 20
-109.731193
-  0
-LWPOLYLINE
-  5
 3C24
-102
-{ACAD_REACTORS
-330
-4077
-330
-4397
-330
-43FF
-102
-}
 330
 1F
 100
 AcDbEntity
   8
-Dol - zgięcie
+BOT_Partial_CutOut_45
 100
 AcDbPolyline
  90
@@ -72957,7 +72863,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Dol - wycinanie
+BOT_Deepen
 100
 AcDbPolyline
  90
@@ -73007,7 +72913,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Dol - wycinanie
+BOT_Deepen
 100
 AcDbPolyline
  90
@@ -73057,7 +72963,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -73084,18 +72990,12 @@ AcDbPolyline
 LWPOLYLINE
   5
 3C45
-102
-{ACAD_REACTORS
-330
-4397
-102
-}
 330
 1F
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -73139,7 +73039,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      0
 100
@@ -73175,7 +73075,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -73211,7 +73111,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -73243,7 +73143,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -73299,45 +73199,33 @@ AcDbPolyline
  20
 37.699575
   0
-LINE
+LWPOLYLINE
   5
 3C55
-102
-{ACAD_REACTORS
-330
-41FF
-330
-4266
-330
-4287
-330
-42A7
-330
-4386
-102
-}
 330
 1F
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
-AcDbLine
+AcDbPolyline
+ 90
+        2
+ 70
+     0
+ 43
+0.0
  10
 129.226867
  20
 184.441438
- 30
-0.0
- 11
+ 10
 129.226867
- 21
+ 20
 142.344644
- 31
-0.0
   0
 LWPOLYLINE
   5
@@ -73347,7 +73235,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -73383,7 +73271,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -73419,7 +73307,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -73455,7 +73343,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -73491,7 +73379,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -73527,7 +73415,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -73563,7 +73451,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -73599,7 +73487,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -73635,7 +73523,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -73663,118 +73551,6 @@ AcDbPolyline
  20
 163.156525
   0
-DIMENSION
-  5
-4068
-102
-{ACAD_REACTORS
-330
-4077
-102
-}
-102
-{ACAD_XDICTIONARY
-360
-4076
-102
-}
-330
-1F
-100
-AcDbEntity
-  8
-DIMENSION
-100
-AcDbDimension
-280
-     0
-  2
-*D123
- 10
-106.580845
- 20
-154.594456
- 30
-0.0
- 11
-84.939233
- 21
-154.595566
- 31
-0.0
- 70
-    32
- 71
-     5
- 42
-43.283225
- 73
-     0
- 74
-     0
- 75
-     0
-  3
-STANDARD
-100
-AcDbAlignedDimension
- 13
-63.297877
- 23
-159.596677
- 33
-0.0
- 14
-106.581102
- 24
-159.595731
- 34
-0.0
- 50
-179.99706
-100
-AcDbRotatedDimension
-1001
-ACAD
-1000
-DSTYLE
-1002
-{
-1070
-   340
-1005
-11
-1070
-   144
-1040
-1.0
-1070
-    40
-1040
-1.0
-1070
-   173
-1070
-     1
-1070
-   343
-1005
-0
-1070
-   342
-1005
-0
-1070
-   344
-1005
-0
-1070
-   283
-1070
-     1
-1002
-}
-  0
 LWPOLYLINE
   5
 40BB
@@ -73783,7 +73559,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Proste wycinanie
+TOP_Full_CutOut_90
  62
      7
 100
@@ -73806,6 +73582,40 @@ AcDbPolyline
 76.476055
  20
 160.096374
+  0
+LWPOLYLINE
+  5
+4558
+330
+1F
+100
+AcDbEntity
+  8
+TOP_Partial_CutOut_45
+100
+AcDbPolyline
+ 90
+        4
+ 70
+     0
+ 43
+0.0
+ 10
+138.676867
+ 20
+91.814544
+ 10
+131.321615
+ 20
+91.814544
+ 10
+131.320848
+ 20
+109.731193
+ 10
+138.681615
+ 20
+109.731193
   0
 VIEWPORT
   5
@@ -73997,7 +73807,7 @@ EF
   3
 ACDB_RECOMPOSE_DATA
 350
-454A
+4565
   3
 ACDBVARIABLEDICTIONARY
 350
@@ -74074,22 +73884,6 @@ AcDbDictionary
 ACAD_SORTENTS
 360
 235
-  0
-DICTIONARY
-  5
-4076
-330
-4068
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-MC_XOBJECT1
-360
-4077
   0
 DICTIONARY
   5
@@ -74525,7 +74319,7 @@ X-RAY
   0
 XRECORD
   5
-454A
+4565
 102
 {ACAD_REACTORS
 330
@@ -74666,6 +74460,10 @@ DICTIONARY
 AcDbDictionary
 281
      1
+  3
+MyConfiguration
+350
+4513
   0
 SORTENTSTABLE
   5
@@ -74702,20 +74500,6 @@ AcDbSortentsTable
 32A2
   5
 32A4
-  0
-McDbContainer2
-  5
-4077
-102
-{ACAD_REACTORS
-330
-4076
-102
-}
-330
-4076
-100
-McDbContainer2
   0
 LAYOUT
   5
@@ -75326,6 +75110,8 @@ Standard
      9
 273
      9
+298
+     0
 1001
 ACAD_MLEADERVER
 1070
@@ -75434,6 +75220,8 @@ Standard
      9
 273
      9
+298
+     0
 1001
 ACAD_MLEADERVER
 1070
@@ -75899,7 +75687,7 @@ TABLESTYLE
 102
 {ACAD_XDICTIONARY
 360
-450C
+4563
 102
 }
 330
@@ -76092,12 +75880,6 @@ F5
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-450E
-102
-}
 330
 EF
 100
@@ -76107,19 +75889,21 @@ AcDbVisualStyle
  70
      4
 177
-     2
+     3
 291
      0
- 71
-     0
+ 70
+    58
+ 90
+        0
 176
      1
- 72
-     2
+ 90
+        2
 176
      1
- 73
-     1
+ 90
+        1
 176
      1
  90
@@ -76130,81 +75914,107 @@ AcDbVisualStyle
 -0.6
 176
      1
- 41
+ 40
 -30.0
 176
      1
  62
-     5
- 63
      7
 176
      1
- 74
-     1
+ 90
+        1
 176
      1
- 91
+ 90
         4
 176
      1
- 64
+ 62
      7
 176
      1
- 65
+ 62
    257
 176
      1
- 75
-     1
+ 90
+        1
 176
      1
-175
-     1
+ 90
+        1
 176
      1
- 42
+ 40
 1.0
 176
      1
- 92
+ 90
         0
 176
      1
- 66
+ 62
    257
 176
      1
- 43
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        1
 176
      1
- 77
-     6
+ 90
+        6
 176
      1
- 78
-     2
+ 90
+        2
 176
      1
- 67
+ 62
      7
 176
      1
- 79
-     5
+ 90
+        5
 176
      1
-170
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+        1
+176
+     1
+ 40
+0.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -76212,16 +76022,112 @@ AcDbVisualStyle
      0
 176
      1
- 93
-        1
+290
+     0
 176
      1
- 44
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
 0.0
 176
      1
-173
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
      0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -76234,12 +76140,6 @@ F7
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-4510
-102
-}
 330
 EF
 100
@@ -76249,19 +76149,21 @@ AcDbVisualStyle
  70
      6
 177
-     2
+     3
 291
      0
- 71
-     1
+ 70
+    58
+ 90
+        1
 176
      1
- 72
-     2
+ 90
+        2
 176
      1
- 73
-     2
+ 90
+        2
 176
      1
  90
@@ -76272,81 +76174,111 @@ AcDbVisualStyle
 -0.6
 176
      1
- 41
+ 40
 -30.0
 176
      1
  62
-     5
- 63
      7
 176
      1
- 74
-     2
-176
-     1
- 91
+ 90
         2
 176
      1
- 64
+ 90
+        2
+176
+     1
+ 62
      7
 176
      1
- 65
+ 62
    257
 176
      1
- 75
-     2
+ 90
+        2
 176
      1
-175
-     1
+ 90
+        1
 176
      1
- 42
+ 40
 40.0
 176
      1
- 92
+ 90
         0
 176
      1
- 66
+ 62
    257
 176
      1
- 43
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        1
 176
      1
- 77
-     6
+ 90
+        6
 176
      1
- 78
-     2
+ 90
+        2
 176
      1
- 67
+ 62
      7
 176
      1
- 79
-     3
+ 90
+        3
 176
      1
-170
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+        1
+176
+     1
+ 40
+0.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -76354,16 +76286,108 @@ AcDbVisualStyle
      0
 176
      1
- 93
-        1
+290
+     0
 176
      1
- 44
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
 0.0
 176
      1
-173
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
      0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -76376,12 +76400,6 @@ F6
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-4512
-102
-}
 330
 EF
 100
@@ -76391,19 +76409,21 @@ AcDbVisualStyle
  70
      5
 177
-     2
+     3
 291
      0
- 71
-     0
+ 70
+    58
+ 90
+        0
 176
      1
- 72
-     2
+ 90
+        2
 176
      1
- 73
-     1
+ 90
+        1
 176
      1
  90
@@ -76414,81 +76434,111 @@ AcDbVisualStyle
 -0.6
 176
      1
- 41
+ 40
 -30.0
 176
      1
  62
-     5
- 63
      7
 176
      1
- 74
-     1
+ 90
+        1
 176
      1
- 91
+ 90
         4
 176
      1
- 64
+ 62
      7
 176
      1
- 65
+ 62
    257
 176
      1
- 75
-     1
+ 90
+        1
 176
      1
-175
-     1
+ 90
+        1
 176
      1
- 42
+ 40
 1.0
 176
      1
- 92
+ 90
         0
 176
      1
- 66
+ 62
    257
 176
      1
- 43
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        1
 176
      1
- 77
-     6
+ 90
+        6
 176
      1
- 78
-     2
+ 90
+        2
 176
      1
- 67
+ 62
      7
 176
      1
- 79
-     5
+ 90
+        5
 176
      1
-170
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+        1
+176
+     1
+ 40
+0.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -76496,16 +76546,108 @@ AcDbVisualStyle
      0
 176
      1
- 93
-        1
+290
+     0
 176
      1
- 44
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
 0.0
 176
      1
-173
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
      0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -76518,12 +76660,6 @@ F4
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-4514
-102
-}
 330
 EF
 100
@@ -76533,19 +76669,21 @@ Basic
  70
      7
 177
-     2
+     3
 291
      1
- 71
-     1
+ 70
+    58
+ 90
+        1
 176
      1
- 72
-     0
+ 90
+        0
 176
      1
- 73
-     1
+ 90
+        1
 176
      1
  90
@@ -76556,81 +76694,111 @@ Basic
 -0.6
 176
      1
- 41
+ 40
 -30.0
 176
      1
  62
-     5
- 63
      7
 176
      1
- 74
-     0
+ 90
+        0
 176
      1
- 91
+ 90
         4
 176
      1
- 64
+ 62
      7
 176
      1
- 65
+ 62
    257
 176
      1
- 75
-     1
+ 90
+        1
 176
      1
-175
-     1
+ 90
+        1
 176
      1
- 42
+ 40
 1.0
 176
      1
- 92
+ 90
         8
 176
      1
- 66
+ 62
      7
 176
      1
- 43
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        1
 176
      1
- 77
-     6
+ 90
+        6
 176
      1
- 78
-     2
+ 90
+        2
 176
      1
- 67
+ 62
      7
 176
      1
- 79
-     5
+ 90
+        5
 176
      1
-170
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+        1
+176
+     1
+ 40
+0.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -76638,16 +76806,108 @@ Basic
      0
 176
      1
- 93
-        1
+290
+     0
 176
      1
- 44
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
 0.0
 176
      1
-173
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
      0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -76660,12 +76920,6 @@ FB
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-4516
-102
-}
 330
 EF
 100
@@ -76675,19 +76929,21 @@ Brighten
  70
     12
 177
-     2
+     3
 291
      1
- 71
-     2
+ 70
+    58
+ 90
+        2
 176
      1
- 72
-     2
+ 90
+        2
 176
      1
- 73
-     1
+ 90
+        1
 176
      1
  90
@@ -76698,81 +76954,111 @@ Brighten
 -0.6
 176
      1
- 41
+ 40
 -30.0
 176
      1
  62
-     5
- 63
      7
 176
      1
- 74
-     1
+ 90
+        1
 176
      1
- 91
+ 90
         4
 176
      1
- 64
+ 62
      7
 176
      1
- 65
+ 62
    257
 176
      1
- 75
-     1
+ 90
+        1
 176
      1
-175
-     1
+ 90
+        1
 176
      1
- 42
+ 40
 1.0
 176
      1
- 92
+ 90
         8
 176
      1
- 66
+ 62
      7
 176
      1
- 43
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        1
 176
      1
- 77
-     6
+ 90
+        6
 176
      1
- 78
-     2
+ 90
+        2
 176
      1
- 67
+ 62
      7
 176
      1
- 79
-     5
+ 90
+        5
 176
      1
-170
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+        1
+176
+     1
+ 40
+50.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -76780,16 +77066,108 @@ Brighten
      0
 176
      1
- 93
-        1
-176
-     1
- 44
-50.0
-176
-     1
-173
+290
      0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
+0.0
+176
+     1
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -76802,12 +77180,6 @@ FF
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-4518
-102
-}
 330
 EF
 100
@@ -76817,19 +77189,21 @@ ColorChange
  70
     16
 177
-     2
+     3
 291
      1
- 71
-     2
+ 70
+    58
+ 90
+        2
 176
      1
- 72
-     2
+ 90
+        2
 176
      1
- 73
-     3
+ 90
+        3
 176
      1
  90
@@ -76840,81 +77214,111 @@ ColorChange
 -0.6
 176
      1
- 41
+ 40
 -30.0
 176
      1
  62
-     5
- 63
      8
 176
      1
- 74
-     1
+ 90
+        1
 176
      1
- 91
+ 90
         4
 176
      1
- 64
+ 62
      7
 176
      1
- 65
+ 62
    257
 176
      1
- 75
-     1
+ 90
+        1
 176
      1
-175
-     1
+ 90
+        1
 176
      1
- 42
+ 40
 1.0
 176
      1
- 92
+ 90
         8
 176
      1
- 66
+ 62
      8
 176
      1
- 43
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        1
 176
      1
- 77
-     6
+ 90
+        6
 176
      1
- 78
-     2
+ 90
+        2
 176
      1
- 67
+ 62
      7
 176
      1
- 79
-     5
+ 90
+        5
 176
      1
-170
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+        1
+176
+     1
+ 40
+0.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -76922,16 +77326,108 @@ ColorChange
      0
 176
      1
- 93
-        1
+290
+     0
 176
      1
- 44
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
 0.0
 176
      1
-173
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
      0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -76944,12 +77440,6 @@ F8
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-451A
-102
-}
 330
 EF
 100
@@ -76959,19 +77449,21 @@ Conceptual
  70
      9
 177
-     2
+     3
 291
      0
- 71
-     3
+ 70
+    58
+ 90
+        3
 176
      1
- 72
-     2
+ 90
+        2
 176
      1
- 73
-     1
+ 90
+        1
 176
      1
  90
@@ -76982,81 +77474,111 @@ Conceptual
 -0.6
 176
      1
- 41
+ 40
 -30.0
 176
      1
  62
-     5
- 63
      7
 176
      1
- 74
-     2
-176
-     1
- 91
+ 90
         2
 176
      1
- 64
+ 90
+        2
+176
+     1
+ 62
      7
 176
      1
- 65
+ 62
    257
 176
      1
- 75
-     1
+ 90
+        1
 176
      1
-175
-     1
+ 90
+        1
 176
      1
- 42
+ 40
 40.0
 176
      1
- 92
+ 90
         8
 176
      1
- 66
+ 62
      7
 176
      1
- 43
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        1
 176
      1
- 77
-     6
+ 90
+        6
 176
      1
- 78
-     2
+ 90
+        2
 176
      1
- 67
+ 62
      7
 176
      1
- 79
-     3
+ 90
+        3
 176
      1
-170
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+        1
+176
+     1
+ 40
+0.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -77064,16 +77586,108 @@ Conceptual
      0
 176
      1
- 93
-        1
+290
+     0
 176
      1
- 44
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
 0.0
 176
      1
-173
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
      0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -77086,12 +77700,6 @@ FA
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-451C
-102
-}
 330
 EF
 100
@@ -77101,19 +77709,21 @@ Dim
  70
     11
 177
-     2
+     3
 291
      1
- 71
-     2
+ 70
+    58
+ 90
+        2
 176
      1
- 72
-     2
+ 90
+        2
 176
      1
- 73
-     1
+ 90
+        1
 176
      1
  90
@@ -77124,81 +77734,111 @@ Dim
 -0.6
 176
      1
- 41
+ 40
 -30.0
 176
      1
  62
-     5
- 63
      7
 176
      1
- 74
-     1
+ 90
+        1
 176
      1
- 91
+ 90
         4
 176
      1
- 64
+ 62
      7
 176
      1
- 65
+ 62
    257
 176
      1
- 75
-     1
+ 90
+        1
 176
      1
-175
-     1
+ 90
+        1
 176
      1
- 42
+ 40
 1.0
 176
      1
- 92
+ 90
         8
 176
      1
- 66
+ 62
      7
 176
      1
- 43
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        1
 176
      1
- 77
-     6
+ 90
+        6
 176
      1
- 78
-     2
+ 90
+        2
 176
      1
- 67
+ 62
      7
 176
      1
- 79
-     5
+ 90
+        5
 176
      1
-170
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+        1
+176
+     1
+ 40
+-50.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -77206,16 +77846,108 @@ Dim
      0
 176
      1
- 93
-        1
-176
-     1
- 44
--50.0
-176
-     1
-173
+290
      0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
+0.0
+176
+     1
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -77228,12 +77960,6 @@ VISUALSTYLE
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-451E
-102
-}
 330
 EF
 100
@@ -77243,19 +77969,21 @@ EdgeColorOff
  70
     22
 177
-     2
+     3
 291
      1
- 71
-     2
+ 70
+    58
+ 90
+        2
 176
      1
- 72
-     2
+ 90
+        2
 176
      1
- 73
-     0
+ 90
+        0
 176
      1
  90
@@ -77266,81 +77994,111 @@ EdgeColorOff
 0.6
 176
      1
- 41
+ 40
 30.0
 176
      1
  62
-     5
- 63
      7
 176
      1
- 74
-     1
+ 90
+        1
 176
      1
- 91
+ 90
         4
 176
      1
- 64
+ 62
      7
 176
      1
- 65
+ 62
    257
 176
      1
- 75
-     1
+ 90
+        1
 176
      1
-175
-     1
+ 90
+        1
 176
      1
- 42
+ 40
 1.0
 176
      1
- 92
+ 90
         8
 176
      1
- 66
+ 62
      7
 176
      1
- 43
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        1
 176
      1
- 77
-     6
+ 90
+        6
 176
      1
- 78
-     2
+ 90
+        2
 176
      1
- 67
+ 62
      7
 176
      1
- 79
-     5
+ 90
+        5
 176
      1
-170
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+        1
+176
+     1
+ 40
+0.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -77348,16 +78106,108 @@ EdgeColorOff
      0
 176
      1
- 93
-        1
+290
+     0
 176
      1
- 44
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
 0.0
 176
      1
-173
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
      0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -77370,12 +78220,6 @@ FE
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-4520
-102
-}
 330
 EF
 100
@@ -77385,19 +78229,21 @@ Facepattern
  70
     15
 177
-     2
+     3
 291
      1
- 71
-     2
+ 70
+    58
+ 90
+        2
 176
      1
- 72
-     2
+ 90
+        2
 176
      1
- 73
-     1
+ 90
+        1
 176
      1
  90
@@ -77408,81 +78254,111 @@ Facepattern
 -0.6
 176
      1
- 41
+ 40
 -30.0
 176
      1
  62
-     5
- 63
      7
 176
      1
- 74
-     1
+ 90
+        1
 176
      1
- 91
+ 90
         4
 176
      1
- 64
+ 62
      7
 176
      1
- 65
+ 62
    257
 176
      1
- 75
-     1
+ 90
+        1
 176
      1
-175
-     1
+ 90
+        1
 176
      1
- 42
+ 40
 1.0
 176
      1
- 92
+ 90
         8
 176
      1
- 66
+ 62
      7
 176
      1
- 43
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        1
 176
      1
- 77
-     6
+ 90
+        6
 176
      1
- 78
-     2
+ 90
+        2
 176
      1
- 67
+ 62
      7
 176
      1
- 79
-     5
+ 90
+        5
 176
      1
-170
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+        1
+176
+     1
+ 40
+0.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -77490,16 +78366,108 @@ Facepattern
      0
 176
      1
- 93
-        1
+290
+     0
 176
      1
- 44
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
 0.0
 176
      1
-173
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
      0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -77512,12 +78480,6 @@ F0
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-4522
-102
-}
 330
 EF
 100
@@ -77527,19 +78489,21 @@ Flat
  70
      0
 177
-     2
+     3
 291
      1
- 71
-     2
+ 70
+    58
+ 90
+        2
 176
      1
- 72
-     1
+ 90
+        1
 176
      1
- 73
-     1
+ 90
+        1
 176
      1
  90
@@ -77550,81 +78514,111 @@ Flat
 -0.6
 176
      1
- 41
+ 40
 30.0
 176
      1
  62
-     5
- 63
      7
 176
      1
- 74
-     0
+ 90
+        0
 176
      1
- 91
+ 90
         4
 176
      1
- 64
+ 62
      7
 176
      1
- 65
+ 62
    257
 176
      1
- 75
-     1
+ 90
+        1
 176
      1
-175
-     1
+ 90
+        1
 176
      1
- 42
+ 40
 1.0
 176
      1
- 92
+ 90
         8
 176
      1
- 66
+ 62
      7
 176
      1
- 43
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        1
 176
      1
- 77
-     6
+ 90
+        6
 176
      1
- 78
-     2
+ 90
+        2
 176
      1
- 67
+ 62
      7
 176
      1
- 79
-     5
+ 90
+        5
 176
      1
-170
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+        1
+176
+     1
+ 40
+0.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -77632,16 +78626,108 @@ Flat
      0
 176
      1
- 93
-        1
+290
+     0
 176
      1
- 44
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
 0.0
 176
      1
-173
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
      0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -77654,12 +78740,6 @@ F1
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-4524
-102
-}
 330
 EF
 100
@@ -77669,19 +78749,21 @@ FlatWithEdges
  70
      1
 177
-     2
+     3
 291
      1
- 71
-     2
+ 70
+    58
+ 90
+        2
 176
      1
- 72
-     1
+ 90
+        1
 176
      1
- 73
-     1
+ 90
+        1
 176
      1
  90
@@ -77692,81 +78774,111 @@ FlatWithEdges
 -0.6
 176
      1
- 41
+ 40
 30.0
 176
      1
  62
-     5
- 63
      7
 176
      1
- 74
-     1
+ 90
+        1
 176
      1
- 91
+ 90
         4
 176
      1
- 64
+ 62
      7
 176
      1
- 65
+ 62
    257
 176
      1
- 75
-     1
+ 90
+        1
 176
      1
-175
-     1
+ 90
+        1
 176
      1
- 42
+ 40
 1.0
 176
      1
- 92
+ 90
         0
 176
      1
- 66
+ 62
    257
 176
      1
- 43
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        1
 176
      1
- 77
-     6
+ 90
+        6
 176
      1
- 78
-     2
+ 90
+        2
 176
      1
- 67
+ 62
      7
 176
      1
- 79
-     5
+ 90
+        5
 176
      1
-170
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+        1
+176
+     1
+ 40
+0.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -77774,16 +78886,108 @@ FlatWithEdges
      0
 176
      1
- 93
-        1
+290
+     0
 176
      1
- 44
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
 0.0
 176
      1
-173
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
      0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -77796,12 +79000,6 @@ F2
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-4526
-102
-}
 330
 EF
 100
@@ -77811,19 +79009,21 @@ Gouraud
  70
      2
 177
-     2
+     3
 291
      1
- 71
-     2
+ 70
+    58
+ 90
+        2
 176
      1
- 72
-     2
+ 90
+        2
 176
      1
- 73
-     1
+ 90
+        1
 176
      1
  90
@@ -77834,81 +79034,111 @@ Gouraud
 -0.6
 176
      1
- 41
+ 40
 30.0
 176
      1
  62
-     5
- 63
      7
 176
      1
- 74
-     0
-176
-     1
- 91
-        4
-176
-     1
- 64
-     7
-176
-     1
- 65
-   257
-176
-     1
- 75
-     1
-176
-     1
-175
-     1
-176
-     1
- 42
-1.0
-176
-     1
- 92
+ 90
         0
 176
      1
- 66
+ 90
+        4
+176
+     1
+ 62
      7
 176
      1
- 43
+ 62
+   257
+176
+     1
+ 90
+        1
+176
+     1
+ 90
+        1
+176
+     1
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        0
 176
      1
- 77
-     6
-176
-     1
- 78
-     2
-176
-     1
- 67
+ 62
      7
 176
      1
- 79
-     5
+ 40
+1.0
 176
      1
-170
+ 90
+        1
+176
+     1
+ 90
+        6
+176
+     1
+ 90
+        2
+176
+     1
+ 62
+     7
+176
+     1
+ 90
+        5
+176
+     1
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+        1
+176
+     1
+ 40
+0.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -77916,16 +79146,108 @@ Gouraud
      0
 176
      1
- 93
-        1
+290
+     0
 176
      1
- 44
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
 0.0
 176
      1
-173
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
      0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -77938,12 +79260,6 @@ F3
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-4528
-102
-}
 330
 EF
 100
@@ -77953,19 +79269,21 @@ GouraudWithEdges
  70
      3
 177
-     2
+     3
 291
      1
- 71
-     2
+ 70
+    58
+ 90
+        2
 176
      1
- 72
-     2
+ 90
+        2
 176
      1
- 73
-     1
+ 90
+        1
 176
      1
  90
@@ -77976,81 +79294,111 @@ GouraudWithEdges
 -0.6
 176
      1
- 41
+ 40
 30.0
 176
      1
  62
-     5
- 63
      7
 176
      1
- 74
-     1
+ 90
+        1
 176
      1
- 91
+ 90
         4
 176
      1
- 64
+ 62
      7
 176
      1
- 65
+ 62
    257
 176
      1
- 75
-     1
+ 90
+        1
 176
      1
-175
-     1
+ 90
+        1
 176
      1
- 42
+ 40
 1.0
 176
      1
- 92
+ 90
         0
 176
      1
- 66
+ 62
    257
 176
      1
- 43
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        1
 176
      1
- 77
-     6
+ 90
+        6
 176
      1
- 78
-     2
+ 90
+        2
 176
      1
- 67
+ 62
      7
 176
      1
- 79
-     5
+ 90
+        5
 176
      1
-170
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+        1
+176
+     1
+ 40
+0.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -78058,16 +79406,108 @@ GouraudWithEdges
      0
 176
      1
- 93
-        1
+290
+     0
 176
      1
- 44
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
 0.0
 176
      1
-173
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
      0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -78080,12 +79520,6 @@ VISUALSTYLE
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-452A
-102
-}
 330
 EF
 100
@@ -78095,19 +79529,21 @@ Hidden
  70
      6
 177
-     2
+     3
 291
      0
- 71
-     1
+ 70
+    58
+ 90
+        1
 176
      1
- 72
-     2
+ 90
+        2
 176
      1
- 73
-     2
+ 90
+        2
 176
      1
  90
@@ -78118,81 +79554,111 @@ Hidden
 0.6
 176
      1
- 41
+ 40
 30.0
 176
      1
  62
-     5
- 63
      7
 176
      1
- 74
-     2
-176
-     1
- 91
+ 90
         2
 176
      1
- 64
+ 90
+        2
+176
+     1
+ 62
      7
 176
      1
- 65
+ 62
    257
 176
      1
- 75
-     2
+ 90
+        2
 176
      1
-175
-     1
+ 90
+        1
 176
      1
- 42
+ 40
 40.0
 176
      1
- 92
+ 90
         0
 176
      1
- 66
+ 62
    257
 176
      1
- 43
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        1
 176
      1
- 77
-     6
+ 90
+        6
 176
      1
- 78
-     2
+ 90
+        2
 176
      1
- 67
+ 62
      7
 176
      1
- 79
-     3
+ 90
+        3
 176
      1
-170
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+        1
+176
+     1
+ 40
+0.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -78200,16 +79666,108 @@ Hidden
      0
 176
      1
- 93
-        1
+290
+     0
 176
      1
- 44
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
 0.0
 176
      1
-173
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
      0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -78222,12 +79780,6 @@ VISUALSTYLE
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-452C
-102
-}
 330
 EF
 100
@@ -78237,19 +79789,21 @@ JitterOff
  70
     20
 177
-     2
+     3
 291
      1
- 71
-     2
+ 70
+    58
+ 90
+        2
 176
      1
- 72
-     2
+ 90
+        2
 176
      1
- 73
-     0
+ 90
+        0
 176
      1
  90
@@ -78260,81 +79814,111 @@ JitterOff
 0.6
 176
      1
- 41
+ 40
 30.0
 176
      1
  62
-     5
- 63
      7
 176
      1
- 74
-     1
+ 90
+        1
 176
      1
- 91
+ 90
         4
 176
      1
- 64
+ 62
      7
 176
      1
- 65
+ 62
    257
 176
      1
- 75
-     1
+ 90
+        1
 176
      1
-175
-     1
+ 90
+        1
 176
      1
- 42
+ 40
 1.0
 176
      1
- 92
+ 90
        10
 176
      1
- 66
+ 62
      7
 176
      1
- 43
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        1
 176
      1
- 77
-     6
+ 90
+        6
 176
      1
- 78
-     2
+ 90
+        2
 176
      1
- 67
+ 62
      7
 176
      1
- 79
-     5
+ 90
+        5
 176
      1
-170
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+        1
+176
+     1
+ 40
+0.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -78342,16 +79926,108 @@ JitterOff
      0
 176
      1
- 93
-        1
+290
+     0
 176
      1
- 44
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
 0.0
 176
      1
-173
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
      0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -78364,12 +80040,6 @@ FD
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-452E
-102
-}
 330
 EF
 100
@@ -78379,19 +80049,21 @@ Linepattern
  70
     14
 177
-     2
+     3
 291
      1
- 71
-     2
+ 70
+    58
+ 90
+        2
 176
      1
- 72
-     2
+ 90
+        2
 176
      1
- 73
-     1
+ 90
+        1
 176
      1
  90
@@ -78402,81 +80074,111 @@ Linepattern
 -0.6
 176
      1
- 41
+ 40
 -30.0
 176
      1
  62
-     5
- 63
      7
 176
      1
- 74
-     1
+ 90
+        1
 176
      1
- 91
+ 90
         4
 176
      1
- 64
+ 62
      7
 176
      1
- 65
+ 62
    257
 176
      1
- 75
-     7
+ 90
+        7
 176
      1
-175
-     7
+ 90
+        7
 176
      1
- 42
+ 40
 1.0
 176
      1
- 92
+ 90
         8
 176
      1
- 66
+ 62
      7
 176
      1
- 43
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        1
 176
      1
- 77
-     6
+ 90
+        6
 176
      1
- 78
-     2
+ 90
+        2
 176
      1
- 67
+ 62
      7
 176
      1
- 79
-     5
+ 90
+        5
 176
      1
-170
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+        1
+176
+     1
+ 40
+0.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -78484,16 +80186,108 @@ Linepattern
      0
 176
      1
- 93
-        1
+290
+     0
 176
      1
- 44
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
 0.0
 176
      1
-173
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
      0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -78506,12 +80300,6 @@ VISUALSTYLE
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-4530
-102
-}
 330
 EF
 100
@@ -78521,19 +80309,21 @@ OverhangOff
  70
     21
 177
-     2
+     3
 291
      1
- 71
-     2
+ 70
+    58
+ 90
+        2
 176
      1
- 72
-     2
+ 90
+        2
 176
      1
- 73
-     0
+ 90
+        0
 176
      1
  90
@@ -78544,81 +80334,111 @@ OverhangOff
 0.6
 176
      1
- 41
+ 40
 30.0
 176
      1
  62
-     5
- 63
      7
 176
      1
- 74
-     1
+ 90
+        1
 176
      1
- 91
+ 90
         4
 176
      1
- 64
+ 62
      7
 176
      1
- 65
+ 62
    257
 176
      1
- 75
-     1
+ 90
+        1
 176
      1
-175
-     1
+ 90
+        1
 176
      1
- 42
+ 40
 1.0
 176
      1
- 92
+ 90
         9
 176
      1
- 66
+ 62
      7
 176
      1
- 43
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        1
 176
      1
- 77
-     6
+ 90
+        6
 176
      1
- 78
-     2
+ 90
+        2
 176
      1
- 67
+ 62
      7
 176
      1
- 79
-     5
+ 90
+        5
 176
      1
-170
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+        1
+176
+     1
+ 40
+0.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -78626,16 +80446,108 @@ OverhangOff
      0
 176
      1
- 93
-        1
+290
+     0
 176
      1
- 44
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
 0.0
 176
      1
-173
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
      0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -78648,12 +80560,6 @@ F9
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-4532
-102
-}
 330
 EF
 100
@@ -78663,19 +80569,21 @@ Realistic
  70
      8
 177
-     2
+     3
 291
      0
- 71
-     2
+ 70
+    58
+ 90
+        2
 176
      1
- 72
-     2
+ 90
+        2
 176
      1
- 73
-     1
+ 90
+        1
 176
      1
  90
@@ -78686,81 +80594,111 @@ Realistic
 -0.6
 176
      1
- 41
+ 40
 -30.0
 176
      1
  62
-     5
- 63
      7
 176
      1
- 74
-     1
+ 90
+        1
 176
      1
- 91
+ 90
         0
 176
      1
- 64
+ 62
      7
 176
      1
- 65
+ 62
    257
 176
      1
- 75
-     1
+ 90
+        1
 176
      1
-175
-     1
+ 90
+        1
 176
      1
- 42
+ 40
 1.0
 176
      1
- 92
+ 90
         8
 176
      1
- 66
+ 62
      8
 176
      1
- 43
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        1
 176
      1
- 77
-     6
+ 90
+        6
 176
      1
- 78
-     2
+ 90
+        2
 176
      1
- 67
+ 62
      7
 176
      1
- 79
-     5
+ 90
+        5
 176
      1
-170
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+       13
+176
+     1
+ 40
+0.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -78768,16 +80706,108 @@ Realistic
      0
 176
      1
- 93
-       13
+290
+     0
 176
      1
- 44
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
 0.0
 176
      1
-173
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
      0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -78790,12 +80820,6 @@ VISUALSTYLE
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-4534
-102
-}
 330
 EF
 100
@@ -78805,19 +80829,21 @@ Shaded
  70
     27
 177
-     2
+     3
 291
      0
- 71
-     2
+ 70
+    58
+ 90
+        2
 176
      1
- 72
-     2
+ 90
+        2
 176
      1
- 73
-     1
+ 90
+        1
 176
      1
  90
@@ -78828,81 +80854,111 @@ Shaded
 0.6
 176
      1
- 41
+ 40
 30.0
 176
      1
  62
-     5
- 63
      7
 176
      1
- 74
-     0
+ 90
+        0
 176
      1
- 91
+ 90
         4
 176
      1
- 64
+ 62
      7
 176
      1
- 65
+ 62
    257
 176
      1
- 75
-     1
+ 90
+        1
 176
      1
-175
-     1
+ 90
+        1
 176
      1
- 42
+ 40
 1.0
 176
      1
- 92
+ 90
         8
 176
      1
- 66
+ 62
    257
 176
      1
- 43
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        1
 176
      1
- 77
-     6
+ 90
+        6
 176
      1
- 78
-     2
+ 90
+        2
 176
      1
- 67
+ 62
      8
 176
      1
- 79
-     3
+ 90
+        3
 176
      1
-170
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+        5
+176
+     1
+ 40
+0.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -78910,16 +80966,108 @@ Shaded
      0
 176
      1
- 93
-        5
+290
+     0
 176
      1
- 44
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
 0.0
 176
      1
-173
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
      0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -78932,12 +81080,6 @@ VISUALSTYLE
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-4536
-102
-}
 330
 EF
 100
@@ -78947,19 +81089,21 @@ Shaded with edges
  70
     26
 177
-     2
+     3
 291
      0
- 71
-     2
+ 70
+    58
+ 90
+        2
 176
      1
- 72
-     2
+ 90
+        2
 176
      1
- 73
-     1
+ 90
+        1
 176
      1
  90
@@ -78970,81 +81114,111 @@ Shaded with edges
 0.6
 176
      1
- 41
+ 40
 30.0
 176
      1
  62
-     5
- 63
      7
 176
      1
- 74
-     1
+ 90
+        1
 176
      1
- 91
+ 90
        10
 176
      1
- 64
+ 62
      7
 176
      1
- 65
+ 62
    257
 176
      1
- 75
-     2
+ 90
+        2
 176
      1
-175
-     1
+ 90
+        1
 176
      1
- 42
+ 40
 1.0
 176
      1
- 92
+ 90
         8
 176
      1
- 66
+ 62
    257
 176
      1
- 43
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        1
 176
      1
- 77
-     6
+ 90
+        6
 176
      1
- 78
-     2
+ 90
+        2
 176
      1
- 67
+ 62
      7
 176
      1
- 79
-     3
+ 90
+        3
 176
      1
-170
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+        5
+176
+     1
+ 40
+0.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -79052,16 +81226,108 @@ Shaded with edges
      0
 176
      1
- 93
-        5
+290
+     0
 176
      1
- 44
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
 0.0
 176
      1
-173
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
      0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -79074,12 +81340,6 @@ VISUALSTYLE
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-4538
-102
-}
 330
 EF
 100
@@ -79089,19 +81349,21 @@ Shaded with edges
  70
     26
 177
-     2
+     3
 291
      0
- 71
-     2
+ 70
+    58
+ 90
+        2
 176
      1
- 72
-     2
+ 90
+        2
 176
      1
- 73
-     1
+ 90
+        1
 176
      1
  90
@@ -79112,81 +81374,111 @@ Shaded with edges
 0.6
 176
      1
- 41
+ 40
 30.0
 176
      1
  62
-     5
- 63
      7
 176
      1
- 74
-     1
+ 90
+        1
 176
      1
- 91
+ 90
        10
 176
      1
- 64
+ 62
      7
 176
      1
- 65
+ 62
    257
 176
      1
- 75
-     2
+ 90
+        2
 176
      1
-175
-     1
+ 90
+        1
 176
      1
- 42
+ 40
 1.0
 176
      1
- 92
+ 90
         8
 176
      1
- 66
+ 62
    257
 176
      1
- 43
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        1
 176
      1
- 77
-     6
+ 90
+        6
 176
      1
- 78
-     2
+ 90
+        2
 176
      1
- 67
+ 62
      7
 176
      1
- 79
-     3
+ 90
+        3
 176
      1
-170
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+        5
+176
+     1
+ 40
+0.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -79194,16 +81486,108 @@ Shaded with edges
      0
 176
      1
- 93
-        5
+290
+     0
 176
      1
- 44
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
 0.0
 176
      1
-173
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
      0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -79216,12 +81600,6 @@ C02
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-453A
-102
-}
 330
 EF
 100
@@ -79231,19 +81609,21 @@ Shaded with edges
  70
     26
 177
-     2
+     3
 291
      0
- 71
-     2
+ 70
+    58
+ 90
+        2
 176
      1
- 72
-     2
+ 90
+        2
 176
      1
- 73
-     1
+ 90
+        1
 176
      1
  90
@@ -79254,81 +81634,111 @@ Shaded with edges
 0.6
 176
      1
- 41
+ 40
 30.0
 176
      1
  62
-     5
- 63
      7
 176
      1
- 74
-     1
+ 90
+        1
 176
      1
- 91
+ 90
        10
 176
      1
- 64
+ 62
      7
 176
      1
- 65
+ 62
    257
 176
      1
- 75
-     2
+ 90
+        2
 176
      1
-175
-     1
+ 90
+        1
 176
      1
- 42
+ 40
 1.0
 176
      1
- 92
+ 90
         8
 176
      1
- 66
+ 62
    257
 176
      1
- 43
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        1
 176
      1
- 77
-     6
+ 90
+        6
 176
      1
- 78
-     2
+ 90
+        2
 176
      1
- 67
+ 62
      7
 176
      1
- 79
-     3
+ 90
+        3
 176
      1
-170
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+        5
+176
+     1
+ 40
+0.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -79336,16 +81746,108 @@ Shaded with edges
      0
 176
      1
- 93
-        5
+290
+     0
 176
      1
- 44
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
 0.0
 176
      1
-173
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
      0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -79358,12 +81860,6 @@ VISUALSTYLE
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-453C
-102
-}
 330
 EF
 100
@@ -79373,19 +81869,21 @@ Shades of Gray
  70
     23
 177
-     2
+     3
 291
      0
- 71
-     2
+ 70
+    58
+ 90
+        2
 176
      1
- 72
-     2
+ 90
+        2
 176
      1
- 73
-     3
+ 90
+        3
 176
      1
  90
@@ -79396,81 +81894,111 @@ Shades of Gray
 0.6
 176
      1
- 41
+ 40
 30.0
 176
      1
  62
-     5
- 63
      7
 176
      1
- 74
-     2
-176
-     1
- 91
+ 90
         2
 176
      1
- 64
+ 90
+        2
+176
+     1
+ 62
      7
 176
      1
- 65
+ 62
      7
 176
      1
- 75
-     1
+ 90
+        1
 176
      1
-175
-     1
+ 90
+        1
 176
      1
- 42
+ 40
 40.0
 176
      1
- 92
+ 90
         8
 176
      1
- 66
+ 62
      7
 176
      1
- 43
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        1
 176
      1
- 77
-     6
+ 90
+        6
 176
      1
- 78
-     2
+ 90
+        2
 176
      1
- 67
+ 62
      7
 176
      1
- 79
-     3
+ 90
+        3
 176
      1
-170
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+        1
+176
+     1
+ 40
+0.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -79478,16 +82006,108 @@ Shades of Gray
      0
 176
      1
- 93
-        1
+290
+     0
 176
      1
- 44
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
 0.0
 176
      1
-173
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
      0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -79500,12 +82120,6 @@ VISUALSTYLE
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-453E
-102
-}
 330
 EF
 100
@@ -79515,19 +82129,21 @@ Shades of Gray
  70
     23
 177
-     2
+     3
 291
      0
- 71
-     2
+ 70
+    58
+ 90
+        2
 176
      1
- 72
-     2
+ 90
+        2
 176
      1
- 73
-     3
+ 90
+        3
 176
      1
  90
@@ -79538,81 +82154,111 @@ Shades of Gray
 0.6
 176
      1
- 41
+ 40
 30.0
 176
      1
  62
-     5
- 63
      7
 176
      1
- 74
-     2
-176
-     1
- 91
+ 90
         2
 176
      1
- 64
+ 90
+        2
+176
+     1
+ 62
      7
 176
      1
- 65
+ 62
      7
 176
      1
- 75
-     1
+ 90
+        1
 176
      1
-175
-     1
+ 90
+        1
 176
      1
- 42
+ 40
 40.0
 176
      1
- 92
+ 90
         8
 176
      1
- 66
+ 62
      7
 176
      1
- 43
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        1
 176
      1
- 77
-     6
+ 90
+        6
 176
      1
- 78
-     2
+ 90
+        2
 176
      1
- 67
+ 62
      7
 176
      1
- 79
-     3
+ 90
+        3
 176
      1
-170
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+        1
+176
+     1
+ 40
+0.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -79620,16 +82266,108 @@ Shades of Gray
      0
 176
      1
- 93
-        1
+290
+     0
 176
      1
- 44
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
 0.0
 176
      1
-173
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
      0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -79642,12 +82380,6 @@ C01
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-4540
-102
-}
 330
 EF
 100
@@ -79657,19 +82389,21 @@ Shades of Gray
  70
     23
 177
-     2
+     3
 291
      0
- 71
-     2
+ 70
+    58
+ 90
+        2
 176
      1
- 72
-     2
+ 90
+        2
 176
      1
- 73
-     3
+ 90
+        3
 176
      1
  90
@@ -79680,81 +82414,111 @@ Shades of Gray
 0.6
 176
      1
- 41
+ 40
 30.0
 176
      1
  62
-     5
- 63
      7
 176
      1
- 74
-     2
-176
-     1
- 91
+ 90
         2
 176
      1
- 64
+ 90
+        2
+176
+     1
+ 62
      7
 176
      1
- 65
+ 62
      7
 176
      1
- 75
-     1
+ 90
+        1
 176
      1
-175
-     1
+ 90
+        1
 176
      1
- 42
+ 40
 40.0
 176
      1
- 92
+ 90
         8
 176
      1
- 66
+ 62
      7
 176
      1
- 43
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        1
 176
      1
- 77
-     6
+ 90
+        6
 176
      1
- 78
-     2
+ 90
+        2
 176
      1
- 67
+ 62
      7
 176
      1
- 79
-     3
+ 90
+        3
 176
      1
-170
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+        1
+176
+     1
+ 40
+0.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -79762,16 +82526,108 @@ Shades of Gray
      0
 176
      1
- 93
-        1
+290
+     0
 176
      1
- 44
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
 0.0
 176
      1
-173
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
      0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -79784,12 +82640,6 @@ VISUALSTYLE
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-4542
-102
-}
 330
 EF
 100
@@ -79799,19 +82649,21 @@ Sketchy
  70
     24
 177
-     2
+     3
 291
      0
- 71
-     1
+ 70
+    58
+ 90
+        1
 176
      1
- 72
-     2
+ 90
+        2
 176
      1
- 73
-     2
+ 90
+        2
 176
      1
  90
@@ -79822,81 +82674,111 @@ Sketchy
 0.6
 176
      1
- 41
+ 40
 30.0
 176
      1
  62
-     5
- 63
      7
 176
      1
- 74
-     2
-176
-     1
- 91
+ 90
         2
 176
      1
- 64
+ 90
+        2
+176
+     1
+ 62
      7
 176
      1
- 65
+ 62
      7
 176
      1
- 75
-     1
+ 90
+        1
 176
      1
-175
-     1
+ 90
+        1
 176
      1
- 42
+ 40
 40.0
 176
      1
- 92
+ 90
        11
 176
      1
- 66
+ 62
      7
 176
      1
- 43
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        1
 176
      1
- 77
-     6
+ 90
+        6
 176
      1
- 78
-     2
+ 90
+        2
 176
      1
- 67
+ 62
      7
 176
      1
- 79
-     6
+ 90
+        6
 176
      1
-170
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+        1
+176
+     1
+ 40
+0.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -79904,16 +82786,108 @@ Sketchy
      0
 176
      1
- 93
-        1
+290
+     0
 176
      1
- 44
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
 0.0
 176
      1
-173
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
      0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -79926,12 +82900,6 @@ FC
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-4544
-102
-}
 330
 EF
 100
@@ -79941,19 +82909,21 @@ Thicken
  70
     13
 177
-     2
+     3
 291
      1
- 71
-     2
+ 70
+    58
+ 90
+        2
 176
      1
- 72
-     2
+ 90
+        2
 176
      1
- 73
-     1
+ 90
+        1
 176
      1
  90
@@ -79964,81 +82934,111 @@ Thicken
 -0.6
 176
      1
- 41
+ 40
 -30.0
 176
      1
  62
-     5
- 63
      7
 176
      1
- 74
-     1
+ 90
+        1
 176
      1
- 91
+ 90
         4
 176
      1
- 64
+ 62
      7
 176
      1
- 65
+ 62
    257
 176
      1
- 75
-     1
+ 90
+        1
 176
      1
-175
-     1
+ 90
+        1
 176
      1
- 42
+ 40
 1.0
 176
      1
- 92
+ 90
        12
 176
      1
- 66
+ 62
      7
 176
      1
- 43
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        1
 176
      1
- 77
-     6
+ 90
+        6
 176
      1
- 78
-     2
+ 90
+        2
 176
      1
- 67
+ 62
      7
 176
      1
- 79
-     5
+ 90
+        5
 176
      1
-170
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+        1
+176
+     1
+ 40
+0.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -80046,16 +83046,108 @@ Thicken
      0
 176
      1
- 93
-        1
+290
+     0
 176
      1
- 44
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
 0.0
 176
      1
-173
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
      0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -80068,12 +83160,6 @@ VISUALSTYLE
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-4546
-102
-}
 330
 EF
 100
@@ -80083,19 +83169,21 @@ Wireframe
  70
      5
 177
-     2
+     3
 291
      0
- 71
-     0
+ 70
+    58
+ 90
+        0
 176
      1
- 72
-     2
+ 90
+        2
 176
      1
- 73
-     0
+ 90
+        0
 176
      1
  90
@@ -80106,81 +83194,111 @@ Wireframe
 0.6
 176
      1
- 41
+ 40
 30.0
 176
      1
  62
-     5
- 63
      7
 176
      1
- 74
-     1
+ 90
+        1
 176
      1
- 91
+ 90
         4
 176
      1
- 64
+ 62
      7
 176
      1
- 65
+ 62
    257
 176
      1
- 75
-     1
+ 90
+        1
 176
      1
-175
-     1
+ 90
+        1
 176
      1
- 42
+ 40
 1.0
 176
      1
- 92
+ 90
         0
 176
      1
- 66
+ 62
    257
 176
      1
- 43
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        1
 176
      1
- 77
-     6
+ 90
+        6
 176
      1
- 78
-     2
+ 90
+        2
 176
      1
- 67
+ 62
      7
 176
      1
- 79
-     3
+ 90
+        3
 176
      1
-170
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+        1
+176
+     1
+ 40
+0.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -80188,16 +83306,108 @@ Wireframe
      0
 176
      1
- 93
-        1
+290
+     0
 176
      1
- 44
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
 0.0
 176
      1
-173
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
      0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -80210,12 +83420,6 @@ VISUALSTYLE
 EF
 102
 }
-102
-{ACAD_XDICTIONARY
-360
-4548
-102
-}
 330
 EF
 100
@@ -80225,19 +83429,21 @@ X-Ray
  70
     25
 177
-     2
+     3
 291
      0
- 71
-     2
+ 70
+    58
+ 90
+        2
 176
      1
- 72
-     2
+ 90
+        2
 176
      1
- 73
-     1
+ 90
+        1
 176
      1
  90
@@ -80248,81 +83454,111 @@ X-Ray
 0.5
 176
      1
- 41
+ 40
 30.0
 176
      1
  62
-     5
- 63
      7
 176
      1
- 74
-     1
+ 90
+        1
 176
      1
- 91
+ 90
         0
 176
      1
- 64
+ 62
      7
 176
      1
- 65
+ 62
    257
 176
      1
- 75
-     1
+ 90
+        1
 176
      1
-175
-     1
+ 90
+        1
 176
      1
- 42
+ 40
 1.0
 176
      1
- 92
+ 90
         8
 176
      1
- 66
+ 62
      7
 176
      1
- 43
+ 40
 1.0
 176
      1
- 76
-     1
+ 90
+        1
 176
      1
- 77
-     6
+ 90
+        6
 176
      1
- 78
-     2
+ 90
+        2
 176
      1
- 67
+ 62
      7
 176
      1
- 79
-     3
+ 90
+        3
 176
      1
-170
+ 90
+        0
+176
+     1
+ 90
+        0
+176
+     1
+290
      0
 176
      1
-171
+ 90
+       13
+176
+     1
+ 40
+0.0
+176
+     1
+ 90
+        0
+176
+     1
+290
+     0
+176
+     1
+290
+     1
+176
+     1
+290
+     1
+176
+     1
+290
      0
 176
      1
@@ -80330,16 +83566,108 @@ X-Ray
      0
 176
      1
- 93
-       13
+290
+     0
 176
      1
- 44
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 40
 0.0
 176
      1
-173
+ 40
+1.0
+176
+     1
+ 90
+        0
+176
+     1
+ 62
+    18
+420
+        0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+        3
+176
+     1
+ 62
+     5
+420
+      255
+176
+     1
+290
      0
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+ 90
+       50
+176
+     1
+290
+     0
+176
+     1
+ 90
+       50
+176
+     1
+ 62
+   256
+176
+     0
+ 40
+1.0
+176
+     0
+ 90
+        2
+176
+     1
+  1
+strokes_ogs.tif
+176
+     1
+290
+     0
+176
+     1
+ 40
+1.0
+176
+     1
+ 40
+1.0
 176
      1
   0
@@ -80595,7 +83923,7 @@ MCS_DOCUMENT_ID
  90
        60
 310
-0600000002000000150000001C000000E204000000000000000000007801E36DEAEE59515DEEEC30574E5DD53942F2ED7F2000005F580A6815000000
+0600000002000000150000001C000000E204000000000000000000007801E35593FD65BFCAEDACDBD679B92B172814AEF80F040068C30BCB15000000
   0
 XRECORD
   5
@@ -80671,9 +83999,141 @@ EE0AFA030B3CB273954C91D5916E83CC9BEE074FAB1E6B73B11CFB6CBEB73B4C23589D2D05F4CC9A
 310
 99FF03A92412CEF64B0000
   0
+XRECORD
+  5
+4513
+102
+{ACAD_REACTORS
+330
+3D1
+102
+}
+330
+3D1
+100
+AcDbXrecord
+280
+     1
+ 91
+     1023
+301
+Configuration1: description
+290
+     0
+302
+0
+330
+10
+ 90
+        8
+ 62
+     7
+370
+    -3
+331
+16
+  1
+Color_7
+330
+450D
+ 90
+        8
+ 62
+     7
+370
+    -3
+331
+16
+  1
+Color_7
+330
+450E
+ 90
+        8
+ 62
+     7
+370
+    -3
+331
+16
+  1
+Color_7
+330
+450F
+ 90
+        8
+ 62
+     5
+370
+    -3
+331
+16
+  1
+Color_5
+330
+4510
+ 90
+        8
+ 62
+     3
+370
+    -3
+331
+16
+  1
+Color_3
+330
+4511
+ 90
+        8
+ 62
+     1
+370
+    -3
+331
+16
+  1
+Color_1
+330
+4512
+ 90
+        8
+ 62
+     4
+370
+    -3
+331
+16
+  1
+Color_4
+330
+40FB
+ 90
+        8
+ 62
+     6
+370
+    -3
+331
+16
+  1
+Color_6
+330
+32EA
+ 90
+        8
+ 62
+     2
+370
+    -3
+331
+16
+  1
+Color_3
+  0
 DICTIONARY
   5
-450C
+4563
 330
 24A2
 100
@@ -80685,499 +84145,19 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-450D
-  0
-DICTIONARY
-  5
-450E
-330
-F5
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-450F
-  0
-DICTIONARY
-  5
-4510
-330
-F7
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-4511
-  0
-DICTIONARY
-  5
-4512
-330
-F6
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-4513
-  0
-DICTIONARY
-  5
-4514
-330
-F4
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-4515
-  0
-DICTIONARY
-  5
-4516
-330
-FB
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-4517
-  0
-DICTIONARY
-  5
-4518
-330
-FF
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-4519
-  0
-DICTIONARY
-  5
-451A
-330
-F8
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-451B
-  0
-DICTIONARY
-  5
-451C
-330
-FA
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-451D
-  0
-DICTIONARY
-  5
-451E
-330
-35E
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-451F
-  0
-DICTIONARY
-  5
-4520
-330
-FE
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-4521
-  0
-DICTIONARY
-  5
-4522
-330
-F0
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-4523
-  0
-DICTIONARY
-  5
-4524
-330
-F1
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-4525
-  0
-DICTIONARY
-  5
-4526
-330
-F2
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-4527
-  0
-DICTIONARY
-  5
-4528
-330
-F3
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-4529
-  0
-DICTIONARY
-  5
-452A
-330
-35B
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-452B
-  0
-DICTIONARY
-  5
-452C
-330
-35C
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-452D
-  0
-DICTIONARY
-  5
-452E
-330
-FD
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-452F
-  0
-DICTIONARY
-  5
-4530
-330
-35D
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-4531
-  0
-DICTIONARY
-  5
-4532
-330
-F9
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-4533
-  0
-DICTIONARY
-  5
-4534
-330
-363
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-4535
-  0
-DICTIONARY
-  5
-4536
-330
-126C
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-4537
-  0
-DICTIONARY
-  5
-4538
-330
-362
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-4539
-  0
-DICTIONARY
-  5
-453A
-330
-C02
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-453B
-  0
-DICTIONARY
-  5
-453C
-330
-126B
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-453D
-  0
-DICTIONARY
-  5
-453E
-330
-35F
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-453F
-  0
-DICTIONARY
-  5
-4540
-330
-C01
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-4541
-  0
-DICTIONARY
-  5
-4542
-330
-360
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-4543
-  0
-DICTIONARY
-  5
-4544
-330
-FC
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-4545
-  0
-DICTIONARY
-  5
-4546
-330
-35A
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-4547
-  0
-DICTIONARY
-  5
-4548
-330
-361
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_XREC_ROUNDTRIP
-360
-4549
+4564
   0
 CELLSTYLEMAP
   5
-450D
+4564
 102
 {ACAD_REACTORS
 330
-450C
+4563
 102
 }
 330
-450C
+4563
 100
 AcDbCellStyleMap
  90
@@ -81813,2285 +84793,6 @@ _DATA
 309
 CELLSTYLE_END
   0
-XRECORD
-  5
-450F
-102
-{ACAD_REACTORS
-330
-450E
-102
-}
-330
-450E
-100
-AcDbXrecord
-280
-     1
-102
-RTVSPost2010Prop28
-280
-     1
-102
-RTVSPost2010PropOp28
- 70
-     1
-102
-RTVSPost2010Prop29
-280
-     1
-102
-RTVSPost2010PropOp29
- 70
-     1
-102
-RTVSPost2010Prop30
-280
-     0
-102
-RTVSPost2010PropOp30
- 70
-     1
-102
-RTVSPost2010Prop31
-280
-     0
-102
-RTVSPost2010PropOp31
- 70
-     1
-102
-RTVSPost2010Prop32
-280
-     0
-102
-RTVSPost2010PropOp32
- 70
-     1
-102
-RTVSPost2010Prop33
-280
-     0
-102
-RTVSPost2010PropOp33
- 70
-     1
-102
-RTVSPost2010Prop34
-280
-     0
-102
-RTVSPost2010PropOp34
- 70
-     1
-102
-RTVSPost2010Prop35
-280
-     0
-102
-RTVSPost2010PropOp35
- 70
-     1
-102
-RTVSPost2010Prop36
-280
-     0
-102
-RTVSPost2010PropOp36
- 70
-     1
-102
-RTVSPost2010Prop37
- 90
-       50
-102
-RTVSPost2010PropOp37
- 70
-     1
-102
-RTVSPost2010Prop38
-140
-0.0
-102
-RTVSPost2010PropOp38
- 70
-     1
-102
-RTVSPost2010Prop39
-140
-1.0
-102
-RTVSPost2010PropOp39
- 70
-     1
-102
-RTVSPost2010Prop40
- 90
-        0
-102
-RTVSPost2010PropOp40
- 70
-     1
-102
-RTVSPost2010Prop41ColorIndex
- 90
-       18
-102
-RTVSPost2010Prop41ColorRGB
- 90
-        0
-102
-RTVSPost2010PropOp41
- 70
-     1
-102
-RTVSPost2010Prop42
- 90
-       50
-102
-RTVSPost2010PropOp42
- 70
-     1
-102
-RTVSPost2010Prop43
- 90
-        3
-102
-RTVSPost2010PropOp43
- 70
-     1
-102
-RTVSPost2010Prop44ColorIndex
- 90
-        5
-102
-RTVSPost2010Prop44ColorRGB
- 90
-      255
-102
-RTVSPost2010PropOp44
- 70
-     1
-102
-RTVSPost2010Prop45
-280
-     0
-102
-RTVSPost2010PropOp45
- 70
-     1
-102
-RTVSPost2010Prop46
- 90
-       50
-102
-RTVSPost2010PropOp46
- 70
-     1
-102
-RTVSPost2010Prop47
- 90
-       50
-102
-RTVSPost2010PropOp47
- 70
-     1
-102
-RTVSPost2010Prop48
- 90
-       50
-102
-RTVSPost2010PropOp48
- 70
-     1
-102
-RTVSPost2010Prop49
-280
-     0
-102
-RTVSPost2010PropOp49
- 70
-     1
-102
-RTVSPost2010Prop50
- 90
-       50
-102
-RTVSPost2010PropOp50
- 70
-     1
-102
-RTVSPost2010Prop51ColorIndex
- 90
-      256
-102
-RTVSPost2010Prop51ColorRGB
- 90
--16777216
-102
-RTVSPost2010PropOp51
- 70
-     0
-102
-RTVSPost2010Prop52
-140
-1.0
-102
-RTVSPost2010PropOp52
- 70
-     0
-102
-RTVSPost2010Prop53
- 90
-        2
-102
-RTVSPost2010PropOp53
- 70
-     1
-102
-RTVSPost2010Prop54
-  1
-strokes_ogs.tif
-102
-RTVSPost2010PropOp54
- 70
-     1
-102
-RTVSPost2010Prop55
-280
-     0
-102
-RTVSPost2010PropOp55
- 70
-     1
-102
-RTVSPost2010Prop56
-140
-1.0
-102
-RTVSPost2010PropOp56
- 70
-     1
-102
-RTVSPost2010Prop57
-140
-1.0
-102
-RTVSPost2010PropOp57
- 70
-     1
+ENDSEC
   0
-XRECORD
-  5
-4511
-102
-{ACAD_REACTORS
-330
-4510
-102
-}
-330
-4510
-100
-AcDbXrecord
-280
-     1
-102
-RTVSPost2010Prop28
-280
-     0
-102
-RTVSPost2010PropOp28
- 70
-     1
-102
-RTVSPost2010Prop29
-280
-     1
-102
-RTVSPost2010PropOp29
- 70
-     1
-102
-RTVSPost2010Prop30
-280
-     1
-102
-RTVSPost2010PropOp30
- 70
-     1
-102
-RTVSPost2010Prop31
-280
-     0
-102
-RTVSPost2010PropOp31
- 70
-     1
-102
-RTVSPost2010Prop32
-280
-     0
-102
-RTVSPost2010PropOp32
- 70
-     1
-102
-RTVSPost2010Prop33
-280
-     0
-102
-RTVSPost2010PropOp33
- 70
-     1
-102
-RTVSPost2010Prop34
-280
-     0
-102
-RTVSPost2010PropOp34
- 70
-     1
-102
-RTVSPost2010Prop35
-280
-     0
-102
-RTVSPost2010PropOp35
- 70
-     1
-102
-RTVSPost2010Prop36
-280
-     0
-102
-RTVSPost2010PropOp36
- 70
-     1
-102
-RTVSPost2010Prop37
- 90
-       50
-102
-RTVSPost2010PropOp37
- 70
-     1
-102
-RTVSPost2010Prop38
-140
-0.0
-102
-RTVSPost2010PropOp38
- 70
-     1
-102
-RTVSPost2010Prop39
-140
-1.0
-102
-RTVSPost2010PropOp39
- 70
-     1
-102
-RTVSPost2010Prop40
- 90
-        0
-102
-RTVSPost2010PropOp40
- 70
-     1
-102
-RTVSPost2010Prop41ColorIndex
- 90
-       18
-102
-RTVSPost2010Prop41ColorRGB
- 90
-        0
-102
-RTVSPost2010PropOp41
- 70
-     1
-102
-RTVSPost2010Prop42
- 90
-       50
-102
-RTVSPost2010PropOp42
- 70
-     1
-102
-RTVSPost2010Prop43
- 90
-        3
-102
-RTVSPost2010PropOp43
- 70
-     1
-102
-RTVSPost2010Prop44ColorIndex
- 90
-        5
-102
-RTVSPost2010Prop44ColorRGB
- 90
-      255
-102
-RTVSPost2010PropOp44
- 70
-     1
-102
-RTVSPost2010Prop45
-280
-     0
-102
-RTVSPost2010PropOp45
- 70
-     1
-102
-RTVSPost2010Prop46
- 90
-       50
-102
-RTVSPost2010PropOp46
- 70
-     1
-102
-RTVSPost2010Prop47
- 90
-       50
-102
-RTVSPost2010PropOp47
- 70
-     1
-102
-RTVSPost2010Prop48
- 90
-       50
-102
-RTVSPost2010PropOp48
- 70
-     1
-102
-RTVSPost2010Prop49
-280
-     0
-102
-RTVSPost2010PropOp49
- 70
-     1
-102
-RTVSPost2010Prop50
- 90
-       50
-102
-RTVSPost2010PropOp50
- 70
-     1
-102
-RTVSPost2010Prop51ColorIndex
- 90
-      256
-102
-RTVSPost2010Prop51ColorRGB
- 90
--16777216
-102
-RTVSPost2010PropOp51
- 70
-     0
-102
-RTVSPost2010Prop52
-140
-1.0
-102
-RTVSPost2010PropOp52
- 70
-     0
-102
-RTVSPost2010Prop53
- 90
-        2
-102
-RTVSPost2010PropOp53
- 70
-     1
-102
-RTVSPost2010Prop54
-  1
-strokes_ogs.tif
-102
-RTVSPost2010PropOp54
- 70
-     1
-102
-RTVSPost2010Prop55
-280
-     0
-102
-RTVSPost2010PropOp55
- 70
-     1
-102
-RTVSPost2010Prop56
-140
-1.0
-102
-RTVSPost2010PropOp56
- 70
-     1
-102
-RTVSPost2010Prop57
-140
-1.0
-102
-RTVSPost2010PropOp57
- 70
-     1
-  0
-XRECORD
-  5
-4513
-102
-{ACAD_REACTORS
-330
-4512
-102
-}
-330
-4512
-100
-AcDbXrecord
-280
-     1
-102
-RTVSPost2010Prop28
-280
-     0
-102
-RTVSPost2010PropOp28
- 70
-     1
-102
-RTVSPost2010Prop29
-280
-     1
-102
-RTVSPost2010PropOp29
- 70
-     1
-102
-RTVSPost2010Prop30
-280
-     1
-102
-RTVSPost2010PropOp30
- 70
-     1
-102
-RTVSPost2010Prop31
-280
-     0
-102
-RTVSPost2010PropOp31
- 70
-     1
-102
-RTVSPost2010Prop32
-280
-     0
-102
-RTVSPost2010PropOp32
- 70
-     1
-102
-RTVSPost2010Prop33
-280
-     0
-102
-RTVSPost2010PropOp33
- 70
-     1
-102
-RTVSPost2010Prop34
-280
-     0
-102
-RTVSPost2010PropOp34
- 70
-     1
-102
-RTVSPost2010Prop35
-280
-     0
-102
-RTVSPost2010PropOp35
- 70
-     1
-102
-RTVSPost2010Prop36
-280
-     0
-102
-RTVSPost2010PropOp36
- 70
-     1
-102
-RTVSPost2010Prop37
- 90
-       50
-102
-RTVSPost2010PropOp37
- 70
-     1
-102
-RTVSPost2010Prop38
-140
-0.0
-102
-RTVSPost2010PropOp38
- 70
-     1
-102
-RTVSPost2010Prop39
-140
-1.0
-102
-RTVSPost2010PropOp39
- 70
-     1
-102
-RTVSPost2010Prop40
- 90
-        0
-102
-RTVSPost2010PropOp40
- 70
-     1
-102
-RTVSPost2010Prop41ColorIndex
- 90
-       18
-102
-RTVSPost2010Prop41ColorRGB
- 90
-        0
-102
-RTVSPost2010PropOp41
- 70
-     1
-102
-RTVSPost2010Prop42
- 90
-       50
-102
-RTVSPost2010PropOp42
- 70
-     1
-102
-RTVSPost2010Prop43
- 90
-        3
-102
-RTVSPost2010PropOp43
- 70
-     1
-102
-RTVSPost2010Prop44ColorIndex
- 90
-        5
-102
-RTVSPost2010Prop44ColorRGB
- 90
-      255
-102
-RTVSPost2010PropOp44
- 70
-     1
-102
-RTVSPost2010Prop45
-280
-     0
-102
-RTVSPost2010PropOp45
- 70
-     1
-102
-RTVSPost2010Prop46
- 90
-       50
-102
-RTVSPost2010PropOp46
- 70
-     1
-102
-RTVSPost2010Prop47
- 90
-       50
-102
-RTVSPost2010PropOp47
- 70
-     1
-102
-RTVSPost2010Prop48
- 90
-       50
-102
-RTVSPost2010PropOp48
- 70
-     1
-102
-RTVSPost2010Prop49
-280
-     0
-102
-RTVSPost2010PropOp49
- 70
-     1
-102
-RTVSPost2010Prop50
- 90
-       50
-102
-RTVSPost2010PropOp50
- 70
-     1
-102
-RTVSPost2010Prop51ColorIndex
- 90
-      256
-102
-RTVSPost2010Prop51ColorRGB
- 90
--16777216
-102
-RTVSPost2010PropOp51
- 70
-     0
-102
-RTVSPost2010Prop52
-140
-1.0
-102
-RTVSPost2010PropOp52
- 70
-     0
-102
-RTVSPost2010Prop53
- 90
-        2
-102
-RTVSPost2010PropOp53
- 70
-     1
-102
-RTVSPost2010Prop54
-  1
-strokes_ogs.tif
-102
-RTVSPost2010PropOp54
- 70
-     1
-102
-RTVSPost2010Prop55
-280
-     0
-102
-RTVSPost2010PropOp55
- 70
-     1
-102
-RTVSPost2010Prop56
-140
-1.0
-102
-RTVSPost2010PropOp56
- 70
-     1
-102
-RTVSPost2010Prop57
-140
-1.0
-102
-RTVSPost2010PropOp57
- 70
-     1
-  0
-XRECORD
-  5
-4515
-102
-{ACAD_REACTORS
-330
-4514
-102
-}
-330
-4514
-100
-AcDbXrecord
-280
-     1
-102
-RTVSPost2010Prop28
-280
-     0
-102
-RTVSPost2010PropOp28
- 70
-     1
-102
-RTVSPost2010Prop29
-280
-     1
-102
-RTVSPost2010PropOp29
- 70
-     1
-102
-RTVSPost2010Prop30
-280
-     1
-102
-RTVSPost2010PropOp30
- 70
-     1
-102
-RTVSPost2010Prop31
-280
-     0
-102
-RTVSPost2010PropOp31
- 70
-     1
-102
-RTVSPost2010Prop32
-280
-     0
-102
-RTVSPost2010PropOp32
- 70
-     1
-102
-RTVSPost2010Prop33
-280
-     0
-102
-RTVSPost2010PropOp33
- 70
-     1
-102
-RTVSPost2010Prop34
-280
-     0
-102
-RTVSPost2010PropOp34
- 70
-     1
-102
-RTVSPost2010Prop35
-280
-     0
-102
-RTVSPost2010PropOp35
- 70
-     1
-102
-RTVSPost2010Prop36
-280
-     0
-102
-RTVSPost2010PropOp36
- 70
-     1
-102
-RTVSPost2010Prop37
- 90
-       50
-102
-RTVSPost2010PropOp37
- 70
-     1
-102
-RTVSPost2010Prop38
-140
-0.0
-102
-RTVSPost2010PropOp38
- 70
-     1
-102
-RTVSPost2010Prop39
-140
-1.0
-102
-RTVSPost2010PropOp39
- 70
-     1
-102
-RTVSPost2010Prop40
- 90
-        0
-102
-RTVSPost2010PropOp40
- 70
-     1
-102
-RTVSPost2010Prop41ColorIndex
- 90
-       18
-102
-RTVSPost2010Prop41ColorRGB
- 90
-        0
-102
-RTVSPost2010PropOp41
- 70
-     1
-102
-RTVSPost2010Prop42
- 90
-       50
-102
-RTVSPost2010PropOp42
- 70
-     1
-102
-RTVSPost2010Prop43
- 90
-        3
-102
-RTVSPost2010PropOp43
- 70
-     1
-102
-RTVSPost2010Prop44ColorIndex
- 90
-        5
-102
-RTVSPost2010Prop44ColorRGB
- 90
-      255
-102
-RTVSPost2010PropOp44
- 70
-     1
-102
-RTVSPost2010Prop45
-280
-     0
-102
-RTVSPost2010PropOp45
- 70
-     1
-102
-RTVSPost2010Prop46
- 90
-       50
-102
-RTVSPost2010PropOp46
- 70
-     1
-102
-RTVSPost2010Prop47
- 90
-       50
-102
-RTVSPost2010PropOp47
- 70
-     1
-102
-RTVSPost2010Prop48
- 90
-       50
-102
-RTVSPost2010PropOp48
- 70
-     1
-102
-RTVSPost2010Prop49
-280
-     0
-102
-RTVSPost2010PropOp49
- 70
-     1
-102
-RTVSPost2010Prop50
- 90
-       50
-102
-RTVSPost2010PropOp50
- 70
-     1
-102
-RTVSPost2010Prop51ColorIndex
- 90
-      256
-102
-RTVSPost2010Prop51ColorRGB
- 90
--16777216
-102
-RTVSPost2010PropOp51
- 70
-     0
-102
-RTVSPost2010Prop52
-140
-1.0
-102
-RTVSPost2010PropOp52
- 70
-     0
-102
-RTVSPost2010Prop53
- 90
-        2
-102
-RTVSPost2010PropOp53
- 70
-     1
-102
-RTVSPost2010Prop54
-  1
-strokes_ogs.tif
-102
-RTVSPost2010PropOp54
- 70
-     1
-102
-RTVSPost2010Prop55
-280
-     0
-102
-RTVSPost2010PropOp55
- 70
-     1
-102
-RTVSPost2010Prop56
-140
-1.0
-102
-RTVSPost2010PropOp56
- 70
-     1
-102
-RTVSPost2010Prop57
-140
-1.0
-102
-RTVSPost2010PropOp57
- 70
-     1
-  0
-XRECORD
-  5
-4517
-102
-{ACAD_REACTORS
-330
-4516
-102
-}
-330
-4516
-100
-AcDbXrecord
-280
-     1
-102
-RTVSPost2010Prop28
-280
-     0
-102
-RTVSPost2010PropOp28
- 70
-     1
-102
-RTVSPost2010Prop29
-280
-     1
-102
-RTVSPost2010PropOp29
- 70
-     1
-102
-RTVSPost2010Prop30
-280
-     1
-102
-RTVSPost2010PropOp30
- 70
-     1
-102
-RTVSPost2010Prop31
-280
-     0
-102
-RTVSPost2010PropOp31
- 70
-     1
-102
-RTVSPost2010Prop32
-280
-     0
-102
-RTVSPost2010PropOp32
- 70
-     1
-102
-RTVSPost2010Prop33
-280
-     0
-102
-RTVSPost2010PropOp33
- 70
-     1
-102
-RTVSPost2010Prop34
-280
-     0
-102
-RTVSPost2010PropOp34
- 70
-     1
-102
-RTVSPost2010Prop35
-280
-     0
-102
-RTVSPost2010PropOp35
- 70
-     1
-102
-RTVSPost2010Prop36
-280
-     0
-102
-RTVSPost2010PropOp36
- 70
-     1
-102
-RTVSPost2010Prop37
- 90
-       50
-102
-RTVSPost2010PropOp37
- 70
-     1
-102
-RTVSPost2010Prop38
-140
-0.0
-102
-RTVSPost2010PropOp38
- 70
-     1
-102
-RTVSPost2010Prop39
-140
-1.0
-102
-RTVSPost2010PropOp39
- 70
-     1
-102
-RTVSPost2010Prop40
- 90
-        0
-102
-RTVSPost2010PropOp40
- 70
-     1
-102
-RTVSPost2010Prop41ColorIndex
- 90
-       18
-102
-RTVSPost2010Prop41ColorRGB
- 90
-        0
-102
-RTVSPost2010PropOp41
- 70
-     1
-102
-RTVSPost2010Prop42
- 90
-       50
-102
-RTVSPost2010PropOp42
- 70
-     1
-102
-RTVSPost2010Prop43
- 90
-        3
-102
-RTVSPost2010PropOp43
- 70
-     1
-102
-RTVSPost2010Prop44ColorIndex
- 90
-        5
-102
-RTVSPost2010Prop44ColorRGB
- 90
-      255
-102
-RTVSPost2010PropOp44
- 70
-     1
-102
-RTVSPost2010Prop45
-280
-     0
-102
-RTVSPost2010PropOp45
- 70
-     1
-102
-RTVSPost2010Prop46
- 90
-       50
-102
-RTVSPost2010PropOp46
- 70
-     1
-102
-RTVSPost2010Prop47
- 90
-       50
-102
-RTVSPost2010PropOp47
- 70
-     1
-102
-RTVSPost2010Prop48
- 90
-       50
-102
-RTVSPost2010PropOp48
- 70
-     1
-102
-RTVSPost2010Prop49
-280
-     0
-102
-RTVSPost2010PropOp49
- 70
-     1
-102
-RTVSPost2010Prop50
- 90
-       50
-102
-RTVSPost2010PropOp50
- 70
-     1
-102
-RTVSPost2010Prop51ColorIndex
- 90
-      256
-102
-RTVSPost2010Prop51ColorRGB
- 90
--16777216
-102
-RTVSPost2010PropOp51
- 70
-     0
-102
-RTVSPost2010Prop52
-140
-1.0
-102
-RTVSPost2010PropOp52
- 70
-     0
-102
-RTVSPost2010Prop53
- 90
-        2
-102
-RTVSPost2010PropOp53
- 70
-     1
-102
-RTVSPost2010Prop54
-  1
-strokes_ogs.tif
-102
-RTVSPost2010PropOp54
- 70
-     1
-102
-RTVSPost2010Prop55
-280
-     0
-102
-RTVSPost2010PropOp55
- 70
-     1
-102
-RTVSPost2010Prop56
-140
-1.0
-102
-RTVSPost2010PropOp56
- 70
-     1
-102
-RTVSPost2010Prop57
-140
-1.0
-102
-RTVSPost2010PropOp57
- 70
-     1
-  0
-XRECORD
-  5
-4519
-102
-{ACAD_REACTORS
-330
-4518
-102
-}
-330
-4518
-100
-AcDbXrecord
-280
-     1
-102
-RTVSPost2010Prop28
-280
-     0
-102
-RTVSPost2010PropOp28
- 70
-     1
-102
-RTVSPost2010Prop29
-280
-     1
-102
-RTVSPost2010PropOp29
- 70
-     1
-102
-RTVSPost2010Prop30
-280
-     1
-102
-RTVSPost2010PropOp30
- 70
-     1
-102
-RTVSPost2010Prop31
-280
-     0
-102
-RTVSPost2010PropOp31
- 70
-     1
-102
-RTVSPost2010Prop32
-280
-     0
-102
-RTVSPost2010PropOp32
- 70
-     1
-102
-RTVSPost2010Prop33
-280
-     0
-102
-RTVSPost2010PropOp33
- 70
-     1
-102
-RTVSPost2010Prop34
-280
-     0
-102
-RTVSPost2010PropOp34
- 70
-     1
-102
-RTVSPost2010Prop35
-280
-     0
-102
-RTVSPost2010PropOp35
- 70
-     1
-102
-RTVSPost2010Prop36
-280
-     0
-102
-RTVSPost2010PropOp36
- 70
-     1
-102
-RTVSPost2010Prop37
- 90
-       50
-102
-RTVSPost2010PropOp37
- 70
-     1
-102
-RTVSPost2010Prop38
-140
-0.0
-102
-RTVSPost2010PropOp38
- 70
-     1
-102
-RTVSPost2010Prop39
-140
-1.0
-102
-RTVSPost2010PropOp39
- 70
-     1
-102
-RTVSPost2010Prop40
- 90
-        0
-102
-RTVSPost2010PropOp40
- 70
-     1
-102
-RTVSPost2010Prop41ColorIndex
- 90
-       18
-102
-RTVSPost2010Prop41ColorRGB
- 90
-        0
-102
-RTVSPost2010PropOp41
- 70
-     1
-102
-RTVSPost2010Prop42
- 90
-       50
-102
-RTVSPost2010PropOp42
- 70
-     1
-102
-RTVSPost2010Prop43
- 90
-        3
-102
-RTVSPost2010PropOp43
- 70
-     1
-102
-RTVSPost2010Prop44ColorIndex
- 90
-        5
-102
-RTVSPost2010Prop44ColorRGB
- 90
-      255
-102
-RTVSPost2010PropOp44
- 70
-     1
-102
-RTVSPost2010Prop45
-280
-     0
-102
-RTVSPost2010PropOp45
- 70
-     1
-102
-RTVSPost2010Prop46
- 90
-       50
-102
-RTVSPost2010PropOp46
- 70
-     1
-102
-RTVSPost2010Prop47
- 90
-       50
-102
-RTVSPost2010PropOp47
- 70
-     1
-102
-RTVSPost2010Prop48
- 90
-       50
-102
-RTVSPost2010PropOp48
- 70
-     1
-102
-RTVSPost2010Prop49
-280
-     0
-102
-RTVSPost2010PropOp49
- 70
-     1
-102
-RTVSPost2010Prop50
- 90
-       50
-102
-RTVSPost2010PropOp50
- 70
-     1
-102
-RTVSPost2010Prop51ColorIndex
- 90
-      256
-102
-RTVSPost2010Prop51ColorRGB
- 90
--16777216
-102
-RTVSPost2010PropOp51
- 70
-     0
-102
-RTVSPost2010Prop52
-140
-1.0
-102
-RTVSPost2010PropOp52
- 70
-     0
-102
-RTVSPost2010Prop53
- 90
-        2
-102
-RTVSPost2010PropOp53
- 70
-     1
-102
-RTVSPost2010Prop54
-  1
-strokes_ogs.tif
-102
-RTVSPost2010PropOp54
- 70
-     1
-102
-RTVSPost2010Prop55
-280
-     0
-102
-RTVSPost2010PropOp55
- 70
-     1
-102
-RTVSPost2010Prop56
-140
-1.0
-102
-RTVSPost2010PropOp56
- 70
-     1
-102
-RTVSPost2010Prop57
-140
-1.0
-102
-RTVSPost2010PropOp57
- 70
-     1
-  0
-XRECORD
-  5
-451B
-102
-{ACAD_REACTORS
-330
-451A
-102
-}
-330
-451A
-100
-AcDbXrecord
-280
-     1
-102
-RTVSPost2010Prop28
-280
-     0
-102
-RTVSPost2010PropOp28
- 70
-     1
-102
-RTVSPost2010Prop29
-280
-     1
-102
-RTVSPost2010PropOp29
- 70
-     1
-102
-RTVSPost2010Prop30
-280
-     1
-102
-RTVSPost2010PropOp30
- 70
-     1
-102
-RTVSPost2010Prop31
-280
-     0
-102
-RTVSPost2010PropOp31
- 70
-     1
-102
-RTVSPost2010Prop32
-280
-     0
-102
-RTVSPost2010PropOp32
- 70
-     1
-102
-RTVSPost2010Prop33
-280
-     0
-102
-RTVSPost2010PropOp33
- 70
-     1
-102
-RTVSPost2010Prop34
-280
-     0
-102
-RTVSPost2010PropOp34
- 70
-     1
-102
-RTVSPost2010Prop35
-280
-     0
-102
-RTVSPost2010PropOp35
- 70
-     1
-102
-RTVSPost2010Prop36
-280
-     0
-102
-RTVSPost2010PropOp36
- 70
-     1
-102
-RTVSPost2010Prop37
- 90
-       50
-102
-RTVSPost2010PropOp37
- 70
-     1
-102
-RTVSPost2010Prop38
-140
-0.0
-102
-RTVSPost2010PropOp38
- 70
-     1
-102
-RTVSPost2010Prop39
-140
-1.0
-102
-RTVSPost2010PropOp39
- 70
-     1
-102
-RTVSPost2010Prop40
- 90
-        0
-102
-RTVSPost2010PropOp40
- 70
-     1
-102
-RTVSPost2010Prop41ColorIndex
- 90
-       18
-102
-RTVSPost2010Prop41ColorRGB
- 90
-        0
-102
-RTVSPost2010PropOp41
- 70
-     1
-102
-RTVSPost2010Prop42
- 90
-       50
-102
-RTVSPost2010PropOp42
- 70
-     1
-102
-RTVSPost2010Prop43
- 90
-        3
-102
-RTVSPost2010PropOp43
- 70
-     1
-102
-RTVSPost2010Prop44ColorIndex
- 90
-        5
-102
-RTVSPost2010Prop44ColorRGB
- 90
-      255
-102
-RTVSPost2010PropOp44
- 70
-     1
-102
-RTVSPost2010Prop45
-280
-     0
-102
-RTVSPost2010PropOp45
- 70
-     1
-102
-RTVSPost2010Prop46
- 90
-       50
-102
-RTVSPost2010PropOp46
- 70
-     1
-102
-RTVSPost2010Prop47
- 90
-       50
-102
-RTVSPost2010PropOp47
- 70
-     1
-102
-RTVSPost2010Prop48
- 90
-       50
-102
-RTVSPost2010PropOp48
- 70
-     1
-102
-RTVSPost2010Prop49
-280
-     0
-102
-RTVSPost2010PropOp49
- 70
-     1
-102
-RTVSPost2010Prop50
- 90
-       50
-102
-RTVSPost2010PropOp50
- 70
-     1
-102
-RTVSPost2010Prop51ColorIndex
- 90
-      256
-102
-RTVSPost2010Prop51ColorRGB
- 90
--16777216
-102
-RTVSPost2010PropOp51
- 70
-     0
-102
-RTVSPost2010Prop52
-140
-1.0
-102
-RTVSPost2010PropOp52
- 70
-     0
-102
-RTVSPost2010Prop53
- 90
-        2
-102
-RTVSPost2010PropOp53
- 70
-     1
-102
-RTVSPost2010Prop54
-  1
-strokes_ogs.tif
-102
-RTVSPost2010PropOp54
- 70
-     1
-102
-RTVSPost2010Prop55
-280
-     0
-102
-RTVSPost2010PropOp55
- 70
-     1
-102
-RTVSPost2010Prop56
-140
-1.0
-102
-RTVSPost2010PropOp56
- 70
-     1
-102
-RTVSPost2010Prop57
-140
-1.0
-102
-RTVSPost2010PropOp57
- 70
-     1
-  0
-XRECORD
-  5
-451D
-102
-{ACAD_REACTORS
-330
-451C
-102
-}
-330
-451C
-100
-AcDbXrecord
-280
-     1
-102
-RTVSPost2010Prop28
-280
-     0
-102
-RTVSPost2010PropOp28
- 70
-     1
-102
-RTVSPost2010Prop29
-280
-     1
-102
-RTVSPost2010PropOp29
- 70
-     1
-102
-RTVSPost2010Prop30
-280
-     1
-102
-RTVSPost2010PropOp30
- 70
-     1
-102
-RTVSPost2010Prop31
-280
-     0
-102
-RTVSPost2010PropOp31
- 70
-     1
-102
-RTVSPost2010Prop32
-280
-     0
-102
-RTVSPost2010PropOp32
- 70
-     1
-102
-RTVSPost2010Prop33
-280
-     0
-102
-RTVSPost2010PropOp33
- 70
-     1
-102
-RTVSPost2010Prop34
-280
-     0
-102
-RTVSPost2010PropOp34
- 70
-     1
-102
-RTVSPost2010Prop35
-280
-     0
-102
-RTVSPost2010PropOp35
- 70
-     1
-102
-RTVSPost2010Prop36
-280
-     0
-102
-RTVSPost2010PropOp36
- 70
-     1
-102
-RTVSPost2010Prop37
- 90
-       50
-102
-RTVSPost2010PropOp37
- 70
-     1
-102
-RTVSPost2010Prop38
-140
-0.0
-102
-RTVSPost2010PropOp38
- 70
-     1
-102
-RTVSPost2010Prop39
-140
-1.0
-102
-RTVSPost2010PropOp39
- 70
-     1
-102
-RTVSPost2010Prop40
- 90
-        0
-102
-RTVSPost2010PropOp40
- 70
-     1
-102
-RTVSPost2010Prop41ColorIndex
- 90
-       18
-102
-RTVSPost2010Prop41ColorRGB
- 90
-        0
-102
-RTVSPost2010PropOp41
- 70
-     1
-102
-RTVSPost2010Prop42
- 90
-       50
-102
-RTVSPost2010PropOp42
- 70
-     1
-102
-RTVSPost2010Prop43
- 90
-        3
-102
-RTVSPost2010PropOp43
- 70
-     1
-102
-RTVSPost2010Prop44ColorIndex
- 90
-        5
-102
-RTVSPost2010Prop44ColorRGB
- 90
-      255
-102
-RTVSPost2010PropOp44
- 70
-     1
-102
-RTVSPost2010Prop45
-280
-     0
-102
-RTVSPost2010PropOp45
- 70
-     1
-102
-RTVSPost2010Prop46
- 90
-       50
-102
-RTVSPost2010PropOp46
- 70
-     1
-102
-RTVSPost2010Prop47
- 90
-       50
-102
-RTVSPost2010PropOp47
- 70
-     1
-102
-RTVSPost2010Prop48
- 90
-       50
-102
-RTVSPost2010PropOp48
- 70
-     1
-102
-RTVSPost2010Prop49
-280
-     0
-102
-RTVSPost2010PropOp49
- 70
-     1
-102
-RTVSPost2010Prop50
- 90
-       50
-102
-RTVSPost2010PropOp50
- 70
-     1
-102
-RTVSPost2010Prop51ColorIndex
- 90
-      256
-102
-RTVSPost2010Prop51ColorRGB
- 90
--16777216
-102
-RTVSPost2010PropOp51
- 70
-     0
-102
-RTVSPost2010Prop52
-140
-1.0
-102
-RTVSPost2010PropOp52
- 70
-     0
-102
-RTVSPost2010Prop53
- 90
-        2
-102
-RTVSPost2010PropOp53
- 70
-     1
-102
-RTVSPost2010Prop54
-  1
-strokes_ogs.tif
-102
-RTVSPost2010PropOp54
- 70
-     1
-102
-RTVSPost2010Prop55
-280
-     0
-102
-RTVSPost2010PropOp55
- 70
-     1
-102
-RTVSPost2010Prop56
-140
-1.0
-102
-RTVSPost2010PropOp56
- 70
-     1
-102
-RTVSPost2010Prop57
-140
-1.0
-102
-RTVSPost2010PropOp57
- 70
-     1
-  0
-XRECORD
-  5
-451F
-102
-{ACAD_REACTORS
-330
-451E
-102
-}
-330
-451E
-100
-AcDbXrecord
-280
-     1
-102
-RTVSPost2010Prop28
-280
-     0
-102
-RTVSPost2010PropOp28
- 70
-     1
-102
-RTVSPost2010Prop29
-280
-     1
-102
-RTVSPost2010PropOp29
- 70
-     1
-102
-RTVSPost2010Prop30
-280
-     1
-102
-RTVSPost2010PropOp30
- 70
-     1
-102
-RTVSPost2010Prop31
-280
-     0
-102
-RTVSPost2010PropOp31
- 70
-     1
-102
-RTVSPost2010Prop32
-280
-     0
-102
-RTVSPost2010PropOp32
- 70
-     1
-102
-RTVSPost2010Prop33
-280
-     0
-102
-RTVSPost2010PropOp33
- 70
-     1
-102
-RTVSPost2010Prop34
-280
-     0
-102
-RTVSPost2010PropOp34
- 70
-     1
-102
-RTVSPost2010Prop35
-280
-     0
-102
-RTVSPost2010PropOp35
- 70
-     1
-102
-RTVSPost2010Prop36
-280
-     0
-102
-RTVSPost2010PropOp36
- 70
-     1
-102
-RTVSPost2010Prop37
- 90
-       50
-102
-RTVSPost2010PropOp37
- 70
-     1
-102
-RTVSPost2010Prop38
-140
-0.0
-102
-RTVSPost2010PropOp38
- 70
-     1
-102
-RTVSPost2010Prop39
-140
-1.0
-102
-RTVSPost2010PropOp39
- 70
-     1
-102
-RTVSPost2010Prop40
- 90
-        0
-102
-RTVSPost2010PropOp40
- 70
-     1
-102
-RTVSPost2010Prop41ColorIndex
- 90
-       18
-102
-RTVSPost2010Prop41ColorRGB
- 90
-        0
-102
-RTVSPost2010PropOp41
- 70
-     1
-102
-RTVSPost2010Prop42
- 90
-       50
-102
-RTVSPost2010PropOp42
- 70                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+EOF
