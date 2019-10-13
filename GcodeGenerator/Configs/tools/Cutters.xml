@@ -1,0 +1,66 @@
+<config>
+    <type_90>
+        <plexi>
+            <diameter_1>
+                <params 
+                    maxDepth = "1.6" 
+                    cutSpeed = "200" 
+                    drillSpeed = "20" 
+                />
+            </diameter_1>
+            <diameter_3>
+                <params 
+                    maxDepth = "1.6"
+                    cutSpeed = "200" 
+                    drillSpeed = "20" 
+                />
+            </diameter_3>
+            <diameter_6>
+                <params 
+                    maxDepth = "1.6" 
+                    cutSpeed = "200" 
+                    drillSpeed = "20" 
+                />
+            </diameter_6>
+        </plexi>
+        <balsa>
+            <diameter_1>
+                <params 
+                    maxDepth = "3.2" 
+                    cutSpeed = "500" 
+                    drillSpeed = "100" 
+                />
+            </diameter_1>
+            <diameter_3>
+                <params 
+                    maxDepth = "3.2"
+                    cutSpeed = "500" 
+                    drillSpeed = "100" 
+                />
+            </diameter_3>
+            <diameter_6>
+                <params 
+                    maxDepth = "3.2" 
+                    cutSpeed = "500"
+                    drillSpeed = "100" 
+                />
+            </diameter_6>
+        </balsa>
+    </type_90>
+    <type_45>
+        <plexi>
+            <params 
+                cutAmount = "4.75" 
+                cutSpeed = "200" 
+                drillSpeed = "20" 
+            />
+        </plexi>
+        <balsa>
+            <params 
+                cutAmount = "9.5" 
+                cutSpeed = "500" 
+                drillSpeed = "100" 
+            />
+        </balsa>
+    </type_45>
+</config>

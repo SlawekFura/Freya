@@ -1,32 +1,35 @@
 import sys
 sys.path.append('../Common/')
 
-import dxfgrabber as dg
 import GcodeCommandGenerator as gg
+import DxfPolyCreator as dpc
 
 
-dxf = dg.readfile("../TestFiles/DuzaSala2.dxf")
+#dxf = dg.readfile("../TestFiles/DuzaSala.dxf")
 
-for layer in dxf.layers:
-    print("layer: ", layer.name)
+#material = input("Choose material plexi/balsa/plywood: ")
+#if not material in ["plexi", "balsa", "plywood"]:
+#    print("Wrong material!") 
+#    quit()
+#
+#cutterDeg = int(input("Choose cutter degree 45/90: "))
+#if not cutterDeg in [45, 90]:
+#    print("Wrong cutter degree!") 
+#    quit()
+#
+#cutterDiameter = None
+#if cutterDeg == 90:
+#    cutterDiameter = int(input("Choose cutter diameter[mm] 1/3/6: "))
+#
+#if not cutterDiameter in [1, 3, 6]:
+#    print("Wrong cutter diameter!") 
+#    quit()
+material = "balsa"
+cutterDeg = 90
+cutterDiameter = 1
+material_thickness = 9.0
 
+commandGenerator = gg.CommandGenerator("../Configs/tools/Cutters.xml", material, material_thickness, cutterDeg, cutterDiameter) 
+entityToLayerMap = dpc.createPolyFromDxf("../TestFiles/DuzaSala.dxf", cutterDiameter)
 
-for entity in dxf.entities:
-    print("entity: ", entity.dxftype, "\tlayer: ", entity.layer)
-
-entityToLayerMap = {}
-
-for layer in dxf.layers:
-    for entity in dxf.entities:
-        if entity.layer == layer.name and entity.dxftype == 'LWPOLYLINE':
-            if layer in entityToLayerMap:
-                entityToLayerMap[layer].append(entity) 
-            else:
-                entityToLayerMap.update({layer : [entity]})
-
-for key, val in entityToLayerMap.items():
-    print("layer: ", key.name) 
-    for entity in val:
-        print("\tentity: ", entity)
-
-gg.genGcode2D(".gcode", entityToLayerMap)
+commandGenerator.genGcode2D("./", entityToLayerMap)

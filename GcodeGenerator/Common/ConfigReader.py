@@ -1,3 +1,4 @@
+import xml.etree.ElementTree as ET
 
 def readLayerConfig(filename):
     layerConfig = {}
@@ -20,3 +21,5 @@ def readLayerConfig(filename):
 
     return layerConfig
             
+
+
