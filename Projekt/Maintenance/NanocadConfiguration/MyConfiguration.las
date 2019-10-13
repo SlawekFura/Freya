@@ -7,7 +7,7 @@ MyConfiguration
  91
      1023
 301
-Configuration0: description
+Configuration1: description
 290
      0
 302
@@ -21,59 +21,11 @@ Configuration0: description
 370
     -3
   6
-Continuous
+CONTINUOUS
   2
 Color_7
   8
-Defpoints
- 90
-        0
- 62
-     7
-370
-    -3
-  6
-Continuous
-  2
-Color_7
-  8
-_B_WIDOK
- 90
-       10
- 62
-     9
-370
-    -3
-  6
-Continuous
-  2
-Color_9
-  8
--_D_-_WIDOK_DACH_W
- 90
-        8
- 62
-   130
-370
-    -3
-  6
-Continuous
-  2
-Color_130
-  8
--_D_-_WIDOK_DACH_W_CIENKA
- 90
-        8
- 62
-     8
-370
-    -3
-  6
-Continuous
-  2
-Color_8
-  8
-Proste wycinanie
+TOP_Full_CutOut_90
  90
         8
  62
@@ -81,23 +33,23 @@ Proste wycinanie
 370
     -3
   6
-Continuous
+CONTINUOUS
   2
 Color_7
   8
-DIMENSION
+BOT_Full_CutOut_90
  90
         8
  62
-     3
+     7
 370
-    25
+    -3
   6
-Continuous
+CONTINUOUS
   2
-Color_3
+Color_7
   8
-Gora - wycinanie
+TOP_Fulll_CutOut_45
  90
         8
  62
@@ -105,11 +57,11 @@ Gora - wycinanie
 370
     -3
   6
-Continuous
+CONTINUOUS
   2
 Color_5
   8
-Dol - wycinanie
+BOT_Fulll_CutOut_45
  90
         8
  62
@@ -117,11 +69,11 @@ Dol - wycinanie
 370
     -3
   6
-Continuous
+CONTINUOUS
   2
 Color_3
   8
-Gora - zgiecie
+TOP_Partial_CutOut_45
  90
         8
  62
@@ -129,11 +81,11 @@ Gora - zgiecie
 370
     -3
   6
-Continuous
+CONTINUOUS
   2
 Color_1
   8
-Dol - zgiecie
+BOT_Partial_CutOut_45
  90
         8
  62
@@ -141,6 +93,30 @@ Dol - zgiecie
 370
     -3
   6
-Continuous
+CONTINUOUS
   2
 Color_4
+  8
+TOP_Deepen
+ 90
+        8
+ 62
+     6
+370
+    -3
+  6
+CONTINUOUS
+  2
+Color_6
+  8
+BOT_Deepen
+ 90
+        8
+ 62
+     2
+370
+    -3
+  6
+CONTINUOUS
+  2
+Color_3
