@@ -49,7 +49,7 @@ CONTINUOUS
   2
 Color_7
   8
-TOP_Fulll_CutOut_45
+TOP_Full_CutOut_45
  90
         8
  62
@@ -61,7 +61,7 @@ CONTINUOUS
   2
 Color_5
   8
-BOT_Fulll_CutOut_45
+BOT_Full_CutOut_45
  90
         8
  62
