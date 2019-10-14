@@ -80,13 +80,14 @@ class CommandGenerator:
             cutLevels.append(-materialThickenss)
         else:
             maxCutDepth = float(self.cutterConfig[0].get("maxDepth"))
-            print("maxCutDepth: ", maxCutDepth)
-            numOfCuts = int(materialThickenss / maxCutDepth) + 1
-            print("numOfCuts: ", numOfCuts)
+            numOfCuts = math.ceil(materialThickenss / maxCutDepth)
             for i in range(1, numOfCuts):
                 cutLevels.append(-i * maxCutDepth)
 
-        if cutLevels and (materialThickenss - bot_margin) > abs(cutLevels[-1]):
+        if cutLevels:  
+            if (materialThickenss - bot_margin) > abs(cutLevels[-1]):
+                cutLevels.append(-(materialThickenss - bot_margin)) 
+        else:
             cutLevels.append(-(materialThickenss - bot_margin)) 
         return cutLevels
 
