@@ -43,7 +43,7 @@ material_thickness = float(input("Insert material thickness: "))
 #material_thickness = 9.0
 
 
-entityToLayerMap = dpc.createPolyFromDxf("../../Projekt/szkola/CzescDlaStarszychDzieci/budynek_doFrezowania.dxf", cutterDiameter)
+entityToLayerMap = dpc.createPolyFromDxf(inputDxf, cutterDiameter)
 
 commandGenerator = gg.CommandGenerator("../Configs/tools/Cutters.xml", material, material_thickness, cutterDeg, cutterDiameter) 
 commandGenerator.genGcode2D(outputDir, entityToLayerMap)

@@ -39,6 +39,7 @@ def createPolyFromDxf(path, cutterDiameter):
     for layer in dxf.layers:
         for entity in dxf.entities:
             if entity.layer == layer.name and entity.dxftype == 'LWPOLYLINE':
+                print("layer.name: ", layer.name)
                 if "BOT" in layer.name:
                     print("Dupa", layer.name)
                     movedEntity = [[-(point[x] - midX), point[y] - lowestXY[y] + 2 * cutterDiameter] for point in entity] 
