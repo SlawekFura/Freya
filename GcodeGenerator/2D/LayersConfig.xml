@@ -1,6 +1,6 @@
 <config>
     <TOP_Full_CutOut_90>
-    	<property       bot_margin = "0.0" />
+    	<property       bot_margin = "-0.15" />
     </TOP_Full_CutOut_90>
     <TOP_Full_CutOut_45>
     	<property       bot_margin = "0.0" />
@@ -15,7 +15,7 @@
     	<property       bot_margin = "0.0" />
     </TOP_Deepen>
     <BOT_Full_CutOut_90>
-    	<property       bot_margin = "0.0" />
+    	<property       bot_margin = "-0.15" />
     </BOT_Full_CutOut_90>
     <BOT_Full_CutOut_45>
     	<property       bot_margin = "0.0" />
