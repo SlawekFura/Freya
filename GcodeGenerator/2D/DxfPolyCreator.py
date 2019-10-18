@@ -33,18 +33,19 @@ def createPolyFromDxf(path, cutterDiameter):
         lowestXY, highestXY = getExtremeCoords(dxf.entities)
     midX = (lowestXY[x] + highestXY[x]) / 2
     midY = (lowestXY[y] + highestXY[y]) / 2
-    print("mid: ", midX, midY, "lowestXY: ", lowestXY, "highest: ", highestXY)
 
     entityToLayerMap = {}
     for layer in dxf.layers:
         for entity in dxf.entities:
             if entity.layer == layer.name and entity.dxftype == 'LWPOLYLINE':
-                print("layer.name: ", layer.name)
                 if "BOT" in layer.name:
-                    print("Dupa", layer.name)
                     movedEntity = [[-(point[x] - midX), point[y] - lowestXY[y] + 2 * cutterDiameter] for point in entity] 
+                    if entity.is_closed:
+                        movedEntity.append([-(entity[0][x] - midX), entity[0][y] - lowestXY[y] + 2 * cutterDiameter])
                 else:
                     movedEntity = [[point[x] - midX, point[y] - lowestXY[y] + 2 * cutterDiameter] for point in entity] 
+                    if entity.is_closed:
+                        movedEntity.append([entity[0][x] - midX, entity[0][y] - lowestXY[y] + 2 * cutterDiameter])
                 if layer in entityToLayerMap:
                     entityToLayerMap[layer].append(movedEntity) 
                 else:
