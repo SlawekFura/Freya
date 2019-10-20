@@ -1,3 +1,6 @@
+import sys
+sys.path.append('../Common/')
+
 from OffsetCreator import *
 import plotly.graph_objects as go
 import utils
@@ -13,11 +16,12 @@ import subprocess
 import GcodeCommandGenerator as gGen
 
 
-millDiameter = 3
+millDiameter = 1
 baseOffset = 1
-materialHeight = 70.0
+materialHeight = 4.0
 #mesh = pymesh.load_mesh("schody_stl_p2_rotated.stl")
-mesh = pymesh.load_mesh("complicatedShape.stl")
+#mesh = pymesh.load_mesh("complicatedShape.stl")
+mesh = pymesh.load_mesh("schody1.stl")
 
 mesh = pc.moveToGround(mesh)
 
@@ -76,4 +80,4 @@ output = popen.stdout.read()
 
 offsetPolygonsMap = RWPolys.readPolysFromFile("dataFromCgal.txt")
 
-gGen.genGcode("gcode.ngc", offsetPolygonsMap)
+gGen.genGcode3D("gcode.ngc", offsetPolygonsMap, 100, 200)

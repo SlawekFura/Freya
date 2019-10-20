@@ -45,23 +45,6 @@ class CommandGenerator:
                             "/diameter_" + str(self.cutterDiameter) +
                             "/params")
 
-    def genGcode3D(outFile, polysMap): 
-        fileToWrite = open(outFile,'w')
-        keys = sorted(polysMap.keys(), reverse = True)
-        print("keys gcode:", keys)
-        fileToWrite.write(commandsMap["SetCoordMM"])
-    
-        for key in keys:
-            for poly in polysMap[key]:
-                fileToWrite.write("\n" + commandsMap["FastMoveZ"](safeHeight))
-                fileToWrite.write(commandsMap["FastMove"](poly[0]))
-                fileToWrite.write(commandsMap["MoveZ"](key), self.speedZ)
-                for point in poly[1:]:
-                    fileToWrite.write(commandsMap["Move"](point), self.speed)
-        fileToWrite.write("\n" + commandsMap["FastMoveZ"](safeHeight))
-        fileToWrite.write("\n" + commandsMap["FastMoveToBase"])
-        fileToWrite.write(commandsMap["EndProgram"])
-        fileToWrite.close()
     
     
     def generateMillingLevels(self, bot_margin, isDeepenLayer):
@@ -116,3 +99,20 @@ class CommandGenerator:
             fileToWrite.write(commandsMap["EndProgram"])
             fileToWrite.close()
 
+def genGcode3D(outFile, polysMap, speedZ, speed): 
+    fileToWrite = open(outFile,'w')
+    keys = sorted(polysMap.keys(), reverse = True)
+    print("keys gcode:", keys)
+    fileToWrite.write(commandsMap["SetCoordMM"])
+
+    for key in keys:
+        for poly in polysMap[key]:
+            fileToWrite.write("\n" + commandsMap["FastMoveZ"](safeHeight))
+            fileToWrite.write(commandsMap["FastMove"](poly[0]))
+            fileToWrite.write(commandsMap["MoveZ"](key, speedZ))
+            for point in poly[1:]:
+                fileToWrite.write(commandsMap["Move"](point, speed = speed))
+    fileToWrite.write("\n" + commandsMap["FastMoveZ"](safeHeight))
+    fileToWrite.write("\n" + commandsMap["FastMoveToBase"])
+    fileToWrite.write(commandsMap["EndProgram"])
+    fileToWrite.close()
