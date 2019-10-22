@@ -14,8 +14,6 @@ class OffsetGenerator:
         self.zCoordList = genZCoordList(mesh)
         self.offsetStructure = self.generateOffsetList()
         self.zCoordIndex = 0
-        print(self.crossSectionsCoords)
-        print("dupa")
 
     def genOffsetMap(self):
         offsetStructureMap = {}
@@ -29,7 +27,6 @@ class OffsetGenerator:
                 offsetStructureMap.update({self.zCoordList[self.zCoordIndex] : offsetStruct})
             if round(self.zCoordList[self.zCoordIndex], 3) < round(offsetStruct[0][z], 3):
                 self.zCoordIndex += 1
-        print("offset: ",offsetStructureMap)
         return offsetStructureMap
 
     def generateOffsetList(self):

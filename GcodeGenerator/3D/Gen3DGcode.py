@@ -15,21 +15,35 @@ import ReadWritePolysFromFile as RWPolys
 import subprocess
 import GcodeCommandGenerator as gGen
 
+if len(sys.argv) < 3:
+    print("not enough arguments provided!")
+    quit()
 
-millDiameter = 1
+inputStl = os.path.abspath(sys.argv[1])
+outputDir = os.path.abspath(sys.argv[2])
+
+millDiameter = float(input("Choose cutter diameter[mm] 1/3/6: "))
+if not millDiameter in [1.0, 3.0, 6.0]:
+    print("Wrong cutter diameter!") 
+    quit()
+
 baseOffset = 1
-materialHeight = 4.0
+
+materialHeight = float(input("Insert material thickness: "))
+fillCoefficient = 0.8
+
 #mesh = pymesh.load_mesh("schody_stl_p2_rotated.stl")
 #mesh = pymesh.load_mesh("complicatedShape.stl")
-mesh = pymesh.load_mesh("schody1.stl")
+mesh = pymesh.load_mesh(inputStl)
 
 mesh = pc.moveToGround(mesh)
 
 bbox = mesh.bbox
-bbox[0][x] -= baseOffset + millDiameter / 2
-bbox[0][y] -= baseOffset + millDiameter / 2
-bbox[1][x] += baseOffset + millDiameter / 2
-bbox[1][y] += baseOffset + millDiameter / 2
+print("bbox[0][x]: ", bbox[0][x], "\tbbox[0][y]: ", bbox[0][y],  "\tbbox[1][x]: ", bbox[1][x], "\tbbox[1][y]: ", bbox[1][y])
+bbox[0][x] -= (baseOffset + millDiameter * 2 / 3)
+bbox[0][y] -= (baseOffset + millDiameter * 2 / 3)
+bbox[1][x] += (baseOffset + millDiameter * 2 / 3)
+bbox[1][y] += (baseOffset + millDiameter * 2 / 3)
 
 
 boxMesh = pymesh.generate_box_mesh(bbox[0], bbox[1])
@@ -73,11 +87,13 @@ for key, polylines in polylinesMap.items():
 
 RWPolys.writePolyCoordsMapIntoFile('MeshOffsetsMap', polylinesCoordMap)
 
-args = ("/home/slawek/workspace/CppWorkspace/ToolpathGenerator/build-debug/ToolpathGenerator")
+args = ("../CppWorkspace/ToolpathGenerator/build-debug/ToolpathGenerator", str(millDiameter * fillCoefficient))
+print("args: ", args)
 popen = subprocess.Popen(args, stdout=subprocess.PIPE)
 popen.wait()
 output = popen.stdout.read()
+print(output)
 
 offsetPolygonsMap = RWPolys.readPolysFromFile("dataFromCgal.txt")
 
-gGen.genGcode3D("gcode.ngc", offsetPolygonsMap, 100, 200)
+gGen.genGcode3D(outputDir + "/gcode.gcode", offsetPolygonsMap, 100, 300)

@@ -7,3 +7,6 @@ Projekt/szkola/calosc
 Elementy*
 ugsplatform/
 Projekt/Koszty.ods
+GcodeGenerator/Common/__pycache__/
+GcodeGenerator/CppWorkspace/ToolpathGenerator/build-debug/
+*swp

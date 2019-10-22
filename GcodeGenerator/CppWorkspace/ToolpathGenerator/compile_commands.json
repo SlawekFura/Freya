@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/slawek/workspace/CppWorkspace/ToolpathGenerator",
+  "command": "/usr/bin/c++  -DCGAL_USE_GMP -DCGAL_USE_MPFR -I/home/slawek/workspace/CppWorkspace/ToolpathGenerator  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -frounding-math -std=c++11 -O0 -g -O0 -O0   -o CMakeFiles/ToolpathGenerator.dir/main.cpp.o -c /home/slawek/workspace/CppWorkspace/ToolpathGenerator/main.cpp",
+  "file": "/home/slawek/workspace/CppWorkspace/ToolpathGenerator/main.cpp"
+}
+]
