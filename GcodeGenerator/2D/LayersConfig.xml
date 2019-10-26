@@ -2,6 +2,13 @@
     <TOP_Full_CutOut_90>
     	<property       bot_margin = "-0.15" />
     </TOP_Full_CutOut_90>
+    <TOP_Full_CutOut_90_1>
+    	<property       bot_margin = "-0.15" />
+    </TOP_Full_CutOut_90_1>	
+    <TOP_Full_CutOut_90_2>
+    	<property       bot_margin = "-0.15" />
+    </TOP_Full_CutOut_90_2>
+	
     <TOP_Full_CutOut_45>
     	<property       bot_margin = "0.0" />
     </TOP_Full_CutOut_45>
@@ -14,9 +21,18 @@
     <TOP_Deepen>
     	<property       bot_margin = "0.0" />
     </TOP_Deepen>
+	
+	
     <BOT_Full_CutOut_90>
     	<property       bot_margin = "-0.15" />
     </BOT_Full_CutOut_90>
+    <BOT_Full_CutOut_90_1>
+    	<property       bot_margin = "-0.15" />
+    </BOT_Full_CutOut_90_1>
+    <BOT_Full_CutOut_90_2>
+    	<property       bot_margin = "-0.15" />
+    </BOT_Full_CutOut_90_2>
+	
     <BOT_Full_CutOut_45>
     	<property       bot_margin = "0.0" />
     </BOT_Full_CutOut_45>

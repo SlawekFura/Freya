@@ -21,7 +21,7 @@ Configuration1: description
 370
     -3
   6
-CONTINUOUS
+Continuous
   2
 Color_7
   8
@@ -33,7 +33,7 @@ TOP_Full_CutOut_90
 370
     -3
   6
-CONTINUOUS
+Continuous
   2
 Color_7
   8
@@ -45,7 +45,7 @@ BOT_Full_CutOut_90
 370
     -3
   6
-CONTINUOUS
+Continuous
   2
 Color_7
   8
@@ -57,7 +57,7 @@ TOP_Full_CutOut_45
 370
     -3
   6
-CONTINUOUS
+Continuous
   2
 Color_5
   8
@@ -69,7 +69,7 @@ BOT_Full_CutOut_45
 370
     -3
   6
-CONTINUOUS
+Continuous
   2
 Color_3
   8
@@ -81,7 +81,7 @@ TOP_Partial_CutOut_45
 370
     -3
   6
-CONTINUOUS
+Continuous
   2
 Color_1
   8
@@ -93,7 +93,7 @@ BOT_Partial_CutOut_45
 370
     -3
   6
-CONTINUOUS
+Continuous
   2
 Color_4
   8
@@ -105,7 +105,7 @@ TOP_Deepen
 370
     -3
   6
-CONTINUOUS
+Continuous
   2
 Color_6
   8
@@ -117,6 +117,54 @@ BOT_Deepen
 370
     -3
   6
-CONTINUOUS
+Continuous
   2
 Color_3
+  8
+BOT_Full_CutOut_90_1
+ 90
+        8
+ 62
+     7
+370
+    13
+  6
+Continuous
+  2
+Color_9
+  8
+BOT_Full_CutOut_90_2
+ 90
+        8
+ 62
+     7
+370
+    18
+  6
+Continuous
+  2
+Color_130
+  8
+TOP_Full_CutOut_90_1
+ 90
+        8
+ 62
+     7
+370
+    13
+  6
+Continuous
+  2
+Color_8
+  8
+TOP_Full_CutOut_90_2
+ 90
+        9
+ 62
+     7
+370
+     9
+  6
+Continuous
+  2
+Color_253
