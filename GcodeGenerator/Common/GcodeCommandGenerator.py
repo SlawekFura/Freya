@@ -23,49 +23,57 @@ commandsMap = { "FastMove"      : lambda point = [], *args        :"G00 X" + str
                 "EndProgram"    :                                  "\nM02\n" }
 
 class CommandGenerator:
-    def __init__(self, configPath, material, material_thickness, cutterType, cutterDiameter = None):
+    def __init__(self, configPath, material, material_thickness, cutterDiameter = None):
         self.material = material
         self.material_thickness = material_thickness
-        self.cutterType = cutterType
         self.cutterDiameter = cutterDiameter
-        self.cutterConfig = self.getCutterConfig(configPath)
-        self.speed = self.cutterConfig[0].get('cutSpeed')
-        self.speedZ = self.cutterConfig[0].get('drillSpeed')
+        self.configPath = configPath
+        self.speed = None
+        self.speedZ = None
     
     def readLayerConfig(self, filename, layer):
         root = ET.parse(filename).getroot()
         return root.findall(layer + "/property")
 
-    def getCutterConfig(self, path):
+    def getCutterConfig(self, path, cutterType):
         root = ET.parse(path).getroot()
-        if not self.cutterDiameter: 
-            return root.findall("type_" + str(self.cutterType) + "/" + str(self.material) + "/params")
-        return root.findall("type_"      + str(self.cutterType) + 
+        if cutterType == "45":
+            return root.findall("type_" + str(cutterType) + "/" + str(self.material) + "/params")
+        return root.findall("type_"      + str(cutterType) + 
                             "/"          + str(self.material) + 
                             "/diameter_" + str(self.cutterDiameter) +
                             "/params")
 
     
     
-    def generateMillingLevels(self, bot_margin, isDeepenLayer):
+    def generateMillingLevels(self, bot_margin, layerName):
         cutLevels = []
-        materialThickenss = self.material_thickness / 2.0 if isDeepenLayer else self.material_thickness
-        if self.cutterType == "45":
-            cutAmount = self.cutterConfig.get("cutAmount")
-            
+        cutterConfig = None
+        materialThickenss = self.material_thickness / 2.0 if "Deepen" in layerName else self.material_thickness
+
+        if "45" in layerName:
+            cutterConfig = self.getCutterConfig(self.configPath, "45")
+            cutAmount = float(cutterConfig[0].get("cutAmount"))
+
+
             baseMultipleParam = 1.0
-            baseLevel = math.sqrt(cutAmount)
+            baseLevel = -math.sqrt(cutAmount)
             
             level = baseLevel * math.sqrt(baseMultipleParam)
-            while level < materialThickenss: 
-                cutLevels.apped(level)
+            while level > -materialThickenss: 
+                cutLevels.append(level)
                 baseMultipleParam += 1.0
+                level = baseLevel * math.sqrt(baseMultipleParam)
             cutLevels.append(-materialThickenss)
         else:
-            maxCutDepth = float(self.cutterConfig[0].get("maxDepth"))
+            cutterConfig = self.getCutterConfig(self.configPath, "90")
+            maxCutDepth = float(cutterConfig[0].get("maxDepth"))
             numOfCuts = math.ceil(materialThickenss / maxCutDepth)
             for i in range(1, numOfCuts):
                 cutLevels.append(-i * maxCutDepth)
+
+        self.speed = cutterConfig[0].get('cutSpeed')
+        self.speedZ = cutterConfig[0].get('drillSpeed')
 
         if cutLevels:  
             if (materialThickenss - bot_margin) > abs(cutLevels[-1]):
@@ -75,13 +83,16 @@ class CommandGenerator:
         return cutLevels
 
     def genGcode2D(self, outfileDir, polysToLayerMap): 
+        
         for layer, polys in polysToLayerMap.items():
+
+
             print("out :", outfileDir + "/" + layer.name + ".gcode")
             fileToWrite = open(outfileDir + "/" + layer.name + ".gcode",'w')
             fileToWrite.write(commandsMap["SetCoordMM"])
             
             layerConfig = self.readLayerConfig("../2D/LayersConfig.xml", layer.name)
-            levels = self.generateMillingLevels(float(layerConfig[0].get("bot_margin")), "Deepen" in layer.name)
+            levels = self.generateMillingLevels(float(layerConfig[0].get("bot_margin")), layer.name)
             print("levels: ", levels)
             
             for level in levels: 
