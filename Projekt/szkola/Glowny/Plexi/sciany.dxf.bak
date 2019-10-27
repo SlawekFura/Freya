@@ -493,7 +493,7 @@ $SKPOLY
   9
 $TDCREATE
  40
-2454082.991716713
+2454082.950050046
   9
 $TDUCREATE
  40
@@ -501,11 +501,11 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2458783.84573581
+2458784.730882234
   9
 $TDUUPDATE
  40
-2458783.762402477
+2458784.689215567
   9
 $TDINDWG
  40
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-501
+50A
   9
 $SURFTAB1
  70
@@ -1127,7 +1127,7 @@ ObjectDBX Classes
  90
         0
  91
-       12
+        6
 280
      0
 281
@@ -1175,7 +1175,7 @@ ObjectDBX Classes
  90
         0
  91
-        7
+        4
 280
      0
 281
@@ -1191,7 +1191,7 @@ ObjectDBX Classes
  90
      4095
  91
-        8
+        5
 280
      0
 281
@@ -1207,7 +1207,7 @@ ObjectDBX Classes
  90
      1153
  91
-       11
+        5
 280
      0
 281
@@ -1223,7 +1223,7 @@ ObjectDBX Classes
  90
      4095
  91
-       11
+        5
 280
      0
 281
@@ -1239,7 +1239,7 @@ ObjectDBX Classes
  90
      1153
  91
-       11
+        5
 280
      0
 281
@@ -1255,7 +1255,7 @@ ACDB_MLEADERSTYLE_CLASS
  90
      4095
  91
-        7
+        4
 280
      0
 281
@@ -1271,7 +1271,7 @@ ObjectDBX Classes
  90
      1152
  91
-        7
+        4
 280
      0
 281
@@ -1319,7 +1319,7 @@ ObjectDBX Classes
  90
         0
  91
-        6
+        4
 280
      0
 281
@@ -1335,7 +1335,7 @@ AutoCAD 2000
  90
         0
  91
-        6
+        4
 280
      0
 281
@@ -1351,7 +1351,7 @@ ObjectDBX Classes
  90
         0
  91
-        6
+        4
 280
      0
 281
@@ -1383,7 +1383,7 @@ ObjectDBX Classes
  90
         0
  91
-        7
+        4
 280
      0
 281
@@ -1415,7 +1415,7 @@ NanoSPDS
  90
       893
  91
-        6
+        4
 280
      0
 281
@@ -1431,7 +1431,7 @@ NanoSPDS
  90
       893
  91
-       23
+       21
 280
      0
 281
@@ -1447,7 +1447,7 @@ NanoSPDS
  90
       893
  91
-       10
+        4
 280
      0
 281
@@ -1495,7 +1495,7 @@ CAcLayoutPrintConfig
  90
      4095
  91
-        6
+        4
 280
      0
 281
@@ -1511,7 +1511,7 @@ SCENEOE
  90
      1153
  91
-       11
+        5
 280
      0
 281
@@ -1557,9 +1557,9 @@ AcDbViewportTableRecord
  21
 1.0
  12
--279.838965
+-229.316772
  22
-70.277911
+34.21443
  13
 0.0
  23
@@ -1585,9 +1585,9 @@ AcDbViewportTableRecord
  37
 0.0
  40
-105.191359
+445.759934
  41
-2.783843
+2.246725
  42
 50.0
  43
@@ -9195,7 +9195,7 @@ SECTION
   2
 ENTITIES
   0
-LINE
+LWPOLYLINE
   5
 3FE
 330
@@ -9205,21 +9205,23 @@ AcDbEntity
   8
 TOP_Partial_CutOut_45
 100
-AcDbLine
+AcDbPolyline
+ 90
+        2
+ 70
+     0
+ 43
+0.0
  10
 -119.405916
  20
 228.819082
- 30
-0.0
- 11
+ 10
 -95.705916
- 21
+ 20
 228.819082
- 31
-0.0
   0
-LINE
+LWPOLYLINE
   5
 3FF
 330
@@ -9229,21 +9231,23 @@ AcDbEntity
   8
 TOP_Partial_CutOut_45
 100
-AcDbLine
+AcDbPolyline
+ 90
+        2
+ 70
+     0
+ 43
+0.0
  10
 -119.405916
  20
 164.71818
- 30
-0.0
- 11
+ 10
 -95.705916
- 21
+ 20
 164.71818
- 31
-0.0
   0
-LINE
+LWPOLYLINE
   5
 400
 330
@@ -9253,19 +9257,21 @@ AcDbEntity
   8
 TOP_Partial_CutOut_45
 100
-AcDbLine
+AcDbPolyline
+ 90
+        2
+ 70
+     0
+ 43
+0.0
  10
 -119.405916
  20
 120.034738
- 30
-0.0
- 11
+ 10
 -95.705916
- 21
+ 20
 120.034738
- 31
-0.0
   0
 LWPOLYLINE
   5
@@ -9338,14 +9344,6 @@ AcDbPolyline
 LWPOLYLINE
   5
 403
-102
-{ACAD_REACTORS
-330
-472
-330
-4C7
-102
-}
 330
 1F
 100
@@ -9609,7 +9607,7 @@ EF
   3
 ACDB_RECOMPOSE_DATA
 350
-500
+509
   3
 AcDbVariableDictionary
 350
@@ -10149,7 +10147,7 @@ X-Ray
   0
 XRECORD
   5
-500
+509
 102
 {ACAD_REACTORS
 330
@@ -12303,7 +12301,7 @@ TABLESTYLE
 102
 {ACAD_XDICTIONARY
 360
-4FE
+507
 102
 }
 330
@@ -19717,7 +19715,7 @@ CSD_PLOT_CONFIG
   0
 DICTIONARY
   5
-4FE
+507
 330
 7F
 100
@@ -19729,7 +19727,7 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-4FF
+508
   0
 LAYOUTPRINTCONFIG
   5
@@ -19757,15 +19755,15 @@ CAcLayoutPrintConfig
   0
 CELLSTYLEMAP
   5
-4FF
+508
 102
 {ACAD_REACTORS
 330
-4FE
+507
 102
 }
 330
-4FE
+507
 100
 AcDbCellStyleMap
  90
