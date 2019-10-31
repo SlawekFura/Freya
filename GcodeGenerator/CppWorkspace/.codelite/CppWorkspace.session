@@ -6,6 +6,27 @@
     <TabInfo>
       <wxString Value="/home/slawek/workspace/CppWorkspace/ToolpathGenerator/main.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="14" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/slawek/workspace/Frez/Freya/GcodeGenerator/CppWorkspace/ToolpathGenerator/PolyWithHolesCreator.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="0" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/slawek/workspace/Frez/Freya/GcodeGenerator/CppWorkspace/ToolpathGenerator/WritePolysIntoFile.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="0" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/slawek/workspace/Frez/Freya/GcodeGenerator/CppWorkspace/ToolpathGenerator/FileParser.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
       <int Value="0" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>

@@ -16,7 +16,7 @@
     	<property       bot_margin = "0.15" />
     </TOP_Partial_CutOut_90>
     <TOP_Partial_CutOut_45>
-    	<property       bot_margin = "0.15" />
+    	<property       bot_margin = "0.10" />
     </TOP_Partial_CutOut_45>
     <TOP_Deepen>
     	<property       bot_margin = "0.0" />
@@ -37,7 +37,7 @@
     	<property       bot_margin = "0.0" />
     </BOT_Full_CutOut_45>
     <BOT_Partial_CutOut_90>
-    	<property       bot_margin  = "0.15" />
+    	<property       bot_margin  = "0.10" />
     </BOT_Partial_CutOut_90>
     <BOT_Partial_CutOut_45>
     	<property       bot_margin  = "0.15" />

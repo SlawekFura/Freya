@@ -4,6 +4,7 @@ import os
 
 import GcodeCommandGenerator as gg
 import DxfPolyCreator as dpc
+import dxfgrabber as dg
 
 
 print('Number of arguments:', len(sys.argv), 'arguments.') 
@@ -23,27 +24,16 @@ if not material in ["plexi", "balsa", "plywood"]:
     print("Wrong material!") 
     quit()
 
-cutterDeg = int(input("Choose cutter degree 45/90: "))
-if not cutterDeg in [45, 90]:
-    print("Wrong cutter degree!") 
-    quit()
+material_thickness = float(input("Insert material thickness: "))
 
 cutterDiameter = None
-if cutterDeg == 90:
+if any([ "90" in layer.name or "Deepen" in layer.name for layer in dg.readfile(inputDxf).layers]):
     cutterDiameter = int(input("Choose cutter diameter[mm] 1/3/6: "))
     if not cutterDiameter in [1, 3, 6]:
         print("Wrong cutter diameter!") 
         quit()
 
-material_thickness = float(input("Insert material thickness: "))
-
-#material = "balsa"
-#cutterDeg = 90
-#cutterDiameter = 1
-#material_thickness = 9.0
-
-
 entityToLayerMap = dpc.createPolyFromDxf(inputDxf, cutterDiameter)
 
-commandGenerator = gg.CommandGenerator("../Configs/tools/Cutters.xml", material, material_thickness, cutterDeg, cutterDiameter) 
+commandGenerator = gg.CommandGenerator("../Configs/tools/Cutters.xml", material, material_thickness, cutterDiameter) 
 commandGenerator.genGcode2D(outputDir, entityToLayerMap)
