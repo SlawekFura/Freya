@@ -14,9 +14,9 @@ safeHeight = 1.0
 highSpeed = 1000.0
 highSpeedZ = 200.0
 
-commandsMap = { "FastMove"      : lambda point = [], *args        :"G00 X" + str(point[x]) + " Y" + str(point[y]) + " F" + str(highSpeed) + "\n",
-                "FastMoveToBase":                                  "G00 X" + str(0.0) + " Y" + str(0.0) + " F" + str(highSpeed) + "\n",
-                "FastMoveZ"     : lambda z                        :"G00 Z" + str(z) + "F" + str(highSpeedZ) + "\n",
+commandsMap = { "FastMove"      : lambda point = [], *args        :"G0 X" + str(point[x]) + " Y" + str(point[y]) + " F" + str(highSpeed) + "\n",
+                "FastMoveToBase":                                  "G0 X" + str(0.0) + " Y" + str(0.0) + " F" + str(highSpeed) + "\n",
+                "FastMoveZ"     : lambda z                        :"G0 Z" + str(z) + "F" + str(highSpeedZ) + "\n",
                 "Move"          : lambda point = [], *args, speed :"G01 X" + str(point[x]) + " Y" + str(point[y]) + " F" + str(speed) + "\n",
                 "MoveZ"         : lambda z, speedZ                :"G01 Z" + str(z) + "F" + str(speedZ) + "\n",
                 "SetCoordMM"    :                                  "G21\n\n",
