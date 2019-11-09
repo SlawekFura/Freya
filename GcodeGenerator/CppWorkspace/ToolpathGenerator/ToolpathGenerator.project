@@ -51,7 +51,7 @@
         <SingleFileCommand/>
         <MakefileGenerationCommand/>
         <ThirdPartyToolName>None</ThirdPartyToolName>
-        <WorkingDirectory>$(ProjectPath)build-debug</WorkingDirectory>
+        <WorkingDirectory>/home/slawek/workspace/Frez/Freya/GcodeGenerator/CppWorkspace/ToolpathGenerator/build-debug</WorkingDirectory>
       </CustomBuild>
       <AdditionalRules>
         <CustomPostBuild/>

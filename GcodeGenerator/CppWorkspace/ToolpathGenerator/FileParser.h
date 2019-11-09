@@ -15,16 +15,17 @@ typedef CGAL::Exact_predicates_inexact_constructions_kernel K ;
 typedef K::Point_2                    Point ;
 typedef CGAL::Polygon_2<K>            Polygon_2 ;
 
-std::map<float, std::vector<Polygon_2>> parse(std::ifstream& inputFile)
+std::map<float, std::vector<Polygon_2> > parse(std::ifstream& inputFile)
 {
     std::string line;
-    std::map<float, std::vector<Polygon_2>> crossSections;
+    std::map<float, std::vector<Polygon_2> > crossSections;
     boost::optional<Polygon_2> polyg;
-    boost::optional<std::vector<Polygon_2>> polygons;
+    boost::optional<std::vector<Polygon_2> > polygons;
     float key;
-    
+    int a = 0;
     while(std::getline(inputFile, line))
     {   
+        ++a;
         std::stringstream ss(line);
         if(ss.peek() == 'p')
         {
@@ -39,11 +40,14 @@ std::map<float, std::vector<Polygon_2>> parse(std::ifstream& inputFile)
         }
         else if (ss.peek() != '\t')
         {
-            if(polygons)
+            if(polyg)
             {                    
-                polygons->push_back(*polyg);
+                if(!polygons)
+                    polygons = std::vector<Polygon_2>{*polyg};
+                else
+                    polygons->push_back(*polyg);
+                    
                 polyg.reset();
-                
                 crossSections.insert({key, *polygons});
                 polygons.reset();
             }
@@ -53,7 +57,10 @@ std::map<float, std::vector<Polygon_2>> parse(std::ifstream& inputFile)
         {
             ss.get();
             ss.get();
-            float x, y; ss >> x; ss.get(); ss >> y;
+            float x, y; 
+            ss >> x; 
+            ss.get(); 
+            ss >> y;
             if(!polyg)
                 polyg = Polygon_2();
             polyg->push_back({x, y});

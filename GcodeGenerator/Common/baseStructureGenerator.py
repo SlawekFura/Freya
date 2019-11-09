@@ -65,13 +65,15 @@ def removePointsOnSameLine(structure, vertices):
         #print("first: (" + str(vertices[p0Index][x]) + ", " + str(vertices[p0Index][y]) +  ")" + "\tsecond: (" + str(vertices[p1Index][x]) + ", " + str(vertices[p1Index][y]) + ")" + "\tthird: (" + str(vertices[p2Index][x]) + ", " + str(vertices[p2Index][y]) +  ")" + "\tT/F: " + str(cond))
     return newStructure
 
-def getNumOfSlices(mesh):
+def getNumOfSlices(mesh, minReso):
     bbox = mesh.bbox
     meshSize = abs(bbox[1][z] - mesh.bbox[0][z])
     zCoordList = genZCoordList(mesh)
     zCoordList.sort(reverse=True)
-    smallestHeightDifference = getSmallestDifference(zCoordList)
+    smallestHeightDifference = max(getSmallestDifference(zCoordList), minReso)
+    print("smallestDif: ", getSmallestDifference(zCoordList), "\tminReso: ", minReso)
     print("meshSize: ", meshSize, "\tsdiff: ", smallestHeightDifference)
+    
     return math.ceil(meshSize/smallestHeightDifference)
 
 def genZCoordList(mesh):

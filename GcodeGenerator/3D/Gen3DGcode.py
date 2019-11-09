@@ -39,7 +39,6 @@ mesh = pymesh.load_mesh(inputStl)
 mesh = pc.moveToGround(mesh)
 
 bbox = mesh.bbox
-print("bbox[0][x]: ", bbox[0][x], "\tbbox[0][y]: ", bbox[0][y],  "\tbbox[1][x]: ", bbox[1][x], "\tbbox[1][y]: ", bbox[1][y])
 bbox[0][x] -= (baseOffset + millDiameter * 2 / 3)
 bbox[0][y] -= (baseOffset + millDiameter * 2 / 3)
 bbox[1][x] += (baseOffset + millDiameter * 2 / 3)
@@ -47,24 +46,15 @@ bbox[1][y] += (baseOffset + millDiameter * 2 / 3)
 
 
 boxMesh = pymesh.generate_box_mesh(bbox[0], bbox[1])
+print("dupa2!")
 diff = pymesh.boolean(boxMesh, mesh, "difference")
+print("dupa3!")
 
-polyCreator = pc.polyFromMeshCreator(diff)
+minReso = 0.3
+polyCreator = pc.polyFromMeshCreator(diff, minReso)
+print("dupa4!")
+print("poly Created!")
 polylinesMap, verticesMap = polyCreator.genPolylines()
-
-#fig = plt.figure()
-#ax = fig.add_subplot(111, projection='3d')
-
-#for key, values in polylinesMap.items():
-    #print(key, values)
-#    for poly in values:
-#        for i in range(0, len(poly) - 1):
-#            p1 = [verticesMap[key][poly[i]][x], verticesMap[key][poly[i]][y], verticesMap[key][poly[i]][z]]
-#            p2 = [verticesMap[key][poly[i+1]][x], verticesMap[key][poly[i+1]][y], verticesMap[key][poly[i+1]][z]]
-#            print("p1(", poly[i], ") :", p1, "\tp2(", poly[i+1], ") :", p2)
-#            ax.plot([p1[x], p2[x]], [p1[y], p2[y]], [p1[z], p2[z]])
-
-#plt.show()
 
 keys = polylinesMap.keys()
 key = list(keys)[0]
@@ -88,6 +78,7 @@ for key, polylines in polylinesMap.items():
 RWPolys.writePolyCoordsMapIntoFile('MeshOffsetsMap', polylinesCoordMap)
 
 args = ("../CppWorkspace/ToolpathGenerator/build-debug/ToolpathGenerator", str(millDiameter * fillCoefficient))
+#args = ("/home/slawek/workspace/CppWorkspace/ToolpathGenerator/build-debug/ToolpathGenerator", str(millDiameter * fillCoefficient))
 print("args: ", args)
 popen = subprocess.Popen(args, stdout=subprocess.PIPE)
 popen.wait()
@@ -96,4 +87,5 @@ print(output)
 
 offsetPolygonsMap = RWPolys.readPolysFromFile("dataFromCgal.txt")
 
+print(offsetPolygonsMap)
 gGen.genGcode3D(outputDir + "/gcode.gcode", offsetPolygonsMap, 100, 300)

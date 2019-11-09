@@ -6,7 +6,7 @@ set( PROJECT_NAME "ToolpathGenerator" )
 ## Set our project name
 project(${PROJECT_NAME})
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -O0")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -O0")
 # Find CGAL
 # Add -O0 to remove optimizations when using gcc
 IF(CMAKE_COMPILER_IS_GNUCC)
@@ -19,7 +19,10 @@ include( ${CGAL_USE_FILE} )
 
 ## Use all the *.cpp files we found under this folder for the project
 FILE(GLOB SRCS "*.cpp" "*.c")
+FILE(GLOB HEADER_FILES "*.hpp" "*.h")
+#set(HEADER_FILES ${YOUR_DIRECTORY}/FileParser.h ${YOUR_DIRECTORY}/PolyWithHolesCreator.h ${YOUR_DIRECTORY}/WritePolysIntoFile.h)
+
 message(STATUS SRCS)
 ## Define the executable
-add_executable(${PROJECT_NAME} ${SRCS})
+add_executable(${PROJECT_NAME} ${SRCS} ${HEADER_FILES})
 target_link_libraries(${PROJECT_NAME} ${CGAL_LIBS} CGAL::CGAL CGAL::CGAL_Core)

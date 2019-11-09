@@ -1,3 +1,0 @@
-/home/slawek/workspace/CppWorkspace/ToolpathGenerator/CMakeFiles/rebuild_cache.dir
-/home/slawek/workspace/CppWorkspace/ToolpathGenerator/CMakeFiles/edit_cache.dir
-/home/slawek/workspace/CppWorkspace/ToolpathGenerator/CMakeFiles/ToolpathGenerator.dir

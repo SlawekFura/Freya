@@ -27,6 +27,8 @@ int main(int argc, char* argv[])
     inputFile.open("/home/slawek/workspace/Frez/Freya/GcodeGenerator/3D/MeshOffsetsMap", std::ios_base::in);
     
     std::map<float, std::vector<Polygon_2>> crossSections = parse(inputFile);
+    std::cout << std::endl;
+
     auto polyWithHolesMap = createPolygonsWithHoles(crossSections);
     
     float offset = atof(argv[1]);
@@ -36,20 +38,11 @@ int main(int argc, char* argv[])
     std::ofstream outfile;
     outfile.open("/home/slawek/workspace/Frez/Freya/GcodeGenerator/3D/dataFromCgal.txt", std::ofstream::out | std::ofstream::trunc);//std::ios_base::app
 
-    #ifndef DEBUG_VERSION
     for (auto& polyWithHolesPair : polyWithHolesMap)
-    #endif
     {
-#ifdef DEBUG_VERSION
-        float zCoord = 4.99289989;
-        auto& polyWithHolesVect = polyWithHolesMap[4.99289989];
-#else
-
         float zCoord = polyWithHolesPair.first;
         outfile << zCoord << std::endl;
-        
         auto& polyWithHolesVect = polyWithHolesPair.second; 
-#endif
         bool shouldDivideOffset = true;
         std::map<float, std::vector<Polygon_2>> layerGeneralOutput;
         

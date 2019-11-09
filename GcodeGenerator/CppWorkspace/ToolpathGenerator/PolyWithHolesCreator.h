@@ -15,7 +15,6 @@ typedef K::Point_2                    Point ;
 typedef CGAL::Polygon_2<K>            Polygon_2 ;
 typedef CGAL::Polygon_with_holes_2<K> Polygon_with_holes ;
 
-
 bool check_inside(Point pt, Point *pgn_begin, Point *pgn_end, K traits)
 {
   switch(CGAL::bounded_side_2(pgn_begin, pgn_end,pt, traits)) {
@@ -39,7 +38,7 @@ std::map<float, std::vector<Polygon_with_holes>> createPolygonsWithHoles(std::ma
     {
         float key = polygonsInLayer.first;
         auto& polygVect = polygonsInLayer.second;
-
+        
         for(auto it = polygonsInLayer.second.begin(); it != polygonsInLayer.second.end(); ++it)
         {
             auto checkIfPointIsInsidePoly = [&](const Point& point)
@@ -48,7 +47,8 @@ std::map<float, std::vector<Polygon_with_holes>> createPolygonsWithHoles(std::ma
                         return check_inside(point, &(*polygon.vertices_begin()), &(*polygon.vertices_end()), K());
                 });
             };
-            bool isOuterPoly = std::all_of(it->vertices_begin(), it->vertices_end(), checkIfPointIsInsidePoly);
+            
+            bool isOuterPoly = std::all_of(it->vertices_begin(), it->vertices_end(), checkIfPointIsInsidePoly);            
             if(isOuterPoly)
             {        
                 if(it->orientation() == CGAL::CLOCKWISE)
@@ -63,7 +63,7 @@ std::map<float, std::vector<Polygon_with_holes>> createPolygonsWithHoles(std::ma
             }
         };
     }
-         
+
     for(auto& elem : polygonsWithHolesMap)
     {
         float key =  elem.first;
@@ -94,5 +94,7 @@ std::map<float, std::vector<Polygon_with_holes>> createPolygonsWithHoles(std::ma
             }       
         }
     }
+    
     return polygonsWithHolesMap;
 }
+

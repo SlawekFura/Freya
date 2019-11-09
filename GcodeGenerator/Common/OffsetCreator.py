@@ -5,9 +5,9 @@ import numpy as np
 import plotly.graph_objects as go
 
 class OffsetGenerator:
-    def __init__(self, mesh, offset):
+    def __init__(self, mesh, offset, minReso):
         self.mesh = mesh
-        self.numOfSlices = getNumOfSlices(self.mesh)
+        self.numOfSlices = getNumOfSlices(self.mesh, minReso)
         self.crossSections = pymesh.slice_mesh(mesh, np.array([0, 0, 1], np.int32), self.numOfSlices * 3)
         self.crossSectionsCoords = self.genCrossSectionsCoords()
         self.offset = offset

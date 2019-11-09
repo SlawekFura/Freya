@@ -9,9 +9,9 @@ import copy
 
 
 class polyFromMeshCreator:
-    def __init__(self, mesh):
+    def __init__(self, mesh, minSliceThickness):
         self.mesh = mesh
-        self.numOfSlices = getNumOfSlices(self.mesh)
+        self.numOfSlices = getNumOfSlices(self.mesh, minSliceThickness)
         print("numOfSlices: ", self.numOfSlices)
         self.crossSections = pymesh.slice_mesh(mesh, np.array([0, 0, 1], np.int32), self.numOfSlices * 1)
         self.zCoordList = genZCoordList(mesh)
@@ -37,22 +37,8 @@ class polyFromMeshCreator:
             crossSectToZ.update({key : val})
             verticesMap.update({key : vertices})
             
-            #print(key)
-            #for elem in val:
-            #    for point in elem:
-            #        print(vertices[point])
-                
         return crossSectToZ, verticesMap
 
-        for triangle in self.mesh.faces:
-            if matchFloats(self.vertices[triangle[0]][z], self.vertices[triangle[1]][z], self.vertices[triangle[2]][z]):
-                key = self.vertices[triangle[0]][z]
-                if key in trianglesToZMap:
-                    trianglesToZMap[key].append(triangle.tolist())
-                else:
-                    trianglesToZMap[key] = [triangle.tolist()]
-        return trianglesToZMap
-                
     def getLinesMapFromZMap(self):
         linesList = {}
         for key, triangles in self.trianglesToZMap.items():
@@ -78,7 +64,7 @@ class polyFromMeshCreator:
     
         for key, values in self.linesMap.items():
             linesList = list(values)
-            polylines = [list(linesList[0])]
+            polylines = [list(linesList[0][1:])]
             linesList.remove(linesList[0])
             for polyline in polylines:
                 token = True
@@ -99,7 +85,7 @@ class polyFromMeshCreator:
                         linesList.remove(line)
                         token = True
                 if linesList:
-                    polylines.append(list(linesList[0]))
+                    polylines.append(list(linesList[0][1:]))
                     linesList.remove(linesList[0])
             polyMap.update({key : polylines})
         return polyMap, self.verticesMap
