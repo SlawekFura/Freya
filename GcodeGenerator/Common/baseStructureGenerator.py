@@ -80,7 +80,7 @@ def genZCoordList(mesh):
     zCoords = []
     for vertice in mesh.vertices:
         zCoords.append(vertice[z])
-    print(zCoords)
+    #print(zCoords)
     zCoords = roundFloatList(zCoords)
     zCoords = removeDuplicates(zCoords)
     #zCoords.sort(reverse=True)

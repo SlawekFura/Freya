@@ -15,7 +15,7 @@ class polyFromMeshCreator:
         print("numOfSlices: ", self.numOfSlices)
         self.crossSections = pymesh.slice_mesh(mesh, np.array([0, 0, 1], np.int32), self.numOfSlices * 1)
         self.zCoordList = genZCoordList(mesh)
-        print(self.zCoordList)
+        #print(self.zCoordList)
         self.vertices = roundFloatNestedList(mesh.vertices.tolist(), 4)
         self.trianglesToZMap, self.verticesMap = self.mapTrianglesToZ()
         self.linesMap = self.getLinesMapFromZMap()

@@ -39,10 +39,10 @@ mesh = pymesh.load_mesh(inputStl)
 mesh = pc.moveToGround(mesh)
 
 bbox = mesh.bbox
-bbox[0][x] -= (baseOffset + millDiameter * 2 / 3)
-bbox[0][y] -= (baseOffset + millDiameter * 2 / 3)
-bbox[1][x] += (baseOffset + millDiameter * 2 / 3)
-bbox[1][y] += (baseOffset + millDiameter * 2 / 3)
+bbox[0][x] -= (baseOffset + millDiameter)
+bbox[0][y] -= (baseOffset + millDiameter)
+bbox[1][x] += (baseOffset + millDiameter)
+bbox[1][y] += (baseOffset + millDiameter)
 
 
 boxMesh = pymesh.generate_box_mesh(bbox[0], bbox[1])
@@ -77,15 +77,14 @@ for key, polylines in polylinesMap.items():
 
 RWPolys.writePolyCoordsMapIntoFile('MeshOffsetsMap', polylinesCoordMap)
 
-args = ("../CppWorkspace/ToolpathGenerator/build-debug/ToolpathGenerator", str(millDiameter * fillCoefficient))
+#args = ("../CppWorkspace/ToolpathGenerator/build-debug/ToolpathGenerator", str(millDiameter * fillCoefficient))
 #args = ("/home/slawek/workspace/CppWorkspace/ToolpathGenerator/build-debug/ToolpathGenerator", str(millDiameter * fillCoefficient))
-print("args: ", args)
-popen = subprocess.Popen(args, stdout=subprocess.PIPE)
-popen.wait()
-output = popen.stdout.read()
-print(output)
+#print("args: ", args)
+#popen = subprocess.Popen(args, stdout=subprocess.PIPE)
+#popen.wait()
+#output = popen.stdout.read()
+#print(output)
 
 offsetPolygonsMap = RWPolys.readPolysFromFile("dataFromCgal.txt")
 
-print(offsetPolygonsMap)
 gGen.genGcode3D(outputDir + "/gcode.gcode", offsetPolygonsMap, 100, 300)

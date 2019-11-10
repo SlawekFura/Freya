@@ -11,10 +11,6 @@
   <VirtualDirectory Name="resources">
     <File Name="CMakeLists.txt"/>
   </VirtualDirectory>
-  <Dependencies Name="Debug_Linux"/>
-  <Dependencies Name="Debug_Windows"/>
-  <Dependencies Name="Release_Linux"/>
-  <Dependencies Name="Release_Windows"/>
   <Settings Type="Executable">
     <GlobalSettings>
       <Compiler Options="-std=c++14;-Wall -O0" C_Options="" Assembler="">
@@ -182,4 +178,8 @@
       </Completion>
     </Configuration>
   </Settings>
+  <Dependencies Name="Debug_Linux"/>
+  <Dependencies Name="Debug_Windows"/>
+  <Dependencies Name="Release_Linux"/>
+  <Dependencies Name="Release_Windows"/>
 </CodeLite_Project>

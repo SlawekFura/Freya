@@ -24,7 +24,7 @@ int main(int argc, char* argv[])
     }
     
     std::ifstream inputFile;
-    inputFile.open("/home/slawek/workspace/Frez/Freya/GcodeGenerator/3D/MeshOffsetsMap", std::ios_base::in);
+    inputFile.open("../3D/MeshOffsetsMap", std::ios_base::in);
     
     std::map<float, std::vector<Polygon_2>> crossSections = parse(inputFile);
     std::cout << std::endl;
@@ -36,7 +36,7 @@ int main(int argc, char* argv[])
     std::cout << "Offset is[*]: " << argv[1] << std::endl;
     std::cout << "Offset is: " << offset << std::endl;
     std::ofstream outfile;
-    outfile.open("/home/slawek/workspace/Frez/Freya/GcodeGenerator/3D/dataFromCgal.txt", std::ofstream::out | std::ofstream::trunc);//std::ios_base::app
+    outfile.open("../3D/dataFromCgal.txt", std::ofstream::out | std::ofstream::trunc);//std::ios_base::app
 
     for (auto& polyWithHolesPair : polyWithHolesMap)
     {
