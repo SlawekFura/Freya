@@ -127,7 +127,7 @@ BOT_Full_CutOut_90_1
  62
      7
 370
-    13
+    18
   6
 Continuous
   2
@@ -151,7 +151,7 @@ TOP_Full_CutOut_90_1
  62
      7
 370
-    13
+    18
   6
 Continuous
   2
@@ -159,11 +159,35 @@ Color_8
   8
 TOP_Full_CutOut_90_2
  90
-        9
+        8
  62
      7
 370
-     9
+    18
+  6
+Continuous
+  2
+Color_253
+  8
+BOT_Full_CutOut_90_3
+ 90
+        8
+ 62
+     7
+370
+    18
+  6
+Continuous
+  2
+Color_130
+  8
+TOP_Full_CutOut_90_3
+ 90
+        8
+ 62
+     7
+370
+    18
   6
 Continuous
   2
