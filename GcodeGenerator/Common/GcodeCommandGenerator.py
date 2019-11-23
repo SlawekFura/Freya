@@ -5,10 +5,7 @@ import utils
 import ConfigReader as cr
 import xml.etree.ElementTree as ET
 import math
-
-x = 0
-y = 1
-z = 2
+from utils import *
 
 safeHeight = 1.0
 highSpeed = 1000.0

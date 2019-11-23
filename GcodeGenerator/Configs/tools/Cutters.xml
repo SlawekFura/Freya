@@ -8,6 +8,13 @@
                     drillSpeed = "20" 
                 />
             </diameter_1>
+            <diameter_2>
+                <params 
+                    maxDepth = "1.8" 
+                    cutSpeed = "200" 
+                    drillSpeed = "20" 
+                />
+            </diameter_2>
             <diameter_3>
                 <params 
                     maxDepth = "1.6"
@@ -15,13 +22,13 @@
                     drillSpeed = "20" 
                 />
             </diameter_3>
-            <diameter_6>
+            <diameter_6.35>
                 <params 
-                    maxDepth = "1.6" 
+                    maxDepth = "2.5" 
                     cutSpeed = "200" 
                     drillSpeed = "20" 
                 />
-            </diameter_6>
+            </diameter_6.35>
         </plexi>
         <balsa>
             <diameter_1>
@@ -31,6 +38,13 @@
                     drillSpeed = "100" 
                 />
             </diameter_1>
+            <diameter_2>
+                <params 
+                    maxDepth = "4.3" 
+                    cutSpeed = "500" 
+                    drillSpeed = "100" 
+                />
+            </diameter_2>
             <diameter_3>
                 <params 
                     maxDepth = "3.2"
@@ -38,13 +52,13 @@
                     drillSpeed = "100" 
                 />
             </diameter_3>
-            <diameter_6>
+            <diameter_6.35>
                 <params 
-                    maxDepth = "3.2" 
+                    maxDepth = "8" 
                     cutSpeed = "1250"
                     drillSpeed = "100" 
                 />
-            </diameter_6>
+            </diameter_6.35>
         </balsa>
     </type_90>
     <type_45>

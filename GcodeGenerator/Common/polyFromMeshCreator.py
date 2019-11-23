@@ -1,17 +1,18 @@
-from OffsetCreator import *
 import plotly.graph_objects as go
-import utils
+from utils import *
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
 import matplotlib.lines as mlines
 import copy
-
+from baseStructureGenerator import *
+import pymesh
+import numpy as np
 
 
 class polyFromMeshCreator:
-    def __init__(self, mesh, minSliceThickness):
+    def __init__(self, mesh, minSliceThickness, maxSliceThickness):
         self.mesh = mesh
-        self.numOfSlices = getNumOfSlices(self.mesh, minSliceThickness)
+        self.numOfSlices = getNumOfSlices(self.mesh, minSliceThickness, maxSliceThickness)
         print("numOfSlices: ", self.numOfSlices)
         self.crossSections = pymesh.slice_mesh(mesh, np.array([0, 0, 1], np.int32), self.numOfSlices * 1)
         self.zCoordList = genZCoordList(mesh)
@@ -22,7 +23,6 @@ class polyFromMeshCreator:
         
 
     def mapTrianglesToZ(self):
-        trianglesToZMap = {}
         #for triangle in self.mesh.faces:
         #print("crossSec: ", self.crossSections)
         #print("selfMesh: ", self.mesh.faces)

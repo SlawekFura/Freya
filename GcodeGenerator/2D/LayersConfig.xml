@@ -8,7 +8,10 @@
     <TOP_Full_CutOut_90_2>
     	<property       bot_margin = "-0.15" />
     </TOP_Full_CutOut_90_2>
-	
+	<TOP_Full_CutOut_90_3>
+    	<property       bot_margin = "-0.15" />
+    </TOP_Full_CutOut_90_3>
+
     <TOP_Full_CutOut_45>
     	<property       bot_margin = "0.0" />
     </TOP_Full_CutOut_45>
@@ -32,7 +35,10 @@
     <BOT_Full_CutOut_90_2>
     	<property       bot_margin = "-0.15" />
     </BOT_Full_CutOut_90_2>
-	
+	<BOT_Full_CutOut_90_3>
+    	<property       bot_margin = "-0.15" />
+    </BOT_Full_CutOut_90_3>
+
     <BOT_Full_CutOut_45>
     	<property       bot_margin = "0.0" />
     </BOT_Full_CutOut_45>

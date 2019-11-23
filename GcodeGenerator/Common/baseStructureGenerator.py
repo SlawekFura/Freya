@@ -1,5 +1,4 @@
 from utils import *
-import OffsetCreator as oc
 
 def detriangulize(structure, triangle):
     for i in range(0, len(structure)):
@@ -65,12 +64,12 @@ def removePointsOnSameLine(structure, vertices):
         #print("first: (" + str(vertices[p0Index][x]) + ", " + str(vertices[p0Index][y]) +  ")" + "\tsecond: (" + str(vertices[p1Index][x]) + ", " + str(vertices[p1Index][y]) + ")" + "\tthird: (" + str(vertices[p2Index][x]) + ", " + str(vertices[p2Index][y]) +  ")" + "\tT/F: " + str(cond))
     return newStructure
 
-def getNumOfSlices(mesh, minReso):
+def getNumOfSlices(mesh, minReso, maxReso):
     bbox = mesh.bbox
     meshSize = abs(bbox[1][z] - mesh.bbox[0][z])
     zCoordList = genZCoordList(mesh)
     zCoordList.sort(reverse=True)
-    smallestHeightDifference = max(getSmallestDifference(zCoordList), minReso)
+    smallestHeightDifference = min(max(getSmallestDifference(zCoordList), minReso), maxReso)
     print("smallestDif: ", getSmallestDifference(zCoordList), "\tminReso: ", minReso)
     print("meshSize: ", meshSize, "\tsdiff: ", smallestHeightDifference)
     
