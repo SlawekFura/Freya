@@ -10,24 +10,24 @@ import numpy as np
 
 
 class polyFromMeshCreator:
-    def __init__(self, mesh, minSliceThickness, maxSliceThickness):
-        self.mesh = mesh
-        self.numOfSlices = getNumOfSlices(self.mesh, minSliceThickness, maxSliceThickness)
-        print("numOfSlices: ", self.numOfSlices)
-        self.crossSections = pymesh.slice_mesh(mesh, np.array([0, 0, 1], np.int32), self.numOfSlices * 1)
-        self.zCoordList = genZCoordList(mesh)
-        #print(self.zCoordList)
-        self.vertices = roundFloatNestedList(mesh.vertices.tolist(), 4)
+    def __init__(self, mesh = None, minSliceThickness = None, maxSliceThickness = None, crossSections = None):
+        if crossSections:
+            self.crossSections = crossSections
+            self.vertices = crossSections.vertices
+        else: 
+            self.mesh = mesh
+            self.numOfSlices = getNumOfSlices(self.mesh, minSliceThickness, maxSliceThickness)
+            print("numOfSlices: ", self.numOfSlices)
+            self.crossSections = pymesh.slice_mesh(mesh, np.array([0, 0, 1], np.int32), self.numOfSlices * 1)
+            self.vertices = mesh.vertices
+
+        self.vertices = roundFloatNestedList(self.vertices.tolist(), 4)
         self.trianglesToZMap, self.verticesMap = self.mapTrianglesToZ()
         self.linesMap = self.getLinesMapFromZMap()
+        print("linesMap created ")
         
 
     def mapTrianglesToZ(self):
-        #for triangle in self.mesh.faces:
-        #print("crossSec: ", self.crossSections)
-        #print("selfMesh: ", self.mesh.faces)
-
-        prevVertices = []
         verticesMap = {}
         crossSectToZ = {}
         for mesh in self.crossSections:
@@ -50,6 +50,7 @@ class polyFromMeshCreator:
             
             linesList.update({key : linesPerLayer})
             linesList[key] = self.filterInnerLines(linesList[key])
+
         return linesList
     
     def filterInnerLines(self, linesList):
@@ -58,6 +59,29 @@ class polyFromMeshCreator:
             if numOfRepetitions > 1:
                 linesList = list(filter((line.reverse()).__ne__, filter((line).__ne__, linesList)))
         return linesList
+
+    def removeDuplicates(self, polylines):
+        newLinesList = []
+        for line in polylines:
+            newLine = []
+            for point in line:
+                if not point in newLine:
+                    newLine.append(point)
+                else:
+                    print("not added:", point)
+            newLinesList.append(newLine)
+        return newLinesList
+
+        #for i in range(0, lines) - 1):
+        #            linesListLen = len(linesList)
+        #    for j in range(i + 1, linesListLen)):
+        #        if match2FloatLists(linesList[i], linesList[j]):
+        #            print("duplicate:", linesList[i])
+        #            del linesList[j]
+        #            j -= 1
+        #            linesListLen = len(linesList)
+        #return linesList
+
     
     def genPolylines(self):
         polyMap = {}
@@ -88,11 +112,10 @@ class polyFromMeshCreator:
                     polylines.append(list(linesList[0][1:]))
                     linesList.remove(linesList[0])
             polyMap.update({key : polylines})
+
         return polyMap, self.verticesMap
  
 def moveToGround(mesh):
     maxZCoord = mesh.bbox[1][z]
     print("maxZ: ", maxZCoord)
-    #return pymesh.form_mesh(mesh.vertices + [[0, 0, 0]], mesh.faces)
     return pymesh.form_mesh(mesh.vertices + [[0, 0, -maxZCoord]], mesh.faces)
-    #return pymesh.form_mesh(mesh.vertices, mesh.faces)

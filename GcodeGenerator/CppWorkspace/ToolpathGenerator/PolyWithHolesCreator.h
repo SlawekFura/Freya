@@ -50,7 +50,7 @@ std::map<float, std::vector<Polygon_with_holes>> createPolygonsWithHoles(std::ma
             
             bool isOuterPoly = std::all_of(it->vertices_begin(), it->vertices_end(), checkIfPointIsInsidePoly);            
             if(isOuterPoly)
-            {        
+            {     
                 if(it->orientation() == CGAL::CLOCKWISE)
                     it->reverse_orientation();
                 polygonsWithHolesMap[key].push_back(Polygon_with_holes{*it});                

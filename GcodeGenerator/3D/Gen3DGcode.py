@@ -1,5 +1,6 @@
 import sys
 sys.path.append('../Common/')
+sys.path.append('./OptimizedMesh/')
 
 import plotly.graph_objects as go
 from utils import *
@@ -14,6 +15,7 @@ import ReadWritePolysFromFile as RWPolys
 import subprocess
 import GcodeCommandGenerator as gGen
 import pymesh
+import genOptimizedMesh as gom
 
 if len(sys.argv) < 3:
     print("not enough arguments provided!")
@@ -35,8 +37,8 @@ fillCoefficient = 0.8
 #mesh = pymesh.load_mesh("schody_stl_p2_rotated.stl")
 #mesh = pymesh.load_mesh("complicatedShape.stl")
 mesh = pymesh.load_mesh(inputStl)
-
 mesh = pc.moveToGround(mesh)
+optimisedCutOutMesh, meshCrossSectionOptimised = gom.genOptimizedMesh(inputStl, millDiameter)
 
 bbox = mesh.bbox
 bbox[0][x] -= (baseOffset + millDiameter)
@@ -48,35 +50,37 @@ bbox[1][y] += (baseOffset + millDiameter)
 boxMesh = pymesh.generate_box_mesh(bbox[0], bbox[1])
 print("dupa2!")
 diff = pymesh.boolean(boxMesh, mesh, "difference")
+diff = pymesh.boolean(diff, optimisedCutOutMesh, "difference")
+pymesh.save_mesh("diff.stl", diff, ascii=True);
 print("dupa3!")
 
-#minReso = 0.3
-#maxReso = 4.0
-#polyCreator = pc.polyFromMeshCreator(diff, minReso, maxReso)
-#print("dupa4!")
-#print("poly Created!")
-#polylinesMap, verticesMap = polyCreator.genPolylines()
-#
-#keys = polylinesMap.keys()
-#key = list(keys)[0]
-#polyVal = polylinesMap[key]
-#vertice = verticesMap[key]
-#
-#polylinesCoordMap = {}
-#for key, polylines in polylinesMap.items():
-#    vertice = polylinesMap[key]
-#
-#    polylineCoord = []
-#    for line in polylines:
-#        lineCoord = []
-#        for point in line:
-#            lineCoord.append(verticesMap[key][point])
-#        line.append(line[0])
-#        polylineCoord.append(lineCoord)
-#    polylinesCoordMap.update({key : polylineCoord}) 
+minReso = 1.3
+maxReso = 4.0
+polyCreator = pc.polyFromMeshCreator(diff, minReso, maxReso)
+print("dupa4!")
+print("poly Created!")
+polylinesMap, verticesMap = polyCreator.genPolylines()
+
+keys = polylinesMap.keys()
+key = list(keys)[0]
+polyVal = polylinesMap[key]
+vertice = verticesMap[key]
+
+polylinesCoordMap = {}
+for key, polylines in polylinesMap.items():
+    vertice = polylinesMap[key]
+
+    polylineCoord = []
+    for line in polylines:
+        lineCoord = []
+        for point in line:
+            lineCoord.append(verticesMap[key][point])
+        line.append(line[0])
+        polylineCoord.append(lineCoord)
+    polylinesCoordMap.update({key : polyCreator.removeDuplicates(polylineCoord)})
 
 
-#RWPolys.writePolyCoordsMapIntoFile('MeshOffsetsMap', polylinesCoordMap)
+RWPolys.writePolyCoordsMapIntoFile('MeshOffsetsMap', polylinesCoordMap)
 
 args = ("../CppWorkspace/ToolpathGenerator/build-debug/ToolpathGenerator", str(millDiameter * fillCoefficient))
 #args = ("/home/slawek/workspace/CppWorkspace/ToolpathGenerator/build-debug/ToolpathGenerator", str(millDiameter * fillCoefficient))

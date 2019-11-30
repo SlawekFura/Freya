@@ -61,13 +61,12 @@ def removePointsOnSameLine(structure, vertices):
         if oc.matchFloats(vertices[p0Index][x], vertices[p1Index][x], vertices[p2Index][x]) or oc.matchFloats(vertices[p0Index][y], vertices[p1Index][y],vertices[p2Index][y]) or isThirdPointOnSameLine(vertices[p0Index], vertices[p1Index], vertices[p2Index]):
             newStructure.remove(p1Index) 
             cond = True
-        #print("first: (" + str(vertices[p0Index][x]) + ", " + str(vertices[p0Index][y]) +  ")" + "\tsecond: (" + str(vertices[p1Index][x]) + ", " + str(vertices[p1Index][y]) + ")" + "\tthird: (" + str(vertices[p2Index][x]) + ", " + str(vertices[p2Index][y]) +  ")" + "\tT/F: " + str(cond))
     return newStructure
 
 def getNumOfSlices(mesh, minReso, maxReso):
     bbox = mesh.bbox
     meshSize = abs(bbox[1][z] - mesh.bbox[0][z])
-    zCoordList = genZCoordList(mesh)
+    zCoordList = genZCoordList(mesh.vertices)
     zCoordList.sort(reverse=True)
     smallestHeightDifference = min(max(getSmallestDifference(zCoordList), minReso), maxReso)
     print("smallestDif: ", getSmallestDifference(zCoordList), "\tminReso: ", minReso)
@@ -75,9 +74,9 @@ def getNumOfSlices(mesh, minReso, maxReso):
     
     return math.ceil(meshSize/smallestHeightDifference)
 
-def genZCoordList(mesh):
+def genZCoordList(vertices):
     zCoords = []
-    for vertice in mesh.vertices:
+    for vertice in vertices:
         zCoords.append(vertice[z])
     #print(zCoords)
     zCoords = roundFloatList(zCoords)

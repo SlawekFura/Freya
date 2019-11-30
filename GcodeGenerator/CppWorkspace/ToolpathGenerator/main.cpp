@@ -22,15 +22,19 @@ int main(int argc, char* argv[])
         std::cout << "Not enough arguments" << std::endl;
         return -1;
     }
-    
+   std::cout << "Dupa1" << std::endl;
     std::ifstream inputFile;
-    inputFile.open("../3D/MeshOffsetsMap", std::ios_base::in);
+    //inputFile.open("../3D/MeshOffsetsMap", std::ios_base::in);
+    inputFile.open("/home/slawek/workspace/Frez/Freya/GcodeGenerator/3D/MeshOffsetsMap", std::ios_base::in);
+    std::cout << "Dupa1.0" << std::endl;
     
     std::map<float, std::vector<Polygon_2>> crossSections = parse(inputFile);
     std::cout << std::endl;
+       std::cout << "Dupa1.1" << std::endl;
 
     auto polyWithHolesMap = createPolygonsWithHoles(crossSections);
-    
+       std::cout << "Dupa2" << std::endl;
+
     float offset = atof(argv[1]);
     //float offset = 0.8;
     std::cout << "Offset is[*]: " << argv[1] << std::endl;
