@@ -12,7 +12,7 @@ from utils import *
 import ReadWritePolysFromFile as RWPolys
 import os
 import subprocess
-import offsetMesh
+import offsetMesh as om
 
 def combineCrossSectionsIntoMesh(crossSections):
     verticesCombined = crossSections[0].vertices
@@ -67,19 +67,22 @@ def genMeshWithFilteredBasePart(mesh):
             
     return pymesh.form_mesh(np.array(vertices2), np.array(faces))
 
-def genOptimizedMesh(filename, millDiameter):
-    baseOffset = 0.4
-    millDiameter = 3
+def genOptimizedMesh(baseMeshPath, filename, millDiameter):
+    baseOffset = 1
+    #millDiameter = 3
     
     #filename = "../../../Projekt/szkola/Podstawa/Drzewka/drzewko1.stl"
-    mesh = pymesh.load_mesh(filename)
+    mesh = pymesh.load_mesh(baseMeshPath)
+    mesh = pc.moveToGround(mesh)
     
     offset = baseOffset + millDiameter
-    offsetMesh.generateMeshOffsetFile(filename, offset)
+    print("dupaGen")
+    om.generateMeshOffsetFile(filename, offset, os.path.abspath("./Generated/StlOffset.stl"))
     
     bbox = mesh.bbox
     zMin = bbox[0][z]
     zMax = bbox[1][z]
+    print("zMax:", zMax)
     bbox[0][0] -= (baseOffset + millDiameter)
     bbox[0][1] -= (baseOffset + millDiameter)
     bbox[1][0] += (baseOffset + millDiameter)
@@ -94,14 +97,16 @@ def genOptimizedMesh(filename, millDiameter):
     materialThickness = abs(zMax - zMin)
     numOfCuts = math.ceil(materialThickness / maxCutDepth)
     
-    minHeight = 3
+    minHeight = 1
     if (materialThickness < (maxCutDepth + minHeight)):
         print("No optimization due to not enough material thickness")
     
     newBoxHeight = 1.0
     maxWorkableDepth = materialThickness - minHeight
-    basicMesh = pymesh.load_mesh("./Generated/StlOffset.stl");
-    pymesh.save_mesh("basicMesh.stl", basicMesh, ascii=True);
+    offsetMesh = pymesh.load_mesh("./Generated/StlOffset.stl");
+
+    offsetMesh = moveAllVertices(offsetMesh, [0, 0, zMax - offset])
+    pymesh.save_mesh("offsetMesh.stl", offsetMesh, ascii=True);
     
     crossSectionsList = []
     wholeStructure = []
@@ -109,29 +114,37 @@ def genOptimizedMesh(filename, millDiameter):
     layersToMerge.append(int(maxWorkableDepth * 10))
     layersToMerge = [float(x) / 10 for x in layersToMerge]
     
+    i = 0
     print("layersToMerge:", layersToMerge, "\tmaxCutDepth:", maxCutDepth, "\tmaxWorkableDepth:", maxWorkableDepth)
     for depth in layersToMerge: 
         newBox = genBaseBoxDiff(bbox, depth, newBoxHeight)
+        pymesh.save_mesh("newBox" + str(i) + ".stl", newBox, ascii=True);
+        
     
-        wholeDiff = pymesh.boolean(newBox, basicMesh, "difference")
-    
-        pDiff = pymesh.boolean(newBox, basicMesh, "difference")
+        pDiff = pymesh.boolean(newBox, offsetMesh, "difference")
+        pymesh.save_mesh("pDiff" + str(i) + ".stl", pDiff, ascii=True);
+
         crossSectionsList.append(genMeshWithFilteredBasePart(pDiff))
     
+        #wholeDiff = pymesh.boolean(newBox, offsetMesh, "difference")
         wholeDiff = genPulledMesh(pDiff, math.ceil(maxCutDepth / newBoxHeight))
-    
+        pymesh.save_mesh("wholeDiff" + str(i) + ".stl", wholeDiff, ascii=True);
+
         wholeStructure.append(wholeDiff)
+
         print(depth + maxCutDepth)
+        i += 1
     
     finalStructure = wholeStructure[0]
     i = 1;
     for elem in wholeStructure[1:]:
         finalStructure = pymesh.boolean(finalStructure, elem, "union")
-        print("final structure processing", i, "of", len(wholeStructure))
+        print("final structure processing", i, "of", len(wholeStructure) - 1)
         i+=1
         
     meshCombined = combineCrossSectionsIntoMesh(crossSectionsList)
-    return finalStructure, meshCombined
         
     pymesh.save_mesh("finalStructure.stl", finalStructure, ascii=True);
     pymesh.save_mesh("meshCombined.stl", meshCombined, ascii=True);
+
+    return finalStructure, meshCombined

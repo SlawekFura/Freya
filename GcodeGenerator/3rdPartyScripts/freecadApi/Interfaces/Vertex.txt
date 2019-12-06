@@ -1,0 +1,108 @@
+[('Area', 0.0
+ ('BoundBox', BoundBox (26.9983, -2, 0, 26.9983, -2, 0)
+ ('CompSolids', []
+ ('Compounds', []
+ ('Content', ''
+ ('Edges', []
+ ('Faces', []
+ ('Length', 0.0
+ ('Matrix', Matrix ((1,0,0,0
+(0,1,0,0
+(0,0,1,0
+(0,0,0,1))
+ ('MemSize', 200
+ ('Module', 0
+ ('Orientation', 'Forward'
+ ('Placement', Placement [Pos=(0,0,0
+ Yaw-Pitch-Roll=(0,0,0)]
+ ('Point', Vector (26.998322, -2.0, 0.0)
+ ('ShapeType', 'Vertex'
+ ('Shells', []
+ ('Solids', []
+ ('Tolerance', 1e-07
+ ('TypeId', 'Part::TopoShape'
+ ('Vertexes', [<Vertex object at 0x246b110>]
+ ('Volume', 0.0
+ ('Wires', []
+ ('X', 26.998322
+ ('Y', -2.0
+ ('Z', 0.0
+ ('__class__', <type 'Part.Vertex'>
+ ('__delattr__', <method-wrapper '__delattr__' of Part.Vertex object at 0x246c9b8>
+ ('__doc__', 'TopoShapeVertex is the OpenCasCade topological vertex wrapper'
+ ('__format__', <built-in method __format__ of Part.Vertex object at 0x246c9b8>
+ ('__getattribute__', <method-wrapper '__getattribute__' of Part.Vertex object at 0x246c9b8>
+ ('__getstate__', <built-in method __getstate__ of Part.Vertex object at 0x246c9b8>
+ ('__hash__', <method-wrapper '__hash__' of Part.Vertex object at 0x246c9b8>
+ ('__init__', <method-wrapper '__init__' of Part.Vertex object at 0x246c9b8>
+ ('__new__', <built-in method __new__ of type object at 0x7f9aa8f3d6c0>
+ ('__reduce__', <built-in method __reduce__ of Part.Vertex object at 0x246c9b8>
+ ('__reduce_ex__', <built-in method __reduce_ex__ of Part.Vertex object at 0x246c9b8>
+ ('__repr__', <method-wrapper '__repr__' of Part.Vertex object at 0x246c9b8>
+ ('__setattr__', <method-wrapper '__setattr__' of Part.Vertex object at 0x246c9b8>
+ ('__setstate__', <built-in method __setstate__ of Part.Vertex object at 0x246c9b8>
+ ('__sizeof__', <built-in method __sizeof__ of Part.Vertex object at 0x246c9b8>
+ ('__str__', <method-wrapper '__str__' of Part.Vertex object at 0x246c9b8>
+ ('__subclasshook__', <built-in method __subclasshook__ of type object at 0x7f9aa8f3d6c0>
+ ('check', <built-in method check of Part.Vertex object at 0x246c9b8>
+ ('childShapes', <built-in method childShapes of Part.Vertex object at 0x246c9b8>
+ ('cleaned', <built-in method cleaned of Part.Vertex object at 0x246c9b8>
+ ('common', <built-in method common of Part.Vertex object at 0x246c9b8>
+ ('complement', <built-in method complement of Part.Vertex object at 0x246c9b8>
+ ('copy', <built-in method copy of Part.Vertex object at 0x246c9b8>
+ ('cut', <built-in method cut of Part.Vertex object at 0x246c9b8>
+ ('distToShape', <built-in method distToShape of Part.Vertex object at 0x246c9b8>
+ ('dumpToString', <built-in method dumpToString of Part.Vertex object at 0x246c9b8>
+ ('exportBrep', <built-in method exportBrep of Part.Vertex object at 0x246c9b8>
+ ('exportBrepToString', <built-in method exportBrepToString of Part.Vertex object at 0x246c9b8>
+ ('exportIges', <built-in method exportIges of Part.Vertex object at 0x246c9b8>
+ ('exportStep', <built-in method exportStep of Part.Vertex object at 0x246c9b8>
+ ('exportStl', <built-in method exportStl of Part.Vertex object at 0x246c9b8>
+ ('extrude', <built-in method extrude of Part.Vertex object at 0x246c9b8>
+ ('fix', <built-in method fix of Part.Vertex object at 0x246c9b8>
+ ('fuse', <built-in method fuse of Part.Vertex object at 0x246c9b8>
+ ('getAllDerivedFrom', <built-in method getAllDerivedFrom of Part.Vertex object at 0x246c9b8>
+ ('getElement', <built-in method getElement of Part.Vertex object at 0x246c9b8>
+ ('hashCode', <built-in method hashCode of Part.Vertex object at 0x246c9b8>
+ ('importBrep', <built-in method importBrep of Part.Vertex object at 0x246c9b8>
+ ('importBrepFromString', <built-in method importBrepFromString of Part.Vertex object at 0x246c9b8>
+ ('isClosed', <built-in method isClosed of Part.Vertex object at 0x246c9b8>
+ ('isDerivedFrom', <built-in method isDerivedFrom of Part.Vertex object at 0x246c9b8>
+ ('isEqual', <built-in method isEqual of Part.Vertex object at 0x246c9b8>
+ ('isInside', <built-in method isInside of Part.Vertex object at 0x246c9b8>
+ ('isNull', <built-in method isNull of Part.Vertex object at 0x246c9b8>
+ ('isPartner', <built-in method isPartner of Part.Vertex object at 0x246c9b8>
+ ('isSame', <built-in method isSame of Part.Vertex object at 0x246c9b8>
+ ('isValid', <built-in method isValid of Part.Vertex object at 0x246c9b8>
+ ('makeChamfer', <built-in method makeChamfer of Part.Vertex object at 0x246c9b8>
+ ('makeFillet', <built-in method makeFillet of Part.Vertex object at 0x246c9b8>
+ ('makeOffsetShape', <built-in method makeOffsetShape of Part.Vertex object at 0x246c9b8>
+ ('makeParallelProjection', <built-in method makeParallelProjection of Part.Vertex object at 0x246c9b8>
+ ('makePerspectiveProjection', <built-in method makePerspectiveProjection of Part.Vertex object at 0x246c9b8>
+ ('makeShapeFromMesh', <built-in method makeShapeFromMesh of Part.Vertex object at 0x246c9b8>
+ ('makeThickness', <built-in method makeThickness of Part.Vertex object at 0x246c9b8>
+ ('mirror', <built-in method mirror of Part.Vertex object at 0x246c9b8>
+ ('multiFuse', <built-in method multiFuse of Part.Vertex object at 0x246c9b8>
+ ('nullify', <built-in method nullify of Part.Vertex object at 0x246c9b8>
+ ('oldFuse', <built-in method oldFuse of Part.Vertex object at 0x246c9b8>
+ ('project', <built-in method project of Part.Vertex object at 0x246c9b8>
+ ('read', <built-in method read of Part.Vertex object at 0x246c9b8>
+ ('removeInternalWires', <built-in method removeInternalWires of Part.Vertex object at 0x246c9b8>
+ ('removeShape', <built-in method removeShape of Part.Vertex object at 0x246c9b8>
+ ('removeSplitter', <built-in method removeSplitter of Part.Vertex object at 0x246c9b8>
+ ('replaceShape', <built-in method replaceShape of Part.Vertex object at 0x246c9b8>
+ ('reverse', <built-in method reverse of Part.Vertex object at 0x246c9b8>
+ ('revolve', <built-in method revolve of Part.Vertex object at 0x246c9b8>
+ ('rotate', <built-in method rotate of Part.Vertex object at 0x246c9b8>
+ ('scale', <built-in method scale of Part.Vertex object at 0x246c9b8>
+ ('section', <built-in method section of Part.Vertex object at 0x246c9b8>
+ ('setTolerance', <built-in method setTolerance of Part.Vertex object at 0x246c9b8>
+ ('sewShape', <built-in method sewShape of Part.Vertex object at 0x246c9b8>
+ ('slice', <built-in method slice of Part.Vertex object at 0x246c9b8>
+ ('slices', <built-in method slices of Part.Vertex object at 0x246c9b8>
+ ('tessellate', <built-in method tessellate of Part.Vertex object at 0x246c9b8>
+ ('toNurbs', <built-in method toNurbs of Part.Vertex object at 0x246c9b8>
+ ('transformGeometry', <built-in method transformGeometry of Part.Vertex object at 0x246c9b8>
+ ('transformShape', <built-in method transformShape of Part.Vertex object at 0x246c9b8>
+ ('translate', <built-in method translate of Part.Vertex object at 0x246c9b8>
+ ('writeInventor', <built-in method writeInventor of Part.Vertex object at 0x246c9b8>)]

@@ -1,0 +1,120 @@
+('Area', 860.4859203937185
+ ('BoundBox', BoundBox (5.79092e-13, -7.31234, -7.31234, 26.9983, 7.31234, 7.31234)
+ ('CenterOfMass', Vector (9.560172245178606, 2.6832547774081596e-14, -2.4197652176466194e-17)
+ ('CompSolids', []
+ ('Compounds', []
+ ('Content', ''
+ ('Edges', [<Edge object at 0x2a88110>, <Edge object at 0x2a8af50>, <Edge object at 0x2a87b40>, <Edge object at 0x2a8c4c0>, <Edge object at 0x2a8b9a0>, <Edge object at 0x2a89810>, <Edge object at 0x2a86630>, <Edge object at 0x2a7d620>, <Edge object at 0x2a8cc70>]
+ ('Faces', [<Face object at 0x2a8a350>, <Face object at 0x2a87480>, <Face object at 0x2a8bf50>, <Face object at 0x2a8ae40>, <Face object at 0x2a8a610>]
+ ('Length', 286.6896277140445
+ ('Mass', 1936.263573486055
+ ('Matrix', Matrix ((1,0,0,0
+(0,1,0,0
+(0,0,1,0
+(0,0,0,1))
+ ('MatrixOfInertia', Matrix ((36165.5,3.55838e-11,6.51689e-14,0
+(3.55838e-11,67725.1,2.48954e-12,0
+(6.51689e-14,2.48954e-12,67725.1,0
+(0,0,0,1))
+ ('MemSize', 7832
+ ('Module', 0
+ ('Orientation', 'Forward'
+ ('OuterShell', <Shell object at 0x2a7e670>
+ ('Placement', Placement [Pos=(0,0,0
+ Yaw-Pitch-Roll=(0,0,0)]
+ ('PrincipalProperties', {'RadiusOfGyration': (5.914153758428253, 5.914153758428253, 4.321801670591053
+ 'FirstAxisOfInertia': Vector (7.958105230915432e-16, 0.7071067811865477, -0.7071067811865474
+ 'ThirdAxisOfInertia': Vector (1.0, -1.1275109789261014e-15, -2.064944090813967e-18
+ 'Moments': (67725.10668365416, 67725.10668365416, 36165.47231791308
+ 'SymmetryPoint': False, 'SecondAxisOfInertia': Vector (-7.987307950303143e-16, -0.7071067811865474, -0.7071067811865477
+ 'SymmetryAxis': True}
+ ('ShapeType', 'Solid'
+ ('Shells', [<Shell object at 0x2a7e6d0>]
+ ('Solids', [<Solid object at 0x2a7cf90>]
+ ('StaticMoments', (18511.01327459173, 5.1954884838778526e-11, -4.6853032473177054e-14)
+ ('TypeId', 'Part::TopoShape'
+ ('Vertexes', [<Vertex object at 0x2a7e2d0>, <Vertex object at 0x2a82f50>, <Vertex object at 0x2a7c110>, <Vertex object at 0x2a7c1b0>, <Vertex object at 0x2a82220>]
+ ('Volume', 1936.263573486055
+ ('Wires', [<Wire object at 0x2a82360>, <Wire object at 0x2665370>, <Wire object at 0x2665410>, <Wire object at 0x2a7c640>, <Wire object at 0x2a7c6e0>]
+ ('__class__', <type 'Part.Solid'>
+ ('__delattr__', <method-wrapper '__delattr__' of Part.Solid object at 0x2a88218>
+ ('__doc__', 'Create a solid out of the shells of a shape'
+ ('__format__', <built-in method __format__ of Part.Solid object at 0x2a88218>
+ ('__getattribute__', <method-wrapper '__getattribute__' of Part.Solid object at 0x2a88218>
+ ('__getstate__', <built-in method __getstate__ of Part.Solid object at 0x2a88218>
+ ('__hash__', <method-wrapper '__hash__' of Part.Solid object at 0x2a88218>
+ ('__init__', <method-wrapper '__init__' of Part.Solid object at 0x2a88218>
+ ('__new__', <built-in method __new__ of type object at 0x7fe202bb13a0>
+ ('__reduce__', <built-in method __reduce__ of Part.Solid object at 0x2a88218>
+ ('__reduce_ex__', <built-in method __reduce_ex__ of Part.Solid object at 0x2a88218>
+ ('__repr__', <method-wrapper '__repr__' of Part.Solid object at 0x2a88218>
+ ('__setattr__', <method-wrapper '__setattr__' of Part.Solid object at 0x2a88218>
+ ('__setstate__', <built-in method __setstate__ of Part.Solid object at 0x2a88218>
+ ('__sizeof__', <built-in method __sizeof__ of Part.Solid object at 0x2a88218>
+ ('__str__', <method-wrapper '__str__' of Part.Solid object at 0x2a88218>
+ ('__subclasshook__', <built-in method __subclasshook__ of type object at 0x7fe202bb13a0>
+ ('check', <built-in method check of Part.Solid object at 0x2a88218>
+ ('childShapes', <built-in method childShapes of Part.Solid object at 0x2a88218>
+ ('cleaned', <built-in method cleaned of Part.Solid object at 0x2a88218>
+ ('common', <built-in method common of Part.Solid object at 0x2a88218>
+ ('complement', <built-in method complement of Part.Solid object at 0x2a88218>
+ ('copy', <built-in method copy of Part.Solid object at 0x2a88218>
+ ('cut', <built-in method cut of Part.Solid object at 0x2a88218>
+ ('distToShape', <built-in method distToShape of Part.Solid object at 0x2a88218>
+ ('dumpToString', <built-in method dumpToString of Part.Solid object at 0x2a88218>
+ ('exportBrep', <built-in method exportBrep of Part.Solid object at 0x2a88218>
+ ('exportBrepToString', <built-in method exportBrepToString of Part.Solid object at 0x2a88218>
+ ('exportIges', <built-in method exportIges of Part.Solid object at 0x2a88218>
+ ('exportStep', <built-in method exportStep of Part.Solid object at 0x2a88218>
+ ('exportStl', <built-in method exportStl of Part.Solid object at 0x2a88218>
+ ('extrude', <built-in method extrude of Part.Solid object at 0x2a88218>
+ ('fix', <built-in method fix of Part.Solid object at 0x2a88218>
+ ('fuse', <built-in method fuse of Part.Solid object at 0x2a88218>
+ ('getAllDerivedFrom', <built-in method getAllDerivedFrom of Part.Solid object at 0x2a88218>
+ ('getElement', <built-in method getElement of Part.Solid object at 0x2a88218>
+ ('getMomentOfInertia', <built-in method getMomentOfInertia of Part.Solid object at 0x2a88218>
+ ('getRadiusOfGyration', <built-in method getRadiusOfGyration of Part.Solid object at 0x2a88218>
+ ('hashCode', <built-in method hashCode of Part.Solid object at 0x2a88218>
+ ('importBrep', <built-in method importBrep of Part.Solid object at 0x2a88218>
+ ('importBrepFromString', <built-in method importBrepFromString of Part.Solid object at 0x2a88218>
+ ('isClosed', <built-in method isClosed of Part.Solid object at 0x2a88218>
+ ('isDerivedFrom', <built-in method isDerivedFrom of Part.Solid object at 0x2a88218>
+ ('isEqual', <built-in method isEqual of Part.Solid object at 0x2a88218>
+ ('isInside', <built-in method isInside of Part.Solid object at 0x2a88218>
+ ('isNull', <built-in method isNull of Part.Solid object at 0x2a88218>
+ ('isPartner', <built-in method isPartner of Part.Solid object at 0x2a88218>
+ ('isSame', <built-in method isSame of Part.Solid object at 0x2a88218>
+ ('isValid', <built-in method isValid of Part.Solid object at 0x2a88218>
+ ('makeChamfer', <built-in method makeChamfer of Part.Solid object at 0x2a88218>
+ ('makeFillet', <built-in method makeFillet of Part.Solid object at 0x2a88218>
+ ('makeOffsetShape', <built-in method makeOffsetShape of Part.Solid object at 0x2a88218>
+ ('makeParallelProjection', <built-in method makeParallelProjection of Part.Solid object at 0x2a88218>
+ ('makePerspectiveProjection', <built-in method makePerspectiveProjection of Part.Solid object at 0x2a88218>
+ ('makeShapeFromMesh', <built-in method makeShapeFromMesh of Part.Solid object at 0x2a88218>
+ ('makeThickness', <built-in method makeThickness of Part.Solid object at 0x2a88218>
+ ('mirror', <built-in method mirror of Part.Solid object at 0x2a88218>
+ ('multiFuse', <built-in method multiFuse of Part.Solid object at 0x2a88218>
+ ('nullify', <built-in method nullify of Part.Solid object at 0x2a88218>
+ ('offsetFaces', <built-in method offsetFaces of Part.Solid object at 0x2a88218>
+ ('oldFuse', <built-in method oldFuse of Part.Solid object at 0x2a88218>
+ ('project', <built-in method project of Part.Solid object at 0x2a88218>
+ ('read', <built-in method read of Part.Solid object at 0x2a88218>
+ ('removeInternalWires', <built-in method removeInternalWires of Part.Solid object at 0x2a88218>
+ ('removeShape', <built-in method removeShape of Part.Solid object at 0x2a88218>
+ ('removeSplitter', <built-in method removeSplitter of Part.Solid object at 0x2a88218>
+ ('replaceShape', <built-in method replaceShape of Part.Solid object at 0x2a88218>
+ ('reverse', <built-in method reverse of Part.Solid object at 0x2a88218>
+ ('revolve', <built-in method revolve of Part.Solid object at 0x2a88218>
+ ('rotate', <built-in method rotate of Part.Solid object at 0x2a88218>
+ ('scale', <built-in method scale of Part.Solid object at 0x2a88218>
+ ('section', <built-in method section of Part.Solid object at 0x2a88218>
+ ('sewShape', <built-in method sewShape of Part.Solid object at 0x2a88218>
+ ('slice', <built-in method slice of Part.Solid object at 0x2a88218>
+ ('slices', <built-in method slices of Part.Solid object at 0x2a88218>
+ ('tessellate', <built-in method tessellate of Part.Solid object at 0x2a88218>
+ ('toNurbs', <built-in method toNurbs of Part.Solid object at 0x2a88218>
+ ('transformGeometry', <built-in method transformGeometry of Part.Solid object at 0x2a88218>
+ ('transformShape', <built-in method transformShape of Part.Solid object at 0x2a88218>
+ ('translate', <built-in method translate of Part.Solid object at 0x2a88218>
+ ('writeInventor', <built-in method writeInventor of Part.Solid object at 0x2a88218>)]
+[<Wire object at 0x2a88e30>]

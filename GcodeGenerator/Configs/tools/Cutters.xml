@@ -1,27 +1,27 @@
 <config>
     <type_90>
         <plexi>
-            <diameter_1>
+            <diameter_1.0>
                 <params 
                     maxDepth = "1.6" 
                     cutSpeed = "200" 
                     drillSpeed = "20" 
                 />
-            </diameter_1>
-            <diameter_2>
+            </diameter_1.0>
+            <diameter_2.0>
                 <params 
                     maxDepth = "1.8" 
                     cutSpeed = "200" 
                     drillSpeed = "20" 
                 />
-            </diameter_2>
-            <diameter_3>
+            </diameter_2.0>
+            <diameter_3.0>
                 <params 
                     maxDepth = "1.6"
                     cutSpeed = "200" 
                     drillSpeed = "20" 
                 />
-            </diameter_3>
+            </diameter_3.0>
             <diameter_6.35>
                 <params 
                     maxDepth = "2.5" 
@@ -31,30 +31,30 @@
             </diameter_6.35>
         </plexi>
         <balsa>
-            <diameter_1>
+            <diameter_1.0>
                 <params 
                     maxDepth = "3.2" 
                     cutSpeed = "500" 
                     drillSpeed = "100" 
                 />
-            </diameter_1>
-            <diameter_2>
+            </diameter_1.0>
+            <diameter_2.0>
                 <params 
                     maxDepth = "4.3" 
                     cutSpeed = "500" 
                     drillSpeed = "100" 
                 />
-            </diameter_2>
-            <diameter_3>
+            </diameter_2.0>
+            <diameter_3.0>
                 <params 
                     maxDepth = "3.2"
                     cutSpeed = "500" 
                     drillSpeed = "100" 
                 />
-            </diameter_3>
+            </diameter_3.0>
             <diameter_6.35>
                 <params 
-                    maxDepth = "8" 
+                    maxDepth = "10" 
                     cutSpeed = "1250"
                     drillSpeed = "100" 
                 />

@@ -67,22 +67,11 @@ class polyFromMeshCreator:
             for point in line:
                 if not point in newLine:
                     newLine.append(point)
-                else:
-                    print("not added:", point)
+                #else:
+                #    print("not added:", point)
             newLinesList.append(newLine)
         return newLinesList
 
-        #for i in range(0, lines) - 1):
-        #            linesListLen = len(linesList)
-        #    for j in range(i + 1, linesListLen)):
-        #        if match2FloatLists(linesList[i], linesList[j]):
-        #            print("duplicate:", linesList[i])
-        #            del linesList[j]
-        #            j -= 1
-        #            linesListLen = len(linesList)
-        #return linesList
-
-    
     def genPolylines(self):
         polyMap = {}
     
