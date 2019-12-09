@@ -3,6 +3,7 @@ import Part
 from FreeCAD import Base
 import inspect
 import utilsConfig as uc
+import polyFromFaceCreator as pmc
 
 
 def saveModel(savingFunction, savingName):
@@ -29,13 +30,12 @@ def moveToBase(shape, offset):
     saveModel(shape.exportBrep, "moveToBase.brep")
     return shape
 
-def genEnlargedBBox(shape, enlargeBy, additionalSpaceToCutOut, minHeight):
-    shape.tessellate(1)
+def genEnlargedBBox(shape, enlargeBy = 0, additionalSpaceToCutOut = 0 , minHeight = 0):
+    shape.tessellate(2)
     print("Max:", shape.BoundBox.XMax, "\tMin:", shape.BoundBox.XMin)
     basePoint = Base.Vector(shape.BoundBox.XMin - enlargeBy, shape.BoundBox.YMin - enlargeBy, shape.BoundBox.ZMin + minHeight)
     baseVector = Base.Vector(0, 0, 1)
     shapeThickness = shape.BoundBox.ZLength + additionalSpaceToCutOut - minHeight
-    minHeight = 3
     if (shapeThickness < minHeight):
         print("No optimization due to not enough material thickness")
     return Part.makeBox(shape.BoundBox.XLength + 2 * enlargeBy,
@@ -49,9 +49,10 @@ def genBaseBoxDiff(shape, zOffset, height):
     baseVector = Base.Vector(0, 0, 1)
     return Part.makeBox(bbox.XLength, bbox.YLength, height, basePoint, baseVector)
 
+def genBBox(shape):
+    shape.tessellate(1)
+    return shape.BoundBox
 
 def preprocess(shape, offset):
     shape = moveToBase(shape, offset)
     return shape
-
-

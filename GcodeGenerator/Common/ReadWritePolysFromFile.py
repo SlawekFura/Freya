@@ -37,7 +37,3 @@ def readPolysFromFile(filename):
             polygon.clear()
     return offsetPolygonsMap
             
-        
-            
-    
-    

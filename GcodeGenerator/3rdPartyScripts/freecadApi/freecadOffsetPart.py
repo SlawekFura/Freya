@@ -3,6 +3,8 @@ import os
 
 # add folder containing FreeCAD.pyd, FreeCADGui.pyd to sys.path
 sys.path.append("/usr/lib/freecad/lib") # example for Linux
+sys.path.append('../../Common/')
+import ReadWritePolysFromFile as RWPolys
 
 import FreeCAD
 import FreeCADGui  
@@ -14,6 +16,8 @@ from FreeCAD import Base
 import baseModelOperations as bmo
 #import utilsConfig as uc
 import genOptimizedPart as gop
+import polyFromFaceCreator as pfc
+import GcodeCommandGenerator as gGen
 
 inputPart = sys.argv[1]
 millDiameter = float(sys.argv[2])
@@ -27,12 +31,19 @@ partFeature = doc.getObjectsByLabel("PartToOffset")[0]
 
 mutableShape = partFeature.Shape.copy()
 
-optimizedPart = gop.genOptimizedPart(mutableShape, millDiameter, additionalZHigh)
 
+bbox = bmo.genEnlargedBBox(mutableShape)[0]
+diff = bbox.cut(mutableShape)
+bmo.saveModel(diff.exportBrep, "diff.brep")
 
+optimizedPart, crossSecOptimized = gop.genOptimizedPart(mutableShape, millDiameter, additionalZHigh)
 
-dirSlice = Base.Vector(0,0,-1)
-print(partFeature.Shape.slice(dirSlice, 5))
+polylinesCoordMap = pfc.genPolyFromFaces(mutableShape, 0.5, 0.8)
+
+RWPolys.writePolyCoordsMapIntoFile('MeshOffsetsMap', polylinesCoordMap)
+
+offsetPolygonsMap = RWPolys.readPolysFromFile("../../3D/dataFromCgal.txt")
+gGen.genGcode3D(outputDir + "/gcode.gcode", offsetPolygonsMap, 100, 300)
 
 scriptPath = os.getcwd()
 #print(partFeature, inspect.getmembers(type(partFeature)))
