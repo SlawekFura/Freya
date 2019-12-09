@@ -24,9 +24,9 @@ int main(int argc, char* argv[])
     }
    std::cout << "Dupa1" << std::endl;
     std::ifstream inputFile;
-    //inputFile.open("../3D/MeshOffsetsMap", std::ios_base::in);
+    inputFile.open("../3D/MeshOffsetsMap", std::ios_base::in);
     //inputFile.open("/home/slawek/workspace/Frez/Freya/GcodeGenerator/3D/MeshOffsetsMap", std::ios_base::in);
-    inputFile.open("/home/slawek/workspace/Frez/Freya/GcodeGenerator/3rdPartyScripts/freecadApi/MeshOffsetsMap", std::ios_base::in);
+    //inputFile.open("/home/slawek/workspace/Frez/Freya/GcodeGenerator/3rdPartyScripts/freecadApi/MeshOffsetsMap", std::ios_base::in);
     std::cout << "Dupa1.0" << std::endl;
     
     std::map<float, std::vector<Polygon_2>> crossSections = parse(inputFile);

@@ -1,0 +1,33 @@
+[('Center', Vector (13.49916100000029, 0.0, 0.0)
+ ('DiagonalLength', 34.00987525172095
+ ('XLength', 26.998321999999423
+ ('XMax', 26.998322
+ ('XMin', 5.790923296444817e-13
+ ('YLength', 14.624674762571102
+ ('YMax', 7.312337381285551
+ ('YMin', -7.312337381285551
+ ('ZLength', 14.624674762571102
+ ('ZMax', 7.312337381285551
+ ('ZMin', -7.312337381285551
+ ('__class__', <type 'Base.BoundBox'>
+ ('__delattr__', <method-wrapper '__delattr__' of Base.BoundBox object at 0x1021198>
+ ('__doc__', 'Bound box class\nA bounding box is an orthographic cube which is a way to describe outer boundaries.\nYou get a bounding box from a lot of 3D types. It is often used to check if a 3D\nentity lies in the range of another object. Checking for boundig interference first\ncan save a lot of computing time!\n\nConstructor:\nApp.BoundBox([Xmin,Ymin,Zmin,Xmax,Ymax,Zmax])\nApp.BoundBox(Tuple, Tuple)\nApp.BoundBox(Vector, Vector)\nApp.BoundBox(BoundBox)\n\t  '
+ ('__format__', <built-in method __format__ of Base.BoundBox object at 0x1021198>
+ ('__getattribute__', <method-wrapper '__getattribute__' of Base.BoundBox object at 0x1021198>
+ ('__hash__', <method-wrapper '__hash__' of Base.BoundBox object at 0x1021198>
+ ('__init__', <method-wrapper '__init__' of Base.BoundBox object at 0x1021198>
+ ('__new__', <built-in method __new__ of type object at 0x7f89142185c0>
+ ('__reduce__', <built-in method __reduce__ of Base.BoundBox object at 0x1021198>
+ ('__reduce_ex__', <built-in method __reduce_ex__ of Base.BoundBox object at 0x1021198>
+ ('__repr__', <method-wrapper '__repr__' of Base.BoundBox object at 0x1021198>
+ ('__setattr__', <method-wrapper '__setattr__' of Base.BoundBox object at 0x1021198>
+ ('__sizeof__', <built-in method __sizeof__ of Base.BoundBox object at 0x1021198>
+ ('__str__', <method-wrapper '__str__' of Base.BoundBox object at 0x1021198>
+ ('__subclasshook__', <built-in method __subclasshook__ of type object at 0x7f89142185c0>
+ ('add', <built-in method add of Base.BoundBox object at 0x1021198>
+ ('enlarge', <built-in method enlarge of Base.BoundBox object at 0x1021198>
+ ('getIntersectionPoint', <built-in method getIntersectionPoint of Base.BoundBox object at 0x1021198>
+ ('isCutPlane', <built-in method isCutPlane of Base.BoundBox object at 0x1021198>
+ ('isInside', <built-in method isInside of Base.BoundBox object at 0x1021198>
+ ('isIntersection', <built-in method isIntersection of Base.BoundBox object at 0x1021198>
+ ('move', <built-in method move of Base.BoundBox object at 0x1021198>)]

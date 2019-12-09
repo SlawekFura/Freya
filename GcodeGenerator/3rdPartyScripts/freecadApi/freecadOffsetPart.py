@@ -17,7 +17,7 @@ import baseModelOperations as bmo
 #import utilsConfig as uc
 import genOptimizedPart as gop
 import polyFromFaceCreator as pfc
-import GcodeCommandGenerator as gGen
+#import GcodeCommandGenerator as gGen
 
 inputPart = sys.argv[1]
 millDiameter = float(sys.argv[2])
@@ -40,21 +40,20 @@ optimizedPart, crossSecOptimized = gop.genOptimizedPart(mutableShape, millDiamet
 
 polylinesCoordMap = pfc.genPolyFromFaces(mutableShape, 0.5, 0.8)
 
+polylinesCoordMap = pfc.genPolyFromFaces(crossSecOptimized, 0.5, 0.8)
+
 RWPolys.writePolyCoordsMapIntoFile('MeshOffsetsMap', polylinesCoordMap)
 
 offsetPolygonsMap = RWPolys.readPolysFromFile("../../3D/dataFromCgal.txt")
-gGen.genGcode3D(outputDir + "/gcode.gcode", offsetPolygonsMap, 100, 300)
 
-scriptPath = os.getcwd()
-#print(partFeature, inspect.getmembers(type(partFeature)))
-#newPart = None
-#minLength = 0.3
-#maxLength = 0.4
-#if (offset > 0.001):
-#    newPart = partFeature.Shape.makeOffsetShape(offset=offset, tolerance=0.05)
-#else:
-#    MeshPart.meshFromShape(partFeature.Shape, minLength, maxLength).write(outputStl)
-#    exit()
-#print("Saving mesh", inputPart)
-#print(partFeature.getTopoShape())#slice([0,0,-1], 2))
-#MeshPart.meshFromShape(newPart, minLength, maxLength).write(outputStl)
+#args = ("../CppWorkspace/ToolpathGenerator/build-debug/ToolpathGenerator", str(millDiameter * fillCoefficient))
+##args = ("/home/slawek/workspace/CppWorkspace/ToolpathGenerator/build-debug/ToolpathGenerator", str(millDiameter * fillCoefficient))
+#print("args: ", args)
+#popen = subprocess.Popen(args, stdout=subprocess.PIPE)
+#popen.wait()
+#output = popen.stdout.read()
+#print(output)
+
+offsetPolygonsMap = RWPolys.readPolysFromFile("dataFromCgal.txt")
+
+gGen.genGcode3D(outputDir + "/gcode.gcode", offsetPolygonsMap, 100, 300)

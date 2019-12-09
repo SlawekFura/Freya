@@ -1,102 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Session Name="/home/slawek/workspace/Frez/Freya/GcodeGenerator/CppWorkspace/CppWorkspace.workspace">
-  <int Value="2" Name="m_selectedTab"/>
+  <int Value="0" Name="m_selectedTab"/>
   <wxString Value="/home/slawek/workspace/Frez/Freya/GcodeGenerator/CppWorkspace/CppWorkspace.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
       <wxString Value="/home/slawek/workspace/Frez/Freya/GcodeGenerator/CppWorkspace/ToolpathGenerator/main.cpp" Name="FileName"/>
-      <int Value="25" Name="FirstVisibleLine"/>
-      <int Value="34" Name="CurrentLine"/>
+      <int Value="17" Name="FirstVisibleLine"/>
+      <int Value="26" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/home/slawek/workspace/Frez/Freya/GcodeGenerator/CppWorkspace/ToolpathGenerator/FileParser.h" Name="FileName"/>
-      <int Value="33" Name="FirstVisibleLine"/>
-      <int Value="31" Name="CurrentLine"/>
+      <int Value="15" Name="FirstVisibleLine"/>
+      <int Value="22" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/home/slawek/workspace/Frez/Freya/GcodeGenerator/CppWorkspace/ToolpathGenerator/PolyWithHolesCreator.h" Name="FileName"/>
-      <int Value="35" Name="FirstVisibleLine"/>
+      <int Value="50" Name="FirstVisibleLine"/>
       <int Value="48" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/usr/include/c++/5/bits/stl_map.h" Name="FileName"/>
-      <int Value="178" Name="FirstVisibleLine"/>
+      <int Value="187" Name="FirstVisibleLine"/>
       <int Value="185" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/usr/include/c++/5/bits/stl_tree.h" Name="FileName"/>
-      <int Value="805" Name="FirstVisibleLine"/>
+      <int Value="820" Name="FirstVisibleLine"/>
       <int Value="818" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/usr/include/c++/5/ext/alloc_traits.h" Name="FileName"/>
-      <int Value="131" Name="FirstVisibleLine"/>
+      <int Value="140" Name="FirstVisibleLine"/>
       <int Value="138" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/usr/include/c++/5/bits/alloc_traits.h" Name="FileName"/>
-      <int Value="522" Name="FirstVisibleLine"/>
+      <int Value="531" Name="FirstVisibleLine"/>
       <int Value="529" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/usr/include/c++/5/bits/allocator.h" Name="FileName"/>
-      <int Value="113" Name="FirstVisibleLine"/>
+      <int Value="122" Name="FirstVisibleLine"/>
       <int Value="120" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/usr/include/c++/5/ext/new_allocator.h" Name="FileName"/>
-      <int Value="112" Name="FirstVisibleLine"/>
+      <int Value="121" Name="FirstVisibleLine"/>
       <int Value="119" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/usr/include/c++/5/bits/move.h" Name="FileName"/>
-      <int Value="69" Name="FirstVisibleLine"/>
+      <int Value="78" Name="FirstVisibleLine"/>
       <int Value="76" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/usr/include/c++/5/ext/aligned_buffer.h" Name="FileName"/>
-      <int Value="61" Name="FirstVisibleLine"/>
+      <int Value="64" Name="FirstVisibleLine"/>
       <int Value="62" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/usr/include/c++/5/new" Name="FileName"/>
-      <int Value="122" Name="FirstVisibleLine"/>
+      <int Value="131" Name="FirstVisibleLine"/>
       <int Value="129" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/usr/include/c++/5/bits/stl_pair.h" Name="FileName"/>
-      <int Value="119" Name="FirstVisibleLine"/>
+      <int Value="128" Name="FirstVisibleLine"/>
       <int Value="126" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/usr/include/c++/5/bits/stl_vector.h" Name="FileName"/>
-      <int Value="312" Name="FirstVisibleLine"/>
+      <int Value="321" Name="FirstVisibleLine"/>
       <int Value="319" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>

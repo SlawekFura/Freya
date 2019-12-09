@@ -1,0 +1,107 @@
+'Area', <attribute 'Area' of 'Part.Shape' objects>
+ ('BoundBox', <attribute 'BoundBox' of 'Data.ComplexGeoData' objects>
+ ('CenterOfMass', <attribute 'CenterOfMass' of 'Part.Solid' objects>
+ ('CompSolids', <attribute 'CompSolids' of 'Part.Shape' objects>
+ ('Compounds', <attribute 'Compounds' of 'Part.Shape' objects>
+ ('Content', <attribute 'Content' of 'Base.Persistence' objects>
+ ('Edges', <attribute 'Edges' of 'Part.Shape' objects>
+ ('Faces', <attribute 'Faces' of 'Part.Shape' objects>
+ ('Length', <attribute 'Length' of 'Part.Shape' objects>
+ ('Mass', <attribute 'Mass' of 'Part.Solid' objects>
+ ('Matrix', <attribute 'Matrix' of 'Data.ComplexGeoData' objects>
+ ('MatrixOfInertia', <attribute 'MatrixOfInertia' of 'Part.Solid' objects>
+ ('MemSize', <attribute 'MemSize' of 'Base.Persistence' objects>
+ ('Module', <attribute 'Module' of 'Base.BaseClass' objects>
+ ('Orientation', <attribute 'Orientation' of 'Part.Shape' objects>
+ ('OuterShell', <attribute 'OuterShell' of 'Part.Solid' objects>
+ ('Placement', <attribute 'Placement' of 'Data.ComplexGeoData' objects>
+ ('PrincipalProperties', <attribute 'PrincipalProperties' of 'Part.Solid' objects>
+ ('ShapeType', <attribute 'ShapeType' of 'Part.Shape' objects>
+ ('Shells', <attribute 'Shells' of 'Part.Shape' objects>
+ ('Solids', <attribute 'Solids' of 'Part.Shape' objects>
+ ('StaticMoments', <attribute 'StaticMoments' of 'Part.Solid' objects>
+ ('TypeId', <attribute 'TypeId' of 'Base.BaseClass' objects>
+ ('Vertexes', <attribute 'Vertexes' of 'Part.Shape' objects>
+ ('Volume', <attribute 'Volume' of 'Part.Shape' objects>
+ ('Wires', <attribute 'Wires' of 'Part.Shape' objects>
+ ('__class__', <type 'type'>
+ ('__delattr__', <slot wrapper '__delattr__' of 'object' objects>
+ ('__doc__', 'Create a solid out of the shells of a shape'
+ ('__format__', <method '__format__' of 'object' objects>
+ ('__getattribute__', <slot wrapper '__getattribute__' of 'object' objects>
+ ('__getstate__', <method '__getstate__' of 'Part.Shape' objects>
+ ('__hash__', <slot wrapper '__hash__' of 'object' objects>
+ ('__init__', <slot wrapper '__init__' of 'Part.Solid' objects>
+ ('__new__', <built-in method __new__ of type object at 0x7fe4d85153a0>
+ ('__reduce__', <method '__reduce__' of 'object' objects>
+ ('__reduce_ex__', <method '__reduce_ex__' of 'object' objects>
+ ('__repr__', <slot wrapper '__repr__' of 'Part.Solid' objects>
+ ('__setattr__', <slot wrapper '__setattr__' of 'object' objects>
+ ('__setstate__', <method '__setstate__' of 'Part.Shape' objects>
+ ('__sizeof__', <method '__sizeof__' of 'object' objects>
+ ('__str__', <slot wrapper '__str__' of 'object' objects>
+ ('__subclasshook__', <built-in method __subclasshook__ of type object at 0x7fe4d85153a0>
+ ('check', <method 'check' of 'Part.Shape' objects>
+ ('childShapes', <method 'childShapes' of 'Part.Shape' objects>
+ ('cleaned', <method 'cleaned' of 'Part.Shape' objects>
+ ('common', <method 'common' of 'Part.Shape' objects>
+ ('complement', <method 'complement' of 'Part.Shape' objects>
+ ('copy', <method 'copy' of 'Part.Shape' objects>
+ ('cut', <method 'cut' of 'Part.Shape' objects>
+ ('distToShape', <method 'distToShape' of 'Part.Shape' objects>
+ ('dumpToString', <method 'dumpToString' of 'Part.Shape' objects>
+ ('exportBrep', <method 'exportBrep' of 'Part.Shape' objects>
+ ('exportBrepToString', <method 'exportBrepToString' of 'Part.Shape' objects>
+ ('exportIges', <method 'exportIges' of 'Part.Shape' objects>
+ ('exportStep', <method 'exportStep' of 'Part.Shape' objects>
+ ('exportStl', <method 'exportStl' of 'Part.Shape' objects>
+ ('extrude', <method 'extrude' of 'Part.Shape' objects>
+ ('fix', <method 'fix' of 'Part.Shape' objects>
+ ('fuse', <method 'fuse' of 'Part.Shape' objects>
+ ('getAllDerivedFrom', <method 'getAllDerivedFrom' of 'Base.BaseClass' objects>
+ ('getElement', <method 'getElement' of 'Part.Shape' objects>
+ ('getMomentOfInertia', <method 'getMomentOfInertia' of 'Part.Solid' objects>
+ ('getRadiusOfGyration', <method 'getRadiusOfGyration' of 'Part.Solid' objects>
+ ('hashCode', <method 'hashCode' of 'Part.Shape' objects>
+ ('importBrep', <method 'importBrep' of 'Part.Shape' objects>
+ ('importBrepFromString', <method 'importBrepFromString' of 'Part.Shape' objects>
+ ('isClosed', <method 'isClosed' of 'Part.Shape' objects>
+ ('isDerivedFrom', <method 'isDerivedFrom' of 'Base.BaseClass' objects>
+ ('isEqual', <method 'isEqual' of 'Part.Shape' objects>
+ ('isInside', <method 'isInside' of 'Part.Shape' objects>
+ ('isNull', <method 'isNull' of 'Part.Shape' objects>
+ ('isPartner', <method 'isPartner' of 'Part.Shape' objects>
+ ('isSame', <method 'isSame' of 'Part.Shape' objects>
+ ('isValid', <method 'isValid' of 'Part.Shape' objects>
+ ('makeChamfer', <method 'makeChamfer' of 'Part.Shape' objects>
+ ('makeFillet', <method 'makeFillet' of 'Part.Shape' objects>
+ ('makeOffsetShape', <method 'makeOffsetShape' of 'Part.Shape' objects>
+ ('makeParallelProjection', <method 'makeParallelProjection' of 'Part.Shape' objects>
+ ('makePerspectiveProjection', <method 'makePerspectiveProjection' of 'Part.Shape' objects>
+ ('makeShapeFromMesh', <method 'makeShapeFromMesh' of 'Part.Shape' objects>
+ ('makeThickness', <method 'makeThickness' of 'Part.Shape' objects>
+ ('mirror', <method 'mirror' of 'Part.Shape' objects>
+ ('multiFuse', <method 'multiFuse' of 'Part.Shape' objects>
+ ('nullify', <method 'nullify' of 'Part.Shape' objects>
+ ('offsetFaces', <method 'offsetFaces' of 'Part.Solid' objects>
+ ('oldFuse', <method 'oldFuse' of 'Part.Shape' objects>
+ ('project', <method 'project' of 'Part.Shape' objects>
+ ('read', <method 'read' of 'Part.Shape' objects>
+ ('removeInternalWires', <method 'removeInternalWires' of 'Part.Shape' objects>
+ ('removeShape', <method 'removeShape' of 'Part.Shape' objects>
+ ('removeSplitter', <method 'removeSplitter' of 'Part.Shape' objects>
+ ('replaceShape', <method 'replaceShape' of 'Part.Shape' objects>
+ ('reverse', <method 'reverse' of 'Part.Shape' objects>
+ ('revolve', <method 'revolve' of 'Part.Shape' objects>
+ ('rotate', <method 'rotate' of 'Part.Shape' objects>
+ ('scale', <method 'scale' of 'Part.Shape' objects>
+ ('section', <method 'section' of 'Part.Shape' objects>
+ ('sewShape', <method 'sewShape' of 'Part.Shape' objects>
+ ('slice', <method 'slice' of 'Part.Shape' objects>
+ ('slices', <method 'slices' of 'Part.Shape' objects>
+ ('tessellate', <method 'tessellate' of 'Part.Shape' objects>
+ ('toNurbs', <method 'toNurbs' of 'Part.Shape' objects>
+ ('transformGeometry', <method 'transformGeometry' of 'Part.Shape' objects>
+ ('transformShape', <method 'transformShape' of 'Part.Shape' objects>
+ ('translate', <method 'translate' of 'Part.Shape' objects>
+ ('writeInventor', <method 'writeInventor' of 'Part.Shape' objects>

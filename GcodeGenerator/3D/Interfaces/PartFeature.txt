@@ -1,0 +1,37 @@
+[('Content', <attribute 'Content' of 'Base.Persistence' objects>
+ ('Document', <attribute 'Document' of 'App.DocumentObject' objects>
+ ('InList', <attribute 'InList' of 'App.DocumentObject' objects>
+ ('MemSize', <attribute 'MemSize' of 'Base.Persistence' objects>
+ ('Module', <attribute 'Module' of 'Base.BaseClass' objects>
+ ('Name', <attribute 'Name' of 'App.DocumentObject' objects>
+ ('OutList', <attribute 'OutList' of 'App.DocumentObject' objects>
+ ('PropertiesList', <attribute 'PropertiesList' of 'App.PropertyContainer' objects>
+ ('State', <attribute 'State' of 'App.DocumentObject' objects>
+ ('TypeId', <attribute 'TypeId' of 'Base.BaseClass' objects>
+ ('ViewObject', <attribute 'ViewObject' of 'App.DocumentObject' objects>
+ ('__class__', <type 'type'>
+ ('__delattr__', <slot wrapper '__delattr__' of 'object' objects>
+ ('__doc__', 'This is the father of all shape object classes'
+ ('__format__', <method '__format__' of 'object' objects>
+ ('__getattribute__', <slot wrapper '__getattribute__' of 'object' objects>
+ ('__hash__', <slot wrapper '__hash__' of 'object' objects>
+ ('__init__', <slot wrapper '__init__' of 'Part.Feature' objects>
+ ('__new__', <built-in method __new__ of type object at 0x7f788cb4d0a0>
+ ('__reduce__', <method '__reduce__' of 'object' objects>
+ ('__reduce_ex__', <method '__reduce_ex__' of 'object' objects>
+ ('__repr__', <slot wrapper '__repr__' of 'Part.Feature' objects>
+ ('__setattr__', <slot wrapper '__setattr__' of 'object' objects>
+ ('__sizeof__', <method '__sizeof__' of 'object' objects>
+ ('__str__', <slot wrapper '__str__' of 'object' objects>
+ ('__subclasshook__', <built-in method __subclasshook__ of type object at 0x7f788cb4d0a0>
+ ('getAllDerivedFrom', <method 'getAllDerivedFrom' of 'Base.BaseClass' objects>
+ ('getDocumentationOfProperty', <method 'getDocumentationOfProperty' of 'App.PropertyContainer' objects>
+ ('getEditorMode', <method 'getEditorMode' of 'App.PropertyContainer' objects>
+ ('getGroupOfProperty', <method 'getGroupOfProperty' of 'App.PropertyContainer' objects>
+ ('getPropertyByName', <method 'getPropertyByName' of 'App.PropertyContainer' objects>
+ ('getTypeIdOfProperty', <method 'getTypeIdOfProperty' of 'App.PropertyContainer' objects>
+ ('getTypeOfProperty', <method 'getTypeOfProperty' of 'App.PropertyContainer' objects>
+ ('isDerivedFrom', <method 'isDerivedFrom' of 'Base.BaseClass' objects>
+ ('purgeTouched', <method 'purgeTouched' of 'App.DocumentObject' objects>
+ ('setEditorMode', <method 'setEditorMode' of 'App.PropertyContainer' objects>
+ ('touch', <method 'touch' of 'App.DocumentObject' objects>)

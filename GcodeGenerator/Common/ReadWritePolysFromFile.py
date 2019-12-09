@@ -9,7 +9,7 @@ def writePolyCoordsMapIntoFile(fileToWrite, polylinesCoordMap):
             strToAdd += "p" + "\n"
             index += 1
             for coords in polyline:
-                strToAdd += "\t" + str(coords) + "\n"
+                strToAdd += "\t" + str(coords[:3]) + "\n"
     strToAdd += "p" + "\n"
     
     fileToWrite = open('MeshOffsetsMap','w')

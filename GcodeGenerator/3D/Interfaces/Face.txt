@@ -1,0 +1,119 @@
+[('Area', 10.729083410937026
+ ('BoundBox', BoundBox (-17.4992, -15.0681, -3.56995, -17.4992, 6.39011, -3.06995)
+ ('CenterOfMass', Vector (-17.499160999999134, -4.338972811735421, -3.319949407834951)
+ ('CompSolids', []
+ ('Compounds', []
+ ('Content', ''
+ ('Edges', [<Edge object at 0x22747e0>, <Edge object at 0x224ba60>, <Edge object at 0x22a4ae0>, <Edge object at 0x21b56b0>]
+ ('Faces', [<Face object at 0x2273d50>]
+ ('Length', 43.91633364374811
+ ('Matrix', Matrix ((1,0,0,0
+(0,1,0,0
+(0,0,1,0
+(0,0,0,1))
+ ('MemSize', 2352
+ ('Module', 0
+ ('Orientation', 'Reversed'
+ ('OuterWire', <Wire object at 0x22126e0>
+ ('ParameterRange', (0.0, 0.5, -21.458166821874055, 0.0)
+ ('Placement', Placement [Pos=(0,0,0
+ Yaw-Pitch-Roll=(0,0,0)]
+ ('ShapeType', 'Face'
+ ('Shells', []
+ ('Solids', []
+ ('Surface', <Plane object>
+ ('Tolerance', 1e-07
+ ('TypeId', 'Part::TopoShape'
+ ('Vertexes', [<Vertex object at 0x227a3e0>, <Vertex object at 0x22a47a0>, <Vertex object at 0x22a4970>, <Vertex object at 0x22127e0>]
+ ('Volume', 0.0
+ ('Wire', <Wire object at 0x224acd0>
+ ('Wires', [<Wire object at 0x2273120>]
+ ('__class__', <type 'Part.Face'>
+ ('__delattr__', <method-wrapper '__delattr__' of Part.Face object at 0x21ba8c8>
+ ('__doc__', 'TopoShapeFace is the OpenCasCade topological face wrapper'
+ ('__format__', <built-in method __format__ of Part.Face object at 0x21ba8c8>
+ ('__getattribute__', <method-wrapper '__getattribute__' of Part.Face object at 0x21ba8c8>
+ ('__getstate__', <built-in method __getstate__ of Part.Face object at 0x21ba8c8>
+ ('__hash__', <method-wrapper '__hash__' of Part.Face object at 0x21ba8c8>
+ ('__init__', <method-wrapper '__init__' of Part.Face object at 0x21ba8c8>
+ ('__new__', <built-in method __new__ of type object at 0x7f695be26da0>
+ ('__reduce__', <built-in method __reduce__ of Part.Face object at 0x21ba8c8>
+ ('__reduce_ex__', <built-in method __reduce_ex__ of Part.Face object at 0x21ba8c8>
+ ('__repr__', <method-wrapper '__repr__' of Part.Face object at 0x21ba8c8>
+ ('__setattr__', <method-wrapper '__setattr__' of Part.Face object at 0x21ba8c8>
+ ('__setstate__', <built-in method __setstate__ of Part.Face object at 0x21ba8c8>
+ ('__sizeof__', <built-in method __sizeof__ of Part.Face object at 0x21ba8c8>
+ ('__str__', <method-wrapper '__str__' of Part.Face object at 0x21ba8c8>
+ ('__subclasshook__', <built-in method __subclasshook__ of type object at 0x7f695be26da0>
+ ('check', <built-in method check of Part.Face object at 0x21ba8c8>
+ ('childShapes', <built-in method childShapes of Part.Face object at 0x21ba8c8>
+ ('cleaned', <built-in method cleaned of Part.Face object at 0x21ba8c8>
+ ('common', <built-in method common of Part.Face object at 0x21ba8c8>
+ ('complement', <built-in method complement of Part.Face object at 0x21ba8c8>
+ ('copy', <built-in method copy of Part.Face object at 0x21ba8c8>
+ ('curvatureAt', <built-in method curvatureAt of Part.Face object at 0x21ba8c8>
+ ('cut', <built-in method cut of Part.Face object at 0x21ba8c8>
+ ('derivative1At', <built-in method derivative1At of Part.Face object at 0x21ba8c8>
+ ('derivative2At', <built-in method derivative2At of Part.Face object at 0x21ba8c8>
+ ('distToShape', <built-in method distToShape of Part.Face object at 0x21ba8c8>
+ ('dumpToString', <built-in method dumpToString of Part.Face object at 0x21ba8c8>
+ ('exportBrep', <built-in method exportBrep of Part.Face object at 0x21ba8c8>
+ ('exportBrepToString', <built-in method exportBrepToString of Part.Face object at 0x21ba8c8>
+ ('exportIges', <built-in method exportIges of Part.Face object at 0x21ba8c8>
+ ('exportStep', <built-in method exportStep of Part.Face object at 0x21ba8c8>
+ ('exportStl', <built-in method exportStl of Part.Face object at 0x21ba8c8>
+ ('extrude', <built-in method extrude of Part.Face object at 0x21ba8c8>
+ ('fix', <built-in method fix of Part.Face object at 0x21ba8c8>
+ ('fuse', <built-in method fuse of Part.Face object at 0x21ba8c8>
+ ('getAllDerivedFrom', <built-in method getAllDerivedFrom of Part.Face object at 0x21ba8c8>
+ ('getElement', <built-in method getElement of Part.Face object at 0x21ba8c8>
+ ('hashCode', <built-in method hashCode of Part.Face object at 0x21ba8c8>
+ ('importBrep', <built-in method importBrep of Part.Face object at 0x21ba8c8>
+ ('importBrepFromString', <built-in method importBrepFromString of Part.Face object at 0x21ba8c8>
+ ('isClosed', <built-in method isClosed of Part.Face object at 0x21ba8c8>
+ ('isDerivedFrom', <built-in method isDerivedFrom of Part.Face object at 0x21ba8c8>
+ ('isEqual', <built-in method isEqual of Part.Face object at 0x21ba8c8>
+ ('isInside', <built-in method isInside of Part.Face object at 0x21ba8c8>
+ ('isNull', <built-in method isNull of Part.Face object at 0x21ba8c8>
+ ('isPartOfDomain', <built-in method isPartOfDomain of Part.Face object at 0x21ba8c8>
+ ('isPartner', <built-in method isPartner of Part.Face object at 0x21ba8c8>
+ ('isSame', <built-in method isSame of Part.Face object at 0x21ba8c8>
+ ('isValid', <built-in method isValid of Part.Face object at 0x21ba8c8>
+ ('makeChamfer', <built-in method makeChamfer of Part.Face object at 0x21ba8c8>
+ ('makeFillet', <built-in method makeFillet of Part.Face object at 0x21ba8c8>
+ ('makeHalfSpace', <built-in method makeHalfSpace of Part.Face object at 0x21ba8c8>
+ ('makeOffset', <built-in method makeOffset of Part.Face object at 0x21ba8c8>
+ ('makeOffsetShape', <built-in method makeOffsetShape of Part.Face object at 0x21ba8c8>
+ ('makeParallelProjection', <built-in method makeParallelProjection of Part.Face object at 0x21ba8c8>
+ ('makePerspectiveProjection', <built-in method makePerspectiveProjection of Part.Face object at 0x21ba8c8>
+ ('makeShapeFromMesh', <built-in method makeShapeFromMesh of Part.Face object at 0x21ba8c8>
+ ('makeThickness', <built-in method makeThickness of Part.Face object at 0x21ba8c8>
+ ('mirror', <built-in method mirror of Part.Face object at 0x21ba8c8>
+ ('multiFuse', <built-in method multiFuse of Part.Face object at 0x21ba8c8>
+ ('normalAt', <built-in method normalAt of Part.Face object at 0x21ba8c8>
+ ('nullify', <built-in method nullify of Part.Face object at 0x21ba8c8>
+ ('oldFuse', <built-in method oldFuse of Part.Face object at 0x21ba8c8>
+ ('project', <built-in method project of Part.Face object at 0x21ba8c8>
+ ('read', <built-in method read of Part.Face object at 0x21ba8c8>
+ ('removeInternalWires', <built-in method removeInternalWires of Part.Face object at 0x21ba8c8>
+ ('removeShape', <built-in method removeShape of Part.Face object at 0x21ba8c8>
+ ('removeSplitter', <built-in method removeSplitter of Part.Face object at 0x21ba8c8>
+ ('replaceShape', <built-in method replaceShape of Part.Face object at 0x21ba8c8>
+ ('reverse', <built-in method reverse of Part.Face object at 0x21ba8c8>
+ ('revolve', <built-in method revolve of Part.Face object at 0x21ba8c8>
+ ('rotate', <built-in method rotate of Part.Face object at 0x21ba8c8>
+ ('scale', <built-in method scale of Part.Face object at 0x21ba8c8>
+ ('section', <built-in method section of Part.Face object at 0x21ba8c8>
+ ('setTolerance', <built-in method setTolerance of Part.Face object at 0x21ba8c8>
+ ('sewShape', <built-in method sewShape of Part.Face object at 0x21ba8c8>
+ ('slice', <built-in method slice of Part.Face object at 0x21ba8c8>
+ ('slices', <built-in method slices of Part.Face object at 0x21ba8c8>
+ ('tangentAt', <built-in method tangentAt of Part.Face object at 0x21ba8c8>
+ ('tessellate', <built-in method tessellate of Part.Face object at 0x21ba8c8>
+ ('toNurbs', <built-in method toNurbs of Part.Face object at 0x21ba8c8>
+ ('transformGeometry', <built-in method transformGeometry of Part.Face object at 0x21ba8c8>
+ ('transformShape', <built-in method transformShape of Part.Face object at 0x21ba8c8>
+ ('translate', <built-in method translate of Part.Face object at 0x21ba8c8>
+ ('validate', <built-in method validate of Part.Face object at 0x21ba8c8>
+ ('valueAt', <built-in method valueAt of Part.Face object at 0x21ba8c8>
+ ('writeInventor', <built-in method writeInventor of Part.Face object at 0x21ba8c8>)]

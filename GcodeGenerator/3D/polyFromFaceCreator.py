@@ -41,6 +41,20 @@ def genPolyFromSlices(slices):
 
     return polylines
 
+def mapPolysToZ(polys):
+    polysMapToZ = {}
+    for poly in polys:
+        key = poly[0][z]
+        print("key", key)
+        poly = removeDuplicates(poly)
+        if key in polysMapToZ.keys():
+
+            polysMapToZ[key].append(poly)
+        else:
+            polysMapToZ[key] = [poly]
+    return polysMapToZ
+
+
 def genAndMapPolyFromSlices(slices): 
     polys = gop.genPolyFromShape(slices)
     polys = mergeEdgesInsidePolys(polys)
@@ -54,15 +68,15 @@ def genAndMapPolyFromSlices(slices):
     #        print("\tpoly")
     #        for point in poly:
     #            print("\t\tpoint"+ str(point))
-    polysMapToZ = {}
-    for poly in polys:
-        key = poly[0][z]
-        poly = removeDuplicates(poly)
-        if key in polysMapToZ.keys():
+    polysMapToZ = mapPolysToZ(polys)
+    #for poly in polys:
+    #    key = poly[0][z]
+    #    poly = removeDuplicates(poly)
+    #    if key in polysMapToZ.keys():
 
-            polysMapToZ[key].append(poly)
-        else:
-            polysMapToZ[key] = [poly]
+    #        polysMapToZ[key].append(poly)
+    #    else:
+    #        polysMapToZ[key] = [poly]
     #for key, value in polysMapToZ.items():
     #    print("key", key)
     #    for val in value:
@@ -97,10 +111,10 @@ def genPolyFromFaces(shape, minThickness, maxThickness):
     sliceCoord = [float(elem) / multVal for elem in sliceCoord]
     print("sliceCoord", sliceCoord)
     
-    genAndMapPolyFromSlices(
+    polysMapToZ = genAndMapPolyFromSlices(partToCut.slices(Base.Vector(0,0,-1), sliceCoord))
     #polys = genPolyFromSlices(partToCut.slices(Base.Vector(0,0,-1), sliceCoord))
     polys = gop.genPolyFromShape(partToCut.slices(Base.Vector(0,0,-1), sliceCoord))
-    #gen = partToCut.slices(Base.Vector(0,0,-1), sliceCoord)
+    gen = partToCut.slices(Base.Vector(0,0,-1), sliceCoord)
     #print(polys)
 
     bmo.saveModel(gen.exportBrep, "polys.brep")
@@ -115,19 +129,19 @@ def genPolyFromFaces(shape, minThickness, maxThickness):
     #        print("\tpoly")
     #        for point in poly:
     #            print("\t\tpoint"+ str(point))
-    polysMapToZ = {}
-    for poly in polys:
-        key = poly[0][z]
-        poly = removeDuplicates(poly)
-        if key in polysMapToZ.keys():
+    #polysMapToZ = {}
+    #for poly in polys:
+    #    key = poly[0][z]
+    #    poly = removeDuplicates(poly)
+    #    if key in polysMapToZ.keys():
 
-            polysMapToZ[key].append(poly)
-        else:
-            polysMapToZ[key] = [poly]
-    for key, value in polysMapToZ.items():
-        print("key", key)
-        for val in value:
-            print("\tvalue " + str(val))
+    #        polysMapToZ[key].append(poly)
+    #    else:
+    #        polysMapToZ[key] = [poly]
+    #for key, value in polysMapToZ.items():
+    #    print("key", key)
+    #    for val in value:
+    #        print("\tvalue " + str(val))
         
     return polysMapToZ
 

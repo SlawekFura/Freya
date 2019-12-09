@@ -16,4 +16,4 @@ then
 fi
 
 cd "$( dirname "$0" )" && pwd 
-python "./Gen3DGcode.py" $pathToDxf $pathToOutput $optimization
+python3 "./Gen3DGcode.py" $pathToDxf $pathToOutput $optimization

@@ -1,0 +1,107 @@
+[('Area', 2035.5855289928584
+ ('BoundBox', BoundBox (-17.4992, -15.9542, -18.9542, 17.4992, 7.32957, 4.32957)
+ ('CompSolids', []
+ ('Compounds', []
+ ('Content', ''
+ ('Edges', [<Edge object at 0x10d6360>, <Edge object at 0x10b6900>, <Edge object at 0x10b6980>, <Edge object at 0x11710f0>, <Edge object at 0x1171170>, <Edge object at 0x1171240>, <Edge object at 0x11712c0>, <Edge object at 0x1171340>, <Edge object at 0x11713c0>, <Edge object at 0x10fa1b0>, <Edge object at 0x10fa250>, <Edge object at 0x10fa2f0>, <Edge object at 0x10fa390>]
+ ('Faces', [<Face object at 0x11709b0>, <Face object at 0x1170a50>, <Face object at 0x1170af0>, <Face object at 0x1170b90>, <Face object at 0x10b6720>, <Face object at 0x10b6860>, <Face object at 0x10fa7b0>]
+ ('Length', 538.1095646175085
+ ('Matrix', Matrix ((1,0,0,0
+(0,1,0,0
+(0,0,1,0
+(0,0,0,1))
+ ('MemSize', 17104
+ ('Module', 0
+ ('Orientation', 'Forward'
+ ('Placement', Placement [Pos=(0,0,0
+ Yaw-Pitch-Roll=(0,0,0)]
+ ('ShapeType', 'Shell'
+ ('Shells', [<Shell object at 0x10fa430>]
+ ('Solids', []
+ ('TypeId', 'Part::TopoShape'
+ ('Vertexes', [<Vertex object at 0x1170900>, <Vertex object at 0x10fa540>, <Vertex object at 0x10fa5e0>, <Vertex object at 0x10fa680>, <Vertex object at 0x10d1090>, <Vertex object at 0x10d1180>, <Vertex object at 0x10d1220>]
+ ('Volume', 7557.603612004242
+ ('Wires', [<Wire object at 0x10d12c0>, <Wire object at 0x10d1360>, <Wire object at 0x10d1400>, <Wire object at 0x10d14a0>, <Wire object at 0x1175650>, <Wire object at 0x1175740>, <Wire object at 0x11757e0>]
+ ('__class__', <type 'Part.Shell'>
+ ('__delattr__', <method-wrapper '__delattr__' of Part.Shell object at 0x10d8a58>
+ ('__doc__', 'Create a shell out of a list of faces'
+ ('__format__', <built-in method __format__ of Part.Shell object at 0x10d8a58>
+ ('__getattribute__', <method-wrapper '__getattribute__' of Part.Shell object at 0x10d8a58>
+ ('__getstate__', <built-in method __getstate__ of Part.Shell object at 0x10d8a58>
+ ('__hash__', <method-wrapper '__hash__' of Part.Shell object at 0x10d8a58>
+ ('__init__', <method-wrapper '__init__' of Part.Shell object at 0x10d8a58>
+ ('__new__', <built-in method __new__ of type object at 0x7f0151de8020>
+ ('__reduce__', <built-in method __reduce__ of Part.Shell object at 0x10d8a58>
+ ('__reduce_ex__', <built-in method __reduce_ex__ of Part.Shell object at 0x10d8a58>
+ ('__repr__', <method-wrapper '__repr__' of Part.Shell object at 0x10d8a58>
+ ('__setattr__', <method-wrapper '__setattr__' of Part.Shell object at 0x10d8a58>
+ ('__setstate__', <built-in method __setstate__ of Part.Shell object at 0x10d8a58>
+ ('__sizeof__', <built-in method __sizeof__ of Part.Shell object at 0x10d8a58>
+ ('__str__', <method-wrapper '__str__' of Part.Shell object at 0x10d8a58>
+ ('__subclasshook__', <built-in method __subclasshook__ of type object at 0x7f0151de8020>
+ ('add', <built-in method add of Part.Shell object at 0x10d8a58>
+ ('check', <built-in method check of Part.Shell object at 0x10d8a58>
+ ('childShapes', <built-in method childShapes of Part.Shell object at 0x10d8a58>
+ ('cleaned', <built-in method cleaned of Part.Shell object at 0x10d8a58>
+ ('common', <built-in method common of Part.Shell object at 0x10d8a58>
+ ('complement', <built-in method complement of Part.Shell object at 0x10d8a58>
+ ('copy', <built-in method copy of Part.Shell object at 0x10d8a58>
+ ('cut', <built-in method cut of Part.Shell object at 0x10d8a58>
+ ('distToShape', <built-in method distToShape of Part.Shell object at 0x10d8a58>
+ ('dumpToString', <built-in method dumpToString of Part.Shell object at 0x10d8a58>
+ ('exportBrep', <built-in method exportBrep of Part.Shell object at 0x10d8a58>
+ ('exportBrepToString', <built-in method exportBrepToString of Part.Shell object at 0x10d8a58>
+ ('exportIges', <built-in method exportIges of Part.Shell object at 0x10d8a58>
+ ('exportStep', <built-in method exportStep of Part.Shell object at 0x10d8a58>
+ ('exportStl', <built-in method exportStl of Part.Shell object at 0x10d8a58>
+ ('extrude', <built-in method extrude of Part.Shell object at 0x10d8a58>
+ ('fix', <built-in method fix of Part.Shell object at 0x10d8a58>
+ ('fuse', <built-in method fuse of Part.Shell object at 0x10d8a58>
+ ('getAllDerivedFrom', <built-in method getAllDerivedFrom of Part.Shell object at 0x10d8a58>
+ ('getBadEdges', <built-in method getBadEdges of Part.Shell object at 0x10d8a58>
+ ('getElement', <built-in method getElement of Part.Shell object at 0x10d8a58>
+ ('getFreeEdges', <built-in method getFreeEdges of Part.Shell object at 0x10d8a58>
+ ('hashCode', <built-in method hashCode of Part.Shell object at 0x10d8a58>
+ ('importBrep', <built-in method importBrep of Part.Shell object at 0x10d8a58>
+ ('importBrepFromString', <built-in method importBrepFromString of Part.Shell object at 0x10d8a58>
+ ('isClosed', <built-in method isClosed of Part.Shell object at 0x10d8a58>
+ ('isDerivedFrom', <built-in method isDerivedFrom of Part.Shell object at 0x10d8a58>
+ ('isEqual', <built-in method isEqual of Part.Shell object at 0x10d8a58>
+ ('isInside', <built-in method isInside of Part.Shell object at 0x10d8a58>
+ ('isNull', <built-in method isNull of Part.Shell object at 0x10d8a58>
+ ('isPartner', <built-in method isPartner of Part.Shell object at 0x10d8a58>
+ ('isSame', <built-in method isSame of Part.Shell object at 0x10d8a58>
+ ('isValid', <built-in method isValid of Part.Shell object at 0x10d8a58>
+ ('makeChamfer', <built-in method makeChamfer of Part.Shell object at 0x10d8a58>
+ ('makeFillet', <built-in method makeFillet of Part.Shell object at 0x10d8a58>
+ ('makeHalfSpace', <built-in method makeHalfSpace of Part.Shell object at 0x10d8a58>
+ ('makeOffsetShape', <built-in method makeOffsetShape of Part.Shell object at 0x10d8a58>
+ ('makeParallelProjection', <built-in method makeParallelProjection of Part.Shell object at 0x10d8a58>
+ ('makePerspectiveProjection', <built-in method makePerspectiveProjection of Part.Shell object at 0x10d8a58>
+ ('makeShapeFromMesh', <built-in method makeShapeFromMesh of Part.Shell object at 0x10d8a58>
+ ('makeThickness', <built-in method makeThickness of Part.Shell object at 0x10d8a58>
+ ('mirror', <built-in method mirror of Part.Shell object at 0x10d8a58>
+ ('multiFuse', <built-in method multiFuse of Part.Shell object at 0x10d8a58>
+ ('nullify', <built-in method nullify of Part.Shell object at 0x10d8a58>
+ ('oldFuse', <built-in method oldFuse of Part.Shell object at 0x10d8a58>
+ ('project', <built-in method project of Part.Shell object at 0x10d8a58>
+ ('read', <built-in method read of Part.Shell object at 0x10d8a58>
+ ('removeInternalWires', <built-in method removeInternalWires of Part.Shell object at 0x10d8a58>
+ ('removeShape', <built-in method removeShape of Part.Shell object at 0x10d8a58>
+ ('removeSplitter', <built-in method removeSplitter of Part.Shell object at 0x10d8a58>
+ ('replaceShape', <built-in method replaceShape of Part.Shell object at 0x10d8a58>
+ ('reverse', <built-in method reverse of Part.Shell object at 0x10d8a58>
+ ('revolve', <built-in method revolve of Part.Shell object at 0x10d8a58>
+ ('rotate', <built-in method rotate of Part.Shell object at 0x10d8a58>
+ ('scale', <built-in method scale of Part.Shell object at 0x10d8a58>
+ ('section', <built-in method section of Part.Shell object at 0x10d8a58>
+ ('sewShape', <built-in method sewShape of Part.Shell object at 0x10d8a58>
+ ('slice', <built-in method slice of Part.Shell object at 0x10d8a58>
+ ('slices', <built-in method slices of Part.Shell object at 0x10d8a58>
+ ('tessellate', <built-in method tessellate of Part.Shell object at 0x10d8a58>
+ ('toNurbs', <built-in method toNurbs of Part.Shell object at 0x10d8a58>
+ ('transformGeometry', <built-in method transformGeometry of Part.Shell object at 0x10d8a58>
+ ('transformShape', <built-in method transformShape of Part.Shell object at 0x10d8a58>
+ ('translate', <built-in method translate of Part.Shell object at 0x10d8a58>
+ ('writeInventor', <built-in method writeInventor of Part.Shell object at 0x10d8a58>)]
+[]
