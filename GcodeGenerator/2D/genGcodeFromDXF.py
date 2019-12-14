@@ -28,8 +28,8 @@ material_thickness = float(input("Insert material thickness: "))
 
 cutterDiameter = None
 if any([ "90" in layer.name or "Deepen" in layer.name for layer in dg.readfile(inputDxf).layers]):
-    cutterDiameter = int(input("Choose cutter diameter[mm] 1/2/3/6: "))
-    if not cutterDiameter in [1, 2, 3, 6]:
+    cutterDiameter = float(input("Choose cutter diameter[mm] 1/2/3/6.35: "))
+    if not cutterDiameter in [1.0, 2.0, 3.0, 6.35]:
         print("Wrong cutter diameter!") 
         quit()
 
