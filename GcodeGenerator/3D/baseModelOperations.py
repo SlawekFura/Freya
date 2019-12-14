@@ -5,9 +5,11 @@ import inspect
 import utilsConfig as uc
 import polyFromFaceCreator as pmc
 
+def setSavingPrefix(_prefix):
+    uc.prefix = _prefix 
 
 def saveModel(savingFunction, savingName):
-    savingFunction("./Generated/_" + str(uc.numOfSavedModels) + "_" + savingName)
+    savingFunction("./Generated/_" + str(uc.numOfSavedModels) + "_" + uc.prefix + "_" + savingName)
     uc.numOfSavedModels += 1
 
 def moveToBase(shape, offset):
@@ -20,22 +22,22 @@ def moveToBase(shape, offset):
 
     maxY = shape.BoundBox.YMax
     minY = shape.BoundBox.YMin
-    print("biggest model Z coordinate before move:", maxZ)
+    #print("biggest model Z coordinate before move:", maxZ)
 
     #print(inspect.getmembers(shape.Solids[0]))
     #print(inspect.getmembers(shape.Solids[0].BoundBox))
     shape.translate(Base.Vector(-(maxX - minX)/2, -(maxY - minY)/2 + offset, -maxZ))
-    print("biggest model Z coordinate after move::", shape.BoundBox.ZMax)
+    #print("biggest model Z coordinate after move::", shape.BoundBox.ZMax)
 
     saveModel(shape.exportBrep, "moveToBase.brep")
     return shape
 
-def genEnlargedBBox(shape, enlargeBy = 0, additionalSpaceToCutOut = 0 , minHeight = 0):
+def genEnlargedBBox(shape, enlargeBy = 0, additionalHeightToCutOut = 0 , minHeight = 0):
     shape.tessellate(2)
     print("Max:", shape.BoundBox.XMax, "\tMin:", shape.BoundBox.XMin)
     basePoint = Base.Vector(shape.BoundBox.XMin - enlargeBy, shape.BoundBox.YMin - enlargeBy, shape.BoundBox.ZMin + minHeight)
     baseVector = Base.Vector(0, 0, 1)
-    shapeThickness = shape.BoundBox.ZLength + additionalSpaceToCutOut - minHeight
+    shapeThickness = shape.BoundBox.ZLength + additionalHeightToCutOut - minHeight
     if (shapeThickness < minHeight):
         print("No optimization due to not enough material thickness")
     return Part.makeBox(shape.BoundBox.XLength + 2 * enlargeBy,

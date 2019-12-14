@@ -1,8 +1,8 @@
 #include "PolyWithHolesCreator.h"
-
 //#define DEBUG_VERSION
 
-void generateAndSavePoly(std::ofstream& outfile, Polygon_with_holes polyg, float zCoord, float offset, bool shouldDivideOffset)
+void generateAndSavePoly(std::ofstream& outfile, Polygon_with_holes polyg, float zCoord,
+                         float offset, bool isFirstPass, float millDiameter)
 {
     bool isPolyWithHoleEmpty = polyg.outer_boundary().vertices_begin() == polyg.outer_boundary().vertices_end();
     //std::cout << "isPolyWithHoleEmpty: " << isPolyWithHoleEmpty << std::endl;
@@ -24,10 +24,10 @@ void generateAndSavePoly(std::ofstream& outfile, Polygon_with_holes polyg, float
 //        }
 //            
         auto newOffset = offset;
-        if(shouldDivideOffset)
+        if(isFirstPass)
         {
-            newOffset = offset / 2;
-            shouldDivideOffset = false;
+            newOffset = millDiameter / 2;
+            isFirstPass = false;
         }
         auto iss = CGAL::create_interior_skeleton_and_offset_polygons_2(newOffset, polyg); 
         size_t size = iss.size();
@@ -74,7 +74,7 @@ void generateAndSavePoly(std::ofstream& outfile, Polygon_with_holes polyg, float
 //                    debugFile << std::endl;
 //                }
            
-                generateAndSavePoly(outfile, polyWithHoles, zCoord, offset, shouldDivideOffset);
+                generateAndSavePoly(outfile, polyWithHoles, zCoord, offset, isFirstPass, millDiameter);
             }
         }                
     }

@@ -7,17 +7,19 @@ import subprocess
 import GcodeCommandGenerator as gGen
 
 numOfSavedModels = 0
-smallestDiscLength = 0.8
+smallestDiscLength = 0.3
+prefix = ""
 
-def genGcodeFromCoordMap(coordMap, outputFilename, offset):
+def genGcodeFromCoordMap(coordMap, outputFilename, offset, millDiameter):
     RWPolys.writePolyCoordsMapIntoFile('MeshOffsetsMap', coordMap)
-    args = ("../CppWorkspace/ToolpathGenerator/build-debug/ToolpathGenerator", str(offset))
+    args = ("../CppWorkspace/ToolpathGenerator/build-debug/ToolpathGenerator", str(offset) , str(millDiameter))
     print("args: ", args)
     popen = subprocess.Popen(args, stdout=subprocess.PIPE)
     popen.wait()
     output = popen.stdout.read()
     print(output)
-    gGen.genGcode3D(outputFilename, coordMap, 100, 300)
+    offsetPolygonsMap = RWPolys.readPolysFromFile("dataFromCgal.txt")
+    gGen.genGcode3D(outputFilename, offsetPolygonsMap, 100, 300)
 
 
 

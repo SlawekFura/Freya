@@ -11,21 +11,22 @@
 #include <boost/optional.hpp>
 #include <algorithm>
 #include <iostream>
+#include <boost/optional.hpp>
 
 #include "FileParser.h"
 #include "WritePolysIntoFile.h"
 
 int main(int argc, char* argv[])
 {
-    if(argc < 2)
+    if(argc < 3)
     {
         std::cout << "Not enough arguments" << std::endl;
         return -1;
     }
-   std::cout << "Dupa1" << std::endl;
+    std::cout << "Dupa1" << std::endl;
     std::ifstream inputFile;
-    inputFile.open("../3D/MeshOffsetsMap", std::ios_base::in);
-    //inputFile.open("/home/slawek/workspace/Frez/Freya/GcodeGenerator/3D/MeshOffsetsMap", std::ios_base::in);
+    //inputFile.open("../3D/MeshOffsetsMap", std::ios_base::in);
+    inputFile.open("/home/slawek/workspace/Frez/Freya/GcodeGenerator/3D/MeshOffsetsMap", std::ios_base::in);
     //inputFile.open("/home/slawek/workspace/Frez/Freya/GcodeGenerator/3rdPartyScripts/freecadApi/MeshOffsetsMap", std::ios_base::in);
     std::cout << "Dupa1.0" << std::endl;
     
@@ -37,9 +38,10 @@ int main(int argc, char* argv[])
        std::cout << "Dupa2" << std::endl;
 
     float offset = atof(argv[1]);
+    float millDiameter = atof(argv[2]);
     //float offset = 0.8;
-    std::cout << "Offset is[*]: " << argv[1] << std::endl;
     std::cout << "Offset is: " << offset << std::endl;
+    std::cout << "Mill diameter is: " << millDiameter << std::endl;
     std::ofstream outfile;
     outfile.open("../3D/dataFromCgal.txt", std::ofstream::out | std::ofstream::trunc);//std::ios_base::app
 
@@ -53,7 +55,7 @@ int main(int argc, char* argv[])
         
         for(auto& polyWithHole : polyWithHolesVect)
         {        
-            generateAndSavePoly(outfile, polyWithHole, zCoord, offset, shouldDivideOffset);
+            generateAndSavePoly(outfile, polyWithHole, zCoord, offset, shouldDivideOffset, millDiameter);
         }
     }
     return 0;

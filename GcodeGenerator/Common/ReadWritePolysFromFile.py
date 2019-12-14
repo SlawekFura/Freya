@@ -34,6 +34,6 @@ def readPolysFromFile(filename):
                 offsetPolygonsMap[key].append(list(polygon));
             else:
                 offsetPolygonsMap.update({key : [list(polygon)]});
-            polygon.clear()
+            polygon = []#.clear()
     return offsetPolygonsMap
             

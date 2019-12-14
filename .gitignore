@@ -11,3 +11,4 @@ GcodeGenerator/Common/__pycache__/
 GcodeGenerator/CppWorkspace/ToolpathGenerator/build-debug/
 *swp
 GcodeGenerator/3rdPartyScripts/freecadApi/Generated/*
+GcodeGenerator/3D/Generated/*

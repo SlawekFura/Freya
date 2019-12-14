@@ -39,25 +39,6 @@ def genBaseFace(shape):
 
     return facesWithNormalZ
 
-def genPolyFromWires(wires):
-    polys = []
-    for wire in wires:
-        polyFromWire = []
-        for edge in wire:
-            polyFromEdge = []
-            if type(edge.Curve) is Part.BSplineCurve:
-                numOfPoints = int(edge.Curve.length() / uc.smallestDiscLength)
-                for point in edge.Curve.discretize(numOfPoints):
-                    point = utils.roundFloatList([point.x, point.y, point.z])
-                    polyFromEdge.append(point)
-            else:
-                for point in edge.Vertexes:
-                    point = utils.roundFloatList([point.Point.x, point.Point.y, point.Point.z])
-                    polyFromEdge.append(point)
-            polyFromWire.append(polyFromEdge)
-    polys.append(polyFromEdge)
-    return polys
-
 def reorientPolys(polys):
     for poly in polys[1:]:
         prevPoly = polys[polys.index(poly) - 1]
@@ -72,10 +53,105 @@ def reorientPolys(polys):
             poly = poly.reverse()
     return polys
 
+def sortPolyFromWire(edges):
+#    print("edges", edges)
+    newPoly = [edges[0]]
+    edges.remove(edges[0])
+
+    while len(edges) > 0:
+        newEdge = []
+        flag = False
+        for edge in edges:
+            #print("edge", edge)
+            lastPointOfLastEdge = newPoly[-1][-1]
+
+            if uc.match2FloatLists(lastPointOfLastEdge, edge[0]):
+                edges.remove(edge)
+                newPoly.append(edge)
+                flag = True
+            if uc.match2FloatLists(lastPointOfLastEdge, edge[-1]):
+                #print("reverse", edge)
+                edges.remove(edge)
+                edge.reverse()
+                #print("reverse after", edge)
+                newPoly.append(edge)
+                flag = True
+        #print("\n\n")
+        #print("newpoly", newPoly)
+        #print("\n")
+        #print("edges", edges)
+        #newPoly.extend(newEdge)
+        if not flag:
+            input("asdsad")
+
+    #print("end")
+    print("after sorting", newPoly)
+    return newPoly
+        
+
 def genPolyFromShape(face):
+    print("genPolyFromShape begin")
     polylines = []
     for wire in face.Wires:
         polyFromWire = []
+        #print("polyFromWire AAAA") 
+        for edge in wire.Edges:
+            polyFromEdge = []
+            if type(edge.Curve) is Part.BSplineCurve:
+                numOfPoints = int(edge.Curve.length() / uc.smallestDiscLength)
+                for point in edge.Curve.discretize(numOfPoints):
+                    point = utils.roundFloatList([point.x, point.y, point.z])
+                    polyFromEdge.append(point)
+                    print("edge curve:", point) 
+            else:
+                for point in edge.Vertexes:
+                    point = utils.roundFloatList([point.Point.x, point.Point.y, point.Point.z])
+                    polyFromEdge.append(point)
+                    print("edge line:", point) 
+                #if (polyFromEdge[0][2] == 0.7):
+                    #input("some")
+            
+            polyFromWire.append(polyFromEdge)
+        #print("polyFromWire:", polyFromWire) 
+        polylines.append(sortPolyFromWire(polyFromWire))
+
+    #for poly in polylines:
+    #    print "\nbefore:"
+    #    print poly
+    #for polyFromWires in polylines:
+    #    #polyFromWires = reorientePolys(polyFromWires)
+    #    for poly in polyFromWires[1:]:
+    #        prevPoly = polyFromWires[polyFromWires.index(poly) - 1]
+    #        if uc.match2FloatLists(prevPoly[-1], poly[0]):
+    #            print "dupa1"
+    #            continue
+    #        elif uc.match2FloatLists(prevPoly[0], poly[0]):
+    #            print "dupa2"
+    #            prevPoly = prevPoly.reverse()
+    #        elif uc.match2FloatLists(prevPoly[-1], poly[-1]):
+    #            print "dupa3"
+    #            poly = poly.reverse()
+    #        elif uc.match2FloatLists(prevPoly[0], poly[-1]):
+    #            print "dupa4"
+    #            prevPoly = prevPoly.reverse()
+    #            poly = poly.reverse()
+    #        else:
+    #            print("ERROR!")
+    #            print("prevPoly:", prevPoly,"poly:", poly)
+
+    #for poly in polylines:
+    #    print "\nafter:"
+    #    print poly
+
+    print("genPolyFromShape end")
+    return polylines
+
+def genPolyFromShapeRough(face):
+    print("genPolyFromShape begin")
+    polylines = []
+    for wire in face.Wires:
+        polyFromWire = []
+        #print("polyFromWire AAAA") 
         for edge in wire.Edges:
             polyFromEdge = []
             if type(edge.Curve) is Part.BSplineCurve:
@@ -89,34 +165,20 @@ def genPolyFromShape(face):
                     point = utils.roundFloatList([point.Point.x, point.Point.y, point.Point.z])
                     polyFromEdge.append(point)
                     #print("edge line:", point) 
+                #if (polyFromEdge[0][2] == 0.7):
+                    #input("some")
+            
             polyFromWire.append(polyFromEdge)
-        polylines.append(polyFromWire)
+        #print("polyFromWire:", polyFromWire) 
+        
+        polylines.append(pfc.mergeEdgesInsidePolysRough(sortPolyFromWire(polyFromWire)))
 
-    #for poly in polylines:
-    #    print "\nbefore:"
-    #    print poly
-    for polyFromWires in polylines:
-        #polyFromWires = reorientePolys(polyFromWires)
-        for poly in polyFromWires[1:]:
-            prevPoly = polyFromWires[polyFromWires.index(poly) - 1]
-            if uc.match2FloatLists(prevPoly[-1], poly[0]):
-                continue
-            elif uc.match2FloatLists(prevPoly[0], poly[0]):
-                prevPoly = prevPoly.reverse()
-            elif uc.match2FloatLists(prevPoly[-1], poly[-1]):
-                poly = poly.reverse()
-            elif uc.match2FloatLists(prevPoly[0], poly[-1]):
-                prevPoly = prevPoly.reverse()
-                poly = poly.reverse()
-
-    #for poly in polylines:
-    #    print "\nafter:"
-    #    print poly
-
+    print("genPolyFromShape end")
     return polylines
 
+
 def genOptimizedPart(shape, millDiameter, additionalZHight = 0):
-    preprocessedShape = bmo.preprocess(shape, millDiameter)
+    preprocessedShape = shape# = bmo.preprocess(shape, millDiameter)
     
     baseOffset = 1
     offset = baseOffset + millDiameter
@@ -160,21 +222,28 @@ def genOptimizedPart(shape, millDiameter, additionalZHight = 0):
         
         face = genBaseFace(diffBox_OffsetModel)
         bmo.saveModel(face.exportBrep, "_" + str(i) + "_face.brep")
-        crossSectionsList.append(genPolyFromShape(face))
+        #print("polyFromShape:", genPolyFromShape(face))
+        crossSectionsList.append(genPolyFromShapeRough(face))
         wholeDiff = face.extrude(FreeCAD.Vector(0, 0, maxCutDepth))
         wholeStructure.append(wholeDiff)
 
         i += 1
     finalStructure = wholeStructure[0]
     i = 1;
-    #for elem in wholeStructure[1:]:
-    #    #finalStructure = pymesh.boolean(finalStructure, elem, "union")
-    #    finalStructure = finalStructure.fuse(elem)
-    #    print("final structure processing", i, "of", len(wholeStructure) - 1)
-    #    i+=1
+    for elem in wholeStructure[1:]:
+        #finalStructure = pymesh.boolean(finalStructure, elem, "union")
+        finalStructure = finalStructure.fuse(elem)
+        print("final structure processing", i, "of", len(wholeStructure) - 1)
+        i+=1
 
+    #for polysInLayer in crossSectionsList:
+    #    print "+++++++++++++++++++++"
+    #    for poly in polysInLayer:
+    #        print "$$$$$$$$$$$$$$$$$$$"
+    #        print poly
     bmo.saveModel(finalStructure.exportBrep, "finalStructure.brep")
-    crossSectionsList = pfc.mergeEdgesInsidePolys(pfc.mergeEdgesInsidePolys(crossSectionsList))
+    #crossSectionsList = pfc.mergeEdgesInsidePolys(crossSectionsList)
+    print("crossSectionsList:", crossSectionsList)
 
-    return finalStructure, pfc.mapPolysToZ(crossSectionsList)
+    return finalStructure, pfc.crossSectionsToZRough(crossSectionsList)
 

@@ -13,51 +13,145 @@ def removeDuplicates(line):
     for point in line:
         if not point in newLineList:
             newLineList.append(point)
-        else:
-            print("not added:", point)
+        #else:
+        #    print("not added:", point)
+
+    #print("additional:", newLineList[0])
+    #newLineList.append(newLineList[0])
     return newLineList
 
 def mergeEdgesInsidePolys(polys):
+    #print("before merge", polys)
     polylines = []
-    for poly in polys:
-        partPoly = poly[0]
-        for edge in poly[1:]:
-            partPoly.extend(edge)
-        polylines.append(partPoly)
+    for polyInLayer in polys:
+        for wire in polyInLayer:
+            wirePoly = []
+            for edge in wire:
+                for point in edge:
+                    wirePoly.append(point)
+            polylines.append(wirePoly)
+    print("after merge:", polylines)
     return polylines
 
-def genPolyFromSlices(slices):
-    polylines = []
-    print(len(slices.Wires[11:16]))
-    for wire in slices.Wires[:3]:
-        polyFromEdge = []
-        print("wire " + str(wire.Edges[0].Vertexes[0].Z))
-        for edge in wire.Edges:
-            polyFromVertexes = []
-            for vertex in edge.Vertexes:
-                polyFromVertexes.append(vertex.Point)
-            polyFromEdge.append(polyFromVertexes)
-        polylines.append(polyFromEdge)
+def mergeEdgesInsidePolysRough(wire):
+    #print("before merge", polys)
+    polyline = []
+    for edge in wire:
+        for point in edge:
+            polyline.append(point)
+    print("wirePoly", polyline)
+    #print("after merge:", polylines)
+    return polyline
 
+def mergeEdgesInsideSlices(polys):
+    #print("before merge", polys)
+    polylines = []
+    #for polyInLayer in polys:
+    #    for wire in polyInLayer:
+    for wire in polys:
+        wirePoly = []
+        for edge in wire:
+            for point in edge:
+                wirePoly.append(point)
+        polylines.append(wirePoly)
+    #print("after merge:", polylines)
+    #input("slices")
     return polylines
+
+#def genPolyFromSlices(slices):
+#    polylines = []
+#    for wire in slices.Wires[:3]:
+#        polyFromEdge = []
+#        print("wire " + str(wire.Edges[0].Vertexes[0].Z))
+#        for edge in wire.Edges:
+#            polyFromVertexes = []
+#            for vertex in edge.Vertexes:
+#                polyFromVertexes.append(vertex.Point)
+#            polyFromEdge.append(polyFromVertexes)
+#        polylines.append(polyFromEdge)
+#
+#    return polylines
 
 def mapPolysToZ(polys):
     polysMapToZ = {}
+    #print("before poly", polys)
+    for poly in polys:
+        key = poly[0][z]
+        #print("key", key)
+        
+        #print("before remove", poly)
+        poly = removeDuplicates(poly)
+        #print("after remove", poly)
+        if key in polysMapToZ.keys():
+
+            polysMapToZ[key].append(poly)
+        else:
+            #print("key", key, "poly", poly)
+            polysMapToZ[key] = [poly]
+
+    #print("map ================================= poly")
+    #for key, value in polysMapToZ.items():
+    #    print("key:", key)
+    #    for val in value:
+    #        print "--->",val
+    
+    return polysMapToZ
+
+
+def crossSectionsToZ(polys):
+    polysMapToZ = {}
+    #print("before poly", polys)
     for poly in polys:
         key = poly[0][z]
         print("key", key)
         poly = removeDuplicates(poly)
         if key in polysMapToZ.keys():
-
-            polysMapToZ[key].append(poly)
+            polysMapToZ[key].append(poly[:-1])
         else:
-            polysMapToZ[key] = [poly]
+            #print("key", key, "poly", poly)
+            polysMapToZ[key] = [poly[:-1]]
+
+    #print("map ================================= poly")
+    #for key, value in polysMapToZ.items():
+    #    print("hey:", key)
+    #    for val in value:
+    #        print "--->",val
+    
+    return polysMapToZ
+
+def crossSectionsToZRough(polys):
+    polysMapToZ = {}
+    #print("before poly", polys)
+    for polyPerLayer in polys:
+        for poly in polyPerLayer:
+            key = poly[0][z]
+            print("key", key)
+            poly = removeDuplicates(poly)
+            if key in polysMapToZ.keys():
+                polysMapToZ[key].append(poly)
+            else:
+                #print("key", key, "poly", poly)
+                polysMapToZ[key] = [poly]
+
+    #print("map ================================= poly")
+    #for key, value in polysMapToZ.items():
+    #    print("hey:", key)
+    #    for val in value:
+    #        print "--->",val
+    
     return polysMapToZ
 
 
 def genAndMapPolyFromSlices(slices): 
+    bmo.saveModel(slices.exportBrep, "sliced.brep")
+    print("begin genAndMapPolyFromSlices")
+    #for wire in slices.Wires:
+    #    print("\nwire")
+    #    for edge in wire.Edges:
+    #        print("wire: ", [vertex.Point for vertex in edge.Vertexes])
+    #input("some")
     polys = gop.genPolyFromShape(slices)
-    polys = mergeEdgesInsidePolys(polys)
+    polys = mergeEdgesInsideSlices(polys)
     #for poly in polys:
     #    print "poly for " + str(poly[0][z])
     #    for point in poly:
@@ -81,67 +175,43 @@ def genAndMapPolyFromSlices(slices):
     #    print("key", key)
     #    for val in value:
     #        print("\tvalue " + str(val))
+    print("genAndMapPolyFromSlices end")
     return polysMapToZ
 
 
 def genPolyFromFaces(shape, minThickness, maxThickness):
-
+    shape.tessellate(2)
     bbox = bmo.genBBox(shape)
-    basePoint = Base.Vector(bbox.XMax, bbox.YMin, bbox.ZMax)
-    box = Part.makeBox(bbox.XLength, bbox.YLength, bbox.ZMax - bbox.ZMin, basePoint, Base.Vector(0,0,-1))
+    basePoint = Base.Vector(bbox.XMax + 0.5, bbox.YMin - 0.5, bbox.ZMax)
+    box = Part.makeBox(bbox.XLength + 1.0, bbox.YLength +  1.0, bbox.ZMax - bbox.ZMin, basePoint, Base.Vector(0,0,-1))
     partToCut = box.cut(shape)
     bmo.saveModel(partToCut.exportBrep, "partToCut.brep")
 
-    #polys = pfc.genPolyFromFaces(box.cut(shape), minThickness)
-    #mesh = MeshPart.meshFromShape(shape, 0.1, 0.1, 0.1)#MinLength= 1, MaxLength = 10.5, 2)
-
-    #mesh.write("./mesh.stl")
-    #print(inspect.getmembers(Part.Compound))
-    #bmo.saveModel(mesh.write, "mesh.stl")
     partToCut.tessellate(1)
     bbox = partToCut.BoundBox
 
     multVal = 10
-    valBegin = int(-abs(bbox.ZMax - bbox.ZMin) / 2 * multVal)
-    valEnd = int( abs(bbox.ZMax - bbox.ZMin) / 2 * multVal)
+    #valBegin = int(-abs(bbox.ZMax + bbox.ZMin) / 2 * multVal)
+    valBegin = 0
+    #valEnd = int( abs(bbox.ZMax + bbox.ZMin) / 2 * multVal)
+    valEnd = int( abs(bbox.ZMin) * multVal) 
     by = int((bbox.ZMax - bbox.ZMin)*minThickness)
-    #print("begin", valBegin, "end", valEnd, "by", by)
+    print("begin", valBegin, "end", valEnd, "by", by)
 
     sliceCoord = range(valBegin, valEnd, by)
     sliceCoord = [float(elem) / multVal for elem in sliceCoord]
     print("sliceCoord", sliceCoord)
-    
+    #sliceCoord = [3]
     polysMapToZ = genAndMapPolyFromSlices(partToCut.slices(Base.Vector(0,0,-1), sliceCoord))
-    #polys = genPolyFromSlices(partToCut.slices(Base.Vector(0,0,-1), sliceCoord))
-    polys = gop.genPolyFromShape(partToCut.slices(Base.Vector(0,0,-1), sliceCoord))
+
+    sliced = partToCut.slices(Base.Vector(0,0,-1), sliceCoord)
+    bmo.saveModel(sliced.exportBrep, "sliced.brep")
+    polys = gop.genPolyFromShape(sliced)
     gen = partToCut.slices(Base.Vector(0,0,-1), sliceCoord)
-    #print(polys)
+    #print("Poly", polys)
 
     bmo.saveModel(gen.exportBrep, "polys.brep")
     polys = mergeEdgesInsidePolys(polys)
-    #for poly in polys:
-    #    print "poly for " + str(poly[0][z])
-    #    for point in poly:
-    #        print("\tpoint" + str(point)) 
-    #for layer in polys:
-    #    print("layer " + str(layer[0][z]))
-    #    for poly in layer:
-    #        print("\tpoly")
-    #        for point in poly:
-    #            print("\t\tpoint"+ str(point))
-    #polysMapToZ = {}
-    #for poly in polys:
-    #    key = poly[0][z]
-    #    poly = removeDuplicates(poly)
-    #    if key in polysMapToZ.keys():
-
-    #        polysMapToZ[key].append(poly)
-    #    else:
-    #        polysMapToZ[key] = [poly]
-    #for key, value in polysMapToZ.items():
-    #    print("key", key)
-    #    for val in value:
-    #        print("\tvalue " + str(val))
         
     return polysMapToZ
 

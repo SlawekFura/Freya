@@ -17,6 +17,7 @@ import baseModelOperations as bmo
 import utilsConfig as uc
 import genOptimizedPart as gop
 import polyFromFaceCreator as pfc
+import baseModelOperations as bmo
 #import GcodeCommandGenerator as gGen
 
 if len(sys.argv) < 3:
@@ -48,16 +49,26 @@ doc = FreeCAD.openDocument(inputPart)
 partFeature = doc.getObjectsByLabel("PartToOffset")[0]
 
 mutableShape = partFeature.Shape.copy()
+mutableShape = bmo.moveToBase(mutableShape, 2 * millDiameter)
+bmo.saveModel(mutableShape.exportBrep, "moved.brep")
 
+bbox = bmo.genEnlargedBBox(shape = mutableShape, enlargeBy = millDiameter * 1.2)[0]
+bmo.saveModel(bbox.exportBrep, "bbox.brep")
 
-bbox = bmo.genEnlargedBBox(mutableShape)[0]
 diff = bbox.cut(mutableShape)
 bmo.saveModel(diff.exportBrep, "diff.brep")
 
+bmo.setSavingPrefix("Rough")
 optimizedPart, roughProcessingCoordMap = gop.genOptimizedPart(mutableShape, millDiameter, additionalZHigh)
 
-finalProcessingCoordMap = pfc.genPolyFromFaces(mutableShape, 0.5, 0.8)
+bmo.setSavingPrefix("Final")
+
+#finalOptimized = bbox.cut(mutableShape.fuse(optimizedPart))
+finalOptimized = mutableShape.fuse(optimizedPart)
+bmo.saveModel(finalOptimized.exportBrep, "finalOptimized.brep")
+finalProcessingCoordMap = pfc.genPolyFromFaces(finalOptimized, 0.5, 0.8)
 
 offset = millDiameter * 0.8
-uc.genGcodeFromCoordMap(roughProcessingCoordMap, outputDir + "/rough.gcode", offset)
-uc.genGcodeFromCoordMap(finalProcessingCoordMap, outputDir + "/finish.gcode", offset)
+
+uc.genGcodeFromCoordMap(roughProcessingCoordMap, outputDir + "/rough.gcode", offset, millDiameter)
+uc.genGcodeFromCoordMap(finalProcessingCoordMap, outputDir + "/finish.gcode", offset, millDiameter)
