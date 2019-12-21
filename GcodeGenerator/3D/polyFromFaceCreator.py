@@ -15,7 +15,6 @@ def removeDuplicates(line):
             newLineList.append(point)
         #else:
         #    print("not added:", point)
-
     #print("additional:", newLineList[0])
     #newLineList.append(newLineList[0])
     return newLineList
@@ -58,20 +57,6 @@ def mergeEdgesInsideSlices(polys):
     #input("slices")
     return polylines
 
-#def genPolyFromSlices(slices):
-#    polylines = []
-#    for wire in slices.Wires[:3]:
-#        polyFromEdge = []
-#        print("wire " + str(wire.Edges[0].Vertexes[0].Z))
-#        for edge in wire.Edges:
-#            polyFromVertexes = []
-#            for vertex in edge.Vertexes:
-#                polyFromVertexes.append(vertex.Point)
-#            polyFromEdge.append(polyFromVertexes)
-#        polylines.append(polyFromEdge)
-#
-#    return polylines
-
 def mapPolysToZ(polys):
     polysMapToZ = {}
     #print("before poly", polys)
@@ -97,27 +82,6 @@ def mapPolysToZ(polys):
     
     return polysMapToZ
 
-
-def crossSectionsToZ(polys):
-    polysMapToZ = {}
-    #print("before poly", polys)
-    for poly in polys:
-        key = poly[0][z]
-        print("key", key)
-        poly = removeDuplicates(poly)
-        if key in polysMapToZ.keys():
-            polysMapToZ[key].append(poly[:-1])
-        else:
-            #print("key", key, "poly", poly)
-            polysMapToZ[key] = [poly[:-1]]
-
-    #print("map ================================= poly")
-    #for key, value in polysMapToZ.items():
-    #    print("hey:", key)
-    #    for val in value:
-    #        print "--->",val
-    
-    return polysMapToZ
 
 def crossSectionsToZRough(polys):
     polysMapToZ = {}

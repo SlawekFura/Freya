@@ -13,21 +13,6 @@ sys.path.append('../../Common/')
 import utils
 import polyFromFaceCreator as pfc
 
-def genMergedStructureAndCrossSectionsList():
-    i = 0
-    crossSectionsList = []
-    wholeStructure = []
-    print("layersToMerge:", layersToMerge, "\tmaxCutDepth:", maxCutDepth, "\tmaxWorkableDepth:", maxWorkableDepth)
-    for depth in layersToMerge: 
-        newBox = bmo.genBaseBoxDiff(enlargedBBox, depth, newBoxHeight)
-        bmo.saveModel(newBox.exportBrep, "_" + str(i) + "_newBox.brep")
-
-        diffBox_OffsetModel = newBox.cut(offsetPart.Solids[0])
-        bmo.saveModel(diffBox_OffsetModel.exportBrep, "_" + str(i) + "_diffBox_OffsetModel.brep")
-
-        crossSectionsList.append(genMeshWithFilteredBasePart(pDiff))
-    
-    return wholeStructure, crossSectionsList
 
 def genBaseFace(shape):
     facesWithNormalZ = None
@@ -115,29 +100,6 @@ def genPolyFromShape(face):
         #print("polyFromWire:", polyFromWire) 
         polylines.append(sortPolyFromWire(polyFromWire))
 
-    #for poly in polylines:
-    #    print "\nbefore:"
-    #    print poly
-    #for polyFromWires in polylines:
-    #    #polyFromWires = reorientePolys(polyFromWires)
-    #    for poly in polyFromWires[1:]:
-    #        prevPoly = polyFromWires[polyFromWires.index(poly) - 1]
-    #        if uc.match2FloatLists(prevPoly[-1], poly[0]):
-    #            print "dupa1"
-    #            continue
-    #        elif uc.match2FloatLists(prevPoly[0], poly[0]):
-    #            print "dupa2"
-    #            prevPoly = prevPoly.reverse()
-    #        elif uc.match2FloatLists(prevPoly[-1], poly[-1]):
-    #            print "dupa3"
-    #            poly = poly.reverse()
-    #        elif uc.match2FloatLists(prevPoly[0], poly[-1]):
-    #            print "dupa4"
-    #            prevPoly = prevPoly.reverse()
-    #            poly = poly.reverse()
-    #        else:
-    #            print("ERROR!")
-    #            print("prevPoly:", prevPoly,"poly:", poly)
 
     #for poly in polylines:
     #    print "\nafter:"
@@ -234,7 +196,7 @@ def genOptimizedPart(shape, millDiameter, additionalZHight = 0):
         #finalStructure = pymesh.boolean(finalStructure, elem, "union")
         finalStructure = finalStructure.fuse(elem)
         print("final structure processing", i, "of", len(wholeStructure) - 1)
-        i+=1
+        i += 1
 
     #for polysInLayer in crossSectionsList:
     #    print "+++++++++++++++++++++"
@@ -243,7 +205,7 @@ def genOptimizedPart(shape, millDiameter, additionalZHight = 0):
     #        print poly
     bmo.saveModel(finalStructure.exportBrep, "finalStructure.brep")
     #crossSectionsList = pfc.mergeEdgesInsidePolys(crossSectionsList)
-    print("crossSectionsList:", crossSectionsList)
+    #print("crossSectionsList:", crossSectionsList)
 
     return finalStructure, pfc.crossSectionsToZRough(crossSectionsList)
 
