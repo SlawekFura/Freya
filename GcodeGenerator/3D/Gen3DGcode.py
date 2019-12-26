@@ -52,23 +52,22 @@ mutableShape = partFeature.Shape.copy()
 mutableShape = bmo.moveToBase(mutableShape, 2 * millDiameter)
 bmo.saveModel(mutableShape.exportBrep, "moved.brep")
 
-bbox = bmo.genEnlargedBBox(shape = mutableShape, enlargeBy = millDiameter * 1.2)[0]
-bmo.saveModel(bbox.exportBrep, "bbox.brep")
-
-diff = bbox.cut(mutableShape)
-bmo.saveModel(diff.exportBrep, "diff.brep")
-
 bmo.setSavingPrefix("Rough")
+
 optimizedPart, roughProcessingCoordMap = gop.genOptimizedPart(mutableShape, millDiameter, additionalZHigh)
+offset = millDiameter * 0.8
+uc.genGcodeFromCoordMap(roughProcessingCoordMap, outputDir + "/rough.gcode", offset, millDiameter)
 
 bmo.setSavingPrefix("Final")
 
-#finalOptimized = bbox.cut(mutableShape.fuse(optimizedPart))
 finalOptimized = mutableShape.fuse(optimizedPart)
+#finalOptimized = mutableShape
+bmo.saveModel(optimizedPart.exportBrep, "optimizedPart_next.brep")
+bmo.saveModel(mutableShape.exportBrep, "mutable.brep")
 bmo.saveModel(finalOptimized.exportBrep, "finalOptimized.brep")
+
 finalProcessingCoordMap = pfc.genPolyFromFaces(finalOptimized, 0.5, 0.8)
-
-offset = millDiameter * 0.8
-
-uc.genGcodeFromCoordMap(roughProcessingCoordMap, outputDir + "/rough.gcode", offset, millDiameter)
 uc.genGcodeFromCoordMap(finalProcessingCoordMap, outputDir + "/finish.gcode", offset, millDiameter)
+#
+#
+#RWPolys.writePolyCoordsMapIntoFile('MeshOffsetsMap', roughProcessingCoordMap)

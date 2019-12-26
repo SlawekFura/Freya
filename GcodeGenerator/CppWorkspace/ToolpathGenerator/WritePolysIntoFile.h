@@ -32,8 +32,24 @@ void generateAndSavePoly(std::ofstream& outfile, Polygon_with_holes polyg, float
         auto iss = CGAL::create_interior_skeleton_and_offset_polygons_2(newOffset, polyg); 
         size_t size = iss.size();
         if(iss.empty())
+        {
             iss = CGAL::create_interior_skeleton_and_offset_polygons_2(newOffset / 2, polyg);
-       
+            std::cout << "half offset" << std::endl;
+        }
+        std::cout << "\nnewVect" << std::endl;
+        
+        std::fstream debugFile;
+        debugFile.open("/home/slawek/workspace/Frez/Freya/GcodeGenerator/CppWorkspace/ToolpathGenerator/data.txt", std::ofstream::out | std::ofstream::trunc);//std::ios_base::app
+
+        for (const auto& elem : iss)
+        {        
+            for (auto iter = elem->vertices_begin(); iter != elem->vertices_end(); ++iter)
+            {
+                debugFile << *iter << std::endl;
+            }        
+        }
+        debugFile.close();
+      
  //       std::cout << "size: " << size << std::endl;
         for (const auto& elem : iss)
         {
@@ -54,6 +70,7 @@ void generateAndSavePoly(std::ofstream& outfile, Polygon_with_holes polyg, float
             polyVect.push_back(*elem);
         }
         float dummyVal = -1.0;
+        
         auto polyWithHolesMap = createPolygonsWithHoles({{dummyVal, polyVect}});
         for(auto& polyWithHolesPair : polyWithHolesMap)
         {

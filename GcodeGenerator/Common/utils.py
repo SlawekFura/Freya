@@ -20,9 +20,9 @@ def removeDuplicates(duplicate):
 def matchFloats(*floats):
     return all(math.isclose(floatToCompare, floats[0], abs_tol = 0.001) for floatToCompare in floats)
 
-def match2FloatLists(floatList1, floatList2):
+def match2FloatLists(floatList1, floatList2, tol = 0.001):
     for i in range(len(floatList1)):
-        if not math.isclose(floatList1[i], floatList2[i], abs_tol = 0.001):
+        if not math.isclose(floatList1[i], floatList2[i], abs_tol = tol):
             return False
     return True
 

@@ -38,7 +38,7 @@ std::map<float, std::vector<Polygon_with_holes>> createPolygonsWithHoles(std::ma
     {
         float key = polygonsInLayer.first;
         auto& polygVect = polygonsInLayer.second;
-        
+        std::cout << "key: " << key << std::endl;
         for(auto it = polygonsInLayer.second.begin(); it != polygonsInLayer.second.end(); ++it)
         {
             auto checkIfPointIsInsidePoly = [&](const Point& point)

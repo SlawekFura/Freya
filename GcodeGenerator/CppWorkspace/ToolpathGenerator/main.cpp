@@ -48,6 +48,7 @@ int main(int argc, char* argv[])
     for (auto& polyWithHolesPair : polyWithHolesMap)
     {
         float zCoord = polyWithHolesPair.first;
+        std::cout << "Processing z: " << zCoord << std::endl;
         outfile << zCoord << std::endl;
         auto& polyWithHolesVect = polyWithHolesPair.second; 
         bool shouldDivideOffset = true;

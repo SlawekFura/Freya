@@ -29,7 +29,7 @@ def mergeEdgesInsidePolys(polys):
                 for point in edge:
                     wirePoly.append(point)
             polylines.append(wirePoly)
-    print("after merge:", polylines)
+    #print("after merge:", polylines)
     return polylines
 
 def mergeEdgesInsidePolysRough(wire):
@@ -38,7 +38,7 @@ def mergeEdgesInsidePolysRough(wire):
     for edge in wire:
         for point in edge:
             polyline.append(point)
-    print("wirePoly", polyline)
+    #print("wirePoly", polyline)
     #print("after merge:", polylines)
     return polyline
 
@@ -66,9 +66,10 @@ def mapPolysToZ(polys):
         
         #print("before remove", poly)
         poly = removeDuplicates(poly)
+        if match2FloatLists(poly[0], poly[-1], 0.01):
+            poly = poly[:-1]
         #print("after remove", poly)
         if key in polysMapToZ.keys():
-
             polysMapToZ[key].append(poly)
         else:
             #print("key", key, "poly", poly)
@@ -89,7 +90,7 @@ def crossSectionsToZRough(polys):
     for polyPerLayer in polys:
         for poly in polyPerLayer:
             key = poly[0][z]
-            print("key", key)
+            #print("key", key)
             poly = removeDuplicates(poly)
             if key in polysMapToZ.keys():
                 polysMapToZ[key].append(poly)
@@ -99,7 +100,7 @@ def crossSectionsToZRough(polys):
 
     #print("map ================================= poly")
     #for key, value in polysMapToZ.items():
-    #    print("hey:", key)
+    #    print("key:", key)
     #    for val in value:
     #        print "--->",val
     
@@ -108,14 +109,15 @@ def crossSectionsToZRough(polys):
 
 def genAndMapPolyFromSlices(slices): 
     bmo.saveModel(slices.exportBrep, "sliced.brep")
-    print("begin genAndMapPolyFromSlices")
+    #print("begin genAndMapPolyFromSlices")
     #for wire in slices.Wires:
     #    print("\nwire")
     #    for edge in wire.Edges:
     #        print("wire: ", [vertex.Point for vertex in edge.Vertexes])
     #input("some")
     polys = gop.genPolyFromShape(slices)
-    polys = mergeEdgesInsideSlices(polys)
+    #print("polys", polys)
+    #polys = mergeEdgesInsideSlices(polys)
     #for poly in polys:
     #    print "poly for " + str(poly[0][z])
     #    for point in poly:
@@ -146,8 +148,10 @@ def genAndMapPolyFromSlices(slices):
 def genPolyFromFaces(shape, minThickness, maxThickness):
     shape.tessellate(2)
     bbox = bmo.genBBox(shape)
-    basePoint = Base.Vector(bbox.XMax + 0.5, bbox.YMin - 0.5, bbox.ZMax)
-    box = Part.makeBox(bbox.XLength + 1.0, bbox.YLength +  1.0, bbox.ZMax - bbox.ZMin, basePoint, Base.Vector(0,0,-1))
+    #basePoint = Base.Vector(bbox.XMax + 0.5, bbox.YMin - 0.5, bbox.ZMax)
+    #box = Part.makeBox(bbox.XLength + 1.0, bbox.YLength +  1.0, bbox.ZMax - bbox.ZMin, basePoint, Base.Vector(0,0,-1))
+    basePoint = Base.Vector(bbox.XMax, bbox.YMin, bbox.ZMax)
+    box = Part.makeBox(bbox.XLength, bbox.YLength, bbox.ZMax - bbox.ZMin, basePoint, Base.Vector(0,0,-1))
     partToCut = box.cut(shape)
     bmo.saveModel(partToCut.exportBrep, "partToCut.brep")
 
@@ -159,7 +163,8 @@ def genPolyFromFaces(shape, minThickness, maxThickness):
     valBegin = 0
     #valEnd = int( abs(bbox.ZMax + bbox.ZMin) / 2 * multVal)
     valEnd = int( abs(bbox.ZMin) * multVal) 
-    by = int((bbox.ZMax - bbox.ZMin)*minThickness)
+    #by = int((bbox.ZMax - bbox.ZMin)*minThickness)
+    by = int(minThickness * 10)
     print("begin", valBegin, "end", valEnd, "by", by)
 
     sliceCoord = range(valBegin, valEnd, by)
@@ -175,7 +180,7 @@ def genPolyFromFaces(shape, minThickness, maxThickness):
     #print("Poly", polys)
 
     bmo.saveModel(gen.exportBrep, "polys.brep")
-    polys = mergeEdgesInsidePolys(polys)
+    #polys = mergeEdgesInsidePolys(polys)
         
     return polysMapToZ
 

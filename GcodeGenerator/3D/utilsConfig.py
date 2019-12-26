@@ -7,7 +7,7 @@ import subprocess
 import GcodeCommandGenerator as gGen
 
 numOfSavedModels = 0
-smallestDiscLength = 0.3
+smallestDiscLength = 0.2
 prefix = ""
 
 def genGcodeFromCoordMap(coordMap, outputFilename, offset, millDiameter):
@@ -29,9 +29,9 @@ z = 2
 def isclose(a, b, rel_tol=1e-09, abs_tol=0.0):
     return abs(a-b) <= max(rel_tol * max(abs(a), abs(b)), abs_tol)
 
-def match2FloatLists(floatList1, floatList2):
+def match2FloatLists(floatList1, floatList2, tol = 0.001):
     for i in range(len(floatList1)):
-        if not isclose(floatList1[i], floatList2[i], abs_tol = 0.001):
+        if not isclose(floatList1[i], floatList2[i], abs_tol = tol):
             return False
     return True
 
