@@ -46,15 +46,17 @@ if not millDiameter in [1.0, 3.0, 6.35]:
     quit()
 
 doc = FreeCAD.openDocument(inputPart)
-partFeature = doc.getObjectsByLabel("PartToOffset")[0]
+partFeature = doc.getObjectsByLabel("Part")[0]
+partFeatureOffset = doc.getObjectsByLabel("OffsetPart")[0]
 
 mutableShape = partFeature.Shape.copy()
-mutableShape = bmo.moveToBase(mutableShape, 2 * millDiameter)
-bmo.saveModel(mutableShape.exportBrep, "moved.brep")
+mutableOffsetShape = partFeatureOffset.Shape.copy()
+
+mutableShape, mutableOffsetShape = bmo.moveToBase(mutableShape, mutableOffsetShape, 2.0 * millDiameter)
 
 bmo.setSavingPrefix("Rough")
 
-optimizedPart, roughProcessingCoordMap = gop.genOptimizedPart(mutableShape, millDiameter, additionalZHigh)
+optimizedPart, roughProcessingCoordMap = gop.genOptimizedPart(mutableShape, mutableOffsetShape, millDiameter, additionalZHigh)
 offset = millDiameter * 0.8
 uc.genGcodeFromCoordMap(roughProcessingCoordMap, outputDir + "/rough.gcode", offset, millDiameter)
 

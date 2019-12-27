@@ -12,8 +12,9 @@ def saveModel(savingFunction, savingName):
     savingFunction("./Generated/_" + str(uc.numOfSavedModels) + "_" + uc.prefix + "_" + savingName)
     uc.numOfSavedModels += 1
 
-def moveToBase(shape, offset):
+def moveToBase(shape, offsetShape, additionalOffset):
     shape = shape.copy()
+    offsetShape = offsetShape.copy()
 
     maxZ = shape.BoundBox.ZMax
 
@@ -22,15 +23,17 @@ def moveToBase(shape, offset):
 
     maxY = shape.BoundBox.YMax
     minY = shape.BoundBox.YMin
-    #print("biggest model Z coordinate before move:", maxZ)
 
-    #print(inspect.getmembers(shape.Solids[0]))
-    #print(inspect.getmembers(shape.Solids[0].BoundBox))
-    shape.translate(Base.Vector(-(maxX - minX)/2, -(maxY - minY)/2 + offset, -maxZ))
+    moveX = -(maxX - minX)/2
+    moveY = -(maxY - minY)/2 + additionalOffset
+    moveZ = -maxZ
+    shape.translate(Base.Vector(moveX, moveY, moveZ))
+    offsetShape.translate(Base.Vector(moveX, moveY, moveZ))
     #print("biggest model Z coordinate after move::", shape.BoundBox.ZMax)
 
     saveModel(shape.exportBrep, "moveToBase.brep")
-    return shape
+    saveModel(offsetShape.exportBrep, "offsetShapeMoved.brep")
+    return shape, offsetShape
 
 def genEnlargedBBox(shape, enlargeBy = 0, additionalHeightToCutOut = 0 , minHeight = 0):
     shape.tessellate(2)

@@ -187,15 +187,17 @@ def genPolyFromShapeRough(face):
     return polylines
 
 
-def genOptimizedPart(shape, millDiameter, additionalZHight = 0):
+def genOptimizedPart(shape, offsetShape, millDiameter, additionalZHight = 0):
     preprocessedShape = shape#.removeSplitter()# = bmo.preprocess(shape, millDiameter)
     
-    baseOffset = 1
-    offset = baseOffset + millDiameter
+    #baseOffset = 1
+    #offset = baseOffset + millDiameter
+    offset = millDiameter
 
-    #offsetPart = Part.makeSolid(preprocessedShape.makeOffsetShape(offset=offset, tolerance=0.01, inter=True))#, fill=True))
-    solidPrepShape = Part.makeSolid(preprocessedShape.removeSplitter())
-    offsetPart = solidPrepShape.makeOffsetShape(offset=offset, tolerance=0.01, inter=True)
+    ##offsetPart = Part.makeSolid(preprocessedShape.makeOffsetShape(offset=offset, tolerance=0.01, inter=True))#, fill=True))
+    #solidPrepShape = Part.makeSolid(preprocessedShape.removeSplitter())
+    #offsetPart = solidPrepShape.makeOffsetShape(offset=offset, tolerance=0.01, inter=True)
+    offsetPart = offsetShape
     bmo.saveModel(offsetPart.exportBrep, "offsetPart.brep")
     print("Done offset!")
     
