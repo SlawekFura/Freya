@@ -201,7 +201,7 @@ def genOptimizedPart(shape, offsetShape, millDiameter, additionalZHight = 0):
     bmo.saveModel(offsetPart.exportBrep, "offsetPart.brep")
     print("Done offset!")
     
-    minModelHeight = 2
+    minModelHeight = 0
     enlargedBBox, modelThickness = bmo.genEnlargedBBox(preprocessedShape, offset, additionalZHight, minHeight = minModelHeight)
     bmo.saveModel(enlargedBBox.exportBrep, "enlargedBBox.brep")
     
