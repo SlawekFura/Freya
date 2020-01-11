@@ -60,6 +60,36 @@
                 />
             </diameter_6.35>
         </balsa>
+        <plywood>
+            <diameter_1.0>
+                <params 
+                    maxDepth = "2.0" 
+                    cutSpeed = "500" 
+                    drillSpeed = "100" 
+                />
+            </diameter_1.0>
+            <diameter_2.0>
+                <params 
+                    maxDepth = "2.6" 
+                    cutSpeed = "500" 
+                    drillSpeed = "100" 
+                />
+            </diameter_2.0>
+            <diameter_3.0>
+                <params 
+                    maxDepth = "3.2"
+                    cutSpeed = "500" 
+                    drillSpeed = "100" 
+                />
+            </diameter_3.0>
+            <diameter_6.35>
+                <params 
+                    maxDepth = "6" 
+                    cutSpeed = "1000"
+                    drillSpeed = "100" 
+                />
+            </diameter_6.35>
+        </plywood>
     </type_90>
     <type_45>
         <plexi>
@@ -76,5 +106,12 @@
                 drillSpeed = "100" 
             />
         </balsa>
+        <plywood>
+            <params 
+                cutAmount = "9.5" 
+                cutSpeed = "500" 
+                drillSpeed = "100" 
+            />
+        </plywood>
     </type_45>
 </config>

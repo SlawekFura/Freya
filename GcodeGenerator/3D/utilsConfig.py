@@ -5,12 +5,13 @@ sys.path.append('../Common/')
 import ReadWritePolysFromFile as RWPolys
 import subprocess
 import GcodeCommandGenerator as gGen
+import finalGcodeOptimizer as fgo
 
 numOfSavedModels = 0
 smallestDiscLength = 0.2
 prefix = ""
 
-def genGcodeFromCoordMap(coordMap, outputFilename, offset, millDiameter):
+def genGcodeFromCoordMap(coordMap, outputFilename, offset, millDiameter, optimization = True):
     RWPolys.writePolyCoordsMapIntoFile('MeshOffsetsMap', coordMap)
     args = ("../CppWorkspace/ToolpathGenerator/build-debug/ToolpathGenerator", str(offset) , str(millDiameter))
     print("args: ", args)
@@ -19,9 +20,11 @@ def genGcodeFromCoordMap(coordMap, outputFilename, offset, millDiameter):
     output = popen.stdout.read()
     print(output)
     offsetPolygonsMap = RWPolys.readPolysFromFile("dataFromCgal.txt")
-    gGen.genGcode3D(outputFilename, offsetPolygonsMap, 100, 300)
-
-
+    if optimization:
+        fgo.genOptimizationTree(offsetPolygonsMap)
+        gGen.genGcode3DOpt(outputFilename, offsetPolygonsMap, 100, 300)
+    else:
+        gGen.genGcode3D(outputFilename, offsetPolygonsMap, 100, 300)
 
 x = 0
 y = 1

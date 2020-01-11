@@ -2,7 +2,7 @@ import sys
 sys.path.append('../Common/')
 import os
 
-import GcodeCommandGenerator as gg
+import GcodeCommandGenerator3 as gg
 import DxfPolyCreator as dpc
 import dxfgrabber as dg
 
