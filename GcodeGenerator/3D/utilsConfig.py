@@ -11,7 +11,7 @@ numOfSavedModels = 0
 smallestDiscLength = 0.2
 prefix = ""
 
-def genGcodeFromCoordMap(coordMap, outputFilename, offset, millDiameter, optimization = True):
+def genGcodeFromCoordMap(coordMap, outputFilename, offset, millDiameter, optimization = False):
     RWPolys.writePolyCoordsMapIntoFile('MeshOffsetsMap', coordMap)
     args = ("../CppWorkspace/ToolpathGenerator/build-debug/ToolpathGenerator", str(offset) , str(millDiameter))
     print("args: ", args)
@@ -21,8 +21,8 @@ def genGcodeFromCoordMap(coordMap, outputFilename, offset, millDiameter, optimiz
     print(output)
     offsetPolygonsMap = RWPolys.readPolysFromFile("dataFromCgal.txt")
     if optimization:
-        fgo.genOptimizationTree(offsetPolygonsMap)
-        gGen.genGcode3DOpt(outputFilename, offsetPolygonsMap, 100, 300)
+        tree = fgo.genOptimizationTree(offsetPolygonsMap)
+        gGen.genGcode3DOpt(outputFilename, tree, 100, 300)
     else:
         gGen.genGcode3D(outputFilename, offsetPolygonsMap, 100, 300)
 

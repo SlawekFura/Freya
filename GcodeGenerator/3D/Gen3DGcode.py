@@ -58,6 +58,7 @@ bmo.setSavingPrefix("Rough")
 
 optimizedPart, roughProcessingCoordMap = gop.genOptimizedPart(mutableShape, mutableOffsetShape, millDiameter, additionalZHigh)
 offset = millDiameter * 0.8
+print "------------Gen rough gcode ------------------"
 uc.genGcodeFromCoordMap(roughProcessingCoordMap, outputDir + "/rough.gcode", offset, millDiameter)
 
 bmo.setSavingPrefix("Final")
@@ -69,7 +70,5 @@ bmo.saveModel(mutableShape.exportBrep, "mutable.brep")
 bmo.saveModel(finalOptimized.exportBrep, "finalOptimized.brep")
 
 finalProcessingCoordMap = pfc.genPolyFromFaces(finalOptimized, 0.5, 0.8)
-uc.genGcodeFromCoordMap(finalProcessingCoordMap, outputDir + "/finish.gcode", offset, millDiameter)
-#
-#
-#RWPolys.writePolyCoordsMapIntoFile('MeshOffsetsMap', roughProcessingCoordMap)
+print "------------Gen finish gcode ------------------"
+uc.genGcodeFromCoordMap(finalProcessingCoordMap, outputDir + "/finish.gcode", offset, millDiameter, optimization = True)

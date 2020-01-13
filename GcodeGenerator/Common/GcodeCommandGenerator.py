@@ -237,8 +237,9 @@ def genGcode3DOpt(outFile, polysTree, speedZ, speed):
 
     for key in keys:
         mainNode = polysTree[key]
+        #print(mainNode)
         nodeIds = [node.id for node in LevelOrderIter(mainNode, filter_=lambda n: not n.id == mainNode.id,  maxlevel=2)]
-        print("mainNodeIds", nodeIds)
+        #print("mainNodeIds", nodeIds)
         for nodeId in nodeIds:
             nextNode = search.findall(mainNode, lambda node: node.id == nodeId)[0]
             genGcodeForNode(nextNode, fileToWrite, key, speedZ, speed, True)
