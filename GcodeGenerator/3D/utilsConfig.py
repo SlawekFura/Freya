@@ -22,7 +22,7 @@ def genGcodeFromCoordMap(coordMap, outputFilename, offset, millDiameter, optimiz
     offsetPolygonsMap = RWPolys.readPolysFromFile("dataFromCgal.txt")
     if optimization:
         tree = fgo.genOptimizationTree(offsetPolygonsMap)
-        gGen.genGcode3DOpt(outputFilename, tree, 100, 300)
+        gGen.genGcode3DOpt(outputFilename, tree, 100, 300, millDiameter)
     else:
         gGen.genGcode3D(outputFilename, offsetPolygonsMap, 100, 300)
 

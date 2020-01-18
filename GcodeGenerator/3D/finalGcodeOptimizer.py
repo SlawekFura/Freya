@@ -91,5 +91,5 @@ def genOptimizationTree(offsetPolygonsMap = RWPolys.readPolysFromFile("dataFromC
         optMap[zCoord] = mainNode
     return optMap
 
-#tree = genOptimizationTree()
-#gGen.genGcode3DOpt("./optGcode.gcode", tree, 100, 300)
+tree = genOptimizationTree()
+gGen.genGcode3DOpt("./optGcode.gcode", tree, 100, 300, 3.0)

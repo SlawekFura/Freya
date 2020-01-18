@@ -56,19 +56,18 @@ mutableShape, mutableOffsetShape = bmo.moveToBase(mutableShape, mutableOffsetSha
 
 bmo.setSavingPrefix("Rough")
 
+print "------------Gen rough gcode ------------------"
 optimizedPart, roughProcessingCoordMap = gop.genOptimizedPart(mutableShape, mutableOffsetShape, millDiameter, additionalZHigh)
 offset = millDiameter * 0.8
-print "------------Gen rough gcode ------------------"
-uc.genGcodeFromCoordMap(roughProcessingCoordMap, outputDir + "/rough.gcode", offset, millDiameter)
+uc.genGcodeFromCoordMap(roughProcessingCoordMap, outputDir + "/rough.gcode", offset, millDiameter, optimization = True)
 
-bmo.setSavingPrefix("Final")
-
-finalOptimized = mutableShape.fuse(optimizedPart)
-#finalOptimized = mutableShape
-bmo.saveModel(optimizedPart.exportBrep, "optimizedPart_next.brep")
-bmo.saveModel(mutableShape.exportBrep, "mutable.brep")
-bmo.saveModel(finalOptimized.exportBrep, "finalOptimized.brep")
-
-finalProcessingCoordMap = pfc.genPolyFromFaces(finalOptimized, 0.5, 0.8)
-print "------------Gen finish gcode ------------------"
-uc.genGcodeFromCoordMap(finalProcessingCoordMap, outputDir + "/finish.gcode", offset, millDiameter, optimization = True)
+#bmo.setSavingPrefix("Final")
+#
+#finalOptimized = mutableShape.fuse(optimizedPart)
+#bmo.saveModel(optimizedPart.exportBrep, "optimizedPart_next.brep")
+#bmo.saveModel(mutableShape.exportBrep, "mutable.brep")
+#bmo.saveModel(finalOptimized.exportBrep, "finalOptimized.brep")
+#
+#print "------------Gen finish gcode ------------------"
+#finalProcessingCoordMap = pfc.genPolyFromFaces(finalOptimized, 0.5, 0.8)
+#uc.genGcodeFromCoordMap(finalProcessingCoordMap, outputDir + "/finish.gcode", offset, millDiameter, optimization = True)

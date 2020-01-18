@@ -32,12 +32,8 @@ def sortPolyFromWire(edges):
     while len(edges) > 0:
         newEdge = []
         flag = False
-        edgeDebug = None
-        edgesDebug = None
         for edge in edges:
             lastPointOfLastEdge = newPoly[-1][-1]
-            edgesDebug = edges
-            edgeDebug = edge
 
             if uc.match2FloatLists(lastPointOfLastEdge, edge[0]):
                 edges.remove(edge)
@@ -73,24 +69,11 @@ def genPolyFromShape(face):
                 for point in edge.Vertexes:
                     point = utils.roundFloatList([point.Point.x, point.Point.y, point.Point.z])
                     polyFromEdge.append(point)
-                    #print("edge line:", point) 
-                #if (polyFromEdge[0][2] == 0.7):
-                    #input("some")
-            
-        #    polyFromWire.append(wire.discretize(50))
-        #print("polyFromWire:", polyFromWire) 
-        #polylines.append(sortPolyFromWire(polyFromWire))
-        #polylines.append(polyFromWire)
         poly = []
         for point in wire.discretize(50):
             point = utils.roundFloatList([point.x, point.y, point.z], 3)
             poly.append(point)
         polylines.append(poly)
-
-
-    #for poly in polylines:
-    #    print "\nafter:"
-    #    print poly
 
     return polylines
 
@@ -100,12 +83,13 @@ def genPolyFromShapeRough(face):
         numOfPoints = int(wire.Length / uc.smallestDiscLength)
         poly = []
 
-        isAnyCurve = False
-        for edge in wire.Edges:
-            #print("type:", type(edge.Curve) in [Part.BSplineCurve, Part.Circle])
-            if type(edge.Curve) in [Part.BSplineCurve, Part.Circle]:
-                isAnyCurve = True
-                break
+        isAnyCurve = True
+        #isAnyCurve = False
+        #for edge in wire.Edges:
+        #    #print("type:", type(edge.Curve) in [Part.BSplineCurve, Part.Circle])
+        #    if type(edge.Curve) in [Part.BSplineCurve, Part.Circle]:
+        #        isAnyCurve = True
+        #        break
 
         if isAnyCurve:
             for point in wire.discretize(numOfPoints):
