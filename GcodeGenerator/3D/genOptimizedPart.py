@@ -57,20 +57,32 @@ def genPolyFromShape(face):
     for wire in face.Wires:
         polyFromWire = []
         #print("polyFromWire AAAA") 
-        for edge in wire.Edges:
-            polyFromEdge = []
-            if type(edge.Curve) is Part.BSplineCurve:
-                numOfPoints = int(edge.Curve.length() / uc.smallestDiscLength)
-                for point in edge.Curve.discretize(numOfPoints):
-                    point = utils.roundFloatList([point.x, point.y, point.z])
-                    polyFromEdge.append(point)
-                    #print("edge curve:", point) 
-            else:
-                for point in edge.Vertexes:
-                    point = utils.roundFloatList([point.Point.x, point.Point.y, point.Point.z])
-                    polyFromEdge.append(point)
+        #for edge in wire.Edges:
+        #    polyFromEdge = []
+        #    if type(edge.Curve) is Part.BSplineCurve:
+        #        numOfPoints = int(edge.Curve.length() / uc.smallestDiscLength)
+        #        for point in edge.Curve.discretize(numOfPoints):
+        #            point = utils.roundFloatList([point.x, point.y, point.z])
+        #            polyFromEdge.append(point)
+        #            #print("edge curve:", point) 
+        #    else:
+        #        for point in edge.Vertexes:
+        #            point = utils.roundFloatList([point.Point.x, point.Point.y, point.Point.z])
+        #            polyFromEdge.append(point)
         poly = []
-        for point in wire.discretize(50):
+
+        multiplier = 1 
+        minNumOfPoints = 4
+        #numOfPoints = 0
+        numOfPoints = int(wire.Length / uc.smallestDiscLength)
+        if numOfPoints < minNumOfPoints:
+            continue
+        #while numOfPoints < minNumOfPoints:
+        #    numOfPoints = int(wire.Length / uc.smallestDiscLength * multiplier)
+        #    multiplier += 2
+        #print("wireLength", wire.Length, "num of points", numOfPoints)
+        numOfPoints *= multiplier
+        for point in wire.discretize(numOfPoints):
             point = utils.roundFloatList([point.x, point.y, point.z], 3)
             poly.append(point)
         polylines.append(poly)

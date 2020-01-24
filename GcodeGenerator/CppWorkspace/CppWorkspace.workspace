@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="CppWorkspace" Database="">
-  <Project Name="ToolpathGenerator" Path="ToolpathGenerator/ToolpathGenerator.project" Active="Yes"/>
+  <Project Name="ToolpathGenerator" Path="ToolpathGenerator/ToolpathGenerator.project" Active="No"/>
+  <Project Name="ToolpathGeneratorOpt" Path="ToolpathGeneratorOpt/ToolpathGeneratorOpt.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
       <Project Name="ToolpathGenerator" ConfigName="Debug_Linux"/>
+      <Project Name="ToolpathGeneratorOpt" ConfigName="Debug_Linux"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
       <Project Name="ToolpathGenerator" ConfigName="Debug_Linux"/>
+      <Project Name="ToolpathGeneratorOpt" ConfigName="Debug_Linux"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

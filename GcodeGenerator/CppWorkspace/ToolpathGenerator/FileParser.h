@@ -10,10 +10,7 @@
 #include <boost/optional.hpp>
 #include <algorithm>
 #include <iostream>
-
-typedef CGAL::Exact_predicates_inexact_constructions_kernel K ;
-typedef K::Point_2                    Point ;
-typedef CGAL::Polygon_2<K>            Polygon_2 ;
+#include "PolyWithHolesCreator.h"
 
 std::map<float, std::vector<Polygon_2> > parse(std::ifstream& inputFile)
 {
