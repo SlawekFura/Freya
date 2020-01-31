@@ -136,7 +136,8 @@ def genGcode3D(outFile, polysMap, speedZ, speed):
     fileToWrite.close()
 
 
-def getIndexesOfClosestPointsForPolygons(poly1, poly2):
+def getIndexesOfClosestPointsForPolygons(poly1, poly2, millDiameter):
+    #print("mill diameter:", millDiameter)
     index1 = 0 
     index2 = 0
     distance = sys.maxint
@@ -148,9 +149,16 @@ def getIndexesOfClosestPointsForPolygons(poly1, poly2):
             y2 = poly2[j][y]
             newDist = math.hypot(x2 - x1, y2 - y1)
             if newDist < distance:
+                #index1 = i
+                #index2 = j
+                distance = newDist
+            if newDist < millDiameter:
+                #print("newDist = ", newDist)
                 index1 = i
                 index2 = j
-                distance = newDist
+                return index1, index2
+    #print("distance = ", distance)
+
     return index1, index2
 
 def genSimpleGcode(poly, fileToWrite, speed):
@@ -158,97 +166,103 @@ def genSimpleGcode(poly, fileToWrite, speed):
     for point in poly:
         fileToWrite.write(commandsMap["Move"](point, speed = speed))
 
-def goToIndex(poly, idx):
+def goToIndexNew(poly, fileToWrite, prevIdx, destIdx, speed):
+    #print("prev:", prevIdx, "dest:", destIdx)
     routeToIndex = []
-    print("before", poly)
-    if idx <= (len(poly)/2):
-        print "dupa"
-        routeToIndex = poly[:idx+1]
+    if abs(destIdx - prevIdx) <= (len(poly)/2):
+        if destIdx >= prevIdx:
+            #print "dupa if 1"
+            routeToIndex = poly[prevIdx:destIdx+1]
+        else:
+            #print "dupa if 2"
+            routeToIndex = poly[destIdx:prevIdx+1][::-1]
     else:
-        print "dupa else"
-        routeToIndex.append(poly[0])
-        newRoute = poly[idx:][::-1]
-        #newRoute.reverse()
-        routeToIndex.extend(newRoute)
-        
-    print("after", routeToIndex)
-    return routeToIndex
-        
-        
+        if destIdx >= prevIdx:
+            #print "dupa else 1"
+            routeToIndex = poly[:prevIdx+1][::-1] + poly[destIdx:][::-1]
+            #routeToIndex.reverse()
+        else:
+            #print "dupa else 2"
+            routeToIndex = poly[prevIdx:] + poly[:destIdx]
+            
+    #print("after", routeToIndex)
+    #print(routeToIndex)
+    fileToWrite.write("goToIndex--------------\n")
+    fileToWrite.write("prev: " + str(prevIdx) + " " + str(poly[prevIdx]) + "\tdest: " + str(destIdx) + " " + str(poly[destIdx]) + "\n")
+    genSimpleGcode(routeToIndex, fileToWrite, speed)
+    fileToWrite.write("----------------goToIndex\n")
 
-def genGcodeForNode(_node, fileToWrite, key, speedZ, speed, isFirstIteration = False):
+def genGcodeForNode(_node, fileToWrite, key, speedZ, speed, millDiameter, isFirstIteration = False):
     #print("id", _node.id)
-    if isFirstIteration:
-        poly = _node.poly
-        fileToWrite.write("\n" + commandsMap["FastMoveZ"](safeHeight))
-        fileToWrite.write(commandsMap["FastMove"](poly[0]))
-        fileToWrite.write(commandsMap["MoveZ"](key, speedZ))
-        genSimpleGcode(poly, fileToWrite, speed)
+    poly = _node.poly
+    #fileToWrite.write("\n" + commandsMap["FastMoveZ"](safeHeight))
+    #fileToWrite.write(commandsMap["FastMove"](poly[0]))
+    #fileToWrite.write(commandsMap["MoveZ"](key, speedZ))
+    genSimpleGcode(poly, fileToWrite, speed)
 
     
     nodeIds = [node.id for node in LevelOrderIter(_node, filter_=lambda n: not n.id == _node.id,  maxlevel=2)]
     if not nodeIds:
         return
     #print nodeIds
+    currentIdx = 0
     for nodeId in nodeIds:
-        print "\n"
-        print("nodeId", nodeId, "ids", nodeIds)
-        poly = _node.poly
+        #print "\n"
+        #print("nodeId", nodeId, "ids", nodeIds)
         
         nextNode = search.findall(_node, lambda node: node.id == nodeId)[0]
         if nextNode:
-            #print("next node id", nextNode.id)
-            idx1, idx2 = getIndexesOfClosestPointsForPolygons(_node.poly, nextNode.poly)
-            print("indexes", idx1, idx2)
-            routeToNextPoly = goToIndex(_node.poly, idx1)
+            closestPolyIdx, newPolyIdx = getIndexesOfClosestPointsForPolygons(poly, nextNode.poly, millDiameter)
+            goToIndexNew(poly, fileToWrite, prevIdx = currentIdx, destIdx = closestPolyIdx, speed = speed)
+            currentIdx = closestPolyIdx
+
             #print(routeToNextPoly)
+            nextNode.poly = nextNode.poly[newPolyIdx:] + nextNode.poly[:newPolyIdx] + [nextNode.poly[newPolyIdx]]
+            genGcodeForNode(nextNode, fileToWrite, key, speedZ, speed, millDiameter)
 
-            nextPolyRoute = nextNode.poly[idx2:]
-            nextPolyRoute.extend(nextNode.poly[:idx2])
-            nextPolyRoute.append(nextPolyRoute[0])
-
-            #if nodeId == 6:
-            #    print("routeToNextPoly", routeToNextPoly)
-            #    print("nextPolyRoute", nextPolyRoute)
-            genSimpleGcode(routeToNextPoly, fileToWrite, speed)
-            fileToWrite.write("routeToNextPoly\n")
-                
-            genSimpleGcode(nextPolyRoute, fileToWrite, speed)
-            fileToWrite.write("nextPolyRoute\n")
-            nextNode.poly = nextPolyRoute
-            #for pre, fill, node in RenderTree(nextNode):
-            #    print("%s%s" % (pre, node.id))
-            genGcodeForNode(nextNode, fileToWrite, key, speedZ, speed)
-
-            routeToNextPoly.reverse()
-            genSimpleGcode(routeToNextPoly, fileToWrite, speed)
-
-        #print("indexes", idx1, idx2, "points", _node.poly[idx1], nextNode.poly[idx2])
-
-        #print("next nodeId", nextNode.id, "ids", nodeIds)
-
+    #print("current idx", currentIdx)
+    goToIndexNew(poly,fileToWrite, prevIdx=currentIdx, destIdx=0, speed = speed)
+    return poly[0]
           
 
-def genGcode3DOpt(outFile, polysTree, speedZ, speed): 
+def genGcode3DOpt(outFile, polysTree, speedZ, speed, millDiameter): 
     fileToWrite = open(outFile,'w')
     keys = sorted(polysTree.keys(), reverse = True)
     print("keys gcode:", keys)
     fileToWrite.write(commandsMap["SetCoordMM"])
 
+    lastPoint = []
     for key in keys:
         mainNode = polysTree[key]
+        #print(mainNode)
         nodeIds = [node.id for node in LevelOrderIter(mainNode, filter_=lambda n: not n.id == mainNode.id,  maxlevel=2)]
-        print("mainNodeIds", nodeIds)
+        #print("mainNodeIds", nodeIds)
         for nodeId in nodeIds:
             nextNode = search.findall(mainNode, lambda node: node.id == nodeId)[0]
-            genGcodeForNode(nextNode, fileToWrite, key, speedZ, speed, True)
+            #print(nodeId)
+
+            nextNodeFirstPoint = nextNode.poly[0]
+            shouldBackZAxis = True
+            if lastPoint:
+                shouldBackZAxis = math.hypot(nextNodeFirstPoint[x] - lastPoint[x], nextNodeFirstPoint[y] - lastPoint[y]) > 0.0001
+                #print("val:", math.hypot(nextNodeFirstPoint[x] - lastPoint[x], nextNodeFirstPoint[y] - lastPoint[y]), shouldBackZAxis)
+
+            if shouldBackZAxis:
+                fileToWrite.write("\n" + commandsMap["FastMoveZ"](safeHeight))
+                fileToWrite.write(commandsMap["FastMove"](nextNode.poly[0]))
+            fileToWrite.write(commandsMap["MoveZ"](key, speedZ))
+
+            lastPoint = genGcodeForNode(nextNode, fileToWrite, key, speedZ, speed, millDiameter, True)
+
+            #fileToWrite.write("\n" + commandsMap["FastMoveZ"](safeHeight))
+    
     #    for poly in polysMap[key]:
     #        fileToWrite.write("\n" + commandsMap["FastMoveZ"](safeHeight))
     #        fileToWrite.write(commandsMap["FastMove"](poly[0]))
     #        fileToWrite.write(commandsMap["MoveZ"](key, speedZ))
     #        for point in poly[1:]:
     #            fileToWrite.write(commandsMap["Move"](point, speed = speed))
-    #fileToWrite.write("\n" + commandsMap["FastMoveZ"](safeHeight))
-    #fileToWrite.write("\n" + commandsMap["FastMoveToBase"])
-    #fileToWrite.write(commandsMap["EndProgram"])
+    fileToWrite.write("\n" + commandsMap["FastMoveZ"](safeHeight))
+    fileToWrite.write("\n" + commandsMap["FastMoveToBase"])
+    fileToWrite.write(commandsMap["EndProgram"])
     fileToWrite.close()

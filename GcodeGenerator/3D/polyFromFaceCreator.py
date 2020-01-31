@@ -141,7 +141,7 @@ def genAndMapPolyFromSlices(slices):
     #    print("key", key)
     #    for val in value:
     #        print("\tvalue " + str(val))
-    print("genAndMapPolyFromSlices end")
+    #print("genAndMapPolyFromSlices end")
     return polysMapToZ
 
 
@@ -165,11 +165,11 @@ def genPolyFromFaces(shape, minThickness, maxThickness):
     valEnd = int( abs(bbox.ZMin) * multVal) 
     #by = int((bbox.ZMax - bbox.ZMin)*minThickness)
     by = int(minThickness * 10)
-    print("begin", valBegin, "end", valEnd, "by", by)
+    #print("begin", valBegin, "end", valEnd, "by", by)
 
     sliceCoord = range(valBegin, valEnd, by)
     sliceCoord = [float(elem) / multVal for elem in sliceCoord]
-    print("sliceCoord", sliceCoord)
+    #print("sliceCoord", sliceCoord)
     #sliceCoord = [3]
     polysMapToZ = genAndMapPolyFromSlices(partToCut.slices(Base.Vector(0,0,-1), sliceCoord))
 

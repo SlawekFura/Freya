@@ -6,23 +6,42 @@ import ReadWritePolysFromFile as RWPolys
 import subprocess
 import GcodeCommandGenerator as gGen
 import finalGcodeOptimizer as fgo
+import time
 
 numOfSavedModels = 0
 smallestDiscLength = 0.2
 prefix = ""
 
-def genGcodeFromCoordMap(coordMap, outputFilename, offset, millDiameter, optimization = True):
+def genGcodeFromCoordMap(coordMap, outputFilename, offset, millDiameter, optimization = False):
+    start = time.time()
     RWPolys.writePolyCoordsMapIntoFile('MeshOffsetsMap', coordMap)
-    args = ("../CppWorkspace/ToolpathGenerator/build-debug/ToolpathGenerator", str(offset) , str(millDiameter))
-    print("args: ", args)
-    popen = subprocess.Popen(args, stdout=subprocess.PIPE)
-    popen.wait()
-    output = popen.stdout.read()
-    print(output)
+    #args = ("../CppWorkspace/ToolpathGenerator/build-debug/ToolpathGenerator", str(offset) , str(millDiameter))
+    #print("args: ", args)
+    numOfProcesses = 10
+    processes = []
+    for i in xrange(numOfProcesses):
+        args = ("../CppWorkspace/ToolpathGeneratorOpt/build-debug/ToolpathGeneratorOpt", str(offset) , str(millDiameter), str(i), str(numOfProcesses))
+        print("args: ", args)
+        popen = subprocess.Popen(args, stdout=subprocess.PIPE)
+        processes.append(popen)
+
+    for p in processes:
+        p.wait()
+
+    end = time.time()
+    print "Passed time for cpp engine is: " + str(end - start)
+    with open("dataFromCgal.txt", "wb") as outfile:
+        for i in xrange(numOfProcesses):
+            with open("dataFromCgal_" + str(i) + ".txt", "rb") as infile:
+                outfile.write(infile.read())
+
+    #popen.wait()
+    #output = popen.stdout.read()
+    #print(output)
     offsetPolygonsMap = RWPolys.readPolysFromFile("dataFromCgal.txt")
     if optimization:
-        fgo.genOptimizationTree(offsetPolygonsMap)
-        gGen.genGcode3DOpt(outputFilename, offsetPolygonsMap, 100, 300)
+        tree = fgo.genOptimizationTree(offsetPolygonsMap, offset + 0.1)
+        gGen.genGcode3DOpt(outputFilename, tree, 100, 300, millDiameter)
     else:
         gGen.genGcode3D(outputFilename, offsetPolygonsMap, 100, 300)
 

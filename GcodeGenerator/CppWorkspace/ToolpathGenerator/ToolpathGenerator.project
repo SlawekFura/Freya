@@ -3,17 +3,21 @@
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="src">
-    <File Name="main.cpp"/>
     <File Name="PolyWithHolesCreator.h"/>
     <File Name="FileParser.h"/>
     <File Name="WritePolysIntoFile.h"/>
+    <File Name="main.cpp"/>
   </VirtualDirectory>
   <VirtualDirectory Name="resources">
     <File Name="CMakeLists.txt"/>
   </VirtualDirectory>
+  <Dependencies Name="Debug_Linux"/>
+  <Dependencies Name="Debug_Windows"/>
+  <Dependencies Name="Release_Linux"/>
+  <Dependencies Name="Release_Windows"/>
   <Settings Type="Executable">
     <GlobalSettings>
-      <Compiler Options="-std=c++14;-Wall -O0" C_Options="" Assembler="">
+      <Compiler Options="-std=c++17;-Wall -O0" C_Options="" Assembler="">
         <IncludePath Value="."/>
       </Compiler>
       <Linker Options="">
@@ -178,8 +182,4 @@
       </Completion>
     </Configuration>
   </Settings>
-  <Dependencies Name="Debug_Linux"/>
-  <Dependencies Name="Debug_Windows"/>
-  <Dependencies Name="Release_Linux"/>
-  <Dependencies Name="Release_Windows"/>
 </CodeLite_Project>

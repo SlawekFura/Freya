@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/slawek/workspace/Frez/Freya/GcodeGenerator/CppWorkspace/ToolpathGeneratorOpt/build-debug",
+  "command": "/usr/bin/c++  -DCGAL_USE_GMP -DCGAL_USE_MPFR -I/home/slawek/workspace/Frez/Freya/GcodeGenerator/CppWorkspace/ToolpathGeneratorOpt/build-debug  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -frounding-math -std=c++17 -O0 -lstdc++fs -lpthread -g   -o CMakeFiles/ToolpathGeneratorOpt.dir/FileSearch/FileSearch/Result.cpp.o -c /home/slawek/workspace/Frez/Freya/GcodeGenerator/CppWorkspace/ToolpathGeneratorOpt/FileSearch/FileSearch/Result.cpp",
+  "file": "/home/slawek/workspace/Frez/Freya/GcodeGenerator/CppWorkspace/ToolpathGeneratorOpt/FileSearch/FileSearch/Result.cpp"
+},
+{
+  "directory": "/home/slawek/workspace/Frez/Freya/GcodeGenerator/CppWorkspace/ToolpathGeneratorOpt/build-debug",
+  "command": "/usr/bin/c++  -DCGAL_USE_GMP -DCGAL_USE_MPFR -I/home/slawek/workspace/Frez/Freya/GcodeGenerator/CppWorkspace/ToolpathGeneratorOpt/build-debug  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -frounding-math -std=c++17 -O0 -lstdc++fs -lpthread -g   -o CMakeFiles/ToolpathGeneratorOpt.dir/FileSearch/FileSearch/ThreadPool.cpp.o -c /home/slawek/workspace/Frez/Freya/GcodeGenerator/CppWorkspace/ToolpathGeneratorOpt/FileSearch/FileSearch/ThreadPool.cpp",
+  "file": "/home/slawek/workspace/Frez/Freya/GcodeGenerator/CppWorkspace/ToolpathGeneratorOpt/FileSearch/FileSearch/ThreadPool.cpp"
+},
+{
+  "directory": "/home/slawek/workspace/Frez/Freya/GcodeGenerator/CppWorkspace/ToolpathGeneratorOpt/build-debug",
+  "command": "/usr/bin/c++  -DCGAL_USE_GMP -DCGAL_USE_MPFR -I/home/slawek/workspace/Frez/Freya/GcodeGenerator/CppWorkspace/ToolpathGeneratorOpt/build-debug  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -frounding-math -std=c++17 -O0 -lstdc++fs -lpthread -g   -o CMakeFiles/ToolpathGeneratorOpt.dir/main.cpp.o -c /home/slawek/workspace/Frez/Freya/GcodeGenerator/CppWorkspace/ToolpathGeneratorOpt/main.cpp",
+  "file": "/home/slawek/workspace/Frez/Freya/GcodeGenerator/CppWorkspace/ToolpathGeneratorOpt/main.cpp"
+}
+]
