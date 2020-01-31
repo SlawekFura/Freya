@@ -90,6 +90,36 @@
                 />
             </diameter_6.35>
         </plywood>
+		<brass>
+            <diameter_1.0>
+                <params 
+                    maxDepth = "0.2" 
+                    cutSpeed = "70" 
+                    drillSpeed = "50" 
+                />
+            </diameter_1.0>
+            <diameter_2.0>
+                <params 
+                    maxDepth = "0.3" 
+                    cutSpeed = "80" 
+                    drillSpeed = "50" 
+                />
+            </diameter_2.0>
+            <diameter_3.0>
+                <params 
+                    maxDepth = "0.5"
+                    cutSpeed = "100" 
+                    drillSpeed = "50" 
+                />
+            </diameter_3.0>
+            <diameter_6.35>
+                <params 
+                    maxDepth = "0.8" 
+                    cutSpeed = "200"
+                    drillSpeed = "100" 
+                />
+            </diameter_6.35>
+        </brass>
     </type_90>
     <type_45>
         <plexi>
