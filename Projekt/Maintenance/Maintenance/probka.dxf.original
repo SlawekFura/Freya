@@ -501,11 +501,11 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2458881.619971134
+2458881.522699745
   9
 $TDUUPDATE
  40
-2458881.578304468
+2458881.481033079
   9
 $TDINDWG
  40
@@ -513,7 +513,7 @@ $TDINDWG
   9
 $TDUSRTIMER
  40
-0.010575162
+0.0105751736
   9
 $USRTIMER
  70
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-3A0
+386
   9
 $SURFTAB1
  70
@@ -1127,7 +1127,7 @@ ObjectDBX Classes
  90
         0
  91
-        6
+        8
 280
      0
 281
@@ -1175,7 +1175,7 @@ ObjectDBX Classes
  90
         0
  91
-        4
+        5
 280
      0
 281
@@ -1191,7 +1191,7 @@ ObjectDBX Classes
  90
      4095
  91
-        5
+        6
 280
      0
 281
@@ -1207,7 +1207,7 @@ ObjectDBX Classes
  90
      1153
  91
-        5
+        7
 280
      0
 281
@@ -1223,7 +1223,7 @@ ObjectDBX Classes
  90
      4095
  91
-        5
+        7
 280
      0
 281
@@ -1239,7 +1239,7 @@ ObjectDBX Classes
  90
      1153
  91
-        5
+        7
 280
      0
 281
@@ -1255,7 +1255,7 @@ ACDB_MLEADERSTYLE_CLASS
  90
      4095
  91
-        4
+        5
 280
      0
 281
@@ -1271,7 +1271,7 @@ ObjectDBX Classes
  90
      1152
  91
-        4
+        5
 280
      0
 281
@@ -1319,7 +1319,7 @@ ObjectDBX Classes
  90
         0
  91
-        4
+        5
 280
      0
 281
@@ -1335,7 +1335,7 @@ AutoCAD 2000
  90
         0
  91
-        4
+        5
 280
      0
 281
@@ -1351,7 +1351,7 @@ ObjectDBX Classes
  90
         0
  91
-        4
+        5
 280
      0
 281
@@ -1383,7 +1383,7 @@ ObjectDBX Classes
  90
         0
  91
-        4
+        5
 280
      0
 281
@@ -1415,7 +1415,7 @@ NanoSPDS
  90
       893
  91
-        4
+        5
 280
      0
 281
@@ -1431,7 +1431,7 @@ NanoSPDS
  90
       893
  91
-       21
+       22
 280
      0
 281
@@ -1447,7 +1447,7 @@ NanoSPDS
  90
       893
  91
-        4
+        8
 280
      0
 281
@@ -1495,7 +1495,7 @@ CAcLayoutPrintConfig
  90
      4095
  91
-        4
+        5
 280
      0
 281
@@ -1511,7 +1511,7 @@ SCENEOE
  90
      1153
  91
-        5
+        7
 280
      0
 281
@@ -1746,18 +1746,12 @@ TABLE
 LAYER
   5
 2
-102
-{ACAD_XDICTIONARY
-360
-394
-102
-}
 330
 0
 100
 AcDbSymbolTable
  70
-    17
+     3
   0
 LAYER
   5
@@ -1839,370 +1833,6 @@ EE
 348
 0
   0
-LAYER
-  5
-386
-330
-2
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-TOP_Full_CutOut_90
- 70
-     0
- 62
-     7
-  6
-Continuous
-370
-    -3
-390
-F
-347
-EE
-348
-0
-  0
-LAYER
-  5
-387
-330
-2
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-BOT_Full_CutOut_90
- 70
-     0
- 62
-     7
-  6
-Continuous
-370
-    -3
-390
-F
-347
-EE
-348
-0
-  0
-LAYER
-  5
-388
-330
-2
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-TOP_Full_CutOut_45
- 70
-     0
- 62
-     7
-  6
-Continuous
-370
-    -3
-390
-F
-347
-EE
-348
-0
-  0
-LAYER
-  5
-389
-330
-2
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-BOT_Full_CutOut_45
- 70
-     0
- 62
-     7
-  6
-Continuous
-370
-    -3
-390
-F
-347
-EE
-348
-0
-  0
-LAYER
-  5
-38A
-330
-2
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-TOP_Partial_CutOut_45
- 70
-     0
- 62
-     7
-  6
-Continuous
-370
-    -3
-390
-F
-347
-EE
-348
-0
-  0
-LAYER
-  5
-38B
-330
-2
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-BOT_Partial_CutOut_45
- 70
-     0
- 62
-     7
-  6
-Continuous
-370
-    -3
-390
-F
-347
-EE
-348
-0
-  0
-LAYER
-  5
-38C
-330
-2
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-TOP_Deepen
- 70
-     0
- 62
-     7
-  6
-Continuous
-370
-    -3
-390
-F
-347
-EE
-348
-0
-  0
-LAYER
-  5
-38D
-330
-2
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-BOT_Deepen
- 70
-     0
- 62
-     7
-  6
-Continuous
-370
-    -3
-390
-F
-347
-EE
-348
-0
-  0
-LAYER
-  5
-38E
-330
-2
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-BOT_Full_CutOut_90_1
- 70
-     0
- 62
-     7
-  6
-Continuous
-370
-    -3
-390
-F
-347
-EE
-348
-0
-  0
-LAYER
-  5
-38F
-330
-2
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-BOT_Full_CutOut_90_2
- 70
-     0
- 62
-     7
-  6
-Continuous
-370
-    -3
-390
-F
-347
-EE
-348
-0
-  0
-LAYER
-  5
-390
-330
-2
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-TOP_Full_CutOut_90_1
- 70
-     0
- 62
-     7
-  6
-Continuous
-370
-    -3
-390
-F
-347
-EE
-348
-0
-  0
-LAYER
-  5
-391
-330
-2
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-TOP_Full_CutOut_90_2
- 70
-     0
- 62
-     7
-  6
-Continuous
-370
-    -3
-390
-F
-347
-EE
-348
-0
-  0
-LAYER
-  5
-392
-330
-2
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-BOT_Full_CutOut_90_3
- 70
-     0
- 62
-     7
-  6
-Continuous
-370
-    -3
-390
-F
-347
-EE
-348
-0
-  0
-LAYER
-  5
-393
-330
-2
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-TOP_Full_CutOut_90_3
- 70
-     0
- 62
-     7
-  6
-Continuous
-370
-    -3
-390
-F
-347
-EE
-348
-0
-  0
 ENDTAB
   0
 TABLE
@@ -2215,7 +1845,7 @@ STYLE
 100
 AcDbSymbolTable
  70
-     2
+     3
   0
 STYLE
   5
@@ -2558,6 +2188,8 @@ Standard
 2.5
 141
 2.5
+143
+25.4
 147
 1.0
 178
@@ -4608,6 +4240,8 @@ LWPOLYLINE
 36D
 102
 {ACAD_REACTORS
+330
+37E
 102
 }
 330
@@ -4615,7 +4249,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-BOT_Full_CutOut_90
+0
 100
 AcDbPolyline
  90
@@ -4835,7 +4469,7 @@ EF
   3
 ACDB_RECOMPOSE_DATA
 350
-39F
+383
   3
 AcDbVariableDictionary
 350
@@ -4876,22 +4510,6 @@ AcDbSun
    256
 280
      1
-  0
-DICTIONARY
-  5
-394
-330
-2
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-ACAD_LAYERSTATES
-360
-395
   0
 DICTIONARY
   5
@@ -5375,7 +4993,7 @@ X-Ray
   0
 XRECORD
   5
-39F
+383
 102
 {ACAD_REACTORS
 330
@@ -5468,26 +5086,6 @@ MCS_DOCUMENT_ID
 MCS_PARAMS_DATA
 350
 37F
-  0
-DICTIONARY
-  5
-395
-102
-{ACAD_REACTORS
-330
-394
-102
-}
-330
-394
-100
-AcDbDictionary
-281
-     1
-  3
-MyConfiguration
-350
-396
   0
 SORTENTSTABLE
   5
@@ -7529,7 +7127,7 @@ TABLESTYLE
 102
 {ACAD_XDICTIONARY
 360
-39D
+381
 102
 }
 330
@@ -14712,12 +14310,6 @@ XRECORD
 AcDbXrecord
 280
      1
-300
-MCS_DOCUMENT_ID
- 90
-       60
-310
-0600000002000000150000001C000000E204000000000000000000007801E32D102D959BE273C06DA65CA7A265709DDE7F200000524509A115000000
 1001
 MCS_DOCUMENT_ID
 1071
@@ -14799,210 +14391,6 @@ EE0AFA030B3CB273954C91D5916E83CC9BEE074FAB1E6B73B11CFB6CBEB73B4C23589D2D05F4CC9A
 310
 99FF03A92412CEF64B0000
   0
-XRECORD
-  5
-396
-102
-{ACAD_REACTORS
-330
-395
-102
-}
-330
-395
-100
-AcDbXrecord
-280
-     1
- 91
-     1023
-301
-Configuration1: description
-290
-     0
-302
-0
-330
-10
- 90
-        8
- 62
-     7
-370
-    -3
-331
-16
-  1
-Color_7
-330
-386
- 90
-        8
- 62
-     7
-370
-    -3
-331
-16
-  1
-Color_7
-330
-387
- 90
-        8
- 62
-     7
-370
-    -3
-331
-16
-  1
-Color_7
-330
-388
- 90
-        8
- 62
-     5
-370
-    -3
-331
-16
-  1
-Color_5
-330
-389
- 90
-        8
- 62
-     3
-370
-    -3
-331
-16
-  1
-Color_3
-330
-38A
- 90
-        8
- 62
-     1
-370
-    -3
-331
-16
-  1
-Color_1
-330
-38B
- 90
-        8
- 62
-     4
-370
-    -3
-331
-16
-  1
-Color_4
-330
-38C
- 90
-        8
- 62
-     6
-370
-    -3
-331
-16
-  1
-Color_6
-330
-38D
- 90
-        8
- 62
-     2
-370
-    -3
-331
-16
-  1
-Color_3
-330
-38E
- 90
-        8
- 62
-     7
-370
-    18
-331
-16
-  1
-Color_9
-330
-38F
- 90
-        8
- 62
-     7
-370
-    18
-331
-16
-  1
-Color_130
-330
-390
- 90
-        8
- 62
-     7
-370
-    18
-331
-16
-  1
-Color_8
-330
-391
- 90
-        8
- 62
-     7
-370
-    18
-331
-16
-  1
-Color_253
-330
-392
- 90
-        8
- 62
-     7
-370
-    18
-331
-16
-  1
-Color_130
-330
-393
- 90
-        8
- 62
-     7
-370
-    18
-331
-16
-  1
-Color_253
-  0
 DICTIONARY
   5
 358
@@ -15021,7 +14409,7 @@ CSD_PLOT_CONFIG
   0
 DICTIONARY
   5
-39D
+381
 330
 7F
 100
@@ -15033,7 +14421,7 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-39E
+382
   0
 LAYOUTPRINTCONFIG
   5
@@ -15061,15 +14449,15 @@ CAcLayoutPrintConfig
   0
 CELLSTYLEMAP
   5
-39E
+382
 102
 {ACAD_REACTORS
 330
-39D
+381
 102
 }
 330
-39D
+381
 100
 AcDbCellStyleMap
  90
