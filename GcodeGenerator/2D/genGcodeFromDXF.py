@@ -19,8 +19,8 @@ outputDir = os.path.abspath(sys.argv[2])
 if not os.path.exists(outputDir):
     os.makedirs(outputDir)
 
-material = input("Choose material plexi/balsa/plywood: ")
-if not material in ["plexi", "balsa", "plywood"]:
+material = input("Choose material plexi/balsa/plywood/brass: ")
+if not material in ["plexi", "balsa", "plywood", "brass"]:
     print("Wrong material!") 
     quit()
 
