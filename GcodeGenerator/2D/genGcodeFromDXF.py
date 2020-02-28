@@ -32,8 +32,8 @@ if any([ "90" in layer.name or "Deepen" in layer.name for layer in dg.readfile(i
     if not cutterDiameter in [1.0, 2.0, 3.0, 6.35]:
         print("Wrong cutter diameter!") 
         quit()
-
-entityToLayerMap = dpc.createPolyFromDxf(inputDxf, cutterDiameter)
+cutterDiameterDummy = 6.35
+entityToLayerMap = dpc.createPolyFromDxf(inputDxf, cutterDiameterDummy)
 
 commandGenerator = gg.CommandGenerator("../Configs/tools/Cutters.xml", material, material_thickness, cutterDiameter) 
 commandGenerator.genGcode2D(outputDir, entityToLayerMap)
