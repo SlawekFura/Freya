@@ -11,14 +11,6 @@ safeHeight = 1.0
 highSpeed = 1000.0
 highSpeedZ = 200.0
 
-#commandsMap = { "FastMove"      : lambda point = [], *args        :"G0 X" + str(point[x]) + " Y" + str(point[y]) + " F" + str(highSpeed) + "\n",
-#                "FastMoveToBase":                                  "G0 X" + str(0.0) + " Y" + str(0.0) + " F" + str(highSpeed) + "\n",
-#                "FastMoveZ"     : lambda z                        :"G0 Z" + str(z) + "F" + str(highSpeedZ) + "\n",
-#                "Move"          : lambda point = [], *args, speed :"G01 X" + str(point[x]) + " Y" + str(point[y]) + " F" + str(speed) + "\n",
-#                "MoveZ"         : lambda z, speedZ                :"G01 Z" + str(z) + "F" + str(speedZ) + "\n",
-#                "SetCoordMM"    :                                  "G21\n\n",
-#                "EndProgram"    :                                  "\nM02\n" }
-
 commandsMap = { "FastMove"      : lambda point        :"G0 X" + str(point[x]) + " Y" + str(point[y]) + " F" + str(highSpeed) + "\n",
                 "FastMoveToBase":                                  "G0 X" + str(0.0) + " Y" + str(0.0) + " F" + str(highSpeed) + "\n",
                 "FastMoveZ"     : lambda z                        :"G0 Z" + str(z) + "F" + str(highSpeedZ) + "\n",
@@ -29,9 +21,9 @@ commandsMap = { "FastMove"      : lambda point        :"G0 X" + str(point[x]) + 
 
 
 class CommandGenerator:
-    def __init__(self, configPath, material, material_thickness, cutterDiameter = None):
+    def __init__(self, configPath, material, materialThicknessMap, cutterDiameter = None):
         self.material = material
-        self.material_thickness = material_thickness
+        self.materialThicknessMap = materialThicknessMap
         self.cutterDiameter = cutterDiameter
         self.configPath = configPath
         self.speed = None
@@ -55,7 +47,7 @@ class CommandGenerator:
     def generateMillingLevels(self, bot_margin, layerName):
         cutLevels = []
         cutterConfig = None
-        materialThickenss = self.material_thickness / 2.0 if "Deepen" in layerName else self.material_thickness
+        materialThickenss = self.materialThicknessMap[layerName]
 
         if "45" in layerName:
             cutterConfig = self.getCutterConfig(self.configPath, "45")
@@ -85,7 +77,7 @@ class CommandGenerator:
             if (materialThickenss - bot_margin) > abs(cutLevels[-1]):
                 cutLevels.append(-(materialThickenss - bot_margin)) 
         else:
-            cutLevels.append(-(materialThickenss - bot_margin)) 
+            cutLevels.append(-(materialThickenss - bot_margin))
         return cutLevels
 
     def genGcode2D(self, outfileDir, polysToLayerMap): 
@@ -93,12 +85,12 @@ class CommandGenerator:
         for layer, polys in polysToLayerMap.items():
 
 
-            print("out :", outfileDir + "/" + layer.name + ".gcode")
-            fileToWrite = open(outfileDir + "/" + layer.name + ".gcode",'w')
+            print("out :", outfileDir + "/" + layer + ".gcode")
+            fileToWrite = open(outfileDir + "/" + layer + ".gcode",'w')
             fileToWrite.write(commandsMap["SetCoordMM"])
             
-            layerConfig = self.readLayerConfig("../2D/LayersConfig.xml", layer.name)
-            levels = self.generateMillingLevels(float(layerConfig[0].get("bot_margin")), layer.name)
+            layerConfig = self.readLayerConfig("../2D/LayersConfig.xml", layer)
+            levels = self.generateMillingLevels(float(layerConfig[0].get("bot_margin")), layer)
             print("levels: ", levels)
             
             for level in levels: 

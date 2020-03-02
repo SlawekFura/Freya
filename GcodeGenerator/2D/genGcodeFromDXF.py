@@ -24,7 +24,7 @@ if not material in ["plexi", "balsa", "plywood", "brass"]:
     print("Wrong material!") 
     quit()
 
-material_thickness = float(input("Insert material thickness: "))
+materialThicknessMap = {}
 
 cutterDiameter = None
 if any([ "90" in layer.name or "Deepen" in layer.name for layer in dg.readfile(inputDxf).layers]):
@@ -32,8 +32,12 @@ if any([ "90" in layer.name or "Deepen" in layer.name for layer in dg.readfile(i
     if not cutterDiameter in [1.0, 2.0, 3.0, 6.35]:
         print("Wrong cutter diameter!") 
         quit()
-cutterDiameterDummy = 6.35
-entityToLayerMap = dpc.createPolyFromDxf(inputDxf, cutterDiameterDummy)
 
-commandGenerator = gg.CommandGenerator("../Configs/tools/Cutters.xml", material, material_thickness, cutterDiameter) 
+offset = 10.0
+entityToLayerMap = dpc.createPolyFromDxf(inputDxf, offset)
+for key in entityToLayerMap.keys():
+    materialThicknessMap.update({key : float(input("Insert material thickness for layer " + key + ": "))})
+    
+
+commandGenerator = gg.CommandGenerator("../Configs/tools/Cutters.xml", material, materialThicknessMap, cutterDiameter) 
 commandGenerator.genGcode2D(outputDir, entityToLayerMap)

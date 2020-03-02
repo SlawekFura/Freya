@@ -47,9 +47,9 @@
             </diameter_2.0>
             <diameter_3.0>
                 <params 
-                    maxDepth = "3.2"
-                    cutSpeed = "500" 
-                    drillSpeed = "100" 
+                    maxDepth = "4.0"
+                    cutSpeed = "700" 
+                    drillSpeed = "150" 
                 />
             </diameter_3.0>
             <diameter_6.35>
@@ -78,8 +78,8 @@
             <diameter_3.0>
                 <params 
                     maxDepth = "3.2"
-                    cutSpeed = "500" 
-                    drillSpeed = "100" 
+                    cutSpeed = "700" 
+                    drillSpeed = "150" 
                 />
             </diameter_3.0>
             <diameter_6.35>

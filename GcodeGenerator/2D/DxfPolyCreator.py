@@ -25,7 +25,7 @@ def getExtremeCoords(entities):
         
         
 
-def createPolyFromDxf(path, cutterDiameter):
+def createPolyFromDxf(path, offset):
     dxf = dg.readfile(path)
 
     lowestXY, highestXY = [], []
@@ -35,19 +35,26 @@ def createPolyFromDxf(path, cutterDiameter):
     midY = (lowestXY[y] + highestXY[y]) / 2
 
     entityToLayerMap = {}
-    for layer in dxf.layers:
-        for entity in dxf.entities:
-            if entity.layer == layer.name and entity.dxftype == 'LWPOLYLINE':
-                if "BOT" in layer.name:
-                    movedEntity = [[-(point[x] - midX), point[y] - lowestXY[y] + 2 * cutterDiameter] for point in entity] 
-                    if entity.is_closed:
-                        movedEntity.append([-(entity[0][x] - midX), entity[0][y] - lowestXY[y] + 2 * cutterDiameter])
-                else:
-                    movedEntity = [[point[x] - midX, point[y] - lowestXY[y] + 2 * cutterDiameter] for point in entity] 
-                    if entity.is_closed:
-                        movedEntity.append([entity[0][x] - midX, entity[0][y] - lowestXY[y] + 2 * cutterDiameter])
-                if layer in entityToLayerMap:
-                    entityToLayerMap[layer].append(movedEntity) 
-                else:
-                    entityToLayerMap.update({layer : [movedEntity]})
+    for entity in dxf.entities:
+        if entity.dxftype == 'LWPOLYLINE':
+            layer = entity.layer
+            if "BOT" in layer:
+                movedEntity = [[-(point[x] - midX), point[y] - lowestXY[y] + offset] for point in entity] 
+                #if entity.is_closed:
+                #    movedEntity.append([-(entity[0][x] - midX), entity[0][y] - lowestXY[y] + offset])
+            elif "TOP" in layer:
+                movedEntity = [[point[x] - midX, point[y] - lowestXY[y] + offset] for point in entity] 
+                #if entity.is_closed:
+                #    movedEntity.append([entity[0][x] - midX, entity[0][y] - lowestXY[y] + offset])
+            else:
+                sys.exit("Unsupported layer name: " + layer + "!")
+
+            if layer in entityToLayerMap:
+                entityToLayerMap[layer].append(movedEntity) 
+            else:
+                entityToLayerMap.update({layer : [movedEntity]})
+        elif entity.dxftype == 'LINE':
+            continue
+        else:
+            sys.exit("Unsupported type of object: " + entity.dxftype + "!")
     return entityToLayerMap
