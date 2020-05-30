@@ -102,6 +102,7 @@ class CommandGenerator:
 
                     for point in poly:
                         fileToWrite.write(commandsMap["Move"](point, speed = self.speed))
+                    fileToWrite.write(commandsMap["Move"](poly[0], speed = self.speed))
 
             fileToWrite.write("\n" + commandsMap["FastMoveZ"](safeHeight))
             fileToWrite.write("\n" + commandsMap["FastMoveToBase"])
