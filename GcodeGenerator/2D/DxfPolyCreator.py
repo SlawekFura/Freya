@@ -40,12 +40,8 @@ def createPolyFromDxf(path, offset):
             layer = entity.layer
             if "BOT" in layer:
                 movedEntity = [[-(point[x] - midX), point[y] - lowestXY[y] + offset] for point in entity] 
-                #if entity.is_closed:
-                #    movedEntity.append([-(entity[0][x] - midX), entity[0][y] - lowestXY[y] + offset])
             elif "TOP" in layer:
                 movedEntity = [[point[x] - midX, point[y] - lowestXY[y] + offset] for point in entity] 
-                #if entity.is_closed:
-                #    movedEntity.append([entity[0][x] - midX, entity[0][y] - lowestXY[y] + offset])
             else:
                 sys.exit("Unsupported layer name: " + layer + "!")
 
@@ -53,8 +49,19 @@ def createPolyFromDxf(path, offset):
                 entityToLayerMap[layer].append(movedEntity) 
             else:
                 entityToLayerMap.update({layer : [movedEntity]})
-        elif entity.dxftype == 'LINE':
-            continue
+        elif entity.dxftype == 'POINT':
+            layer = entity.layer
+            if "BOT" in layer:
+                movedEntity = [[-(entity.point[x] - midX), entity.point[y] - lowestXY[y] + offset]]
+            elif "TOP" in layer:
+                movedEntity = [[entity.point[x] - midX, entity.point[y] - lowestXY[y] + offset]]
+            else:
+                sys.exit("Unsupported layer name: " + layer + "!")
+
+            if layer in entityToLayerMap:
+                entityToLayerMap[layer].append(movedEntity) 
+            else:
+                entityToLayerMap.update({layer : [movedEntity]})
         else:
             sys.exit("Unsupported type of object: " + entity.dxftype + "!")
     return entityToLayerMap
