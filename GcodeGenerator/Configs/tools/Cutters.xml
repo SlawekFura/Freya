@@ -2,146 +2,104 @@
     <type_90>
         <plexi>
             <diameter_1.0>
-                <params 
-                    maxDepth = "1.6" 
-                    cutSpeed = "200" 
-                    drillSpeed = "20" 
-                />
-            </diameter_1.0>
-            <diameter_2.0>
-                <params 
-                    maxDepth = "1.8" 
-                    cutSpeed = "200" 
-                    drillSpeed = "20" 
-                />
-            </diameter_2.0>
-            <diameter_3.0>
-                <params 
-                    maxDepth = "1.6"
-                    cutSpeed = "200" 
-                    drillSpeed = "20" 
-                />
+                <params maxDepth = "1.6" cutSpeed = "200" drillSpeed = "20" />
+            </diameter_1.0>                                             
+            <diameter_2.0>                                              
+                <params maxDepth = "1.8" cutSpeed = "200" drillSpeed = "20" />
+            </diameter_2.0>                                             
+            <diameter_3.0>                                              
+                <params maxDepth = "1.6" cutSpeed = "200" drillSpeed = "20" />
+            </diameter_3.0>                                             
+            <diameter_6.35>                                             
+                <params maxDepth = "2.5" cutSpeed = "200" drillSpeed = "20" />
+            </diameter_6.35>                                              
+        </plexi>                                                          
+        <balsa>                                                           
+            <diameter_1.0>                                                
+                <params maxDepth = "3.2" cutSpeed = "500" drillSpeed = "100" />
+            </diameter_1.0>                                               
+            <diameter_2.0>                                                
+                <params maxDepth = "4.3" cutSpeed = "500" drillSpeed = "100" />
+            </diameter_2.0>                                               
+            <diameter_3.0>                                                
+                <params maxDepth = "4.0" cutSpeed = "700" drillSpeed = "150" />
             </diameter_3.0>
             <diameter_6.35>
-                <params 
-                    maxDepth = "2.5" 
-                    cutSpeed = "200" 
-                    drillSpeed = "20" 
-                />
-            </diameter_6.35>
-        </plexi>
-        <balsa>
-            <diameter_1.0>
-                <params 
-                    maxDepth = "3.2" 
-                    cutSpeed = "500" 
-                    drillSpeed = "100" 
-                />
-            </diameter_1.0>
-            <diameter_2.0>
-                <params 
-                    maxDepth = "4.3" 
-                    cutSpeed = "500" 
-                    drillSpeed = "100" 
-                />
-            </diameter_2.0>
-            <diameter_3.0>
-                <params 
-                    maxDepth = "4.0"
-                    cutSpeed = "700" 
-                    drillSpeed = "150" 
-                />
-            </diameter_3.0>
-            <diameter_6.35>
-                <params 
-                    maxDepth = "10" 
-                    cutSpeed = "1250"
-                    drillSpeed = "100" 
-                />
+                <params maxDepth = "10" cutSpeed = "1250" drillSpeed = "100" />
             </diameter_6.35>
         </balsa>
         <plywood>
             <diameter_1.0>
-                <params 
-                    maxDepth = "2.0" 
-                    cutSpeed = "500" 
-                    drillSpeed = "100" 
-                />
-            </diameter_1.0>
-            <diameter_2.0>
-                <params 
-                    maxDepth = "2.6" 
-                    cutSpeed = "500" 
-                    drillSpeed = "100" 
-                />
-            </diameter_2.0>
-            <diameter_3.0>
-                <params 
-                    maxDepth = "3.2"
-                    cutSpeed = "700" 
-                    drillSpeed = "150" 
-                />
-            </diameter_3.0>
+                <params maxDepth = "2.0" cutSpeed = "500" drillSpeed = "100" />
+            </diameter_1.0>                                              
+            <diameter_2.0>                                               
+                <params maxDepth = "2.6" cutSpeed = "500" drillSpeed = "100" />
+            </diameter_2.0>                                              
+            <diameter_3.0>                                               
+                <params maxDepth = "3.2" cutSpeed = "700" drillSpeed = "150" />
+            </diameter_3.0>                           
             <diameter_6.35>
-                <params 
-                    maxDepth = "6" 
-                    cutSpeed = "1000"
-                    drillSpeed = "100" 
-                />
+                <params maxDepth = "6" cutSpeed = "1000" drillSpeed = "100" />
             </diameter_6.35>
         </plywood>
 		<brass>
             <diameter_1.0>
-                <params 
-                    maxDepth = "0.2" 
-                    cutSpeed = "70" 
-                    drillSpeed = "50" 
-                />
-            </diameter_1.0>
-            <diameter_2.0>
-                <params 
-                    maxDepth = "0.3" 
-                    cutSpeed = "80" 
-                    drillSpeed = "50" 
-                />
-            </diameter_2.0>
-            <diameter_3.0>
-                <params 
-                    maxDepth = "0.4"
-                    cutSpeed = "100" 
-                    drillSpeed = "50" 
-                />
-            </diameter_3.0>
-            <diameter_6.35>
-                <params 
-                    maxDepth = "0.8" 
-                    cutSpeed = "200"
-                    drillSpeed = "100" 
-                />
+                <params maxDepth = "0.2" cutSpeed = "70" drillSpeed = "50" />
+            </diameter_1.0>                          
+            <diameter_2.0>                           
+                <params maxDepth = "0.3" cutSpeed = "80" drillSpeed = "50" />
+            </diameter_2.0>                          
+            <diameter_3.0>                           
+                <params maxDepth = "0.4" cutSpeed = "100" drillSpeed = "50" />
+            </diameter_3.0>                           
+            <diameter_6.35>                           
+                <params maxDepth = "0.8" cutSpeed = "200" drillSpeed = "100" />
             </diameter_6.35>
         </brass>
     </type_90>
     <type_45>
         <plexi>
-            <params 
-                cutAmount = "4.75" 
-                cutSpeed = "200" 
-                drillSpeed = "20" 
-            />
+            <params cutAmount = "4.75" cutSpeed = "200" drillSpeed = "20" />
         </plexi>
         <balsa>
-            <params 
-                cutAmount = "9.5" 
-                cutSpeed = "500" 
-                drillSpeed = "100" 
-            />
+            <params cutAmount = "9.5" cutSpeed = "500" drillSpeed = "100" />
         </balsa>
         <plywood>
-            <params 
-                cutAmount = "9.5" 
-                cutSpeed = "500" 
-                drillSpeed = "100" 
-            />
+            <params cutAmount = "9.5" cutSpeed = "500" drillSpeed = "100" />
         </plywood>
     </type_45>
+	<type_Drill>
+		<plexi>
+			<diameter_3.0>
+				<params maxDepth = "999" cutSpeed = "10" drillSpeed = "20" />
+			</diameter_3.0>
+			<diameter_6.0>
+				<params maxDepth = "999" cutSpeed = "10" drillSpeed = "20" />
+			</diameter_6.0>
+		</plexi>
+		<balsa>
+			<diameter_3.0>
+				<params maxDepth = "999" cutSpeed = "10" drillSpeed = "20" />
+			</diameter_3.0>
+			<diameter_6.0>
+				<params maxDepth = "999" cutSpeed = "10" drillSpeed = "20" />
+			</diameter_6.0>
+		</balsa>
+		<plywood>
+			<diameter_3.0>
+				<params maxDepth = "999" cutSpeed = "10" drillSpeed = "20" />
+			</diameter_3.0>
+			<diameter_6.0>
+				<params maxDepth = "999" cutSpeed = "10" drillSpeed = "20" />
+			</diameter_6.0>
+		</plywood>
+		<brass>
+			<diameter_3.0>
+				<params maxDepth = "999" cutSpeed = "10" drillSpeed = "20" />
+			</diameter_3.0>
+			<diameter_6.0>
+				<params maxDepth = "999" cutSpeed = "10" drillSpeed = "20" />
+			</diameter_6.0>
+		</brass>
+	</type_Drill>
 </config>

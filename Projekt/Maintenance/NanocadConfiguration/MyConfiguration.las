@@ -97,30 +97,6 @@ Continuous
   2
 Color_4
   8
-TOP_Deepen
- 90
-        8
- 62
-     6
-370
-    -3
-  6
-Continuous
-  2
-Color_6
-  8
-BOT_Deepen
- 90
-        8
- 62
-     2
-370
-    -3
-  6
-Continuous
-  2
-Color_3
-  8
 BOT_Full_CutOut_90_1
  90
         8
@@ -192,3 +168,123 @@ TOP_Full_CutOut_90_3
 Continuous
   2
 Color_253
+  8
+TOP_Drill
+ 90
+        8
+ 62
+     7
+370
+    -3
+  6
+Continuous
+  2
+Color_7
+  8
+TOP_Full_CutOut_90_4
+ 90
+        8
+ 62
+     7
+370
+    -3
+  6
+Continuous
+  2
+Color_7
+  8
+TOP_Full_CutOut_90_5
+ 90
+        8
+ 62
+     7
+370
+    -3
+  6
+Continuous
+  2
+Color_7
+  8
+BOT_Full_CutOut_90_4
+ 90
+        9
+ 62
+     7
+370
+    -3
+  6
+Continuous
+  2
+Color_7
+  8
+BOT_Full_CutOut_90_5
+ 90
+        8
+ 62
+     7
+370
+    -3
+  6
+Continuous
+  2
+Color_7
+  8
+BOT_Drill
+ 90
+        8
+ 62
+     7
+370
+    -3
+  6
+Continuous
+  2
+Color_7
+  8
+TOP_Drill_1
+ 90
+        8
+ 62
+     7
+370
+    -3
+  6
+Continuous
+  2
+Color_7
+  8
+TOP_Drill_2
+ 90
+        8
+ 62
+     7
+370
+    25
+  6
+Continuous
+  2
+Color_3
+  8
+BOT_Drill_1
+ 90
+        8
+ 62
+     7
+370
+    25
+  6
+Continuous
+  2
+Color_3
+  8
+BOT_Drill_2
+ 90
+        8
+ 62
+     7
+370
+    -3
+  6
+Continuous
+  2
+Color_7
