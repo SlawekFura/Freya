@@ -501,11 +501,11 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2458998.861551933
+2458998.861791667
   9
 $TDUUPDATE
  40
-2458998.7782186
+2458998.778458333
   9
 $TDINDWG
  40
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-595
+5A9
   9
 $SURFTAB1
  70
@@ -1557,9 +1557,9 @@ AcDbViewportTableRecord
  21
 1.0
  12
--57.907742
+-164.273588
  22
-93.494232
+134.459457
  13
 0.0
  23
@@ -1585,7 +1585,7 @@ AcDbViewportTableRecord
  37
 0.0
  40
-215.492969
+63.849769
  41
 2.559242
  42
@@ -2583,7 +2583,7 @@ BLOCK_RECORD
 100
 AcDbSymbolTable
  70
-    15
+    16
   0
 BLOCK_RECORD
   5
@@ -2922,6 +2922,26 @@ AcDbSymbolTableRecord
 AcDbBlockTableRecord
   2
 *D14
+340
+0
+ 70
+     0
+280
+     1
+281
+     0
+  0
+BLOCK_RECORD
+  5
+596
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D15
 340
 0
  70
@@ -6334,6 +6354,334 @@ ENDBLK
 564
 330
 562
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+597
+330
+596
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D15
+ 70
+     1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D15
+  1
+*D15
+  0
+LINE
+  5
+599
+330
+596
+100
+AcDbEntity
+  8
+DIMENSION
+ 62
+     0
+370
+    -2
+100
+AcDbLine
+ 10
+3.480438
+ 20
+303.234818
+ 30
+0.0
+ 11
+3.358169
+ 21
+303.234818
+ 31
+0.0
+  0
+LINE
+  5
+59A
+330
+596
+100
+AcDbEntity
+  8
+DIMENSION
+ 62
+     0
+370
+    -2
+100
+AcDbLine
+ 10
+2.858169
+ 20
+264.771021
+ 30
+0.0
+ 11
+3.358169
+ 21
+264.771021
+ 31
+0.0
+  0
+LINE
+  5
+59B
+330
+596
+100
+AcDbEntity
+  8
+DIMENSION
+ 62
+     0
+370
+    -2
+100
+AcDbLine
+ 10
+3.358169
+ 20
+300.734818
+ 30
+0.0
+ 11
+3.358169
+ 21
+292.502919
+ 31
+0.0
+  0
+LINE
+  5
+59C
+330
+596
+100
+AcDbEntity
+  8
+DIMENSION
+ 62
+     0
+370
+    -2
+100
+AcDbLine
+ 10
+3.358169
+ 20
+267.271021
+ 30
+0.0
+ 11
+3.358169
+ 21
+275.502919
+ 31
+0.0
+  0
+SOLID
+  5
+59D
+330
+596
+100
+AcDbEntity
+  8
+DIMENSION
+ 62
+     0
+100
+AcDbTrace
+ 10
+3.774836
+ 20
+300.734818
+ 30
+0.0
+ 11
+2.941502
+ 21
+300.734818
+ 31
+0.0
+ 12
+3.358169
+ 22
+303.234818
+ 32
+0.0
+ 13
+3.358169
+ 23
+303.234818
+ 33
+0.0
+  0
+SOLID
+  5
+59E
+330
+596
+100
+AcDbEntity
+  8
+DIMENSION
+ 62
+     0
+100
+AcDbTrace
+ 10
+2.941502
+ 20
+267.271021
+ 30
+0.0
+ 11
+3.774836
+ 21
+267.271021
+ 31
+0.0
+ 12
+3.358169
+ 22
+264.771021
+ 32
+0.0
+ 13
+3.358169
+ 23
+264.771021
+ 33
+0.0
+  0
+MTEXT
+  5
+59F
+330
+596
+100
+AcDbEntity
+  8
+DIMENSION
+ 62
+     0
+100
+AcDbMText
+ 10
+3.358169
+ 20
+284.002919
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 46
+0.0
+ 71
+     5
+ 72
+     1
+  1
+\A1;38.4638
+ 11
+5.772820718170895E-17
+ 21
+1.0
+ 31
+0.0
+ 73
+     1
+ 44
+1.0
+  0
+POINT
+  5
+5A0
+330
+596
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+     0
+100
+AcDbPoint
+ 10
+3.980438
+ 20
+303.234818
+ 30
+0.0
+  0
+POINT
+  5
+5A1
+330
+596
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+     0
+100
+AcDbPoint
+ 10
+3.358169
+ 20
+264.771021
+ 30
+0.0
+  0
+POINT
+  5
+5A2
+330
+596
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+     0
+100
+AcDbPoint
+ 10
+3.358169
+ 20
+264.771021
+ 30
+0.0
+  0
+ENDBLK
+  5
+598
+330
+596
 100
 AcDbEntity
   8
@@ -14491,7 +14839,7 @@ EF
   3
 ACDB_RECOMPOSE_DATA
 350
-594
+5A8
   3
 AcDbVariableDictionary
 350
@@ -15031,7 +15379,7 @@ X-Ray
   0
 XRECORD
   5
-594
+5A8
 102
 {ACAD_REACTORS
 330
@@ -17185,7 +17533,7 @@ TABLESTYLE
 102
 {ACAD_XDICTIONARY
 360
-592
+5A6
 102
 }
 330
@@ -24677,7 +25025,7 @@ CSD_PLOT_CONFIG
   0
 DICTIONARY
   5
-592
+5A6
 330
 7F
 100
@@ -24689,7 +25037,7 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-593
+5A7
   0
 LAYOUTPRINTCONFIG
   5
@@ -24717,15 +25065,15 @@ CAcLayoutPrintConfig
   0
 CELLSTYLEMAP
   5
-593
+5A7
 102
 {ACAD_REACTORS
 330
-592
+5A6
 102
 }
 330
-592
+5A6
 100
 AcDbCellStyleMap
  90
