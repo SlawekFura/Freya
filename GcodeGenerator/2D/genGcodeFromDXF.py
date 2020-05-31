@@ -16,6 +16,7 @@ import dxfgrabber as dg
 
 inputDxfIdx = 1
 outputDirIdx = 2
+serialGcodeIdx = 3
 
 inputDxf = os.path.abspath(sys.argv[inputDxfIdx])
 outputDir = os.path.abspath(sys.argv[outputDirIdx])

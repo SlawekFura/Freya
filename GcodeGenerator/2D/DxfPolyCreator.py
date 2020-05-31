@@ -39,12 +39,15 @@ def createPolyFromDxf(path, offset):
         if entity.dxftype == 'LWPOLYLINE':
             layer = entity.layer
             if "BOT" in layer:
-                movedEntity = [[-(point[x] - midX), point[y] - lowestXY[y] + offset] for point in entity] 
+                movedEntity = [[-(point[x] - midX), point[y] - lowestXY[y] + offset] for point in entity]
             elif "TOP" in layer:
                 movedEntity = [[point[x] - midX, point[y] - lowestXY[y] + offset] for point in entity] 
             else:
                 sys.exit("Unsupported layer name: " + layer + "!")
 
+            if entity.is_closed:
+                movedEntity.append(movedEntity[0])
+                
             if layer in entityToLayerMap:
                 entityToLayerMap[layer].append(movedEntity) 
             else:
