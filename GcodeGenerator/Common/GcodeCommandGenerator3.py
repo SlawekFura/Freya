@@ -91,6 +91,7 @@ class CommandGenerator:
         fileToWrite = open(filepath,'w')
 
         for poly in polys:
+            poly = roundFloatNestedList(poly, 3)
             previousLevel = roundFloatNestedList(polys[0], 3)
             isEndNewBegin = poly[0] == poly[-1]
             #isFirstIteration = True
@@ -99,7 +100,6 @@ class CommandGenerator:
             fileToWrite.write(commandsMap["MoveZ"](levels[0], self.speedZ))
             
             for level in levels:
-                poly = roundFloatNestedList(poly, 3)
                 if not isEndNewBegin:
                     fileToWrite.write("\n" + commandsMap["FastMoveZ"](safeHeight))
                     fileToWrite.write(commandsMap["FastMove"](poly[0]))

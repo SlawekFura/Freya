@@ -6,20 +6,27 @@ import dxfgrabber as dg
 x = 0
 y = 1
 
+def getExtremes(highestXY, lowestXY, point):
+    return [max(highestXY[x], point[x]), max(highestXY[y], point[y])],\
+           [min(lowestXY[x], point[x]), min(lowestXY[y], point[y])]
+
 def getExtremeCoords(entities):
-    lowestXY = [entities[0][0][x], entities[0][0][y]]
-    highestXY = [entities[0][0][x], entities[0][0][y]]
+    lowestXY = []
+    highestXY = []
+    if entities[0].dxftype == 'LWPOLYLINE':
+        lowestXY = highestXY = [entities[0][0][x], entities[0][0][y]]
+    elif entities[0].dxftype == 'POINT':
+        lowestXY = highestXY = [entities[0].point[x], entities[0].point[y]]
+
+    print("len :", len(entities))
     for entity in entities:
         if entity.dxftype == 'LWPOLYLINE':
             for point in entity:
-                if point[x] > highestXY[x]:
-                    highestXY[x] = point[x]
-                if point[y] > highestXY[y]:
-                    highestXY[y] = point[y]
-                if point[x] < lowestXY[x]:
-                    lowestXY[x] = point[x]
-                if point[y] < lowestXY[y]:
-                    lowestXY[y] = point[y]
+                highestXY, lowestXY = getExtremes(highestXY, lowestXY, point)
+                    
+        elif entity.dxftype == 'POINT':
+            highestXY, lowestXY = getExtremes(highestXY, lowestXY, entity.point)
+            
     return lowestXY, highestXY 
                 
         
@@ -29,11 +36,11 @@ def createPolyFromDxf(path, offset):
     dxf = dg.readfile(path)
 
     lowestXY, highestXY = [], []
-    for layer in dxf.layers:
-        lowestXY, highestXY = getExtremeCoords(dxf.entities)
+    #for layer in dxf.layers:
+    lowestXY, highestXY = getExtremeCoords(dxf.entities)
+
     midX = (lowestXY[x] + highestXY[x]) / 2
     midY = (lowestXY[y] + highestXY[y]) / 2
-
     entityToLayerMap = {}
     for entity in dxf.entities:
         if entity.dxftype == 'LWPOLYLINE':
@@ -65,6 +72,8 @@ def createPolyFromDxf(path, offset):
                 entityToLayerMap[layer].append(movedEntity) 
             else:
                 entityToLayerMap.update({layer : [movedEntity]})
+        elif entity.dxftype == 'LINE':
+            print("Unsupported type of object: " + entity.dxftype + ", but continue")
         else:
             sys.exit("Unsupported type of object: " + entity.dxftype + "!")
     return entityToLayerMap
