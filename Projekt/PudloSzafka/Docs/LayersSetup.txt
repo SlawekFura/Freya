@@ -1,0 +1,12 @@
+Right_Left_Front.dxf
+	BOT_Full_CutOut_90
+		6mm
+	BOT_Full_CutOut_45
+		6mm
+		
+	TOP_Drill
+		7mm
+	TOP_Full_CutOut_90
+		6mm
+	TOP_Full_CutOut_90_1
+		3mm
