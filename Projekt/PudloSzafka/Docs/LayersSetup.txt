@@ -10,3 +10,11 @@ Right_Left_Front.dxf
 		6mm
 	TOP_Full_CutOut_90_1
 		3mm
+
+Bottom_Back.dxf
+	TOP_Drill
+		6mm
+	TOP_Full_CutOut_90
+		6mm
+	TOP_Full_CutOut_45
+		6mm
