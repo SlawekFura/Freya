@@ -39,14 +39,23 @@ for key in entityToLayerMap.keys():
     materialThickness = float(input("Insert material thickness for layer " + key + ": "))
     toolType = None
     toolDiameter = None
+    bothSideMilled = None
+	
     if "45" in key:
-        toolType = "90"
+        toolType = "45"
     elif "90" in key:
         toolType = "90"
         toolDiameter = float(input("Choose cutter diameter[mm] 1/2/3/6.35: "))
         if not toolDiameter in [1.0, 2.0, 3.0, 6.35]:
             print("Wrong cutter diameter!") 
             quit()
+        #bothSideMilled = input("Should mill both-sided y/n: ")
+        bothSideMilled = 'y'
+        if not bothSideMilled in ["y", "n"]:
+        	print("Wrong option - chose 'y' or 'n'!") 
+        	quit()
+        bothSideMilled = True if bothSideMilled == "yes" else "no"
+	
     elif "Drill" in key:
         toolType = "Drill"
         toolDiameter = float(input("Choose cutter diameter[mm] 3/6: "))
@@ -58,7 +67,8 @@ for key in entityToLayerMap.keys():
         quit()
     materialLayersInfo.update({key : {"thickness" : materialThickness,
                                       "toolType" : toolType,
-                                      "toolDiameter" : toolDiameter}})
+                                      "toolDiameter" : toolDiameter,
+									  "bothSideMilled" : bothSideMilled}})
 
 
 commandGenerator = gg.CommandGenerator("../Configs/tools/Cutters.xml", material, materialLayersInfo)

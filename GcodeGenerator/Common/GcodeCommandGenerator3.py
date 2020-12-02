@@ -7,7 +7,7 @@ import xml.etree.ElementTree as ET
 import math
 from utils import *
 
-safeHeight = 1.0
+safeHeight = 5.0
 highSpeed = 1000.0
 highSpeedZ = 200.0
 
@@ -53,8 +53,6 @@ class CommandGenerator:
         if "45" in layerName:
             cutterConfig = self.getCutterConfig(self.configPath, toolType)
             cutAmount = float(cutterConfig[0].get("cutAmount"))
-
-
             baseMultipleParam = 1.0
             baseLevel = -math.sqrt(cutAmount)
 
@@ -81,11 +79,11 @@ class CommandGenerator:
             cutLevels.append(-(materialThickenss - bot_margin))
         return cutLevels
 
-
-    def genGcode2DSerial(self, layer, polys, filepath):
+		
+    def genGcode2DSerial(self, layer, polys, filepath, levels):
         #layerConfig = self.readLayerConfig("../2D/LayersConfig.xml", layer)
         #levels = self.generateMillingLevels(float(layerConfig[0].get("bot_margin")), layer)
-        levels = self.generateMillingLevels(0, layer)
+        #levels = self.generateMillingLevels(0, layer)
         print("out: ", filepath)
         print("levels: ", levels)
         fileToWrite = open(filepath,'w')
@@ -120,35 +118,58 @@ class CommandGenerator:
 
         for layer, polys in polysToLayerMap.items():
             filepath = outfileDir + "/" + layer + ".gcode"
-            shouldGenSerialGcode = input("Should generate serial gcode for " + layer + "? (y/n): ")
-            if (shouldGenSerialGcode == "y"):
-                self.genGcode2DSerial(layer, polys, filepath)
-                continue
-            else:
-                print("Proceed with 'n'")
-
-
+            #shouldGenSerialGcode = input("Should generate serial gcode for " + layer + "? (y/n): ")
+            shouldGenSerialGcode = "y";
+			
             print("out :", outfileDir + "/" + layer + ".gcode")
             fileToWrite = open(filepath,'w')
             fileToWrite.write(commandsMap["SetCoordMM"])
 
-            #layerConfig = self.readLayerConfig("../2D/LayersConfig.xml", layer)
-            #levels = self.generateMillingLevels(float(layerConfig[0].get("bot_margin")), layer)
             levels = self.generateMillingLevels(0, layer)
             print("levels: ", levels)
+            secondSideMillLevel = None;
+            if self.materialLayersInfo[layer]["bothSideMilled"] and len(levels) > 1:
+            	secondSideMillLevel = levels[-1];
+            	levels = levels[:-1]
+				
+            if (shouldGenSerialGcode == "y"):
+                self.genGcode2DSerial(layer, polys, filepath, levels)
+            else:
+                for level in levels:
+                    for poly in polys:
+                        poly = roundFloatNestedList(poly, 3)
+                        fileToWrite.write("\n" + commandsMap["FastMoveZ"](safeHeight))
+                        fileToWrite.write(commandsMap["FastMove"](poly[0]))
+                        fileToWrite.write(commandsMap["MoveZ"](level, self.speedZ))
+			    
+                        for point in poly:
+                            fileToWrite.write(commandsMap["Move"](point, speed = self.speed))
+                        #fileToWrite.write(commandsMap["Move"](poly[0], speed = self.speed))
+			    
+                fileToWrite.write("\n" + commandsMap["FastMoveZ"](safeHeight))
+                fileToWrite.write("\n" + commandsMap["FastMoveToBase"])
+                fileToWrite.write(commandsMap["EndProgram"])
+                fileToWrite.close()
 
-            for level in levels:
-                for poly in polys:
-                    poly = roundFloatNestedList(poly, 3)
-                    fileToWrite.write("\n" + commandsMap["FastMoveZ"](safeHeight))
-                    fileToWrite.write(commandsMap["FastMove"](poly[0]))
-                    fileToWrite.write(commandsMap["MoveZ"](level, self.speedZ))
+            print("secondSideMillLevel: ", secondSideMillLevel)
+            self.writeSecondSide(secondSideMillLevel, outfileDir + "/" + layer + "_SecondSide.gcode", polys)
 
-                    for point in poly:
-                        fileToWrite.write(commandsMap["Move"](point, speed = self.speed))
-                    #fileToWrite.write(commandsMap["Move"](poly[0], speed = self.speed))
+    def writeSecondSide(self, secondSideMillLevel, outFile, polys):
+        if secondSideMillLevel == None:
+            return
+        print("out for second side: ", outFile)
+        fileToWrite = open(outFile,'w')
+        fileToWrite.write(commandsMap["SetCoordMM"])
 
+        for poly in polys:
+            poly = roundFloatNestedList(poly, 3)
             fileToWrite.write("\n" + commandsMap["FastMoveZ"](safeHeight))
-            fileToWrite.write("\n" + commandsMap["FastMoveToBase"])
-            fileToWrite.write(commandsMap["EndProgram"])
-            fileToWrite.close()
+            fileToWrite.write(commandsMap["FastMove"](poly[0]))
+            fileToWrite.write(commandsMap["MoveZ"](secondSideMillLevel, self.speedZ))
+		    
+            for point in poly:
+                fileToWrite.write(commandsMap["Move"](point, speed = self.speed))
+        fileToWrite.write("\n" + commandsMap["FastMoveZ"](safeHeight))
+        fileToWrite.write("\n" + commandsMap["FastMoveToBase"])
+        fileToWrite.write(commandsMap["EndProgram"])
+        fileToWrite.close()
