@@ -1,4 +1,5 @@
 import sys
+
 sys.path.append('../Common/')
 import os
 
@@ -6,11 +7,10 @@ import GcodeCommandGenerator3 as gg
 import DxfPolyCreator as dpc
 import dxfgrabber as dg
 
+# print('Number of arguments:', len(sys.argv), 'arguments.')
+# print('Argument List:', str(sys.argv))
 
-#print('Number of arguments:', len(sys.argv), 'arguments.') 
-#print('Argument List:', str(sys.argv))
-
-#if len(sys.argv) < 3:
+# if len(sys.argv) < 3:
 #    print("not enough arguments provided!")
 #    quit()
 
@@ -26,50 +26,52 @@ if not os.path.exists(outputDir):
 print("inputDxf", inputDxf)
 print("outputDir", outputDir)
 
-material = input("Choose material plexi/balsa/plywood/brass: ")
-if not material in ["plexi", "balsa", "plywood", "brass"]:
-    print("Wrong material!") 
-    quit()
+# material = input("Choose material plexi/balsa/plywood/brass: ")
+# if not material in ["plexi", "balsa", "plywood", "brass"]:
+#     print("Wrong material!")
+#     quit()
 
+material = ""
 materialLayersInfo = {}
 
 offset = 10.0
-entityToLayerMap = dpc.createPolyFromDxf(inputDxf, offset)
-for key in entityToLayerMap.keys():
-    materialThickness = float(input("Insert material thickness for layer " + key + ": "))
+entityToLayerMap, layerConfig = dpc.createPolyAndConfigFromDxf(inputDxf, offset)
+for layer in entityToLayerMap.keys():
+
+    materialThickness = float(layerConfig[layer]["thickness"])
     toolType = None
     toolDiameter = None
     bothSideMilled = None
-	
-    if "45" in key:
+
+    if "45" in layer:
         toolType = "45"
-    elif "90" in key:
+    elif "90" in layer:
         toolType = "90"
-        toolDiameter = float(input("Choose cutter diameter[mm] 1/2/3/6.35: "))
+        toolDiameter = float(layerConfig[layer]["toolDiameter"])
         if not toolDiameter in [1.0, 2.0, 3.0, 6.35]:
-            print("Wrong cutter diameter!") 
+            print("Wrong cutter diameter!")
             quit()
-        #bothSideMilled = input("Should mill both-sided y/n: ")
-        bothSideMilled = 'y'
-        if not bothSideMilled in ["y", "n"]:
-        	print("Wrong option - chose 'y' or 'n'!") 
-        	quit()
+
+        bothSideMilled = True if layerConfig[layer]["bothSideMilled"] == "yes" else False
+        if not bothSideMilled in [True, False]:
+            print("Wrong bothSideMilled option - chose 'yes' or 'no'!")
+            quit()
         bothSideMilled = True if bothSideMilled == "yes" else "no"
-	
-    elif "Drill" in key:
+
+    elif "Drill" in layer:
         toolType = "Drill"
-        toolDiameter = float(input("Choose cutter diameter[mm] 3/6: "))
-        if not toolDiameter in [3.0, 6.0]:
-            print("Wrong Drill diameter!") 
+        toolDiameter = float(layerConfig[layer]["toolDiameter"])
+        if not toolDiameter in [1.0, 2.0, 3.0, 6.0]:
+            print("Wrong Drill diameter!")
             quit()
     else:
         print("Tool type attribute not set in layer name!")
         quit()
-    materialLayersInfo.update({key : {"thickness" : materialThickness,
-                                      "toolType" : toolType,
-                                      "toolDiameter" : toolDiameter,
-									  "bothSideMilled" : bothSideMilled}})
+    materialLayersInfo.update({layer: {"thickness": materialThickness,
+                                        "toolType": toolType,
+                                        "toolDiameter": toolDiameter,
+                                        "bothSideMilled": bothSideMilled}})
 
-
+material = layerConfig["MATERIAL"]
 commandGenerator = gg.CommandGenerator("../Configs/tools/Cutters.xml", material, materialLayersInfo)
 commandGenerator.genGcode2D(outputDir, entityToLayerMap)

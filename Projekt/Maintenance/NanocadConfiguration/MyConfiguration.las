@@ -41,7 +41,7 @@ BOT_Full_CutOut_90
  90
         8
  62
-     7
+     4
 370
     -3
   6
@@ -89,7 +89,7 @@ BOT_Partial_CutOut_45
  90
         8
  62
-     4
+     7
 370
     -3
   6
@@ -101,7 +101,7 @@ BOT_Full_CutOut_90_1
  90
         8
  62
-     7
+     4
 370
     18
   6
@@ -113,7 +113,7 @@ BOT_Full_CutOut_90_2
  90
         8
  62
-     7
+     4
 370
     18
   6
@@ -149,7 +149,7 @@ BOT_Full_CutOut_90_3
  90
         8
  62
-     7
+     4
 370
     18
   6
@@ -173,7 +173,7 @@ TOP_Drill
  90
         8
  62
-     7
+     1
 370
     -3
   6
@@ -209,7 +209,7 @@ BOT_Full_CutOut_90_4
  90
         9
  62
-     7
+     4
 370
     -3
   6
@@ -221,7 +221,7 @@ BOT_Full_CutOut_90_5
  90
         8
  62
-     7
+     4
 370
     -3
   6
@@ -233,7 +233,7 @@ BOT_Drill
  90
         8
  62
-     7
+     6
 370
     -3
   6
@@ -245,7 +245,7 @@ TOP_Drill_1
  90
         8
  62
-     7
+     1
 370
     -3
   6
@@ -257,7 +257,7 @@ TOP_Drill_2
  90
         8
  62
-     7
+     1
 370
     25
   6
@@ -269,7 +269,7 @@ BOT_Drill_1
  90
         8
  62
-     7
+     6
 370
     25
   6
@@ -281,10 +281,82 @@ BOT_Drill_2
  90
         8
  62
-     7
+     6
 370
     -3
   6
 Continuous
   2
 Color_7
+  8
+BOT_Full_CutOut_45_1
+ 90
+        8
+ 62
+     3
+370
+    -3
+  6
+Continuous
+  2
+Color_3
+  8
+BOT_Full_CutOut_45_2
+ 90
+        8
+ 62
+     3
+370
+    -3
+  6
+Continuous
+  2
+Color_3
+  8
+BOT_Full_CutOut_45_3
+ 90
+        8
+ 62
+     3
+370
+    -3
+  6
+Continuous
+  2
+Color_3
+  8
+TOP_Full_CutOut_45_1
+ 90
+        8
+ 62
+     5
+370
+    -3
+  6
+Continuous
+  2
+Color_5
+  8
+TOP_Full_CutOut_45_2
+ 90
+        8
+ 62
+     5
+370
+    -3
+  6
+Continuous
+  2
+Color_5
+  8
+TOP_Full_CutOut_45_3
+ 90
+        8
+ 62
+     5
+370
+    -3
+  6
+Continuous
+  2
+Color_5
