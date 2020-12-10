@@ -1,0 +1,12 @@
+MATERIAL (plexi, balsa, plywood, brass) = plywood
+
+TOP_Drill (thickness, toolDiameter, shouldGenSerialGcode) = 6, 3, no
+TOP_Drill_2 (thickness, toolDiameter, shouldGenSerialGcode) = 6,3,no
+TOP_Full_CutOut_90 (thickness, toolDiameter, bothSideMilled, shouldGenSerialGcode) = 5.7, 3, yes, yes
+TOP_Full_CutOut_90_1 (thickness, toolDiameter, bothSideMilled, shouldGenSerialGcode) = 3, 3, no, yes
+TOP_Drill_1 (thickness, toolDiameter, shouldGenSerialGcode) = 6, 2, no
+BOT_Full_CutOut_45 (thickness, shouldGenSerialGcode) = 5.7,  yes
+
+
+
+

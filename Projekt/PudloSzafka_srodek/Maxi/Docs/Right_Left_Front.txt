@@ -1,0 +1,12 @@
+MATERIAL (plexi, balsa, plywood, brass) = plywood
+
+TOP_Full_CutOut_90 (thickness, toolDiameter, bothSideMilled) = 5.7, 3, yes
+TOP_Full_CutOut_90_1 (thickness, toolDiameter, bothSideMilled) = 3, 3, yes
+TOP_Full_CutOut_45 (thickness) = 3
+TOP_Drill (thickness, toolDiameter) = 6, 3
+TOP_Drill_1 (thickness, toolDiameter) = 6, 2
+BOT_Full_CutOut_45 (thickness) = 5.7
+BOT_Full_CutOut_45_1 (thickness) = 3
+
+
+
