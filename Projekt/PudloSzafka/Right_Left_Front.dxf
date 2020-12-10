@@ -501,11 +501,11 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2459187.999255127
+2459193.92855566
   9
 $TDUUPDATE
  40
-2459187.957588461
+2459193.886888993
   9
 $TDINDWG
  40
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-8F0
+23D9
   9
 $SURFTAB1
  70
@@ -1127,7 +1127,7 @@ ObjectDBX Classes
  90
         0
  91
-        8
+       10
 280
      0
 281
@@ -1175,7 +1175,7 @@ ObjectDBX Classes
  90
         0
  91
-        5
+        6
 280
      0
 281
@@ -1191,7 +1191,7 @@ ObjectDBX Classes
  90
      4095
  91
-        6
+        7
 280
      0
 281
@@ -1207,7 +1207,7 @@ ObjectDBX Classes
  90
      1153
  91
-        7
+        9
 280
      0
 281
@@ -1223,7 +1223,7 @@ ObjectDBX Classes
  90
      4095
  91
-        7
+        9
 280
      0
 281
@@ -1239,7 +1239,7 @@ ObjectDBX Classes
  90
      1153
  91
-        7
+        9
 280
      0
 281
@@ -1255,7 +1255,7 @@ ACDB_MLEADERSTYLE_CLASS
  90
      4095
  91
-        5
+        6
 280
      0
 281
@@ -1271,7 +1271,7 @@ ObjectDBX Classes
  90
      1152
  91
-        5
+        6
 280
      0
 281
@@ -1319,7 +1319,7 @@ ObjectDBX Classes
  90
         0
  91
-        5
+        6
 280
      0
 281
@@ -1335,7 +1335,7 @@ AutoCAD 2000
  90
         0
  91
-        5
+        6
 280
      0
 281
@@ -1351,7 +1351,7 @@ ObjectDBX Classes
  90
         0
  91
-        5
+        6
 280
      0
 281
@@ -1383,7 +1383,7 @@ ObjectDBX Classes
  90
         0
  91
-        5
+        6
 280
      0
 281
@@ -1415,7 +1415,7 @@ NanoSPDS
  90
       893
  91
-        5
+        6
 280
      0
 281
@@ -1431,7 +1431,7 @@ NanoSPDS
  90
       893
  91
-       22
+       23
 280
      0
 281
@@ -1447,7 +1447,7 @@ NanoSPDS
  90
       893
  91
-        5
+       11
 280
      0
 281
@@ -1495,7 +1495,7 @@ CAcLayoutPrintConfig
  90
      4095
  91
-        5
+        6
 280
      0
 281
@@ -1511,7 +1511,7 @@ SCENEOE
  90
      1153
  91
-        7
+        9
 280
      0
 281
@@ -1527,7 +1527,7 @@ CDocDataContainer
  90
      4095
  91
-        4
+        5
 280
      0
 281
@@ -1573,9 +1573,9 @@ AcDbViewportTableRecord
  21
 1.0
  12
-448.553059
+347.669833
  22
-189.664926
+268.208454
  13
 0.0
  23
@@ -1601,9 +1601,9 @@ AcDbViewportTableRecord
  37
 0.0
  40
-309.375
+260.714286
  41
-2.124675
+2.326027
  42
 50.0
  43
@@ -2910,12 +2910,6 @@ AcDbDimStyleTable
 DIMSTYLE
 105
 1B0
-102
-{ACAD_REACTORS
-330
-899
-102
-}
 330
 A
 100
@@ -2969,7 +2963,7 @@ BLOCK_RECORD
 100
 AcDbSymbolTable
  70
-    67
+    68
   0
 BLOCK_RECORD
   5
@@ -4348,6 +4342,26 @@ AcDbSymbolTableRecord
 AcDbBlockTableRecord
   2
 *D66
+340
+0
+ 70
+     0
+280
+     1
+281
+     0
+  0
+BLOCK_RECORD
+  5
+23A6
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*D67
 340
 0
  70
@@ -25349,6 +25363,328 @@ AcDbEntity
 100
 AcDbBlockEnd
   0
+BLOCK
+  5
+23A7
+330
+23A6
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*D67
+ 70
+     1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*D67
+  1
+*D67
+  0
+LINE
+  5
+23A9
+330
+23A6
+100
+AcDbEntity
+  8
+DIMENSION
+ 62
+     0
+370
+    -2
+100
+AcDbLine
+ 10
+850.530505
+ 20
+418.518049
+ 30
+0.0
+ 11
+850.530505
+ 21
+423.018049
+ 31
+0.0
+  0
+LINE
+  5
+23AA
+330
+23A6
+100
+AcDbEntity
+  8
+DIMENSION
+ 62
+     0
+370
+    -2
+100
+AcDbLine
+ 10
+930.506942
+ 20
+418.518049
+ 30
+0.0
+ 11
+930.506942
+ 21
+423.018049
+ 31
+0.0
+  0
+LINE
+  5
+23AB
+330
+23A6
+100
+AcDbEntity
+  8
+DIMENSION
+ 62
+     0
+370
+    -2
+100
+AcDbLine
+ 10
+853.030505
+ 20
+423.018049
+ 30
+0.0
+ 11
+882.018723
+ 21
+423.018049
+ 31
+0.0
+  0
+LINE
+  5
+23AC
+330
+23A6
+100
+AcDbEntity
+  8
+DIMENSION
+ 62
+     0
+370
+    -2
+100
+AcDbLine
+ 10
+928.006942
+ 20
+423.018049
+ 30
+0.0
+ 11
+899.018723
+ 21
+423.018049
+ 31
+0.0
+  0
+SOLID
+  5
+23AD
+330
+23A6
+100
+AcDbEntity
+  8
+DIMENSION
+ 62
+     0
+100
+AcDbTrace
+ 10
+853.030505
+ 20
+423.434716
+ 30
+0.0
+ 11
+853.030505
+ 21
+422.601382
+ 31
+0.0
+ 12
+850.530505
+ 22
+423.018049
+ 32
+0.0
+ 13
+850.530505
+ 23
+423.018049
+ 33
+0.0
+  0
+SOLID
+  5
+23AE
+330
+23A6
+100
+AcDbEntity
+  8
+DIMENSION
+ 62
+     0
+100
+AcDbTrace
+ 10
+928.006942
+ 20
+422.601382
+ 30
+0.0
+ 11
+928.006942
+ 21
+423.434716
+ 31
+0.0
+ 12
+930.506942
+ 22
+423.018049
+ 32
+0.0
+ 13
+930.506942
+ 23
+423.018049
+ 33
+0.0
+  0
+MTEXT
+  5
+23AF
+330
+23A6
+100
+AcDbEntity
+  8
+DIMENSION
+ 62
+     0
+100
+AcDbMText
+ 10
+890.518723
+ 20
+423.018049
+ 30
+0.0
+ 40
+2.5
+ 41
+0.0
+ 46
+0.0
+ 71
+     5
+ 72
+     1
+  1
+\A1;79.9764
+ 73
+     1
+ 44
+1.0
+  0
+POINT
+  5
+23B0
+330
+23A6
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+     0
+100
+AcDbPoint
+ 10
+850.530505
+ 20
+418.018049
+ 30
+0.0
+  0
+POINT
+  5
+23B1
+330
+23A6
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+     0
+100
+AcDbPoint
+ 10
+930.506942
+ 20
+418.018049
+ 30
+0.0
+  0
+POINT
+  5
+23B2
+330
+23A6
+100
+AcDbEntity
+  8
+Defpoints
+ 62
+     0
+100
+AcDbPoint
+ 10
+930.506942
+ 20
+423.018049
+ 30
+0.0
+  0
+ENDBLK
+  5
+23A8
+330
+23A6
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
 ENDSEC
   0
 SECTION
@@ -28694,10 +29030,6 @@ AcDbPolyline
 LWPOLYLINE
   5
 72D
-102
-{ACAD_REACTORS
-102
-}
 330
 1F
 100
@@ -28774,10 +29106,6 @@ AcDbPolyline
 LWPOLYLINE
   5
 73F
-102
-{ACAD_REACTORS
-102
-}
 330
 1F
 100
@@ -28820,10 +29148,6 @@ AcDbPolyline
 LWPOLYLINE
   5
 740
-102
-{ACAD_REACTORS
-102
-}
 330
 1F
 100
@@ -28854,12 +29178,6 @@ AcDbPolyline
 LWPOLYLINE
   5
 741
-102
-{ACAD_REACTORS
-330
-8DB
-102
-}
 330
 1F
 100
@@ -31079,116 +31397,6 @@ AcDbPoint
  50
 180.0
   0
-DIMENSION
-  5
-899
-102
-{ACAD_REACTORS
-330
-8A8
-102
-}
-102
-{ACAD_XDICTIONARY
-360
-8A7
-102
-}
-330
-1F
-100
-AcDbEntity
-  8
-DIMENSION
-100
-AcDbDimension
-280
-     0
-  2
-*D63
- 10
-1165.518724
- 20
-348.018049
- 30
-0.0
- 11
-965.518724
- 21
-348.018049
- 31
-0.0
- 70
-    32
- 71
-     5
- 42
-400.0
- 73
-     0
- 74
-     0
- 75
-     0
-  3
-Standard
-100
-AcDbAlignedDimension
- 13
-765.518724
- 23
-93.018049
- 33
-0.0
- 14
-1165.518724
- 24
-93.018049
- 34
-0.0
-100
-AcDbRotatedDimension
-1001
-ACAD
-1000
-DSTYLE
-1002
-{
-1070
-   340
-1005
-11
-1070
-   144
-1040
-1.0
-1070
-    40
-1040
-1.0
-1070
-   173
-1070
-     1
-1070
-   343
-1005
-0
-1070
-   342
-1005
-0
-1070
-   344
-1005
-0
-1070
-   283
-1070
-     1
-1002
-}
-  0
 MTEXT
   5
 8DD
@@ -31207,9 +31415,9 @@ AcDbMText
  30
 0.0
  40
-2.5
+5.0
  41
-297.120536
+378.90625
  46
 92.209821
  71
@@ -31217,9 +31425,11 @@ AcDbMText
  72
      1
   3
-{\H2x;\f@Arial Unicode MS|b0|i0|c238|p34;MATERIAL (plexi, balsa, plywood, brass) = plywood^J^JBOT_Full_CutOut_45 (thickness) = 6^JBOT_Full_CutOut_45_1 (thickness) = 5^JTOP_Drill (thickness, toolDiameter) = 7, 3^JTOP_Drill_1 (thickness, toolDiameter) = 7, 
+{\f@Arial Unicode MS|b0|i0|c238|p34;MATERIAL (plexi, balsa, plywood, brass) = plywood^J^JBOT_Full_CutOut_45 (thickness, shouldGenSerialGcode) = 5.7,  yes^JBOT_Full_CutOut_45_1 (thickness, shouldGenSerialGcode) = 3, yes^JTOP_Drill (thickness, toolDiameter
+  3
+, shouldGenSerialGcode) = 6, 3, no^JTOP_Drill_1 (thickness, toolDiameter, shouldGenSerialGcode) = 6, 2, no^JTOP_Full_CutOut_45 (thickness, shouldGenSerialGcode) = 3, yes^JTOP_Full_CutOut_90 (thickness, toolDiameter, bothSideMilled, shouldGenSerialGcode)
   1
-2^JTOP_Full_CutOut_45 (thickness) = 5^JTOP_Full_CutOut_90 (thickness, toolDiameter, bothSideMilled) = 6, 3, yes^JTOP_Full_CutOut_90_1 (thickness, toolDiameter, bothSideMilled) = 3, 3, yes}
+ = 5.7, 3, yes, yes^JTOP_Full_CutOut_90_1 (thickness, toolDiameter, bothSideMilled, shouldGenSerialGcode) = 3, 3, no, yes}
  73
      1
  44
@@ -31429,7 +31639,7 @@ EF
   3
 ACDB_RECOMPOSE_DATA
 350
-8EF
+23D8
   3
 AcDbVariableDictionary
 350
@@ -31506,22 +31716,6 @@ AcDbDictionary
 ACAD_SORTENTS
 360
 235
-  0
-DICTIONARY
-  5
-8A7
-330
-899
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  3
-MC_XOBJECT1
-360
-8A8
   0
 DICTIONARY
   5
@@ -31989,7 +32183,7 @@ X-Ray
   0
 XRECORD
   5
-8EF
+23D8
 102
 {ACAD_REACTORS
 330
@@ -32142,20 +32336,6 @@ AcDbSortentsTable
 0
   5
 7B1
-  0
-McDbContainer2
-  5
-8A8
-102
-{ACAD_REACTORS
-330
-8A7
-102
-}
-330
-8A7
-100
-McDbContainer2
   0
 LAYOUT
   5
@@ -34177,7 +34357,7 @@ TABLESTYLE
 102
 {ACAD_XDICTIONARY
 360
-8ED
+23D6
 102
 }
 330
@@ -41849,7 +42029,7 @@ CSD_PLOT_CONFIG
   0
 DICTIONARY
   5
-8ED
+23D6
 330
 7F
 100
@@ -41861,7 +42041,7 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-8EE
+23D7
   0
 LAYOUTPRINTCONFIG
   5
@@ -41889,15 +42069,15 @@ CAcLayoutPrintConfig
   0
 CELLSTYLEMAP
   5
-8EE
+23D7
 102
 {ACAD_REACTORS
 330
-8ED
+23D6
 102
 }
 330
-8ED
+23D6
 100
 AcDbCellStyleMap
  90

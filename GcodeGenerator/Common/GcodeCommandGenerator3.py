@@ -44,9 +44,7 @@ class CommandGenerator:
 
     def generateMillingLevels(self, bot_margin, layerName):
         cutLevels = []
-        cutterConfig = None
-        layerNameIdx = 0
-        materialThickenss = self.materialLayersInfo[layerName]["thickness"]
+        materialThickness = self.materialLayersInfo[layerName]["thickness"]
         toolType = self.materialLayersInfo[layerName]["toolType"]
         toolDiameter = self.materialLayersInfo[layerName]["toolDiameter"]
 
@@ -57,15 +55,15 @@ class CommandGenerator:
             baseLevel = -math.sqrt(cutAmount)
 
             level = baseLevel * math.sqrt(baseMultipleParam)
-            while level > -materialThickenss:
+            while level > -materialThickness:
                 cutLevels.append(level)
                 baseMultipleParam += 1.0
                 level = baseLevel * math.sqrt(baseMultipleParam)
-            cutLevels.append(-materialThickenss)
+            cutLevels.append(-materialThickness)
         else:
             cutterConfig = self.getCutterConfig(self.configPath, toolType, toolDiameter)
             maxCutDepth = float(cutterConfig[0].get("maxDepth"))
-            numOfCuts = math.ceil(materialThickenss / maxCutDepth)
+            numOfCuts = math.ceil(materialThickness / maxCutDepth)
             for i in range(1, numOfCuts):
                 cutLevels.append(-i * maxCutDepth)
 
@@ -73,25 +71,19 @@ class CommandGenerator:
         self.speedZ = cutterConfig[0].get('drillSpeed')
 
         if cutLevels:
-            if (materialThickenss - bot_margin) > abs(cutLevels[-1]):
-                cutLevels.append(-(materialThickenss - bot_margin))
+            if (materialThickness - bot_margin) > abs(cutLevels[-1]):
+                cutLevels.append(-(materialThickness - bot_margin))
         else:
-            cutLevels.append(-(materialThickenss - bot_margin))
+            cutLevels.append(-(materialThickness - bot_margin))
         return cutLevels
 
-    def genGcode2DSerial(self, layer, polys, fileToWrite, levels):
-        # layerConfig = self.readLayerConfig("../2D/LayersConfig.xml", layer)
-        # levels = self.generateMillingLevels(float(layerConfig[0].get("bot_margin")), layer)
-        # levels = self.generateMillingLevels(0, layer)
-        print("levels: ", levels)
-        # fileToWrite = open(filepath, 'w')
+    def genGcode2DSerial(self, polys, fileToWrite, levels):
 
         for poly in polys:
             poly = roundFloatNestedList(poly, 3)
 
             fileToWrite.write("\n" + commandsMap["FastMoveZ"](safeHeight))
             fileToWrite.write(commandsMap["FastMove"](poly[0]))
-            fileToWrite.write(commandsMap["MoveZ"](levels[0], self.speedZ))
 
             for level in levels:
                 fileToWrite.write(commandsMap["MoveZ"](level, self.speedZ))
@@ -107,25 +99,22 @@ class CommandGenerator:
     def genGcode2D(self, outfileDir, polysToLayerMap):
 
         for layer, polys in polysToLayerMap.items():
-            filepath = outfileDir + "/" + layer + ".gcode"
-            # shouldGenSerialGcode = input("Should generate serial gcode for " + layer + "? (y/n): ")
-            shouldGenSerialGcode = "y";
+            print("out :", outfileDir + "\\" + layer + ".gcode")
 
-            print("out :", outfileDir + "/" + layer + ".gcode")
+            filepath = outfileDir + "\\" + layer + ".gcode"
             fileToWrite = open(filepath, 'w')
             fileToWrite.write(commandsMap["SetCoordMM"])
 
             levels = self.generateMillingLevels(0, layer)
-            print("levels: ", levels)
-            secondSideMillLevel = None;
+            secondSideMillLevel = None
             if self.materialLayersInfo[layer]["bothSideMilled"]:
                 if len(levels) == 1:
                     levels = [levels[0] / 2, levels[0]]
-                secondSideMillLevel = levels[-1];
+                secondSideMillLevel = levels[-1]
                 levels = levels[:-1]
 
-            if (shouldGenSerialGcode == "y"):
-                self.genGcode2DSerial(layer, polys, fileToWrite, levels)
+            if self.materialLayersInfo[layer]["shouldGenSerialGcode"]:
+                self.genGcode2DSerial(polys, fileToWrite, levels)
             else:
                 for level in levels:
                     for poly in polys:
@@ -136,18 +125,15 @@ class CommandGenerator:
 
                         for point in poly:
                             fileToWrite.write(commandsMap["Move"](point, speed=self.speed))
-                        # fileToWrite.write(commandsMap["Move"](poly[0], speed = self.speed))
 
                 fileToWrite.write("\n" + commandsMap["FastMoveZ"](safeHeight))
                 fileToWrite.write("\n" + commandsMap["FastMoveToBase"])
                 fileToWrite.write(commandsMap["EndProgram"])
                 fileToWrite.close()
-
-            print("secondSideMillLevel: ", secondSideMillLevel)
-            self.writeSecondSide(secondSideMillLevel, outfileDir + "/" + layer + "_SecondSide.gcode", polys)
+            self.writeSecondSide(secondSideMillLevel, outfileDir + "\\" + layer + "_SecondSide.gcode", polys)
 
     def writeSecondSide(self, secondSideMillLevel, outFile, polys):
-        if secondSideMillLevel == None:
+        if secondSideMillLevel is None:
             return
         print("out for second side: ", outFile)
         fileToWrite = open(outFile, 'w')
