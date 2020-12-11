@@ -39,7 +39,7 @@
                 <params maxDepth = "3.2" cutSpeed = "700" drillSpeed = "150" />
             </diameter_3.0>                           
             <diameter_6.35>
-                <params maxDepth = "6" cutSpeed = "1000" drillSpeed = "100" />
+                <params maxDepth = "6" cutSpeed = "700" drillSpeed = "100" />
             </diameter_6.35>
         </plywood>
 		<brass>
