@@ -13,7 +13,9 @@ class ConfigGenerator:
         return self.extractConfig(baseString)
 
     def extractConfig(self, stringToProcess):
-        lines = stringToProcess.split("^J")
+        print("String to process: ", stringToProcess)
+        # lines = stringToProcess.split("^J")
+        lines = stringToProcess.split("\n")
         newLines = []
         for line in lines:
             line = line.replace(' ', '')
@@ -32,6 +34,7 @@ class ConfigGenerator:
         return layerToconfigMap
 
     def extractConfigElement(self, stringLine):
+        print("String to split: ", stringLine)
         [leftSide, rightSide] = stringLine.split("=")
 
         splitParameters = leftSide.replace(')', '').split("(")

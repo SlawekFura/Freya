@@ -65,7 +65,7 @@
             <params cutAmount = "9.5" cutSpeed = "500" drillSpeed = "100" />
         </balsa>
         <plywood>
-            <params cutAmount = "9.5" cutSpeed = "500" drillSpeed = "100" />
+            <params cutAmount = "11.0" cutSpeed = "1000" drillSpeed = "100" />
         </plywood>
     </type_45>
 	<type_Drill>
