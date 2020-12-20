@@ -17,3 +17,4 @@ MeshFix-V2.1/*
 *.bak
 *.original
 *.dwl2
+GcodeGenerator/.idea/*
