@@ -25,7 +25,6 @@ def getExtremeCoords(entities):
     elif entities[0].dxftype == 'POINT':
         lowestXY = highestXY = [entities[0].point[x], entities[0].point[y]]
 
-    print("len :", len(entities))
     for entity in entities:
         if entity.dxftype == 'LWPOLYLINE':
             for point in entity:

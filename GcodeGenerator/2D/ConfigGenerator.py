@@ -1,5 +1,6 @@
 import dxfgrabber as dg
 import sys
+import re
 
 ParameterList = ["thickness", "toolDiameter", "bothSideMilled", "shouldGenSerialGcode"]
 
@@ -13,13 +14,18 @@ class ConfigGenerator:
         return self.extractConfig(baseString)
 
     def extractConfig(self, stringToProcess):
-        print("String to process: ", stringToProcess)
+        # print("String to process: ", stringToProcess)
         # lines = stringToProcess.split("^J")
-        lines = stringToProcess.split("\n")
+        # lines = stringToProcess.split("\n")
+        lines = stringToProcess
+        # print("-----------before split:", lines)
+        lines = re.split('\^J|\n', lines)
+        # print("----------after split:", lines)
         newLines = []
         for line in lines:
             line = line.replace(' ', '')
             line = line.replace('\n', '')
+            line = line.replace("^S", '')
             if line != "":
                 newLines.append(line)
 
@@ -34,7 +40,7 @@ class ConfigGenerator:
         return layerToconfigMap
 
     def extractConfigElement(self, stringLine):
-        print("String to split: ", stringLine)
+        # print("String to split: ", stringLine)
         [leftSide, rightSide] = stringLine.split("=")
 
         splitParameters = leftSide.replace(')', '').split("(")

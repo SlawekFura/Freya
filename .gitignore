@@ -14,6 +14,6 @@ GcodeGenerator/CppWorkspace/ToolpathGenerator/build-debug/
 GcodeGenerator/3rdPartyScripts/freecadApi/Generated/*
 GcodeGenerator/3D/Generated/*
 MeshFix-V2.1/*
-.*bak
-.*original
-.*dwl2
+*.bak
+*.original
+*.dwl2

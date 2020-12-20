@@ -28,7 +28,6 @@ for layer in entityToLayerMap.keys():
     toolType = None
     toolDiameter = None
     bothSideMilled = None
-    shouldGenSerialGcode = None
 
     if "45" in layer:
         toolType = "45"
