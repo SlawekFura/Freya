@@ -501,11 +501,11 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2459204.924288681
+2459204.941076759
   9
 $TDUUPDATE
  40
-2459204.882622014
+2459204.899410093
   9
 $TDINDWG
  40
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-7E7
+7F6
   9
 $SURFTAB1
  70
@@ -1557,9 +1557,9 @@ AcDbViewportTableRecord
  21
 1.0
  12
-338.132232
+538.781021
  22
-66.071368
+6.135203
  13
 0.0
  23
@@ -1585,9 +1585,9 @@ AcDbViewportTableRecord
  37
 0.0
  40
-543.752078
+1242.120536
  41
-2.323144
+2.360262
  42
 50.0
  43
@@ -21629,7 +21629,7 @@ AcDbMText
   3
 {\f@Arial Unicode MS|b0|i0|c238|p34;MATERIAL (plexi, balsa, plywood, brass) = plywood^J^JBOT_Full_CutOut_45 (thickness, shouldGenSerialGcode) = 5.9,  yes^JBOT_Full_CutOut_45_1 (thickness, shouldGenSerialGcode) = 2.95,  yes\PBOT_Full_CutOut_90 (thickness
   3
-, toolDiameter, bothSideMilled, shouldGenSerialGcode) = 6, 3, yes, yes^JTOP_Drill (thickness, toolDiameter, shouldGenSerialGcode) = 7, 3, no^JTOP_Drill_1 (thickness, toolDiameter, shouldGenSerialGcode) = 7, 3, no^JTOP_Full_CutOut_90^S (thickness, toolDia
+, toolDiameter, bothSideMilled, shouldGenSerialGcode) = 6, 3, yes, yes^JTOP_Drill (thickness, toolDiameter, shouldGenSerialGcode) = 8, 3, no^JTOP_Drill_1 (thickness, toolDiameter, shouldGenSerialGcode) = 7, 3, no^JTOP_Full_CutOut_90^S (thickness, toolDia
   1
 meter, bothSideMilled, shouldGenSerialGcode) = 3, 3, no, yes}
  73
@@ -21650,10 +21650,6 @@ ACAD_MTEXT_DEFINED_HEIGHT_END
 LWPOLYLINE
   5
 399
-102
-{ACAD_REACTORS
-102
-}
 330
 1F
 100
@@ -21758,10 +21754,6 @@ AcDbPoint
 LWPOLYLINE
   5
 3A2
-102
-{ACAD_REACTORS
-102
-}
 330
 1F
 100
@@ -21804,10 +21796,6 @@ AcDbPolyline
 LWPOLYLINE
   5
 3A3
-102
-{ACAD_REACTORS
-102
-}
 330
 1F
 100
@@ -21838,10 +21826,6 @@ AcDbPolyline
 LWPOLYLINE
   5
 3A4
-102
-{ACAD_REACTORS
-102
-}
 330
 1F
 100
@@ -22292,10 +22276,6 @@ AcDbPolyline
 LWPOLYLINE
   5
 731
-102
-{ACAD_REACTORS
-102
-}
 330
 1F
 100
@@ -22639,7 +22619,7 @@ EF
   3
 ACDB_RECOMPOSE_DATA
 350
-7E6
+7F5
   3
 AcDbVariableDictionary
 350
@@ -23179,7 +23159,7 @@ X-Ray
   0
 XRECORD
   5
-7E6
+7F5
 102
 {ACAD_REACTORS
 330
@@ -25333,7 +25313,7 @@ TABLESTYLE
 102
 {ACAD_XDICTIONARY
 360
-7E4
+7F3
 102
 }
 330
@@ -32993,7 +32973,7 @@ CSD_PLOT_CONFIG
   0
 DICTIONARY
   5
-7E4
+7F3
 330
 7F
 100
@@ -33005,7 +32985,7 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-7E5
+7F4
   0
 LAYOUTPRINTCONFIG
   5
@@ -33033,15 +33013,15 @@ CAcLayoutPrintConfig
   0
 CELLSTYLEMAP
   5
-7E5
+7F4
 102
 {ACAD_REACTORS
 330
-7E4
+7F3
 102
 }
 330
-7E4
+7F3
 100
 AcDbCellStyleMap
  90
