@@ -34,7 +34,7 @@ for layer in entityToLayerMap.keys():
     elif "90" in layer:
         toolType = "90"
         toolDiameter = float(layerConfig[layer]["toolDiameter"])
-        if toolDiameter not in [1.0, 2.0, 3.0, 6.35]:
+        if toolDiameter not in [1.0, 2.0, 3.0, 6.0, 6.35]:
             print("Wrong cutter diameter!")
             quit()
 

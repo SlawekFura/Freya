@@ -10,6 +10,9 @@
             <diameter_3.0>                                              
                 <params maxDepth = "1.6" cutSpeed = "200" drillSpeed = "20" />
             </diameter_3.0>                                             
+            <diameter_6.0>                                             
+                <params maxDepth = "2.5" cutSpeed = "200" drillSpeed = "20" />
+            </diameter_6.0>   
             <diameter_6.35>                                             
                 <params maxDepth = "2.5" cutSpeed = "200" drillSpeed = "20" />
             </diameter_6.35>                                              
@@ -24,6 +27,9 @@
             <diameter_3.0>                                                
                 <params maxDepth = "4.0" cutSpeed = "700" drillSpeed = "150" />
             </diameter_3.0>
+            <diameter_6.0>
+                <params maxDepth = "7" cutSpeed = "1000" drillSpeed = "100" />
+            </diameter_6.0>
             <diameter_6.35>
                 <params maxDepth = "10" cutSpeed = "1250" drillSpeed = "100" />
             </diameter_6.35>
@@ -38,6 +44,9 @@
             <diameter_3.0>                                               
                 <params maxDepth = "3.2" cutSpeed = "700" drillSpeed = "150" />
             </diameter_3.0>                           
+            <diameter_6.0>
+                <params maxDepth = "7" cutSpeed = "600" drillSpeed = "100" />
+            </diameter_6.0>
             <diameter_6.35>
                 <params maxDepth = "6" cutSpeed = "700" drillSpeed = "100" />
             </diameter_6.35>
