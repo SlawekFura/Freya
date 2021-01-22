@@ -501,11 +501,11 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2459237.631805914
+2459237.764007373
   9
 $TDUUPDATE
  40
-2459237.590139247
+2459237.722340706
   9
 $TDINDWG
  40
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-5DB
+5DE
   9
 $SURFTAB1
  70
@@ -1557,9 +1557,9 @@ AcDbViewportTableRecord
  21
 1.0
  12
--107.957002
+-342.019502
  22
-215.594831
+244.940069
  13
 0.0
  23
@@ -1585,7 +1585,7 @@ AcDbViewportTableRecord
  37
 0.0
  40
-552.053571
+109.047619
  41
 2.358079
  42
@@ -11889,9 +11889,9 @@ AcDbMText
  72
      1
   3
-{\f@Arial Unicode MS|b0|i0|c238|p34;MATERIAL (plexi, balsa, plywood, brass) = plywood^J\PTOP_Drill (thickness, toolDiameter, shouldGenSerialGcode) = 6, 3, no^JTOP_Full_CutOut_90^S(thickness^S, toolDiameter, bothSideMilled, shouldGenSerialGcode) = 3, 3, n
+{\f@Arial Unicode MS|b0|i0|c238|p34;MATERIAL (plexi, balsa, plywood, brass) = plywood^J\PTOP_Drill (thickness, toolDiameter, shouldGenSerialGcode) = 12.5, 3, no^JTOP_Full_CutOut_90^S(thickness^S, toolDiameter, bothSideMilled, shouldGenSerialGcode) = 3, 3
   1
-o, yes\PTOP_Full_CutOut_90_1^S(thickness^S, toolDiameter, bothSideMilled, shouldGenSerialGcode) = 8, 6, no, yes\PTOP_Full_CutOut_90_2(thickness^S, toolDiameter, bothSideMilled, shouldGenSerialGcode) = 12.3, 6, no, yes\P}
+, no, yes\PTOP_Full_CutOut_90_1^S(thickness^S, toolDiameter, bothSideMilled, shouldGenSerialGcode) = 8, 6, no, yes\PTOP_Full_CutOut_90_2(thickness^S, toolDiameter, bothSideMilled, shouldGenSerialGcode) = 12.3, 6, no, yes\P}
  73
      1
  44
@@ -12801,7 +12801,7 @@ EF
   3
 ACDB_RECOMPOSE_DATA
 350
-5DA
+5DD
   3
 AcDbVariableDictionary
 350
@@ -13373,7 +13373,7 @@ X-Ray
   0
 XRECORD
   5
-5DA
+5DD
 102
 {ACAD_REACTORS
 330
@@ -15555,7 +15555,7 @@ TABLESTYLE
 102
 {ACAD_XDICTIONARY
 360
-5D8
+5DB
 102
 }
 330
@@ -23209,7 +23209,7 @@ CSD_PLOT_CONFIG
   0
 DICTIONARY
   5
-5D8
+5DB
 330
 7F
 100
@@ -23221,7 +23221,7 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-5D9
+5DC
   0
 LAYOUTPRINTCONFIG
   5
@@ -23249,15 +23249,15 @@ CAcLayoutPrintConfig
   0
 CELLSTYLEMAP
   5
-5D9
+5DC
 102
 {ACAD_REACTORS
 330
-5D8
+5DB
 102
 }
 330
-5D8
+5DB
 100
 AcDbCellStyleMap
  90

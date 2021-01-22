@@ -501,11 +501,11 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2459237.623270417
+2459237.763992859
   9
 $TDUUPDATE
  40
-2459237.58160375
+2459237.722326192
   9
 $TDINDWG
  40
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-585
+588
   9
 $SURFTAB1
  70
@@ -1127,7 +1127,7 @@ ObjectDBX Classes
  90
         0
  91
-       21
+       14
 280
      0
 281
@@ -1175,7 +1175,7 @@ ObjectDBX Classes
  90
         0
  91
-       11
+        8
 280
      0
 281
@@ -1191,7 +1191,7 @@ ObjectDBX Classes
  90
      4095
  91
-       12
+        9
 280
      0
 281
@@ -1207,7 +1207,7 @@ ObjectDBX Classes
  90
      1153
  91
-       20
+       13
 280
      0
 281
@@ -1223,7 +1223,7 @@ ObjectDBX Classes
  90
      4095
  91
-       19
+       13
 280
      0
 281
@@ -1239,7 +1239,7 @@ ObjectDBX Classes
  90
      1153
  91
-       20
+       13
 280
      0
 281
@@ -1255,7 +1255,7 @@ ACDB_MLEADERSTYLE_CLASS
  90
      4095
  91
-       11
+        8
 280
      0
 281
@@ -1271,7 +1271,7 @@ ObjectDBX Classes
  90
      1152
  91
-       11
+        8
 280
      0
 281
@@ -1319,7 +1319,7 @@ ObjectDBX Classes
  90
         0
  91
-       11
+        8
 280
      0
 281
@@ -1335,7 +1335,7 @@ AutoCAD 2000
  90
         0
  91
-       11
+        8
 280
      0
 281
@@ -1351,7 +1351,7 @@ ObjectDBX Classes
  90
         0
  91
-       11
+        8
 280
      0
 281
@@ -1383,7 +1383,7 @@ ObjectDBX Classes
  90
         0
  91
-       12
+        8
 280
      0
 281
@@ -1415,7 +1415,7 @@ NanoSPDS
  90
       893
  91
-       11
+        8
 280
      0
 281
@@ -1431,7 +1431,7 @@ NanoSPDS
  90
       893
  91
-       28
+       25
 280
      0
 281
@@ -1447,7 +1447,7 @@ NanoSPDS
  90
       893
  91
-       18
+       10
 280
      0
 281
@@ -1495,7 +1495,7 @@ CAcLayoutPrintConfig
  90
      4095
  91
-       12
+        8
 280
      0
 281
@@ -1511,7 +1511,7 @@ SCENEOE
  90
      1153
  91
-       20
+       13
 280
      0
 281
@@ -1557,9 +1557,9 @@ AcDbViewportTableRecord
  21
 1.0
  12
--340.897599
+-184.46001
  22
-163.361735
+126.086995
  13
 0.0
  23
@@ -1585,7 +1585,7 @@ AcDbViewportTableRecord
  37
 0.0
  40
-143.661972
+323.239437
  41
 2.358079
  42
@@ -8861,9 +8861,9 @@ AcDbMText
  72
      1
   3
-{\f@Arial Unicode MS|b0|i0|c238|p34;MATERIAL (plexi, balsa, plywood, brass) = plywood^J\PTOP_Drill (thickness, toolDiameter, shouldGenSerialGcode) = 6, 3, no^JTOP_Full_CutOut_90^S(thickness^S, toolDiameter, bothSideMilled, shouldGenSerialGcode) = 3, 3, n
+{\f@Arial Unicode MS|b0|i0|c238|p34;MATERIAL (plexi, balsa, plywood, brass) = plywood^J\PTOP_Drill (thickness, toolDiameter, shouldGenSerialGcode) = 12.5, 3, no^JTOP_Full_CutOut_90^S(thickness^S, toolDiameter, bothSideMilled, shouldGenSerialGcode) = 3, 3
   1
-o, yes\PTOP_Full_CutOut_90_1^S(thickness^S, toolDiameter, bothSideMilled, shouldGenSerialGcode) = 8, 6, no, yes\PTOP_Full_CutOut_90_2(thickness^S, toolDiameter, bothSideMilled, shouldGenSerialGcode) = 12.3, 6, no, yes\P}
+, no, yes\PTOP_Full_CutOut_90_1^S(thickness^S, toolDiameter, bothSideMilled, shouldGenSerialGcode) = 8, 6, no, yes\PTOP_Full_CutOut_90_2(thickness^S, toolDiameter, bothSideMilled, shouldGenSerialGcode) = 12.3, 6, no, yes\P}
  73
      1
  44
@@ -9115,7 +9115,7 @@ EF
   3
 ACDB_RECOMPOSE_DATA
 350
-584
+587
   3
 AcDbVariableDictionary
 350
@@ -9655,7 +9655,7 @@ X-Ray
   0
 XRECORD
   5
-584
+587
 102
 {ACAD_REACTORS
 330
@@ -11809,7 +11809,7 @@ TABLESTYLE
 102
 {ACAD_XDICTIONARY
 360
-582
+585
 102
 }
 330
@@ -19463,7 +19463,7 @@ CSD_PLOT_CONFIG
   0
 DICTIONARY
   5
-582
+585
 330
 7F
 100
@@ -19475,7 +19475,7 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-583
+586
   0
 LAYOUTPRINTCONFIG
   5
@@ -19503,15 +19503,15 @@ CAcLayoutPrintConfig
   0
 CELLSTYLEMAP
   5
-583
+586
 102
 {ACAD_REACTORS
 330
-582
+585
 102
 }
 330
-582
+585
 100
 AcDbCellStyleMap
  90
