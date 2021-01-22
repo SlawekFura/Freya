@@ -501,11 +501,11 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2459237.638019271
+2459237.781683542
   9
 $TDUUPDATE
  40
-2459237.596352604
+2459237.740016875
   9
 $TDINDWG
  40
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-911
+917
   9
 $SURFTAB1
  70
@@ -1557,9 +1557,9 @@ AcDbViewportTableRecord
  21
 1.0
  12
-329.099274
+-201.459218
  22
--76.847599
+237.974281
  13
 0.0
  23
@@ -1585,7 +1585,7 @@ AcDbViewportTableRecord
  37
 0.0
  40
-1242.120536
+163.571429
  41
 2.358079
  42
@@ -24375,7 +24375,7 @@ AcDbMText
   3
 o, yes\PTOP_Full_CutOut_90_1^S(thickness^S, toolDiameter, bothSideMilled, shouldGenSerialGcode) = 8, 3, no, yes\PTOP_Full_CutOut_90_2^S(thickness^S, toolDiameter, bothSideMilled, shouldGenSerialGcode) = 3, 3, no, yes\PTOP_Full_CutOut_90_3^S(thickness^S, to
   1
-olDiameter, bothSideMilled, shouldGenSerialGcode) = 12.3, 6, no, yes\PTOP_Full_CutOut_90_4(thickness^S, toolDiameter, bothSideMilled, shouldGenSerialGcode) = 12.3, 6, no, yes\P}
+olDiameter, bothSideMilled, shouldGenSerialGcode) = 8, 6, no, yes\PTOP_Full_CutOut_90_4(thickness^S, toolDiameter, bothSideMilled, shouldGenSerialGcode) = 12.3, 6, no, yes\P}
  73
      1
  44
@@ -24661,7 +24661,7 @@ EF
   3
 ACDB_RECOMPOSE_DATA
 350
-910
+916
   3
 AcDbVariableDictionary
 350
@@ -25201,7 +25201,7 @@ X-Ray
   0
 XRECORD
   5
-910
+916
 102
 {ACAD_REACTORS
 330
@@ -27355,7 +27355,7 @@ TABLESTYLE
 102
 {ACAD_XDICTIONARY
 360
-90E
+914
 102
 }
 330
@@ -35009,7 +35009,7 @@ CSD_PLOT_CONFIG
   0
 DICTIONARY
   5
-90E
+914
 330
 7F
 100
@@ -35021,7 +35021,7 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-90F
+915
   0
 LAYOUTPRINTCONFIG
   5
@@ -35049,15 +35049,15 @@ CAcLayoutPrintConfig
   0
 CELLSTYLEMAP
   5
-90F
+915
 102
 {ACAD_REACTORS
 330
-90E
+914
 102
 }
 330
-90E
+914
 100
 AcDbCellStyleMap
  90
