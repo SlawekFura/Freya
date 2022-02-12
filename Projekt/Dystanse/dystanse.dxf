@@ -501,11 +501,11 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2459623.487704827
+2459623.539057697
   9
 $TDUUPDATE
  40
-2459623.44603816
+2459623.49739103
   9
 $TDINDWG
  40
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-249C
+249F
   9
 $SURFTAB1
  70
@@ -1573,9 +1573,9 @@ AcDbViewportTableRecord
  21
 1.0
  12
-403.571051
+250.779465
  22
-278.873845
+296.387341
  13
 0.0
  23
@@ -1601,7 +1601,7 @@ AcDbViewportTableRecord
  37
 0.0
  40
-223.928571
+149.285714
  41
 2.696172
  42
@@ -130713,9 +130713,9 @@ AcDbMText
  72
      1
   3
-{\f@Arial Unicode MS|b0|i0|c238|p34;MATERIAL (plexi, balsa, plywood, brass) = plywood^J^JTOP_Drill (thickness, toolDiameter, shouldGenSerialGcode) = 10, 3, no\PTOP_Drill_1 (thickness, toolDiameter, shouldGenSerialGcode) = 10, 3, no^JTOP_Full_CutOut_45 (
+{\f@Arial Unicode MS|b0|i0|c238|p34;MATERIAL (plexi, balsa, plywood, brass) = plywood^J^JTOP_Drill (thickness, toolDiameter, shouldGenSerialGcode) = 13, 3, no\PTOP_Drill_1 (thickness, toolDiameter, shouldGenSerialGcode) = 13, 3, no^JTOP_Full_CutOut_45 (
   1
-thickness, shouldGenSerialGcode) = 2.48, yes\PTOP_Full_CutOut_90 (thickness, toolDiameter, bothSideMilled, shouldGenSerialGcode) = 10, 3, no, yes^JTOP_Full_CutOut_90_1(thickness, toolDiameter, bothSideMilled, shouldGenSerialGcode) = 10, 3, no,^S yes}
+thickness, shouldGenSerialGcode) = 2.48, yes\PTOP_Full_CutOut_90 (thickness, toolDiameter, bothSideMilled, shouldGenSerialGcode) = 13, 3, no, yes^JTOP_Full_CutOut_90_1(thickness, toolDiameter, bothSideMilled, shouldGenSerialGcode) = 13, 3, no,^S yes}
  73
      1
  44
@@ -133567,7 +133567,7 @@ EF
   3
 ACDB_RECOMPOSE_DATA
 350
-249B
+249E
   3
 AcDbVariableDictionary
 350
@@ -134107,7 +134107,7 @@ X-Ray
   0
 XRECORD
   5
-249B
+249E
 102
 {ACAD_REACTORS
 330
@@ -136261,7 +136261,7 @@ TABLESTYLE
 102
 {ACAD_XDICTIONARY
 360
-2499
+249C
 102
 }
 330
@@ -143921,7 +143921,7 @@ CSD_PLOT_CONFIG
   0
 DICTIONARY
   5
-2499
+249C
 330
 7F
 100
@@ -143933,7 +143933,7 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-249A
+249D
   0
 LAYOUTPRINTCONFIG
   5
@@ -143961,15 +143961,15 @@ CAcLayoutPrintConfig
   0
 CELLSTYLEMAP
   5
-249A
+249D
 102
 {ACAD_REACTORS
 330
-2499
+249C
 102
 }
 330
-2499
+249C
 100
 AcDbCellStyleMap
  90
