@@ -40,7 +40,7 @@ class ConfigGenerator:
         return layerToconfigMap
 
     def extractConfigElement(self, stringLine):
-        # print("String to split: ", stringLine)
+        print("String to split: ", stringLine)
         [leftSide, rightSide] = stringLine.split("=")
 
         splitParameters = leftSide.replace(')', '').split("(")
